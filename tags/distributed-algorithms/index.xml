@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>distributed-algorithms | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tags/distributed-algorithms/</link>
+      <atom:link href="https://jdaymude.github.io/tags/distributed-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <description>distributed-algorithms</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>distributed-algorithms</title>
+      <link>https://jdaymude.github.io/tags/distributed-algorithms/</link>
+    </image>
+    
+    <item>
+      <title>Convex Hull Formation for Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2020-convexhull/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2020-convexhull/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/talk/2019random-separation/</link>
+      <pubDate>Sat, 21 Sep 2019 09:00:00 -0400</pubDate>
+      <guid>https://jdaymude.github.io/talk/2019random-separation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2019-separation/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2019-separation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Algorithms for Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2019discretemath-stochastic/</link>
+      <pubDate>Wed, 03 Apr 2019 13:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/talk/2019discretemath-stochastic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computing by Programmable Particles</title>
+      <link>https://jdaymude.github.io/publication/daymude2019-computingparticles/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2019-computingparticles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems: an Algorithmic Approach to Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2018wssr-sops/</link>
+      <pubDate>Sun, 04 Nov 2018 16:00:00 +0900</pubDate>
+      <guid>https://jdaymude.github.io/talk/2018wssr-sops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brief Announcement: A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2018-separationba/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2018-separationba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improved Leader Election for Self-Organizing Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2017-improvedleaderelection/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2017-improvedleaderelection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Runtime of Universal Coating for Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2017acoseminar-bridging/</link>
+      <pubDate>Fri, 06 Oct 2017 13:00:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/talk/2017acoseminar-bridging/</guid>
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from 
+&lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</guid>
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from 
+&lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Local Stochastic Algorithms for Compression and Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2017bda-compression/</link>
+      <pubDate>Fri, 28 Jul 2017 14:05:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/talk/2017bda-compression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convex Hull Formation for Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2017bda-convexhull/</link>
+      <pubDate>Fri, 28 Jul 2017 13:40:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/talk/2017bda-convexhull/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Distributed, Stochastic Framework for Active Matter</title>
+      <link>https://jdaymude.github.io/project/active-matter/</link>
+      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/active-matter/</guid>
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&amp;rsquo; rules and our robots&amp;rsquo; designs. This allows us to critically examine our theoretical algorithms&amp;rsquo; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Markov Chain Algorithm for Compression in Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2016-compression/</link>
+      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2016-compression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compression in Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/daymude2016-undergradthesis/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2016-undergradthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compression in Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/talk/2016barrett-thesis/</link>
+      <pubDate>Wed, 06 Apr 2016 11:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/talk/2016barrett-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems (SOPS)</title>
+      <link>https://jdaymude.github.io/project/sops/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/sops/</guid>
+      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
+&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

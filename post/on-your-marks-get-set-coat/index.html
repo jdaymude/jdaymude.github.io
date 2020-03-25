@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Source Themes Academic 4.8.0">
+
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Joshua J. Daymude">
+
+  
+  
+  
+    
+  
+  <meta name="description" content="In this post, I break down some key ideas from my new journal paper &#34;On the Runtime of Universal Coating for Programmable Matter&#34;. TL;DR: the paper is all about programming materials that don&#39;t exist yet to coat other objects in even layers as (relatively) fast as possible.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://jdaymude.github.io/post/on-your-marks-get-set-coat/">
+
+  
+
+
+  
+  
+  
+  <meta name="theme-color" content="#3DAAD9">
+  
+
+  
+  
+  
+  <script src="/js/mathjax-config.js"></script>
+  
+
+  
+  
+  
+  
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+        
+      
+    
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
+
+    
+
+    
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+    
+      
+
+      
+      
+
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
+      
+    
+      
+
+      
+      
+
+      
+    
+
+  
+
+  
+  
+  
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400italic,700%7CLato:400,400italic,700,700italic%7CSource+Code+Pro&display=swap">
+  
+
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/academic.css">
+
+  
+
+
+
+
+  
+
+
+  
+
+  <link rel="manifest" href="/index.webmanifest">
+  <link rel="icon" type="image/png" href="/images/icon_hu1dc8deb1865675db905a286e8af9308b_16380_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu1dc8deb1865675db905a286e8af9308b_16380_192x192_fill_lanczos_center_2.png">
+
+  <link rel="canonical" href="https://jdaymude.github.io/post/on-your-marks-get-set-coat/">
+
+  
+  
+  
+  
+  
+    
+  
+  
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@joshdaymude">
+  <meta property="twitter:creator" content="@joshdaymude">
+  
+  <meta property="og:site_name" content="Joshua J. Daymude">
+  <meta property="og:url" content="https://jdaymude.github.io/post/on-your-marks-get-set-coat/">
+  <meta property="og:title" content="On Your Marks, Get Set, Coat! | Joshua J. Daymude">
+  <meta property="og:description" content="In this post, I break down some key ideas from my new journal paper &#34;On the Runtime of Universal Coating for Programmable Matter&#34;. TL;DR: the paper is all about programming materials that don&#39;t exist yet to coat other objects in even layers as (relatively) fast as possible."><meta property="og:image" content="https://jdaymude.github.io/post/on-your-marks-get-set-coat/featured.png">
+  <meta property="twitter:image" content="https://jdaymude.github.io/post/on-your-marks-get-set-coat/featured.png"><meta property="og:locale" content="en-us">
+  
+    
+      <meta property="article:published_time" content="2017-12-11T09:05:00-07:00">
+    
+    <meta property="article:modified_time" content="2020-03-24T07:50:51-07:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+  
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jdaymude.github.io/post/on-your-marks-get-set-coat/"
+  },
+  "headline": "On Your Marks, Get Set, Coat!",
+  
+  "image": [
+    "https://jdaymude.github.io/post/on-your-marks-get-set-coat/featured.png"
+  ],
+  
+  "datePublished": "2017-12-11T09:05:00-07:00",
+  "dateModified": "2020-03-24T07:50:51-07:00",
+  
+  "author": {
+    "@type": "Person",
+    "name": "Joshua J. Daymude"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Joshua J. Daymude",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_192x192_fit_lanczos_2.png"
+    }
+  },
+  "description": "In this post, I break down some key ideas from my new journal paper \"On the Runtime of Universal Coating for Programmable Matter\". TL;DR: the paper is all about programming materials that don't exist yet to coat other objects in even layers as (relatively) fast as possible."
+}
+</script>
+
+  
+
+  
+
+
+  
+
+
+  
+
+
+
+
+
+  <title>On Your Marks, Get Set, Coat! | Joshua J. Daymude</title>
+
+</head>
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
+
+  <aside class="search-results" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        
+      </div>
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+  
+
+
+
+
+
+
+  
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_0x70_resize_lanczos_2.png" alt="Joshua J. Daymude"></a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/"><img src="/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_0x70_resize_lanczos_2.png" alt="Joshua J. Daymude"></a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>About</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Research</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#courses"><span>Teaching</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#press"><span>Press</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#posts"><span>Blog</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+          
+          
+          
+            
+          
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+        
+        
+        
+        
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/files/jdaymude_cv.pdf"><span>CV</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  <article class="article">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+  
+  
+<div class="article-container pt-3">
+  <h1>On Your Marks, Get Set, Coat!</h1>
+
+  
+
+  
+    
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  
+  <span><a href="/authors/jdaymude/">Joshua J. Daymude</a></span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+          Last updated on
+      
+    
+    Mar 24, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    8 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/categories/research/">research</a></span>
+  
+
+</div>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary my-1 mr-1" href="/project/sops/">
+    Project
+  </a>
+  
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+  
+</div>
+
+
+
+  <div class="article-container">
+
+    <div class="article-style">
+      <p>My first journal paper was 
+<a href="http://rdcu.be/zOaK" target="_blank" rel="noopener">published</a> early last week, marking a milestone in the winding forest path that is my PhD. The paper has some nice ideas and results I&rsquo;m proud of, but — regrettably — the writing style and level of mathematical rigor needed for publication can make it pretty hard to decipher for anyone not familiar with our niche of computer science. I&rsquo;m of the opinion that ideas are only useful if people can understand them, so to that end I&rsquo;m going to explain this paper in a way that&rsquo;s a bit less formal and academic. With a little effort, I think we&rsquo;ll both learn something new here. (And if it&rsquo;s still all Greek to you, I&rsquo;ll happily answer questions you leave in the comments).</p>
+<h2 id="the-nickel-version-tldr">The Nickel Version (TL;DR)</h2>
+<p>The paper (whose title is mathy and unimportant) is all about programming futuristic, sci-fi materials that don&rsquo;t exist yet to coat other objects in even layers as (relatively) fast as possible.</p>
+<h2 id="the-uh-dollar-version">The, Uh, Dollar(?) Version</h2>
+<p>Let&rsquo;s take a look at the paper&rsquo;s title (<em>emphasis</em> added): &ldquo;On the <em>Runtime</em> of <em>Universal Coating</em> for <em>Programmable Matter</em>.&rdquo;</p>
+<p><em>Runtime</em> is a word we use to talk about how fast an algorithm is. As in many other aspects of life, faster is better and more efficient. So this paper is about how fast &ldquo;Universal Coating for Programmable Matter&rdquo; is.</p>
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_2000x2000_fit_lanczos_2.png" >
+
+
+  <img data-src="/post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1200" height="500">
+</a>
+
+
+
+</figure>
+
+<p><em>Programmable matter</em> broadly describes any kind of physical material that can change itself as a reaction to what&rsquo;s around it without human interaction. It&rsquo;s a bit sci-fi, but imagine a future in which roads fill their own potholes and cracks after wear and tear, clothes heal themselves from fraying and holes, or artificial cells isolate and neutralize malignant tumors in the human body. It sounds crazy and is definitely out there, but that&rsquo;s what we&rsquo;re talking about here.</p>
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_2000x2000_fit_lanczos_2.png" >
+
+
+  <img data-src="/post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1200" height="500">
+</a>
+
+
+
+</figure>
+
+<p><em>Universal Coating</em> is the action we&rsquo;re trying to do. In this context, we mean &ldquo;coating&rdquo; like a coat of paint; we want to cover something as evenly as possible. (Nobody likes a lumpy paint job). &ldquo;Universal,&rdquo; as a math word, means that a technique works in many/all cases. Here, we&rsquo;re talking about a single approach to coating that works no matter what the object to be coated looks like. (Which is pretty cool).</p>
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+<figure >
+
+
+  <a data-fancybox="" href="/post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_2000x2000_fit_lanczos_2.png" >
+
+
+  <img data-src="/post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1200" height="500">
+</a>
+
+
+
+</figure>
+
+<p>So, all together, this paper is about analyzing the speed of a particular approach to using futuristic materials for coating any kind of object in nice, even layers. (Ok, so even the one sentence wrap up is a mouthful). Also, a big thank you to Annie Carson for the great illustrations!</p>
+<h2 id="so-how-does-it-work">So How Does It Work?</h2>
+<p>I&rsquo;m really glad you asked. Actually, I&rsquo;m really glad you&rsquo;re still here after that heavy appetizer of an overview; hopefully it didn&rsquo;t spoil your appetite before our main course, which starts right now! Take a look at a simulation of the Universal Coating algorithm over on our 
+<a href="https://sops.engineering.asu.edu/simulations/#universalcoating" target="_blank" rel="noopener">lab site</a>, and keep it open for the rest of this section so you can refer back to it.</p>
+<p>We need a bit of terminology before I explain what&rsquo;s going on with all those dots and colors. There are two main &ldquo;things&rdquo; in this algorithm. Thing 1 is the <em>object</em>, which is the cluster of dots with black circles in the middle. We&rsquo;re keeping things nice and simple in this example by making the object a hexagon, but it can be essentially any shape you want (&ldquo;universal&rdquo;, remember?). Thing 2 is the <em>particle system</em>, which are all the other dots that move around and change color. &ldquo;Particle system&rdquo; is just the term we use for the programmable matter stuff we talked about before: we&rsquo;re trying to coat the object with these particles.</p>
+<p>In really broad strokes, the algorithm can be broken down into four major steps:</p>
+<ol>
+<li>Get all the particles oriented towards the object using something like follow-the-leader. In the simulation video (0:00–0:02), this is when they all turn yellow. If you start at any yellow particle and follow its pointer to the next particle and so on, you&rsquo;ll always end up at the object.</li>
+<li>Coat the object&rsquo;s first layer. This happens insanely fast in the video (0:01–0:02) but there are actually a couple particles that turn red and fill in the few positions on the object&rsquo;s first layer that weren&rsquo;t already filled. You can see them if you pause the video and drag the slider back and forth around 0:01.</li>
+<li>Decide on a position to be the start/end of each layer. Choosing this <em>marker position</em> plays a big role in helping the particles learn when one layer is finished so they can start forming the next one. In the video (0:02–0:07), this decision process is shown with the line segments around the object changing colors. At 0:07, the particle occupying the marker position turns a light grey color.</li>
+<li>Coat the object in more layers one by one until all particles have been used. The video (0:08–0:20) shows this quite clearly, with finished particles turning green. The grey line of particles growing from the object towards the bottom are the particles from Step 3 which mark the start/end of each layer.</li>
+</ol>
+<p>And that&rsquo;s it! Perhaps as a point of pride, I have to mention that — although simple to describe — this algorithm is really involved. One of the main difficulties is that each particle runs this algorithm individually, so instead of Steps 1–4 happening nice and sequentially, they can actually all happen at once. And… yeah, it&rsquo;s as chaotic as it sounds. The good news is that, in a 
+<a href="https://sops.engineering.asu.edu/sops/universal-coating/" target="_blank" rel="noopener">previous paper</a>, our group proved this algorithm always works, no matter what. Going forward, we&rsquo;ll just take the fact that it works for granted.</p>
+<h2 id="quick-get-your-coat">(Quick) Get Your Coat!</h2>
+<p>I can&rsquo;t remember how many times I got in the car to go somewhere as a kid only to be sent back inside to get a jacket. Mom never said the &ldquo;quick&rdquo; part, but it was definitely implied!</p>
+<p>We&rsquo;re going to shift our discussion to the real work of this new paper: proving that our Universal Coating algorithm runs reasonably fast. Let&rsquo;s start with a motivating example for why you might do this kind of analysis:</p>
+<p>Pretend there&rsquo;s a secret technique for earning $1,000,000. Maybe it even comes with a guarantee that it will always work. We might get excited about something like that, or at least want to know more. But what if we found out that no one knew how long it would take to work? Or even worse, what if the fine print said it would take more days than the number of atoms in the universe? Well. We might still be waiting for our payout long after inflation turns a million dollars into pocket change, the cows come home, and the sun expands to consume the earth.</p>
+<p>The lesson to be learned here: we need to know both that an algorithm works <strong>and</strong> that it won&rsquo;t take a ridiculously long time. So how do we analyze the algorithm&rsquo;s runtime? There&rsquo;s often more than one way to crack that coconut, but the techniques can get pretty involved. Even getting a mastery over the most fundamental techniques can take the larger part of most undergraduate Computer Science (CS) programs. (Fun fact: this side of CS doesn&rsquo;t even have to involve programming, contrary to the popular belief that CS people are a bunch of tech support code monkeys. Yes, I probably can 
+<a href="https://www.xkcd.com/627/" target="_blank" rel="noopener">fix your iPhone</a>. No, I didn&rsquo;t learn that in school.)</p>
+<p>To explain both why analyzing our particular algorithm was nasty and how we ended up doing it, I&rsquo;ll use a quick allegory. Imagine a race between two teams: Team Red and Team Blue. Team Red works like a machine: everyone comes to practice and trains hard, they perform well in events, and — most importantly — they run in perfect lock step, starting together and finishing together. Team Blue, on the other hand, is more about the individual effort. They also perform well in events, but have a mix of sprinters, endurance runners, runners who like to stop and smell the roses, and so on. Some of Team Blue&rsquo;s runners end up finishing really fast, while others take longer.</p>
+<p>Our particle systems are, essentially, Team Blue. We don&rsquo;t make any assumptions about how fast each particle works relative to the others, and it&rsquo;s entirely possible that a particle can suddenly go faster or slower than usual without following a pattern. This makes it hard to figure out when the last Blue runner (or particle) will cross the finish line. So, instead of directly analyzing our system (Team Blue), we proved two things:</p>
+<ol>
+<li>Team Red — a simpler version of our particle systems where everyone progresses through the algorithm at the same rate — runs &ldquo;fast&rdquo;.</li>
+<li>Team Blue (our particle system) always runs faster than Team Red.</li>
+</ol>
+<p>Therefore, as a nice logical result, Team Blue also runs &ldquo;fast&rdquo;. In fact, it&rsquo;s entirely possible it even runs <em>really</em> fast!</p>
+<h2 id="good-job-out-there-get-some-water">Good Job Out There, Get Some Water</h2>
+<p>As a recap, we have an algorithm for programmable matter which coats objects of all shapes and sizes. We showed that this algorithm always works in an 
+<a href="https://sops.engineering.asu.edu/sops/universal-coating/" target="_blank" rel="noopener">older paper</a>, and that it runs pretty fast in this new 
+<a href="http://rdcu.be/zOaK" target="_blank" rel="noopener">journal paper</a>. This runtime analysis boiled down to showing that a simplified version of our particle system runs the algorithm quickly, and that the real particle system always runs it even faster. (For my CS people out there, we showed that the Universal Coating algorithm runs in $\mathcal{O}(n)$ asynchronous rounds with high probability, where $n$ is the number of particles in the system).</p>
+<p>Thanks for reading, and feel free to comment with your thoughts, ideas, and questions!</p>
+
+    </div>
+
+    
+
+
+
+<div class="article-tags">
+  
+  <a class="badge badge-light" href="/tags/programmable-matter/">programmable-matter</a>
+  
+  <a class="badge badge-light" href="/tags/coating/">coating</a>
+  
+  <a class="badge badge-light" href="/tags/dominance-argument/">dominance-argument</a>
+  
+</div>
+
+
+
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=On%20Your%20Marks,%20Get%20Set,%20Coat!&amp;body=https://jdaymude.github.io/post/on-your-marks-get-set-coat/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://jdaymude.github.io/post/on-your-marks-get-set-coat/&amp;text=On%20Your%20Marks,%20Get%20Set,%20Coat!" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://jdaymude.github.io/post/on-your-marks-get-set-coat/&amp;t=On%20Your%20Marks,%20Get%20Set,%20Coat!" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://jdaymude.github.io/post/on-your-marks-get-set-coat/&amp;title=On%20Your%20Marks,%20Get%20Set,%20Coat!" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://reddit.com/submit?url=https://jdaymude.github.io/post/on-your-marks-get-set-coat/&amp;title=On%20Your%20Marks,%20Get%20Set,%20Coat!" target="_blank" rel="noopener" class="share-btn-reddit">
+          <i class="fab fa-reddit-alien"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <img class="avatar mr-3 avatar-circle" src="/authors/jdaymude/avatar_hu4d7d01c1aaa3ea1eb29c77aa3e89f777_905663_270x270_fill_q90_lanczos_center.jpg" alt="Joshua J. Daymude">
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://jdaymude.github.io/">Joshua J. Daymude</a></h5>
+      <h6 class="card-subtitle">PhD Student, Computer Science</h6>
+      <p class="card-text">I am a Christian and computer science PhD student studying emergent behavior and programmable matter through the lens of distributed computing, stochastic processes, and bio-inspired algorithms. I also love gaming and playing music.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/files/jdaymude_cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=CQNOJjgAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/joshdaymude" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.instagram.com/joshdaymude" target="_blank" rel="noopener">
+        <i class="fab fa-instagram"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jdaymude" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://account.xbox.com/en-us/profile?gamertag=Iltrivosk" target="_blank" rel="noopener">
+        <i class="fab fa-xbox"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://steamcommunity.com/id/iltrivosk/" target="_blank" rel="noopener">
+        <i class="fab fa-steam"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/daymude2018-coatingruntime/">On the Runtime of Universal Coating for Programmable Matter</a></li>
+      
+      <li><a href="/talk/2017acoseminar-bridging/">A Stochastic Approach to Shortcut Bridging in Programmable Matter</a></li>
+      
+      <li><a href="/publication/andresarroyo2017-bridging/">A Stochastic Approach to Shortcut Bridging in Programmable Matter</a></li>
+      
+      <li><a href="/talk/2017bda-compression/">Local Stochastic Algorithms for Compression and Shortcut Bridging in Programmable Matter</a></li>
+      
+      <li><a href="/talk/2017bda-convexhull/">Convex Hull Formation for Programmable Matter</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+  </div>
+</article>
+
+      
+
+    
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
+        
+      
+
+    
+
+    
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
+    
+
+    
+    
+    <script>const code_highlighting = true;</script>
+    
+
+    
+    
+    <script>const isSiteThemeDark = true;</script>
+    
+
+    
+    
+    
+    
+    
+    
+    <script>
+      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
+      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
+      const content_type = {
+        'post': "Posts",
+        'project': "Projects",
+        'publication' : "Publications",
+        'talk' : "Talks"
+        };
+    </script>
+    
+
+    
+    
+
+    
+    
+    <script id="search-hit-fuse-template" type="text/x-template">
+      <div class="search-hit" id="summary-{{key}}">
+      <div class="search-hit-content">
+        <div class="search-hit-name">
+          <a href="{{relpermalink}}">{{title}}</a>
+          <div class="article-metadata search-hit-type">{{type}}</div>
+          <p class="search-hit-description">{{snippet}}</p>
+        </div>
+      </div>
+      </div>
+    </script>
+    
+
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+    
+
+    
+    
+
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
+
+    
+
+
+
+
+
+
+  
+  
+  <div class="container">
+    <footer class="site-footer">
+  
+
+  <p class="powered-by">
+    © 2020 Joshua J. Daymude &middot; 
+
+    Powered by the
+    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+    
+    <span class="float-right" aria-hidden="true">
+      <a href="#" class="back-to-top">
+        <span class="button_icon">
+          <i class="fas fa-chevron-up fa-2x"></i>
+        </span>
+      </a>
+    </span>
+    
+  </p>
+</footer>
+
+  </div>
+  
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>swarm-robotics | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tags/swarm-robotics/</link>
+      <atom:link href="https://jdaymude.github.io/tags/swarm-robotics/index.xml" rel="self" type="application/rss+xml" />
+    <description>swarm-robotics</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Sun, 04 Nov 2018 16:00:00 +0900</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>swarm-robotics</title>
+      <link>https://jdaymude.github.io/tags/swarm-robotics/</link>
+    </image>
+    
+    <item>
+      <title>Self-Organizing Particle Systems: an Algorithmic Approach to Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2018wssr-sops/</link>
+      <pubDate>Sun, 04 Nov 2018 16:00:00 +0900</pubDate>
+      <guid>https://jdaymude.github.io/talk/2018wssr-sops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phototactic Supersmarticles</title>
+      <link>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Distributed, Stochastic Framework for Active Matter</title>
+      <link>https://jdaymude.github.io/project/active-matter/</link>
+      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/active-matter/</guid>
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&amp;rsquo; rules and our robots&amp;rsquo; designs. This allows us to critically examine our theoretical algorithms&amp;rsquo; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

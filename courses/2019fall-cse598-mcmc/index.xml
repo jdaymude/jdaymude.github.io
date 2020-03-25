@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markov Chains and Monte Carlo Methods | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/courses/2019fall-cse598-mcmc/</link>
+      <atom:link href="https://jdaymude.github.io/courses/2019fall-cse598-mcmc/index.xml" rel="self" type="application/rss+xml" />
+    <description>Markov Chains and Monte Carlo Methods</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Tue, 23 Apr 2019 12:06:00 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>Markov Chains and Monte Carlo Methods</title>
+      <link>https://jdaymude.github.io/courses/2019fall-cse598-mcmc/</link>
+    </image>
+    
+  </channel>
+</rss>

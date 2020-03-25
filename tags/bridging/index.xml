@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bridging | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tags/bridging/</link>
+      <atom:link href="https://jdaymude.github.io/tags/bridging/index.xml" rel="self" type="application/rss+xml" />
+    <description>bridging</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Wed, 03 Apr 2019 13:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>bridging</title>
+      <link>https://jdaymude.github.io/tags/bridging/</link>
+    </image>
+    
+    <item>
+      <title>Stochastic Algorithms for Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2019discretemath-stochastic/</link>
+      <pubDate>Wed, 03 Apr 2019 13:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/talk/2019discretemath-stochastic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computing by Programmable Particles</title>
+      <link>https://jdaymude.github.io/publication/daymude2019-computingparticles/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2019-computingparticles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems: an Algorithmic Approach to Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2018wssr-sops/</link>
+      <pubDate>Sun, 04 Nov 2018 16:00:00 +0900</pubDate>
+      <guid>https://jdaymude.github.io/talk/2018wssr-sops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2017acoseminar-bridging/</link>
+      <pubDate>Fri, 06 Oct 2017 13:00:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/talk/2017acoseminar-bridging/</guid>
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from 
+&lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</guid>
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from 
+&lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Local Stochastic Algorithms for Compression and Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2017bda-compression/</link>
+      <pubDate>Fri, 28 Jul 2017 14:05:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/talk/2017bda-compression/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

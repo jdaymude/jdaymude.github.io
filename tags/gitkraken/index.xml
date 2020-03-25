@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>gitkraken | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tags/gitkraken/</link>
+      <atom:link href="https://jdaymude.github.io/tags/gitkraken/index.xml" rel="self" type="application/rss+xml" />
+    <description>gitkraken</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Tue, 22 Jan 2019 12:40:00 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>gitkraken</title>
+      <link>https://jdaymude.github.io/tags/gitkraken/</link>
+    </image>
+    
+    <item>
+      <title>Git Going With GitKraken</title>
+      <link>https://jdaymude.github.io/post/git-going-with-gitkraken/</link>
+      <pubDate>Tue, 22 Jan 2019 12:40:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/git-going-with-gitkraken/</guid>
+      <description>&lt;p&gt;Our team over at the 
+&lt;a href=&#34;https://sops.engineering.asu.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SOPS Lab&lt;/a&gt; has been writing a lot of code lately as part of an ongoing effort to make our AmoebotSim simulator publicly available through an open source release. There&amp;rsquo;s a lot of diversity in coding/software engineering experience among our team members — from finishing a first course in C++ to completing several internships in big tech — so I&amp;rsquo;ve been spending some time thinking about how to make on-boarding easier, forming new students into conceptual thinkers and proficient programmers as quickly as possible. This tutorial on the basics of Git is meant to help with that.&lt;/p&gt;
+&lt;h2 id=&#34;necessary-disclaimers&#34;&gt;Necessary Disclaimers&lt;/h2&gt;
+&lt;p&gt;We have to get two things out of the way up front. First, this is not really the &amp;ldquo;accessible to anyone, technical or not&amp;rdquo; kind of post that I usually aim for. While it is meant to be simpler than the average Git tutorial, it&amp;rsquo;s still going to talk about software skills that are, by nature, technical. Speaking of other Git tutorials: yes, I do know how many Git tutorials already exist. Many of them are ones I&amp;rsquo;ve learned from and am inspired by. Some are far more 
+&lt;a href=&#34;https://jwiegley.github.io/git-from-the-bottom-up/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;complete&lt;/a&gt;, more 
+&lt;a href=&#34;https://chris.beams.io/posts/git-commit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specific&lt;/a&gt;, more 
+&lt;a href=&#34;https://www.atlassian.com/git/tutorials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;polished&lt;/a&gt;, and even more 
+&lt;a href=&#34;https://www.youtube.com/watch?v=1ffBJ4sVUb4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;craftsy&lt;/a&gt; than what I intend to do here. The point of this tutorial is to distill all that wonderful material into something that gets students (and other newcomers) acquainted with basic Git concepts and comfortable with a great Git client all in one sitting.&lt;/p&gt;
+&lt;p&gt;As a last bit of housekeeping, I&amp;rsquo;d like to credit Rachel M. Carmena, whose 
+&lt;a href=&#34;https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;methodology&lt;/a&gt; I&amp;rsquo;m following quite closely.&lt;/p&gt;
+&lt;h2 id=&#34;gits-view-of-the-world&#34;&gt;Git&amp;rsquo;s View of the World&lt;/h2&gt;
+&lt;p&gt;Git sees a software project loosely like this:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1042&#34; height=&#34;527&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Big picture: there&amp;rsquo;s the remote server that houses the full software project and all the changes that have been made to it so far, and then there&amp;rsquo;s your computer where you implement new features and code changes. Now, Git is usually used when writing software collaboratively, so while the above picture is all that you have to worry about, the real setting is more like this:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1293&#34; height=&#34;555&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;hold-up-whats-git&#34;&gt;Hold Up, What&amp;rsquo;s Git?&lt;/h2&gt;
+&lt;p&gt;Git is just a piece of software that&amp;rsquo;s openly available for anyone to use. (Aside: it&amp;rsquo;s not a company or something that&amp;rsquo;s sold commercially, though this is often confusing because of companies/services like GitHub and GitLab). The problem Git is trying to solve, informally, is to support many people editing the same set of files concurrently while causing as few conflicts and headaches as possible. You might recognize that Google Docs and Dropbox try to solve a similar problem, but with a different strategy that makes them poorly suited for software development. Imagine for a moment that you were trying to use Google Docs for writing real code. Say you&amp;rsquo;ve been up all night working on a cool new feature, tracking down all its subtle and frustrating bugs, and now you want to compile and test it one last time to make sure it&amp;rsquo;s all good to go.&lt;/p&gt;
+&lt;p&gt;But right as you go to compile, your teammate gets in there and starts writing some other code, which naturally isn&amp;rsquo;t complete yet and doesn&amp;rsquo;t build! What do you do? Do you hit them up on Slack and ask them to stop coding while you test your feature? (If so, that essentially means only one person can be working at a time). Do you just keep trying to compile over and over until you get lucky and it builds? (If problems arise in testing, you won&amp;rsquo;t be sure if it&amp;rsquo;s your code that&amp;rsquo;s causing issues or someone else&amp;rsquo;s). This is nightmarish and no one does this. (I hope).&lt;/p&gt;
+&lt;p&gt;Git is an example of &lt;em&gt;distributed version control software&lt;/em&gt;, a type of software meant to make these kinds of situations much easier to handle by giving each user more control over their own version of the files and when to incorporate the changes made by other people. (For the record, there are 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_version-control_software#Distributed_model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;other choices&lt;/a&gt; for distributed version control, but Git is by far the most popular).&lt;/p&gt;
+&lt;h2 id=&#34;tools-of-the-trade&#34;&gt;Tools of the Trade&lt;/h2&gt;
+&lt;p&gt;In Git, the remote repository contains the current version of the shared code. Remote repositories can be set up on any server (or even your own workstation), but most people prefer to use a service like 
+&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;, 
+&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bitbucket&lt;/a&gt;, or 
+&lt;a href=&#34;https://about.gitlab.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab&lt;/a&gt; to host their projects for them, which makes life easier. Think of it like this: GitHub is to Git repositories as WordPress is to websites. You can certainly host your own website, but using a service like WordPress saves you the trouble of maintaining a web server yourself. Our team uses Bitbucket for our AmoebotSim project, so that&amp;rsquo;s what&amp;rsquo;ll be in the screenshots.&lt;/p&gt;
+&lt;p&gt;An additional way to simplify using Git is to get a nice Git client like 
+&lt;a href=&#34;https://www.gitkraken.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitKraken&lt;/a&gt; or 
+&lt;a href=&#34;https://desktop.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Desktop&lt;/a&gt; instead of interfacing with Git on the 
+&lt;a href=&#34;https://blog.axosoft.com/gitkraken-vs-cli/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;command line&lt;/a&gt; (which many hardcore users will tell you is the only way to &lt;em&gt;really&lt;/em&gt; learn Git). Using the website analogy again, Git clients are to Git repositories like themes and rich-text editors are to websites. Could you put a stellar website together writing your own HTML, CSS, and JavaScript? Sure. Would you learn a lot more about how websites work doing it this way? Of course. But it takes a lot longer, and there&amp;rsquo;s much more room to make mistakes. In general, Git clients make understanding your repository a breeze with nice graphical representations and controls. I&amp;rsquo;ll be using GitKraken here, and I highly recommend you do too!&lt;/p&gt;
+&lt;h2 id=&#34;cloning-a-repository&#34;&gt;Cloning a Repository&lt;/h2&gt;
+&lt;p&gt;Getting a copy of a repository from a remote server onto your machine is called &lt;em&gt;cloning&lt;/em&gt; a repository.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1038&#34; height=&#34;527&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Cloning makes a copy of the remote repository to your local repository. This not only includes the most recent version of the files but also the entire version history (list of changes) for every file, who made those changes, when those changes were made, and all the different &lt;em&gt;branches&lt;/em&gt; of those files that your collaborators may be working on (we&amp;rsquo;ll come back to branching in a future post). The clone operation also puts the most recent version of the files in your working directory, where you can open them up in your file system and start making changes.&lt;/p&gt;
+&lt;p&gt;This is pretty easy to do with GitKraken:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/cloneurl_hu88767fc4f30b03d661e088fef7bbea0c_1378198_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/cloneurl_hu88767fc4f30b03d661e088fef7bbea0c_1378198_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1036&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    These GIFs are supposed to animate, but this is currently an &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5030&#34;&gt;open issue&lt;/a&gt; with Hugo. I&amp;rsquo;ll update this when the issue is fixed.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;And it&amp;rsquo;s even easier if you&amp;rsquo;ve already signed into your hosting platform (e.g., Bitbucket) in GitKraken:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/clonebitbucket_hu61ae0670c5c4b7a187bbbb5430688efa_1263001_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/clonebitbucket_hu61ae0670c5c4b7a187bbbb5430688efa_1263001_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1270&#34; height=&#34;887&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;making-and-submitting-changes&#34;&gt;Making and Submitting Changes&lt;/h2&gt;
+&lt;p&gt;Now that the code is in my working directory, I can make my edits. From Git&amp;rsquo;s perspective, changes can either be &lt;em&gt;tracked&lt;/em&gt;, meaning Git knows about them, or &lt;em&gt;untracked&lt;/em&gt;, meaning the changes are in new files that haven&amp;rsquo;t been added to Git yet. Either way, I can add all the changes I&amp;rsquo;ve made to Git&amp;rsquo;s &lt;em&gt;staging area&lt;/em&gt; in a process called &lt;em&gt;staging&lt;/em&gt;:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1881&#34; height=&#34;963&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;To illustrate this, I&amp;rsquo;ll be adding license and copyright information to AmoebotSim (a 
+&lt;a href=&#34;https://choosealicense.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;very important&lt;/a&gt; part of going open source). I&amp;rsquo;ll be making these edits in three parts: (1) adding a LICENSE file, (2) adding a copyright notice to our main.cpp file, and (3) adding an abbreviated copyright notice to the other source files. Adding the LICENSE file will initially be an untracked change (it&amp;rsquo;s a new file), while the other changes that edit existing files will be tracked.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/editstage_hu72ef1d6834c1591d8efffa868800f53e_1005933_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/editstage_hu72ef1d6834c1591d8efffa868800f53e_1005933_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2523&#34; height=&#34;1619&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Now that the changes are staged, we can &lt;em&gt;commit&lt;/em&gt; them to our local repository. A commit is essentially a batch of changes with a description known as a &lt;em&gt;commit message&lt;/em&gt;. In general, a commit message should clearly and concisely describe the changes its commit contains (see 
+&lt;a href=&#34;https://chris.beams.io/posts/git-commit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this post&lt;/a&gt; for best practices). Once that message is done, we can commit, adding our changes to the version history.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1884&#34; height=&#34;956&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;This is, per usual, easy to do and visualize in GitKraken:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/commit_hu4ee087eae0050b5d158cfb372d84b967_726365_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/commit_hu4ee087eae0050b5d158cfb372d84b967_726365_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2523&#34; height=&#34;1619&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;But committing only puts our changes in the local repository (shown by the little computer icon in GitKraken), not the remote repository where everyone else can see them (shown by the profile picture of the repository owner). Updating the remote repository with new commits from our local repository is called &lt;em&gt;pushing&lt;/em&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1880&#34; height=&#34;957&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/push_hubd8f869157e9186c3221db1f52038603_600533_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/push_hubd8f869157e9186c3221db1f52038603_600533_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2523&#34; height=&#34;1619&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Once commits have been pushed, they&amp;rsquo;re out there for other repository members to see and use. Be sure that your code builds and is bug-free before you commit and push; otherwise, you&amp;rsquo;ll break everyone else&amp;rsquo;s builds and get a lot of angry messages asking you to fix your issues quickly! (There are ways to mitigate these kinds of problems, like branch/fork-based workflows with approval processes, but I&amp;rsquo;m saving those more advanced topics for a future post).&lt;/p&gt;
+&lt;h2 id=&#34;getting-other-peoples-changes&#34;&gt;Getting Other People&amp;rsquo;s Changes&lt;/h2&gt;
+&lt;p&gt;Say that you were offline for a couple hours (or days…) and are just returning to your project. Your teammates may have committed and pushed code while you were away, and you want to get all their changes. Git gives you two ways to do this: &lt;em&gt;fetch&lt;/em&gt; and &lt;em&gt;pull&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Fetching retrieves all the new updates (commits, files, etc.) from the remote repository and copies them to your local repository. These new updates exist separately from the rest of your work, allowing you to look into them independently from any changes you&amp;rsquo;ve made locally. If you want your team&amp;rsquo;s updates to be integrated with your local changes, you&amp;rsquo;ll need to &lt;em&gt;merge&lt;/em&gt; them in.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1035&#34; height=&#34;526&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;This can potentially cause &lt;em&gt;merge conflicts&lt;/em&gt; if both you and your teammates&amp;rsquo; commits changed the same lines of code. (Although, to be honest, Git can get confused and think all kinds of things are &amp;ldquo;conflicts&amp;rdquo; even when they&amp;rsquo;re not, so watch out for that). Thankfully, GitKraken has a slick tool for helping you fix your merge conflicts (this was, by far, the #1 reason our team recently switched to GitKraken from Sourcetree):&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/R1iWJNyRpQE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;p&gt;Pulling simply combines fetching and merging into one step. It retrieves all the new updates from the remote repository and automatically tries to merge them into your local repository, possibly triggering merge conflicts for you to resolve along the way.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1036&#34; height=&#34;528&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;In GitKraken, both fetching and pulling can be performed using the top toolbar. The following example shows a pull, though you can see for a brief moment how it first fetches the new commit before merging it in.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/pull_hu0b3e34fdb26186edc7251f8f2c58e820_774784_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/pull_hu0b3e34fdb26186edc7251f8f2c58e820_774784_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2531&#34; height=&#34;1589&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;git-out-there&#34;&gt;Git Out There&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve covered the rudimentary operations of Git and how to do them in GitKraken, but there&amp;rsquo;s much more to learn! In a future post I hope to cover branch/fork-based workflows, pull requests, and rebasing, all of which can play a role in using Git for larger projects.&lt;/p&gt;
+&lt;p&gt;As always, I welcome your feedback and questions. Happy coding!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

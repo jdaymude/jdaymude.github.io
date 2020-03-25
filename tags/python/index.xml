@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>python | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tags/python/</link>
+      <atom:link href="https://jdaymude.github.io/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <description>python</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Sat, 29 Jun 2019 22:21:00 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>python</title>
+      <link>https://jdaymude.github.io/tags/python/</link>
+    </image>
+    
+    <item>
+      <title>SureChoice: Making Informed Insurance Decisions</title>
+      <link>https://jdaymude.github.io/post/surechoice/</link>
+      <pubDate>Sat, 29 Jun 2019 22:21:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/surechoice/</guid>
+      <description>&lt;p&gt;Health insurance is confusing. Last year, after Annie and I got married and she started a new job, she came home from orientation day with &lt;em&gt;the book&lt;/em&gt;. The book of health insurance plans, complete with overcomplicated tables of costs and percentages, interspersed with pictures of smiling people. I assume they&amp;rsquo;re smiling either to make me — the daunted reader — feel assured, or because they know they&amp;rsquo;d be screwed in the U.S. without health insurance. But that&amp;rsquo;s another issue.&lt;/p&gt;
+&lt;h2 id=&#34;choices-choices&#34;&gt;Choices, Choices&lt;/h2&gt;
+&lt;p&gt;The problem with displaying a health insurance plan using many tables is that it&amp;rsquo;s very difficult to make comparisons between plans. One plan might be more costly than another in certain categories but not in others. One might have a low deductible while the other has a high co-pay. Yet a third plan might have a very middling premium and comes with a Flexible Savings Account. Even if I know what all these terms mean and how they interact with one another, it&amp;rsquo;s still hard to discern which would be best for our family&amp;rsquo;s specific health needs. And, to top it all off, I can&amp;rsquo;t know if I&amp;rsquo;m getting a good deal since insurance rates are negotiated between insurance companies and employers, and there&amp;rsquo;s very little info available online to compare with.&lt;/p&gt;
+&lt;p&gt;This, I think, is where uncertainty sets in and some word-of-mouth advice can end up replacing mathematical reasoning for some people. (Or, for those who grew up in the 2000s, maybe you have a vaguely negative feeling about HMOs because of 
+&lt;a href=&#34;https://youtu.be/MHQnTZ2hAgI?t=52&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Melman&lt;/a&gt; from &lt;em&gt;Madagascar&lt;/em&gt;.) But Annie and I wanted grounded answers, so we went to our whiteboard, scribbled a ton of math and graphs, argued about said scribbles, eventually came to realize we agreed about everything we were arguing over (classic), and got to work.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;4032&#34; height=&#34;3024&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;cutting-through-the-jargon&#34;&gt;Cutting Through the Jargon&lt;/h2&gt;
+&lt;p&gt;A big part of this for me was simply understanding what all these health insurance words meant. Here&amp;rsquo;s what I learned (feel free to skip if you know this already).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;premium&lt;/strong&gt; is a cost you pay every month just for being on insurance. Think of it like the cost of a Netflix subscription, but more expensive and way less entertaining.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;deductible&lt;/strong&gt; is a set amount of medical costs that you are 100% responsible for. Insurance is only going to kick in and make things cheaper &lt;em&gt;after&lt;/em&gt; you &amp;ldquo;meet&amp;rdquo; your deductible.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;copay&lt;/strong&gt; (co-payment) is the percentage of medical costs you&amp;rsquo;re responsible for after your deductible is met.&lt;/li&gt;
+&lt;li&gt;An &lt;strong&gt;out-of-pocket maximum&lt;/strong&gt; is the maximum amount of money you will be responsible to pay in a year.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s work this as an example. Say I have Plan A, shown below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;premium&lt;/th&gt;
+&lt;th&gt;deductible&lt;/th&gt;
+&lt;th&gt;copay&lt;/th&gt;
+&lt;th&gt;out-of-pocket maximum&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Plan A&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;$200&lt;/td&gt;
+&lt;td&gt;$500&lt;/td&gt;
+&lt;td&gt;20%&lt;/td&gt;
+&lt;td&gt;$4,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Say my plan starts in January, and the first three months go by without any doctor appointments, prescription refills, etc. By the time March has ended, I&amp;rsquo;ve paid $\$200 \times 3 = \$600$ in premiums. Then, in April, I get an infection and need to see my primary care physician. The doctor is charging me $\$75$ for the visit, and the medication they prescribed is another $\$75$. Because I haven&amp;rsquo;t met my deductible yet (premiums don&amp;rsquo;t count!), I have to pay the full $\$150$. I&amp;rsquo;ll also, of course, have to pay my April premium of $\$200$. (This whole healthcare thing is expensive, isn&amp;rsquo;t it?) Time goes on, and by October my family has paid $\$500$ out-of-pocket. But crisis strikes: I get in a car accident and break several bones. I&amp;rsquo;m rushed to the hospital via ambulance, and have to spend several days in the hospital getting stabilized and getting casts set. Our bill comes out to be $\$25000$. But because our copay has now kicked in, we&amp;rsquo;re only responsible for $20\% \times \$25000 = \$5000$, and we only have to pay $\$3500$ of the bill before we hit our $\$4000$ out-of-pocket maximum.&lt;/p&gt;
+&lt;p&gt;Whew.&lt;/p&gt;
+&lt;h2 id=&#34;a-piecewise-function&#34;&gt;A Piecewise Function&lt;/h2&gt;
+&lt;p&gt;I made many simplifications to the healthcare system in my example above, but a year on health insurance can roughly be split into three stages: paying 100% of costs until meeting the deductible, paying only the copay percentage of costs after the deductible, and paying 0% of costs after hitting the out-of-pocket maximum. If we were to plot this with the x-axis being the total medical costs without insurance and the y-axis being the out-of-pocket costs with insurance, we&amp;rsquo;d end up with something that looks like:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1416&#34; height=&#34;1190&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Once Annie and I saw this, we realized we could plot all of our plan options onto one graph and immediately be able to see what would cost us the most depending on the medical costs we incurred. We only needed to add in the annual premium costs to see a decent approximation of everything we&amp;rsquo;d spend on health insurance in a year with each plan.&lt;/p&gt;
+&lt;h2 id=&#34;building-surechoice&#34;&gt;Building SureChoice&lt;/h2&gt;
+&lt;p&gt;I quickly threw together some MATLAB code to compute and plot the piecewise cost function for each of our possible plans. What we found cut straight through the sales language in our plans booklet and made everything quite concrete: the best plan for us had everything to do with the medical costs we would have. Here&amp;rsquo;s an example plot:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1440&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Every line in the plot shows how expensive that plan would be if we had the total annual medical costs shown on the x-axis. The HMO plan (blue), for example, is almost always the most expensive plan (except for the $\$3000$–$\$9000$ range, where it&amp;rsquo;s better than the HDHP plan). If we knew we were going to have over $\$30000$ in costs, the HDHP plan is the best. If we were going to have under $\$5000$ in costs, everything but the HMO plan is roughly the same. The EPO plan basically wins out in all other cost ranges. All in all, this kind of visualization helped us to make the most cost-effective choice for our expected medical expenses.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve recently cleaned up my code, ported it to Python, and put it up on 
+&lt;a href=&#34;https://github.com/jdaymude/SureChoice&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; for anyone to use (&amp;hellip;assuming you know how to run Python code). Hopefully it can help you like it helped us, and if you have the skills to turn this into something easier to use (a web app, etc.) go for it! We might not be able to change these confusing systems, but we can at least make them easier to navigate.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

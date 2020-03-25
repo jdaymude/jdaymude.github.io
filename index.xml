@@ -1,0 +1,1184 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/</link>
+      <atom:link href="https://jdaymude.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Joshua J. Daymude</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>Joshua J. Daymude</title>
+      <link>https://jdaymude.github.io/</link>
+    </image>
+    
+    <item>
+      <title>Solving the Molecube by Reduction</title>
+      <link>https://jdaymude.github.io/post/solving-the-molecube-by-reduction/</link>
+      <pubDate>Mon, 06 Jan 2020 13:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/solving-the-molecube-by-reduction/</guid>
+      <description>&lt;p&gt;My sister-in-law surprised me with a 
+&lt;a href=&#34;http://www.recenttoys.com/meffert-molecube-twister-puzzle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Molecube&lt;/a&gt; for Christmas, which combines the logic of a Sudoku puzzle with the mechanics of a Rubik&amp;rsquo;s cube. Each ball on the Molecube is one of nine colors, and the goal is to reconfigure a shuffled Molecube so each of its faces has all nine colors on it.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;http://www.recenttoys.com/wp-content/uploads/2019/11/meffert-molecube-twister-puzzle-1200x900.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;http://www.recenttoys.com/wp-content/uploads/2019/11/meffert-molecube-twister-puzzle-1200x900.jpg&#34; alt=&#34;&#34; width=&#34;65%&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;It turns out that solving the Molecube is a wonderful exercise in what computer scientists call &lt;em&gt;reduction&lt;/em&gt;, which involves transforming a problem we don&amp;rsquo;t know how to solve into one that we do, solving that version, and then translating the solution back into the original problem. In this post, I&amp;rsquo;ll give a reader-friendly primer on reduction, outline a reduction from the Molecube to the Rubik&amp;rsquo;s cube, and then wrap up by solving the Molecube with a standard Rubik&amp;rsquo;s cube algorithm.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re interested in solving the Molecube yourself (and perhaps you&amp;rsquo;re here looking for hints), I&amp;rsquo;ve created a &lt;a href=&#34;https://jdaymude.github.io/files/molecube_worksheet.pdf&#34; target=&#34;_blank&#34;&gt;worksheet&lt;/a&gt; you can use and will point out when you should skip ahead in the post so as to avoid spoiling this delightful puzzle.&lt;/p&gt;
+&lt;h2 id=&#34;reduction-there-and-back-again&#34;&gt;Reduction: There and Back Again&lt;/h2&gt;
+&lt;p&gt;Say we have a problem $A$ that we don&amp;rsquo;t know how to solve and another problem $B$ that we do know how to solve. Said another way, we have an &amp;ldquo;algorithm&amp;rdquo; that can answer any question asked in the form of problem $B$, but we have no such algorithm for problem $A$ questions. The whole idea of reduction is to:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Take a problem $A$ question (which we don&amp;rsquo;t know how to answer) and &amp;ldquo;transform&amp;rdquo; it into a problem $B$ question (which we do know how to answer).&lt;/li&gt;
+&lt;li&gt;Use the &amp;ldquo;algorithm&amp;rdquo; for problem $B$ questions to get an answer for our transformed problem $A$ question.&lt;/li&gt;
+&lt;li&gt;Translate the algorithm&amp;rsquo;s answer back into the context of problem $A$.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;That&amp;rsquo;s it. We use a known algorithm (for problem $B$) as our workhorse for a new and unknown problem (problem $A$), and out pop solutions for our unknown problem! This powerful technique underlies almost all of theoretical computer science, giving us a tool to relate difficult problems to one another (as opposed to treating every new problem as something totally unique). I recently heard a high-profile professor in Computer Science claim that reduction is one of only two truly new ideas our discipline has ever contributed to science (though she called this idea &amp;ldquo;hierarchy&amp;rdquo;, with the other idea being &amp;ldquo;abstraction&amp;rdquo;).&lt;/p&gt;
+&lt;p&gt;A natural question to ask next would be if all problems can be tackled with reduction. Unfortunately, in practice, finding the right translation between a pair of problems (Step 1, above) can be prohibitively difficult. Reduction is easiest when the two problems seem to have an obvious relationship we can exploit, which brings us to the Molecube and the Rubik&amp;rsquo;s cube.&lt;/p&gt;
+&lt;h2 id=&#34;a-sudoku-like-transformation&#34;&gt;A Sudoku-Like Transformation&lt;/h2&gt;
+&lt;p&gt;It&amp;rsquo;s difficult to overstate how much of the Molecube&amp;rsquo;s solution is given away in its advertising as &amp;ldquo;Sudoku + Rubik&amp;rsquo;s cube&amp;rdquo;. My solution will treat this equation quite literally, starting with a transformation that relies on a Sudoku puzzle. I found this transformation by asking two simple questions:&lt;/p&gt;
+&lt;img src=&#34;shuffled.png&#34; style=&#34;display: inline-block; width: 48%; margin-right: 2%&#34;/&gt;
+&lt;img src=&#34;rubiks-cube.jpg&#34; style=&#34;display: inline-block; width: 46%; margin-left: 2%&#34;/&gt;
+&lt;ol&gt;
+&lt;li&gt;How are the Molecube and the Rubik&amp;rsquo;s cube similar?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;They&amp;rsquo;re both 3x3x3 cubes, meaning they both have 6 faces, 8 corners, and 12 edges. This totals 26 balls (on the Molecube) or blocks (on the Rubik&amp;rsquo;s cube).&lt;/li&gt;
+&lt;li&gt;Their physical mechanics (spinning, twisting, etc.) are identical.&lt;/li&gt;
+&lt;li&gt;Their goals are, in a way, also identical: from a shuffled configuration, reach a goal configuration.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;How are the Molecube and the Rubik&amp;rsquo;s cube different?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Their goal configurations are different: the Molecube wants one ball of each color on each face, while the Rubik&amp;rsquo;s cube wants each face to be all the same color.&lt;/li&gt;
+&lt;li&gt;There are nine colors on the Molecube, but only six on the Rubik&amp;rsquo;s cube.&lt;/li&gt;
+&lt;li&gt;A block on the Rubik&amp;rsquo;s cube has 1–3 colors (one for each face it touches), while a ball on the Molecube is the same color on all &amp;ldquo;sides&amp;rdquo;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The similarities hint at a solution: though the goal configurations are different, the cubes&amp;rsquo; structures and mechanics are the same. So if I find a goal configuration for the Molecube, I can use the Rubik&amp;rsquo;s cube algorithm to handle all the tricky rearranging involved in actually getting there.&lt;/p&gt;
+&lt;p&gt;If that&amp;rsquo;s enough of a framework for you to attempt your own solution, feel free to download the &lt;a href=&#34;https://jdaymude.github.io/files/molecube_worksheet.pdf&#34; target=&#34;_blank&#34;&gt;worksheet&lt;/a&gt; I&amp;rsquo;ve created to help you visualize the Molecube as a Sudoku puzzle (with colors instead of numbers). You&amp;rsquo;ll want to stop reading here and come back once you&amp;rsquo;ve completed a goal configuration or if you&amp;rsquo;re stuck and need hints.&lt;/p&gt;
+&lt;p&gt;Speaking of hints, the best way to unlock this tricky Sudoku-like color puzzle (getting one color on each face) is to study the Molecube&amp;rsquo;s colors and structure. I asked myself the following questions (which culminated in the table at the top of the &lt;a href=&#34;https://jdaymude.github.io/files/molecube_worksheet.pdf&#34; target=&#34;_blank&#34;&gt;worksheet&lt;/a&gt;):&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;How does the Molecube fit nine colors on a cube with 26 balls?&lt;/li&gt;
+&lt;li&gt;How are the colors distributed over the different types of balls (centers, corners, and edges)?&lt;/li&gt;
+&lt;li&gt;Are there any patterns that appear when trying to place balls of a certain color so it appears on each face exactly once?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The answers to these questions are revealing. There are three balls of each color, with the important exception of Green, which only has two. Further, Green is the unique color that is on two corners. Red and Purple are each on three edges, and the remaining six colors (White, Black, Orange, Yellow, Light Blue, and Blue) are each on one center, one corner, and one edge. This information — after some careful thinking — reveals the patterns we need:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;As in the Rubik&amp;rsquo;s cube, centers opposite one another are always opposite one another (i.e., Black is always opposite White, Orange is always opposite Yellow, and Blue is always opposite Light Blue).&lt;/li&gt;
+&lt;li&gt;The only way the two Green corners avoid being on the same face is if they&amp;rsquo;re opposite one another (e.g., upper-right-back and lower-left-front).&lt;/li&gt;
+&lt;li&gt;The only way the three Red (or Purple) edges avoid being on the same face is if a Red (or Purple) appears exactly once in each &amp;ldquo;middle band&amp;rdquo; (shown below, left). So each middle band contains exactly one Red and one Purple.&lt;/li&gt;
+&lt;li&gt;For any of the remaining colors, (e.g., Blue) there is a center of that color. This blocks the corner of that color from being in the same &amp;ldquo;layer&amp;rdquo;, so the corner must go in the layer opposite the center (shown below, right). Once the position of the corner is fixed, there is only one position the edge of that color can go.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;img src=&#34;rule1.png&#34; style=&#34;display: inline-block; width: 47%; margin-right: 2%&#34;/&gt;
+&lt;img src=&#34;rule2.png&#34; style=&#34;display: inline-block; width: 47%; margin-left: 2%&#34;/&gt;
+&lt;p&gt;Using these rules and some trial and error, I found the solution shown below, also detailed in the &lt;a href=&#34;https://jdaymude.github.io/files/molecube_worksheet_solved.pdf&#34; target=&#34;_blank&#34;&gt;worksheet solution&lt;/a&gt;. (An interesting aside: I don&amp;rsquo;t know if this is the only solution, but any solution works for the reduction). To relate the Molecube solution to the Rubik&amp;rsquo;s cube solution, we simply treat each 3×3 face on the Molecube as a &amp;ldquo;color&amp;rdquo; on the Rubik&amp;rsquo;s cube. (For example, the Black ball at the top-left of the White-center face becomes the Red-White-Green block on the Rubik&amp;rsquo;s cube). This completes the transformation step of the reduction.&lt;/p&gt;
+&lt;img src=&#34;sudoku-soln.jpg&#34; style=&#34;display: inline-block; width: 47%; margin-right: 2%&#34;/&gt;
+&lt;img src=&#34;rubiks-mapping.jpg&#34; style=&#34;display: inline-block; width: 47%; margin-left: 2%&#34;/&gt;
+&lt;h2 id=&#34;rubik-ing-the-molecube&#34;&gt;Rubik-ing the Molecube&lt;/h2&gt;
+&lt;p&gt;With the difficult transformation step out of the way, the rest of the reduction is easy. You can solve any shuffled Molecube just like you would a Rubik&amp;rsquo;s cube (assuming you know how to do that), but instead of aiming to have faces with all the same color, you aim to build the goal configuration we got from the transformation (above, left). To make this easier for me to visualize, I made a 3D rendering of my solution (front view on the left, back view on the right).&lt;/p&gt;
+&lt;img src=&#34;featured.png&#34; style=&#34;display: inline-block; width: 47%; margin-right: 2%&#34;/&gt;
+&lt;img src=&#34;solved-back.png&#34; style=&#34;display: inline-block; width: 47%; margin-left: 2%&#34;/&gt;
+&lt;p&gt;I was pleasantly surprised at how much Rubik&amp;rsquo;s cube muscle memory I still had from speedcubing in junior high (though if you need a refresher, I found 
+&lt;a href=&#34;https://hobbylark.com/puzzles/Rubik-Cube-Algorithms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt; helpful). Interestingly, some of the steps in the Rubik&amp;rsquo;s cube &amp;ldquo;algorithm&amp;rdquo; are unnecessary for the Molecube. Remember the earlier observation that the Molecube&amp;rsquo;s balls are each a single color while the Rubik&amp;rsquo;s cube blocks can have 1–3 colors each? This means that the Molecube doesn&amp;rsquo;t care if its balls are rotated &amp;ldquo;in place&amp;rdquo;, though this is a problem for the Rubik&amp;rsquo;s cube (see the example below). So any steps in the Rubik&amp;rsquo;s cube algorithm that are meant to fix things like this can be skipped entirely.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://usercontent2.hubstatic.com/14101285_f1024.jpg&#34; &gt;
+
+
+  &lt;img src=&#34;https://usercontent2.hubstatic.com/14101285_f1024.jpg&#34; alt=&#34;&#34; width=&#34;90%&#34; &gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;but-does-it-work&#34;&gt;But Does It Work?&lt;/h2&gt;
+&lt;p&gt;To show that the reduction approach not only works but is also reasonably fast, here&amp;rsquo;s me solving the Molecube in just under 2 minutes.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/QRtTLvtXWrQ&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;p&gt;There are a &lt;em&gt;lot&lt;/em&gt; of Rubik&amp;rsquo;s cube-inspired puzzles these days (for example, the 
+&lt;a href=&#34;http://www.recenttoys.com/meffert-ghost-cube-twister-puzzle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ghost Cube&lt;/a&gt; and the 
+&lt;a href=&#34;http://www.recenttoys.com/meffert-pyraminx-twister-puzzle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pyraminx&lt;/a&gt;). But solving the Molecube by reduction makes me wonder just how many of these new puzzles share a similar relationship to the original Rubik&amp;rsquo;s cube. If these relationships exist, we&amp;rsquo;d find that these new puzzles aren&amp;rsquo;t really new at all; they&amp;rsquo;re just an old puzzle we know how to solve, but with new names and nice packaging.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Convex Hull Formation for Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2020-convexhull/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2020-convexhull/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/talk/2019random-separation/</link>
+      <pubDate>Sat, 21 Sep 2019 09:00:00 -0400</pubDate>
+      <guid>https://jdaymude.github.io/talk/2019random-separation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2019-separation/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2019-separation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Three Academics: A Joke</title>
+      <link>https://jdaymude.github.io/post/the-three-academics/</link>
+      <pubDate>Tue, 30 Jul 2019 09:15:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/the-three-academics/</guid>
+      <description>&lt;p&gt;Mathematicians really care about correctness. We believe unspoken assumptions are dangerous. We think vague language is confusing, and saying more or less than we mean is grounds for misunderstanding. We want terms to be clearly defined, and for points to follow logically, like links in an unbreakable chain of truth. But sometimes people say things that are completely reasonable and yet we still feel the need to set them straight:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/the-three-academics/the-three-academics-lowres_huc2345e23d7c9b85a48da5ce8d8476a68_168428_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/the-three-academics/the-three-academics-lowres_huc2345e23d7c9b85a48da5ce8d8476a68_168428_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;850&#34; height=&#34;1100&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;This is my first contribution to the world of webcomics, a medium I&amp;rsquo;ve long admired for being able to deliver witty, weird reflections on life in simple packages. Giving credit where it&amp;rsquo;s due, this &amp;ldquo;joke&amp;rdquo; is adapted from 
+&lt;a href=&#34;https://www.goodreads.com/book/show/1618.The_Curious_Incident_of_the_Dog_in_the_Night_Time&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;The Curious Case of the Dog in the Night-Time&lt;/em&gt;&lt;/a&gt; by Mark Haddon and the art style takes after 
+&lt;a href=&#34;https://www.instagram.com/poorlydrawnlines/?hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poorlydrawnlines&lt;/a&gt; by Reza Farazmand. In living out 
+&lt;a href=&#34;https://www.alabasterco.com/blogs/articles/all-that-is-made&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;generous making&lt;/a&gt;, this comic is available as a high resolution &lt;a href=&#34;https://jdaymude.github.io/files/the-three-academics-highres.png&#34; target=&#34;_blank&#34;&gt;PNG&lt;/a&gt; or &lt;a href=&#34;https://jdaymude.github.io/files/the-three-academics.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; for you to use as you&amp;rsquo;d like. (Just keep my authorship in the corner intact, please!)&lt;/p&gt;
+&lt;p&gt;And hey, to the economists out there: if you&amp;rsquo;ve got any good roasts of mathematicians, I&amp;rsquo;m all ears.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simulation of Programmable Matter Systems Using Active Tile-Based Self-Assembly</title>
+      <link>https://jdaymude.github.io/publication/alumbaugh2019-tilesimulation/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/alumbaugh2019-tilesimulation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SureChoice: Making Informed Insurance Decisions</title>
+      <link>https://jdaymude.github.io/post/surechoice/</link>
+      <pubDate>Sat, 29 Jun 2019 22:21:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/surechoice/</guid>
+      <description>&lt;p&gt;Health insurance is confusing. Last year, after Annie and I got married and she started a new job, she came home from orientation day with &lt;em&gt;the book&lt;/em&gt;. The book of health insurance plans, complete with overcomplicated tables of costs and percentages, interspersed with pictures of smiling people. I assume they&amp;rsquo;re smiling either to make me — the daunted reader — feel assured, or because they know they&amp;rsquo;d be screwed in the U.S. without health insurance. But that&amp;rsquo;s another issue.&lt;/p&gt;
+&lt;h2 id=&#34;choices-choices&#34;&gt;Choices, Choices&lt;/h2&gt;
+&lt;p&gt;The problem with displaying a health insurance plan using many tables is that it&amp;rsquo;s very difficult to make comparisons between plans. One plan might be more costly than another in certain categories but not in others. One might have a low deductible while the other has a high co-pay. Yet a third plan might have a very middling premium and comes with a Flexible Savings Account. Even if I know what all these terms mean and how they interact with one another, it&amp;rsquo;s still hard to discern which would be best for our family&amp;rsquo;s specific health needs. And, to top it all off, I can&amp;rsquo;t know if I&amp;rsquo;m getting a good deal since insurance rates are negotiated between insurance companies and employers, and there&amp;rsquo;s very little info available online to compare with.&lt;/p&gt;
+&lt;p&gt;This, I think, is where uncertainty sets in and some word-of-mouth advice can end up replacing mathematical reasoning for some people. (Or, for those who grew up in the 2000s, maybe you have a vaguely negative feeling about HMOs because of 
+&lt;a href=&#34;https://youtu.be/MHQnTZ2hAgI?t=52&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Melman&lt;/a&gt; from &lt;em&gt;Madagascar&lt;/em&gt;.) But Annie and I wanted grounded answers, so we went to our whiteboard, scribbled a ton of math and graphs, argued about said scribbles, eventually came to realize we agreed about everything we were arguing over (classic), and got to work.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;4032&#34; height=&#34;3024&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;cutting-through-the-jargon&#34;&gt;Cutting Through the Jargon&lt;/h2&gt;
+&lt;p&gt;A big part of this for me was simply understanding what all these health insurance words meant. Here&amp;rsquo;s what I learned (feel free to skip if you know this already).&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A &lt;strong&gt;premium&lt;/strong&gt; is a cost you pay every month just for being on insurance. Think of it like the cost of a Netflix subscription, but more expensive and way less entertaining.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;deductible&lt;/strong&gt; is a set amount of medical costs that you are 100% responsible for. Insurance is only going to kick in and make things cheaper &lt;em&gt;after&lt;/em&gt; you &amp;ldquo;meet&amp;rdquo; your deductible.&lt;/li&gt;
+&lt;li&gt;A &lt;strong&gt;copay&lt;/strong&gt; (co-payment) is the percentage of medical costs you&amp;rsquo;re responsible for after your deductible is met.&lt;/li&gt;
+&lt;li&gt;An &lt;strong&gt;out-of-pocket maximum&lt;/strong&gt; is the maximum amount of money you will be responsible to pay in a year.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Let&amp;rsquo;s work this as an example. Say I have Plan A, shown below.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;/th&gt;
+&lt;th&gt;premium&lt;/th&gt;
+&lt;th&gt;deductible&lt;/th&gt;
+&lt;th&gt;copay&lt;/th&gt;
+&lt;th&gt;out-of-pocket maximum&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Plan A&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;$200&lt;/td&gt;
+&lt;td&gt;$500&lt;/td&gt;
+&lt;td&gt;20%&lt;/td&gt;
+&lt;td&gt;$4,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Say my plan starts in January, and the first three months go by without any doctor appointments, prescription refills, etc. By the time March has ended, I&amp;rsquo;ve paid $\$200 \times 3 = \$600$ in premiums. Then, in April, I get an infection and need to see my primary care physician. The doctor is charging me $\$75$ for the visit, and the medication they prescribed is another $\$75$. Because I haven&amp;rsquo;t met my deductible yet (premiums don&amp;rsquo;t count!), I have to pay the full $\$150$. I&amp;rsquo;ll also, of course, have to pay my April premium of $\$200$. (This whole healthcare thing is expensive, isn&amp;rsquo;t it?) Time goes on, and by October my family has paid $\$500$ out-of-pocket. But crisis strikes: I get in a car accident and break several bones. I&amp;rsquo;m rushed to the hospital via ambulance, and have to spend several days in the hospital getting stabilized and getting casts set. Our bill comes out to be $\$25000$. But because our copay has now kicked in, we&amp;rsquo;re only responsible for $20\% \times \$25000 = \$5000$, and we only have to pay $\$3500$ of the bill before we hit our $\$4000$ out-of-pocket maximum.&lt;/p&gt;
+&lt;p&gt;Whew.&lt;/p&gt;
+&lt;h2 id=&#34;a-piecewise-function&#34;&gt;A Piecewise Function&lt;/h2&gt;
+&lt;p&gt;I made many simplifications to the healthcare system in my example above, but a year on health insurance can roughly be split into three stages: paying 100% of costs until meeting the deductible, paying only the copay percentage of costs after the deductible, and paying 0% of costs after hitting the out-of-pocket maximum. If we were to plot this with the x-axis being the total medical costs without insurance and the y-axis being the out-of-pocket costs with insurance, we&amp;rsquo;d end up with something that looks like:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1416&#34; height=&#34;1190&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Once Annie and I saw this, we realized we could plot all of our plan options onto one graph and immediately be able to see what would cost us the most depending on the medical costs we incurred. We only needed to add in the annual premium costs to see a decent approximation of everything we&amp;rsquo;d spend on health insurance in a year with each plan.&lt;/p&gt;
+&lt;h2 id=&#34;building-surechoice&#34;&gt;Building SureChoice&lt;/h2&gt;
+&lt;p&gt;I quickly threw together some MATLAB code to compute and plot the piecewise cost function for each of our possible plans. What we found cut straight through the sales language in our plans booklet and made everything quite concrete: the best plan for us had everything to do with the medical costs we would have. Here&amp;rsquo;s an example plot:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1440&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Every line in the plot shows how expensive that plan would be if we had the total annual medical costs shown on the x-axis. The HMO plan (blue), for example, is almost always the most expensive plan (except for the $\$3000$–$\$9000$ range, where it&amp;rsquo;s better than the HDHP plan). If we knew we were going to have over $\$30000$ in costs, the HDHP plan is the best. If we were going to have under $\$5000$ in costs, everything but the HMO plan is roughly the same. The EPO plan basically wins out in all other cost ranges. All in all, this kind of visualization helped us to make the most cost-effective choice for our expected medical expenses.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve recently cleaned up my code, ported it to Python, and put it up on 
+&lt;a href=&#34;https://github.com/jdaymude/SureChoice&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; for anyone to use (&amp;hellip;assuming you know how to run Python code). Hopefully it can help you like it helped us, and if you have the skills to turn this into something easier to use (a web app, etc.) go for it! We might not be able to change these confusing systems, but we can at least make them easier to navigate.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Stochastic Algorithms for Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2019discretemath-stochastic/</link>
+      <pubDate>Wed, 03 Apr 2019 13:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/talk/2019discretemath-stochastic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git Going With GitKraken</title>
+      <link>https://jdaymude.github.io/post/git-going-with-gitkraken/</link>
+      <pubDate>Tue, 22 Jan 2019 12:40:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/git-going-with-gitkraken/</guid>
+      <description>&lt;p&gt;Our team over at the 
+&lt;a href=&#34;https://sops.engineering.asu.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SOPS Lab&lt;/a&gt; has been writing a lot of code lately as part of an ongoing effort to make our AmoebotSim simulator publicly available through an open source release. There&amp;rsquo;s a lot of diversity in coding/software engineering experience among our team members — from finishing a first course in C++ to completing several internships in big tech — so I&amp;rsquo;ve been spending some time thinking about how to make on-boarding easier, forming new students into conceptual thinkers and proficient programmers as quickly as possible. This tutorial on the basics of Git is meant to help with that.&lt;/p&gt;
+&lt;h2 id=&#34;necessary-disclaimers&#34;&gt;Necessary Disclaimers&lt;/h2&gt;
+&lt;p&gt;We have to get two things out of the way up front. First, this is not really the &amp;ldquo;accessible to anyone, technical or not&amp;rdquo; kind of post that I usually aim for. While it is meant to be simpler than the average Git tutorial, it&amp;rsquo;s still going to talk about software skills that are, by nature, technical. Speaking of other Git tutorials: yes, I do know how many Git tutorials already exist. Many of them are ones I&amp;rsquo;ve learned from and am inspired by. Some are far more 
+&lt;a href=&#34;https://jwiegley.github.io/git-from-the-bottom-up/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;complete&lt;/a&gt;, more 
+&lt;a href=&#34;https://chris.beams.io/posts/git-commit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specific&lt;/a&gt;, more 
+&lt;a href=&#34;https://www.atlassian.com/git/tutorials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;polished&lt;/a&gt;, and even more 
+&lt;a href=&#34;https://www.youtube.com/watch?v=1ffBJ4sVUb4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;craftsy&lt;/a&gt; than what I intend to do here. The point of this tutorial is to distill all that wonderful material into something that gets students (and other newcomers) acquainted with basic Git concepts and comfortable with a great Git client all in one sitting.&lt;/p&gt;
+&lt;p&gt;As a last bit of housekeeping, I&amp;rsquo;d like to credit Rachel M. Carmena, whose 
+&lt;a href=&#34;https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;methodology&lt;/a&gt; I&amp;rsquo;m following quite closely.&lt;/p&gt;
+&lt;h2 id=&#34;gits-view-of-the-world&#34;&gt;Git&amp;rsquo;s View of the World&lt;/h2&gt;
+&lt;p&gt;Git sees a software project loosely like this:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1042&#34; height=&#34;527&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Big picture: there&amp;rsquo;s the remote server that houses the full software project and all the changes that have been made to it so far, and then there&amp;rsquo;s your computer where you implement new features and code changes. Now, Git is usually used when writing software collaboratively, so while the above picture is all that you have to worry about, the real setting is more like this:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1293&#34; height=&#34;555&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;hold-up-whats-git&#34;&gt;Hold Up, What&amp;rsquo;s Git?&lt;/h2&gt;
+&lt;p&gt;Git is just a piece of software that&amp;rsquo;s openly available for anyone to use. (Aside: it&amp;rsquo;s not a company or something that&amp;rsquo;s sold commercially, though this is often confusing because of companies/services like GitHub and GitLab). The problem Git is trying to solve, informally, is to support many people editing the same set of files concurrently while causing as few conflicts and headaches as possible. You might recognize that Google Docs and Dropbox try to solve a similar problem, but with a different strategy that makes them poorly suited for software development. Imagine for a moment that you were trying to use Google Docs for writing real code. Say you&amp;rsquo;ve been up all night working on a cool new feature, tracking down all its subtle and frustrating bugs, and now you want to compile and test it one last time to make sure it&amp;rsquo;s all good to go.&lt;/p&gt;
+&lt;p&gt;But right as you go to compile, your teammate gets in there and starts writing some other code, which naturally isn&amp;rsquo;t complete yet and doesn&amp;rsquo;t build! What do you do? Do you hit them up on Slack and ask them to stop coding while you test your feature? (If so, that essentially means only one person can be working at a time). Do you just keep trying to compile over and over until you get lucky and it builds? (If problems arise in testing, you won&amp;rsquo;t be sure if it&amp;rsquo;s your code that&amp;rsquo;s causing issues or someone else&amp;rsquo;s). This is nightmarish and no one does this. (I hope).&lt;/p&gt;
+&lt;p&gt;Git is an example of &lt;em&gt;distributed version control software&lt;/em&gt;, a type of software meant to make these kinds of situations much easier to handle by giving each user more control over their own version of the files and when to incorporate the changes made by other people. (For the record, there are 
+&lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_version-control_software#Distributed_model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;other choices&lt;/a&gt; for distributed version control, but Git is by far the most popular).&lt;/p&gt;
+&lt;h2 id=&#34;tools-of-the-trade&#34;&gt;Tools of the Trade&lt;/h2&gt;
+&lt;p&gt;In Git, the remote repository contains the current version of the shared code. Remote repositories can be set up on any server (or even your own workstation), but most people prefer to use a service like 
+&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;, 
+&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bitbucket&lt;/a&gt;, or 
+&lt;a href=&#34;https://about.gitlab.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab&lt;/a&gt; to host their projects for them, which makes life easier. Think of it like this: GitHub is to Git repositories as WordPress is to websites. You can certainly host your own website, but using a service like WordPress saves you the trouble of maintaining a web server yourself. Our team uses Bitbucket for our AmoebotSim project, so that&amp;rsquo;s what&amp;rsquo;ll be in the screenshots.&lt;/p&gt;
+&lt;p&gt;An additional way to simplify using Git is to get a nice Git client like 
+&lt;a href=&#34;https://www.gitkraken.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitKraken&lt;/a&gt; or 
+&lt;a href=&#34;https://desktop.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Desktop&lt;/a&gt; instead of interfacing with Git on the 
+&lt;a href=&#34;https://blog.axosoft.com/gitkraken-vs-cli/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;command line&lt;/a&gt; (which many hardcore users will tell you is the only way to &lt;em&gt;really&lt;/em&gt; learn Git). Using the website analogy again, Git clients are to Git repositories like themes and rich-text editors are to websites. Could you put a stellar website together writing your own HTML, CSS, and JavaScript? Sure. Would you learn a lot more about how websites work doing it this way? Of course. But it takes a lot longer, and there&amp;rsquo;s much more room to make mistakes. In general, Git clients make understanding your repository a breeze with nice graphical representations and controls. I&amp;rsquo;ll be using GitKraken here, and I highly recommend you do too!&lt;/p&gt;
+&lt;h2 id=&#34;cloning-a-repository&#34;&gt;Cloning a Repository&lt;/h2&gt;
+&lt;p&gt;Getting a copy of a repository from a remote server onto your machine is called &lt;em&gt;cloning&lt;/em&gt; a repository.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1038&#34; height=&#34;527&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Cloning makes a copy of the remote repository to your local repository. This not only includes the most recent version of the files but also the entire version history (list of changes) for every file, who made those changes, when those changes were made, and all the different &lt;em&gt;branches&lt;/em&gt; of those files that your collaborators may be working on (we&amp;rsquo;ll come back to branching in a future post). The clone operation also puts the most recent version of the files in your working directory, where you can open them up in your file system and start making changes.&lt;/p&gt;
+&lt;p&gt;This is pretty easy to do with GitKraken:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/cloneurl_hu88767fc4f30b03d661e088fef7bbea0c_1378198_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/cloneurl_hu88767fc4f30b03d661e088fef7bbea0c_1378198_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1036&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    These GIFs are supposed to animate, but this is currently an &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5030&#34;&gt;open issue&lt;/a&gt; with Hugo. I&amp;rsquo;ll update this when the issue is fixed.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;And it&amp;rsquo;s even easier if you&amp;rsquo;ve already signed into your hosting platform (e.g., Bitbucket) in GitKraken:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/clonebitbucket_hu61ae0670c5c4b7a187bbbb5430688efa_1263001_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/clonebitbucket_hu61ae0670c5c4b7a187bbbb5430688efa_1263001_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1270&#34; height=&#34;887&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;making-and-submitting-changes&#34;&gt;Making and Submitting Changes&lt;/h2&gt;
+&lt;p&gt;Now that the code is in my working directory, I can make my edits. From Git&amp;rsquo;s perspective, changes can either be &lt;em&gt;tracked&lt;/em&gt;, meaning Git knows about them, or &lt;em&gt;untracked&lt;/em&gt;, meaning the changes are in new files that haven&amp;rsquo;t been added to Git yet. Either way, I can add all the changes I&amp;rsquo;ve made to Git&amp;rsquo;s &lt;em&gt;staging area&lt;/em&gt; in a process called &lt;em&gt;staging&lt;/em&gt;:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1881&#34; height=&#34;963&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;To illustrate this, I&amp;rsquo;ll be adding license and copyright information to AmoebotSim (a 
+&lt;a href=&#34;https://choosealicense.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;very important&lt;/a&gt; part of going open source). I&amp;rsquo;ll be making these edits in three parts: (1) adding a LICENSE file, (2) adding a copyright notice to our main.cpp file, and (3) adding an abbreviated copyright notice to the other source files. Adding the LICENSE file will initially be an untracked change (it&amp;rsquo;s a new file), while the other changes that edit existing files will be tracked.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/editstage_hu72ef1d6834c1591d8efffa868800f53e_1005933_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/editstage_hu72ef1d6834c1591d8efffa868800f53e_1005933_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2523&#34; height=&#34;1619&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Now that the changes are staged, we can &lt;em&gt;commit&lt;/em&gt; them to our local repository. A commit is essentially a batch of changes with a description known as a &lt;em&gt;commit message&lt;/em&gt;. In general, a commit message should clearly and concisely describe the changes its commit contains (see 
+&lt;a href=&#34;https://chris.beams.io/posts/git-commit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this post&lt;/a&gt; for best practices). Once that message is done, we can commit, adding our changes to the version history.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1884&#34; height=&#34;956&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;This is, per usual, easy to do and visualize in GitKraken:&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/commit_hu4ee087eae0050b5d158cfb372d84b967_726365_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/commit_hu4ee087eae0050b5d158cfb372d84b967_726365_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2523&#34; height=&#34;1619&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;But committing only puts our changes in the local repository (shown by the little computer icon in GitKraken), not the remote repository where everyone else can see them (shown by the profile picture of the repository owner). Updating the remote repository with new commits from our local repository is called &lt;em&gt;pushing&lt;/em&gt;.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1880&#34; height=&#34;957&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/push_hubd8f869157e9186c3221db1f52038603_600533_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/push_hubd8f869157e9186c3221db1f52038603_600533_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2523&#34; height=&#34;1619&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Once commits have been pushed, they&amp;rsquo;re out there for other repository members to see and use. Be sure that your code builds and is bug-free before you commit and push; otherwise, you&amp;rsquo;ll break everyone else&amp;rsquo;s builds and get a lot of angry messages asking you to fix your issues quickly! (There are ways to mitigate these kinds of problems, like branch/fork-based workflows with approval processes, but I&amp;rsquo;m saving those more advanced topics for a future post).&lt;/p&gt;
+&lt;h2 id=&#34;getting-other-peoples-changes&#34;&gt;Getting Other People&amp;rsquo;s Changes&lt;/h2&gt;
+&lt;p&gt;Say that you were offline for a couple hours (or days…) and are just returning to your project. Your teammates may have committed and pushed code while you were away, and you want to get all their changes. Git gives you two ways to do this: &lt;em&gt;fetch&lt;/em&gt; and &lt;em&gt;pull&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Fetching retrieves all the new updates (commits, files, etc.) from the remote repository and copies them to your local repository. These new updates exist separately from the rest of your work, allowing you to look into them independently from any changes you&amp;rsquo;ve made locally. If you want your team&amp;rsquo;s updates to be integrated with your local changes, you&amp;rsquo;ll need to &lt;em&gt;merge&lt;/em&gt; them in.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1035&#34; height=&#34;526&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;This can potentially cause &lt;em&gt;merge conflicts&lt;/em&gt; if both you and your teammates&amp;rsquo; commits changed the same lines of code. (Although, to be honest, Git can get confused and think all kinds of things are &amp;ldquo;conflicts&amp;rdquo; even when they&amp;rsquo;re not, so watch out for that). Thankfully, GitKraken has a slick tool for helping you fix your merge conflicts (this was, by far, the #1 reason our team recently switched to GitKraken from Sourcetree):&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/R1iWJNyRpQE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;p&gt;Pulling simply combines fetching and merging into one step. It retrieves all the new updates from the remote repository and automatically tries to merge them into your local repository, possibly triggering merge conflicts for you to resolve along the way.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1036&#34; height=&#34;528&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;In GitKraken, both fetching and pulling can be performed using the top toolbar. The following example shows a pull, though you can see for a brief moment how it first fetches the new commit before merging it in.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/pull_hu0b3e34fdb26186edc7251f8f2c58e820_774784_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/pull_hu0b3e34fdb26186edc7251f8f2c58e820_774784_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2531&#34; height=&#34;1589&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;h2 id=&#34;git-out-there&#34;&gt;Git Out There&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;ve covered the rudimentary operations of Git and how to do them in GitKraken, but there&amp;rsquo;s much more to learn! In a future post I hope to cover branch/fork-based workflows, pull requests, and rebasing, all of which can play a role in using Git for larger projects.&lt;/p&gt;
+&lt;p&gt;As always, I welcome your feedback and questions. Happy coding!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Computing by Programmable Particles</title>
+      <link>https://jdaymude.github.io/publication/daymude2019-computingparticles/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2019-computingparticles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oh, the Places You&#39;ll Go</title>
+      <link>https://jdaymude.github.io/post/oh-the-places-youll-go/</link>
+      <pubDate>Fri, 21 Dec 2018 12:15:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/oh-the-places-youll-go/</guid>
+      <description>&lt;p&gt;As a PhD student, I get to travel quite a bit. In just the last two years, I&amp;rsquo;ve been to Atlanta (a few times, once as a visiting researcher to GaTech for 3 months), Austin, Vienna, Dagstuhl, and — most recently — Tokyo. I get to meet interesting researchers on every trip, whether it be during a conference coffee break (where &amp;ldquo;meeting&amp;rdquo; people occasionally feels like getting interrogated about research) or by running into each other while meandering through a 
+&lt;a href=&#34;https://www.japan-guide.com/e/e3034_001.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;national park&lt;/a&gt;.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/vyza5tbx-qc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;p&gt;These trips are largely work. I listen to talks on the latest research and imagine ways to connect them to my own. I introduce myself to more senior researchers (usually hesitantly) in the hopes that they&amp;rsquo;ll remember who I am once they&amp;rsquo;re through answering my questions. I stay up way too late the night before my talk polishing my slides to (what I hope is) perfection. I scribble all over whiteboards, drawing (mostly) intelligible pictures when working out new ideas with collaborators.&lt;/p&gt;
+&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Need to update &amp;ldquo;slides&amp;rdquo; with a link to the talk I gave at WSSR.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;But then there&amp;rsquo;s the beauty of getting to go to new places &lt;em&gt;because I have to&lt;/em&gt;. As an introvert and someone who&amp;rsquo;s pretty happy being in one place, travel is definitely not an itch I need to scratch (to me, &amp;ldquo;wanderlust&amp;rdquo; often feels like a made up word fellow Millennials use to describe the need for jealousy-inducing Instagram content). But my PhD has helped me learn that there&amp;rsquo;s a lot out there to see and understand, and somehow the difference and uncertainty and novelty of it all makes me feel hope.&lt;/p&gt;
+&lt;p&gt;So, until we meet again, Tokyo.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems: an Algorithmic Approach to Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2018wssr-sops/</link>
+      <pubDate>Sun, 04 Nov 2018 16:00:00 +0900</pubDate>
+      <guid>https://jdaymude.github.io/talk/2018wssr-sops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phototactic Supersmarticles</title>
+      <link>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brief Announcement: A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2018-separationba/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2018-separationba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improved Leader Election for Self-Organizing Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2017-improvedleaderelection/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2017-improvedleaderelection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On Your Marks, Get Set, Coat!</title>
+      <link>https://jdaymude.github.io/post/on-your-marks-get-set-coat/</link>
+      <pubDate>Mon, 11 Dec 2017 09:05:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/on-your-marks-get-set-coat/</guid>
+      <description>&lt;p&gt;My first journal paper was 
+&lt;a href=&#34;http://rdcu.be/zOaK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;published&lt;/a&gt; early last week, marking a milestone in the winding forest path that is my PhD. The paper has some nice ideas and results I&amp;rsquo;m proud of, but — regrettably — the writing style and level of mathematical rigor needed for publication can make it pretty hard to decipher for anyone not familiar with our niche of computer science. I&amp;rsquo;m of the opinion that ideas are only useful if people can understand them, so to that end I&amp;rsquo;m going to explain this paper in a way that&amp;rsquo;s a bit less formal and academic. With a little effort, I think we&amp;rsquo;ll both learn something new here. (And if it&amp;rsquo;s still all Greek to you, I&amp;rsquo;ll happily answer questions you leave in the comments).&lt;/p&gt;
+&lt;h2 id=&#34;the-nickel-version-tldr&#34;&gt;The Nickel Version (TL;DR)&lt;/h2&gt;
+&lt;p&gt;The paper (whose title is mathy and unimportant) is all about programming futuristic, sci-fi materials that don&amp;rsquo;t exist yet to coat other objects in even layers as (relatively) fast as possible.&lt;/p&gt;
+&lt;h2 id=&#34;the-uh-dollar-version&#34;&gt;The, Uh, Dollar(?) Version&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s take a look at the paper&amp;rsquo;s title (&lt;em&gt;emphasis&lt;/em&gt; added): &amp;ldquo;On the &lt;em&gt;Runtime&lt;/em&gt; of &lt;em&gt;Universal Coating&lt;/em&gt; for &lt;em&gt;Programmable Matter&lt;/em&gt;.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Runtime&lt;/em&gt; is a word we use to talk about how fast an algorithm is. As in many other aspects of life, faster is better and more efficient. So this paper is about how fast &amp;ldquo;Universal Coating for Programmable Matter&amp;rdquo; is.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1200&#34; height=&#34;500&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;Programmable matter&lt;/em&gt; broadly describes any kind of physical material that can change itself as a reaction to what&amp;rsquo;s around it without human interaction. It&amp;rsquo;s a bit sci-fi, but imagine a future in which roads fill their own potholes and cracks after wear and tear, clothes heal themselves from fraying and holes, or artificial cells isolate and neutralize malignant tumors in the human body. It sounds crazy and is definitely out there, but that&amp;rsquo;s what we&amp;rsquo;re talking about here.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1200&#34; height=&#34;500&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;&lt;em&gt;Universal Coating&lt;/em&gt; is the action we&amp;rsquo;re trying to do. In this context, we mean &amp;ldquo;coating&amp;rdquo; like a coat of paint; we want to cover something as evenly as possible. (Nobody likes a lumpy paint job). &amp;ldquo;Universal,&amp;rdquo; as a math word, means that a technique works in many/all cases. Here, we&amp;rsquo;re talking about a single approach to coating that works no matter what the object to be coated looks like. (Which is pretty cool).&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1200&#34; height=&#34;500&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;So, all together, this paper is about analyzing the speed of a particular approach to using futuristic materials for coating any kind of object in nice, even layers. (Ok, so even the one sentence wrap up is a mouthful). Also, a big thank you to Annie Carson for the great illustrations!&lt;/p&gt;
+&lt;h2 id=&#34;so-how-does-it-work&#34;&gt;So How Does It Work?&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m really glad you asked. Actually, I&amp;rsquo;m really glad you&amp;rsquo;re still here after that heavy appetizer of an overview; hopefully it didn&amp;rsquo;t spoil your appetite before our main course, which starts right now! Take a look at a simulation of the Universal Coating algorithm over on our 
+&lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#universalcoating&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lab site&lt;/a&gt;, and keep it open for the rest of this section so you can refer back to it.&lt;/p&gt;
+&lt;p&gt;We need a bit of terminology before I explain what&amp;rsquo;s going on with all those dots and colors. There are two main &amp;ldquo;things&amp;rdquo; in this algorithm. Thing 1 is the &lt;em&gt;object&lt;/em&gt;, which is the cluster of dots with black circles in the middle. We&amp;rsquo;re keeping things nice and simple in this example by making the object a hexagon, but it can be essentially any shape you want (&amp;ldquo;universal&amp;rdquo;, remember?). Thing 2 is the &lt;em&gt;particle system&lt;/em&gt;, which are all the other dots that move around and change color. &amp;ldquo;Particle system&amp;rdquo; is just the term we use for the programmable matter stuff we talked about before: we&amp;rsquo;re trying to coat the object with these particles.&lt;/p&gt;
+&lt;p&gt;In really broad strokes, the algorithm can be broken down into four major steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get all the particles oriented towards the object using something like follow-the-leader. In the simulation video (0:00–0:02), this is when they all turn yellow. If you start at any yellow particle and follow its pointer to the next particle and so on, you&amp;rsquo;ll always end up at the object.&lt;/li&gt;
+&lt;li&gt;Coat the object&amp;rsquo;s first layer. This happens insanely fast in the video (0:01–0:02) but there are actually a couple particles that turn red and fill in the few positions on the object&amp;rsquo;s first layer that weren&amp;rsquo;t already filled. You can see them if you pause the video and drag the slider back and forth around 0:01.&lt;/li&gt;
+&lt;li&gt;Decide on a position to be the start/end of each layer. Choosing this &lt;em&gt;marker position&lt;/em&gt; plays a big role in helping the particles learn when one layer is finished so they can start forming the next one. In the video (0:02–0:07), this decision process is shown with the line segments around the object changing colors. At 0:07, the particle occupying the marker position turns a light grey color.&lt;/li&gt;
+&lt;li&gt;Coat the object in more layers one by one until all particles have been used. The video (0:08–0:20) shows this quite clearly, with finished particles turning green. The grey line of particles growing from the object towards the bottom are the particles from Step 3 which mark the start/end of each layer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And that&amp;rsquo;s it! Perhaps as a point of pride, I have to mention that — although simple to describe — this algorithm is really involved. One of the main difficulties is that each particle runs this algorithm individually, so instead of Steps 1–4 happening nice and sequentially, they can actually all happen at once. And… yeah, it&amp;rsquo;s as chaotic as it sounds. The good news is that, in a 
+&lt;a href=&#34;https://sops.engineering.asu.edu/sops/universal-coating/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous paper&lt;/a&gt;, our group proved this algorithm always works, no matter what. Going forward, we&amp;rsquo;ll just take the fact that it works for granted.&lt;/p&gt;
+&lt;h2 id=&#34;quick-get-your-coat&#34;&gt;(Quick) Get Your Coat!&lt;/h2&gt;
+&lt;p&gt;I can&amp;rsquo;t remember how many times I got in the car to go somewhere as a kid only to be sent back inside to get a jacket. Mom never said the &amp;ldquo;quick&amp;rdquo; part, but it was definitely implied!&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re going to shift our discussion to the real work of this new paper: proving that our Universal Coating algorithm runs reasonably fast. Let&amp;rsquo;s start with a motivating example for why you might do this kind of analysis:&lt;/p&gt;
+&lt;p&gt;Pretend there&amp;rsquo;s a secret technique for earning $1,000,000. Maybe it even comes with a guarantee that it will always work. We might get excited about something like that, or at least want to know more. But what if we found out that no one knew how long it would take to work? Or even worse, what if the fine print said it would take more days than the number of atoms in the universe? Well. We might still be waiting for our payout long after inflation turns a million dollars into pocket change, the cows come home, and the sun expands to consume the earth.&lt;/p&gt;
+&lt;p&gt;The lesson to be learned here: we need to know both that an algorithm works &lt;strong&gt;and&lt;/strong&gt; that it won&amp;rsquo;t take a ridiculously long time. So how do we analyze the algorithm&amp;rsquo;s runtime? There&amp;rsquo;s often more than one way to crack that coconut, but the techniques can get pretty involved. Even getting a mastery over the most fundamental techniques can take the larger part of most undergraduate Computer Science (CS) programs. (Fun fact: this side of CS doesn&amp;rsquo;t even have to involve programming, contrary to the popular belief that CS people are a bunch of tech support code monkeys. Yes, I probably can 
+&lt;a href=&#34;https://www.xkcd.com/627/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fix your iPhone&lt;/a&gt;. No, I didn&amp;rsquo;t learn that in school.)&lt;/p&gt;
+&lt;p&gt;To explain both why analyzing our particular algorithm was nasty and how we ended up doing it, I&amp;rsquo;ll use a quick allegory. Imagine a race between two teams: Team Red and Team Blue. Team Red works like a machine: everyone comes to practice and trains hard, they perform well in events, and — most importantly — they run in perfect lock step, starting together and finishing together. Team Blue, on the other hand, is more about the individual effort. They also perform well in events, but have a mix of sprinters, endurance runners, runners who like to stop and smell the roses, and so on. Some of Team Blue&amp;rsquo;s runners end up finishing really fast, while others take longer.&lt;/p&gt;
+&lt;p&gt;Our particle systems are, essentially, Team Blue. We don&amp;rsquo;t make any assumptions about how fast each particle works relative to the others, and it&amp;rsquo;s entirely possible that a particle can suddenly go faster or slower than usual without following a pattern. This makes it hard to figure out when the last Blue runner (or particle) will cross the finish line. So, instead of directly analyzing our system (Team Blue), we proved two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Team Red — a simpler version of our particle systems where everyone progresses through the algorithm at the same rate — runs &amp;ldquo;fast&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Team Blue (our particle system) always runs faster than Team Red.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Therefore, as a nice logical result, Team Blue also runs &amp;ldquo;fast&amp;rdquo;. In fact, it&amp;rsquo;s entirely possible it even runs &lt;em&gt;really&lt;/em&gt; fast!&lt;/p&gt;
+&lt;h2 id=&#34;good-job-out-there-get-some-water&#34;&gt;Good Job Out There, Get Some Water&lt;/h2&gt;
+&lt;p&gt;As a recap, we have an algorithm for programmable matter which coats objects of all shapes and sizes. We showed that this algorithm always works in an 
+&lt;a href=&#34;https://sops.engineering.asu.edu/sops/universal-coating/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;older paper&lt;/a&gt;, and that it runs pretty fast in this new 
+&lt;a href=&#34;http://rdcu.be/zOaK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;journal paper&lt;/a&gt;. This runtime analysis boiled down to showing that a simplified version of our particle system runs the algorithm quickly, and that the real particle system always runs it even faster. (For my CS people out there, we showed that the Universal Coating algorithm runs in $\mathcal{O}(n)$ asynchronous rounds with high probability, where $n$ is the number of particles in the system).&lt;/p&gt;
+&lt;p&gt;Thanks for reading, and feel free to comment with your thoughts, ideas, and questions!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>On the Runtime of Universal Coating for Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2017acoseminar-bridging/</link>
+      <pubDate>Fri, 06 Oct 2017 13:00:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/talk/2017acoseminar-bridging/</guid>
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from 
+&lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</guid>
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from 
+&lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Local Stochastic Algorithms for Compression and Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2017bda-compression/</link>
+      <pubDate>Fri, 28 Jul 2017 14:05:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/talk/2017bda-compression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convex Hull Formation for Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2017bda-convexhull/</link>
+      <pubDate>Fri, 28 Jul 2017 13:40:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/talk/2017bda-convexhull/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Distributed, Stochastic Framework for Active Matter</title>
+      <link>https://jdaymude.github.io/project/active-matter/</link>
+      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/active-matter/</guid>
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&amp;rsquo; rules and our robots&amp;rsquo; designs. This allows us to critically examine our theoretical algorithms&amp;rsquo; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Markov Chain Algorithm for Compression in Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2016-compression/</link>
+      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2016-compression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compression in Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/daymude2016-undergradthesis/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2016-undergradthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compression in Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/talk/2016barrett-thesis/</link>
+      <pubDate>Wed, 06 Apr 2016 11:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/talk/2016barrett-thesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems (SOPS)</title>
+      <link>https://jdaymude.github.io/project/sops/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/sops/</guid>
+      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
+&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

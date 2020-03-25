@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>binary-counter | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tags/binary-counter/</link>
+      <atom:link href="https://jdaymude.github.io/tags/binary-counter/index.xml" rel="self" type="application/rss+xml" />
+    <description>binary-counter</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>binary-counter</title>
+      <link>https://jdaymude.github.io/tags/binary-counter/</link>
+    </image>
+    
+    <item>
+      <title>Convex Hull Formation for Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2020-convexhull/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2020-convexhull/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computing by Programmable Particles</title>
+      <link>https://jdaymude.github.io/publication/daymude2019-computingparticles/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2019-computingparticles/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>separation | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tags/separation/</link>
+      <atom:link href="https://jdaymude.github.io/tags/separation/index.xml" rel="self" type="application/rss+xml" />
+    <description>separation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Sat, 21 Sep 2019 09:00:00 -0400</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>separation</title>
+      <link>https://jdaymude.github.io/tags/separation/</link>
+    </image>
+    
+    <item>
+      <title>A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/talk/2019random-separation/</link>
+      <pubDate>Sat, 21 Sep 2019 09:00:00 -0400</pubDate>
+      <guid>https://jdaymude.github.io/talk/2019random-separation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2019-separation/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2019-separation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Algorithms for Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2019discretemath-stochastic/</link>
+      <pubDate>Wed, 03 Apr 2019 13:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/talk/2019discretemath-stochastic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computing by Programmable Particles</title>
+      <link>https://jdaymude.github.io/publication/daymude2019-computingparticles/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2019-computingparticles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems: an Algorithmic Approach to Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2018wssr-sops/</link>
+      <pubDate>Sun, 04 Nov 2018 16:00:00 +0900</pubDate>
+      <guid>https://jdaymude.github.io/talk/2018wssr-sops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brief Announcement: A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2018-separationba/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2018-separationba/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

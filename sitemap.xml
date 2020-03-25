@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://jdaymude.github.io/courses/2019fall-cse598-mcmc/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/categories/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/computer-science/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/mathematics/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/molecube/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/puzzle/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/reduction/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/post/solving-the-molecube-by-reduction/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/categories/teaching/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/categories/tutorial/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication_types/1/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/binary-counter/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/computational-geometry/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/daymude2020-convexhull/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/convex-hull/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/distributed-algorithms/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/programmable-matter/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication_types/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/categories/research/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/talk/2019random-separation/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/cluster-expansion/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/markov-chains/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/separation/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/cannon2019-separation/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/academia/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/categories/creative/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/post/the-three-academics/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/webcomic/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/amoebot-model/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/self-assembly/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/simulation/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/alumbaugh2019-tilesimulation/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/tile-automata/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/health-insurance/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/python/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/categories/software/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/post/surechoice/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/bio-inspired/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/bridging/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/compression/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/talk/2019discretemath-stochastic/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/git/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/post/git-going-with-gitkraken/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/gitkraken/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/programming/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication_types/6/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/coating/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/daymude2019-computingparticles/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/leader-election/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/shape-formation/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/shape-recognition/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/post/oh-the-places-youll-go/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/tokyo/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/travel/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/videography/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/locomotion/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/phototaxing/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/talk/2018wssr-sops/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/smarticles/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/swarm-robotics/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication_types/2/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/active-matter/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/cannon2018-separationba/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/daymude2017-improvedleaderelection/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/tags/dominance-argument/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/post/on-your-marks-get-set-coat/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/talk/2017acoseminar-bridging/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/talk/2017bda-compression/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/talk/2017bda-convexhull/</loc>
+    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/project/active-matter/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/cannon2016-compression/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/project/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication_types/7/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/daymude2016-undergradthesis/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/talk/2016barrett-thesis/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/project/sops/</loc>
+    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/aporter/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/aricha/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/bdutta/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/cgokmen/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/cscheideler/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/dgoldman/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/drandall/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/edemaine/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/ikostitsyna/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/jcalumbaugh/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/jdaymude/</loc>
+    <lastmod>2020-03-18T16:25:03-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/khinnenthal/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/mandresarroyo/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/mpatitz/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/rgmyr/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/rwarkentin/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/scannon/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/sli/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/tstrothmann/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/wsavoie/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/authors/zderakhshandeh/</loc>
+    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/post/</loc>
+    <lastmod>2020-03-23T15:39:37-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/</loc>
+    <lastmod>2019-03-17T20:39:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/press/</loc>
+    <lastmod>2020-03-25T11:27:58-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/publication/</loc>
+    <lastmod>2019-05-06T17:54:11+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/talk/</loc>
+    <lastmod>2020-03-24T17:45:17-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jdaymude.github.io/courses/</loc>
+    <lastmod>2020-03-25T11:27:58-07:00</lastmod>
+  </url>
+  
+</urlset>
