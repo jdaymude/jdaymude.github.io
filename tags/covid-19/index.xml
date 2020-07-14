@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>covid-19 | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tags/covid-19/</link>
+      <atom:link href="https://jdaymude.github.io/tags/covid-19/index.xml" rel="self" type="application/rss+xml" />
+    <description>covid-19</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Thu, 09 Jul 2020 14:04:44 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <title>covid-19</title>
+      <link>https://jdaymude.github.io/tags/covid-19/</link>
+    </image>
+    
+    <item>
+      <title>Pool Testing is k-ary Search for COVID-19</title>
+      <link>https://jdaymude.github.io/post/pool-testing-is-kary-search/</link>
+      <pubDate>Thu, 09 Jul 2020 14:04:44 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/pool-testing-is-kary-search/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;ve seen a handful of articles in the last week about &lt;em&gt;pool testing&lt;/em&gt; and &lt;em&gt;sample pooling&lt;/em&gt; for COVID-19.
+The gist of this technique is simple: to make our limited supply of test kits (reagents) stretch farther, mix several people&amp;rsquo;s samples together and then test the mixture for COVID-19.
+Ideally, if the test comes back negative, everyone in that &amp;ldquo;sample pool&amp;rdquo; could be declared COVID-free using just one test.
+Otherwise, if the mixture comes back positive, then additional tests are needed to find the individual positive samples.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m far from a public health and epidemiology expert, but as an enthusiastic computer scientist I can&amp;rsquo;t help but see &lt;em&gt;binary search&lt;/em&gt; (or more generally, $k$-ary search) all over this pool testing technique.
+My goal in this post is to draw out this connection, illustrating why the efficiency of $k$-ary search (and of pool testing, by extension) is so attractive.
+I&amp;rsquo;ll also do some crude math to explore what happens to pool testing if there are too many infections in the population and how many tests it could actually save.&lt;/p&gt;
+&lt;p&gt;If you&amp;rsquo;re not interested in any of that but want to know more about pool testing, NPR has a 
+&lt;a href=&#34;https://www.npr.org/sections/health-shots/2020/07/06/886886255/pooling-coronavirus-tests-can-spare-scarce-supplies-but-theres-a-catch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;short primer&lt;/a&gt; and the FDA has put out a 
+&lt;a href=&#34;https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-facilitating-diagnostic-test-availability-asymptomatic-testing-and&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;statement&lt;/a&gt; on the topic.
+On the other hand, if you&amp;rsquo;re interested in more serious research on the topic, this footnote&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; is for you.&lt;/p&gt;
+&lt;h2 id=&#34;finding-things-fast&#34;&gt;Finding Things Fast&lt;/h2&gt;
+&lt;p&gt;In a &lt;em&gt;search problem&lt;/em&gt;, the goal is to find a specific item $x^*$ amidst a whole bunch of possibilities $(x_1, x_2, \ldots, x_n)$.
+It&amp;rsquo;s like 
+&lt;a href=&#34;https://waldo.fandom.com/wiki/Waldo_Wiki&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Where&amp;rsquo;s Waldo&lt;/a&gt; if Waldo were $x^*$ and each $x_i$ was a person on the page.
+Or, perhaps more practically, it&amp;rsquo;s the way you give your favorite maps app a specific address $x^*$ and it has to find that place&amp;rsquo;s data (latitude/longitude, reviews, etc.) amongst all possible places $x_i$ in its gigantic database.&lt;/p&gt;
+&lt;p&gt;A not-so-great approach to playing Where&amp;rsquo;s Waldo is to make a list of every person on the page and check them one-by-one to see if they&amp;rsquo;re Waldo.
+(This is, perhaps, an entertaining way to play since you get to appreciate all the fun and ridiculous details, but we&amp;rsquo;re going for efficiency here).
+In computer science, we call this strategy — or &amp;ldquo;algorithm&amp;rdquo; — &lt;em&gt;brute force search&lt;/em&gt;: when all else fails, just try everything.
+How bad can this be?
+Well, in the worst case Waldo might be the very last person in our list, so we would have had to check all $n$ people before we found him.
+So, knowing that the least clever search strategy makes us try $n$ times before we find Waldo, can we do better?&lt;/p&gt;
+&lt;p&gt;Imagine that you have a friend who already knows where Waldo is and has agreed to help you out by telling you which half of the page he&amp;rsquo;s on (left or right).
+Now you only have to search half of the possibilities, or roughly $n/2$ people.
+Say your friend&amp;rsquo;s really helpful, and they&amp;rsquo;ll let you do this as many times as you want: they&amp;rsquo;ll keep telling you which half of the remaining section Waldo&amp;rsquo;s in until you find him.
+So at first you have $n$ people to look through, then after your friend helps once you have $n/2$, and after helping again you have $n/4$, and then $n/8$, and so on.
+In general, if your friend has helped you $i$ times, then you only have $n/(2^i)$ people to look through.
+Doing a little algebra, after your friend has helped you $\log_2(n)$ times, you only have $n/(2^{\log_2(n)}) = n/n = 1$ person left, and that person is Waldo.
+This strategy is &lt;em&gt;binary search&lt;/em&gt;: &amp;ldquo;binary&amp;rdquo; because your friend splits the possibilities in two each time they help.&lt;/p&gt;
+&lt;p&gt;It may have been a while since you&amp;rsquo;ve brushed up on your logarithms, so let&amp;rsquo;s look at some numbers to get a sense of how fast this is. An average Where&amp;rsquo;s Waldo puzzle has roughly $n = 500$ people on it.
+So, if we were to use brute force search, we&amp;rsquo;d be looking through all $n = 500$ people.
+However, if we had our helpful friend to do binary search with us, we&amp;rsquo;d only need to ask their help $\log_2(500) \approx 9$ times before we found Waldo!
+Not bad, hey?&lt;/p&gt;
+&lt;p&gt;The key to binary search is in throwing away whole chunks of possibilities all at once, rapidly narrowing our search field.
+$k$-ary search is just a generalization, where instead of splitting the possibilities in half each time, we split them into $k$ equal parts. We then keep the $n/k$-sized section containing our target and repeat, requiring a total of $\log_k(n)$ search operations to find our target (which is even faster than binary search!). Before we call it quits with Waldo and get back to pool testing, it&amp;rsquo;s worth pointing out that there are plenty of ways to make searching even faster (especially with parallel algorithms). There are even search algorithms 
+&lt;a href=&#34;http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specifically for finding Waldo&lt;/a&gt;, if that&amp;rsquo;s your jam.&lt;/p&gt;
+&lt;h2 id=&#34;pool-testing-meet-k-ary-search&#34;&gt;Pool Testing, Meet k-ary Search&lt;/h2&gt;
+&lt;p&gt;Shifting our perspective on testing from personal experience (&amp;ldquo;Have I contracted COVID-19?&amp;quot;) to the population level (&amp;ldquo;Who in our communities are positive?&amp;quot;), we can frame testing as a search problem.
+Among all individuals $(x_1, x_2, \ldots, x_n)$, we want to find those $x_i$&#39;s that are positive for COVID-19 so they can isolate and get timely medical care.
+In this setting, brute force search would be individually testing every single person — and that&amp;rsquo;s 
+&lt;a href=&#34;https://www.nytimes.com/2020/07/06/us/coronavirus-test-shortage.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;way more tests&lt;/a&gt; than we have.
+The current US strategy of only testing symptomatic cases isn&amp;rsquo;t more &amp;ldquo;efficient&amp;rdquo; than brute force, it&amp;rsquo;s just brute force search on a (hopefully) small subset of the total population.&lt;/p&gt;
+&lt;p&gt;Pool testing, on the other hand, is similar to $k$-ary search.
+Just like our helpful friend telling us which half of the page Waldo isn&amp;rsquo;t on, a single pool test ideally shows us a whole group of people that we can declare COVID-19 negative; in our search for positive cases, we can look elsewhere.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3242&#34; height=&#34;1507&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Consider the situation depicted above, with $128$ total individuals needing tests but only $4$ of them COVID-19 positive (shown in red).
+If we tested all $128$ people individually (brute force), we would need $128$ tests.
+But suppose we could reliably test pools of up to $16$ people at once, as shown in the first row.
+Only three of the $128/16 = 8$ pool tests would come back positive, allowing us to immediately rule out $5 \times 16 = 80$ negative individuals.
+For the three positive pools, we need to do additional tests to find the positive cases.
+This could be done by individually testing everyone in the positive pools&lt;sup id=&#34;fnref:2&#34;&gt;&lt;a href=&#34;#fn:2&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;2&lt;/a&gt;&lt;/sup&gt; — effectively using smaller brute force — requiring $3 \times 16 = 48$ additional tests.
+Alternatively (assuming we had enough samples), we could do pool testing again, this time on smaller pools.&lt;sup id=&#34;fnref:3&#34;&gt;&lt;a href=&#34;#fn:3&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;3&lt;/a&gt;&lt;/sup&gt;
+So long as there aren&amp;rsquo;t too many positive samples (something we&amp;rsquo;ll revisit shortly), this will help us save on tests: in the picture, we only end up needing $30$ additional tests to handle the $48$ individuals in positive pools.
+The table below compares the number of tests used by each testing strategy in this example, along with the number of samples per person required.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Testing Strategy&lt;/th&gt;
+&lt;th&gt;Tests Used&lt;/th&gt;
+&lt;th&gt;Tests Saved&lt;/th&gt;
+&lt;th&gt;Samples per Person&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Individual (brute force)&lt;/td&gt;
+&lt;td&gt;$128$&lt;/td&gt;
+&lt;td&gt;$0\%$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pool Testing (one round)&lt;/td&gt;
+&lt;td&gt;$56$&lt;/td&gt;
+&lt;td&gt;$56\%$&lt;/td&gt;
+&lt;td&gt;$1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Pool Testing (repeated)&lt;/td&gt;
+&lt;td&gt;$38$&lt;/td&gt;
+&lt;td&gt;$70\%$&lt;/td&gt;
+&lt;td&gt;$&amp;gt; 1$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;what-can-go-wrong&#34;&gt;What Can Go Wrong?&lt;/h2&gt;
+&lt;p&gt;At least a few serious things:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Added logistical complications for labs, including tracking which individuals&amp;rsquo; samples are in which pools, added mixing steps, etc.&lt;/li&gt;
+&lt;li&gt;The possibility of larger &lt;em&gt;false-negative&lt;/em&gt; rates (i.e., testing negative when the sample was, in fact, positive) due to samples getting diluted when they&amp;rsquo;re mixed into pools.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
+&lt;li&gt;A loss of efficiency when there are too many positive samples.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For the rest of this post, I&amp;rsquo;m going to focus on that last problem.
+Pool testing&amp;rsquo;s strength lies in its ability to rule out large groups of negative cases at once, as we saw in the example.
+But with too many positive cases, the likelihood of pools testing positive becomes much higher, requiring a greater number of subsequent tests.
+At what point does pool testing end up using more tests than if we just tested everyone individually?&lt;/p&gt;
+&lt;p&gt;Instead of repeated pool testing (like in our example above), consider the more practical protocol of doing only one round of pool testing and then testing all samples in positive pools individually.
+If we have $n$ total samples, our pool size is $p$, and $x$ pool tests come back positive, then we will use a total of $n/p + xp$ tests: $n/p$ pool and $xp$ individual.
+Since we&amp;rsquo;d use $n$ tests doing brute force, pool testing only saves us tests if $n/p + xp &amp;lt; n$, or equivalently, if:
+$$x &amp;lt; (n/p)(1 - 1/p)$$&lt;/p&gt;
+&lt;p&gt;To connect the number of positive pools $x$ we&amp;rsquo;ll have based on how many positive cases are in the population, let $r$ be the probability that any given sample is COVID-19 positive.
+The probability that a pool of size $p$ contains a positive sample is $1 - (1 - r)^p$.
+There are $n/p$ total pools, so the expected (average) number of positive pools is:
+$$E[x] = (n/p)(1 - (1 - r)^p)$$
+Therefore, we save on tests using pool testing in expectation if:
+$$\begin{align*} (n/p)(1 - (1 - r)^p) &amp;amp;&amp;lt; (n/p)(1 - 1/p) \\ r &amp;amp;&amp;lt; 1 - p^{-1/p} \end{align*}$$&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1440&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;The above graph plots this efficient region.
+The x-axis is the pool size $p$ and the y-axis is the infection rate $r$.
+Any point in the blue region represents a $(p,r)$ pair for which pool testing uses less tests than brute force in expectation.
+For example, with a pool size of $p = 16$, our crude math suggests that pool testing is more efficient for infection rates up to, coincidentally, $r \approx 16\%$.
+This would be a terrifyingly high infection rate (at the time of this writing, the CDC reports a $\approx 1\%$ 
+&lt;a href=&#34;https://www.cdc.gov/covid-data-tracker/#cases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;positive case rate&lt;/a&gt; in the US), so it seems that in realistic settings even one round of pool testing would save a lot of tests.&lt;/p&gt;
+&lt;h2 id=&#34;taking-our-savings-to-the-bank&#34;&gt;Taking Our Savings to the Bank&lt;/h2&gt;
+&lt;p&gt;To recap, we&amp;rsquo;ve seen how pool testing is related to $k$-ary search, how both of these techniques leverage the ability to rule out large groups of possibilities to narrow things down quickly, and how pool testing will save us tests so long as the infection rate is low enough.
+The last thing to nail down is how many tests are actually saved.
+From our work above, we know that the expected number of tests saved using one round of pool testing is:
+$$\begin{align*} E[\text{# tests saved}] &amp;amp;= \text{# tests for brute force} - E[\text{# tests for pool testing}] \\ &amp;amp;= n - (n/p + E[\text{# positive pools}] \cdot p) \\ &amp;amp;= n - n/p - (n/p)(1 - (1-r)^p)p \\ &amp;amp;= n(-1/p + (1-r)^p) \end{align*}$$
+The fraction of tests saved is just the number of tests saved divided by $n$, so a single round of pool testing in pools of size $p$ uses a $(1-r)^p - 1/p$ fraction less tests.
+The following plot shows this equation for different pool sizes $p$ as a function of the infection rate $r$.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_2000x2000_fit_lanczos_2.png&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1440&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;This shows that larger pool sizes have the potential for saving more tests, but also degrade in their efficiency more rapidly as the infection rate $r$ grows.
+Eventually, if the infection rate becomes too large, all four curves become negative and pool testing ends up using more tests than brute force.
+This corresponds to leaving the efficient region shown in the previous graph.
+If you&amp;rsquo;re having a hard time interpreting these curves, the following table compares pool testing with $p = 4$ (blue) and $p = 16$ (green).&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Pool Size&lt;/th&gt;
+&lt;th&gt;Tests Saved at $r = 1\%$&lt;/th&gt;
+&lt;th&gt;Tests Saved at $r = 5\%$&lt;/th&gt;
+&lt;th&gt;Infection Rate for No Savings&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;$p = 4$&lt;/td&gt;
+&lt;td&gt;$71\%$&lt;/td&gt;
+&lt;td&gt;$56\%$&lt;/td&gt;
+&lt;td&gt;$r = 29\%$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;$p = 16$&lt;/td&gt;
+&lt;td&gt;$79\%$&lt;/td&gt;
+&lt;td&gt;$38\%$&lt;/td&gt;
+&lt;td&gt;$r = 16\%$&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;The key takeaway is that from a purely test-savings perspective, pool testing does a remarkable job for any reasonable pool size.
+While it is true that pool testing can end up using more tests than traditional testing if the infection rate grows too large, my crude math suggests that the infection rate would need to be quite high ($r &amp;gt; 10\%$) before this inefficiency would be noticeable.
+At today&amp;rsquo;s US infection rate of $r \approx 1\%$, we could be $70\%$ more efficient with our limited supply of testing reagents, helping more people get tested more often.
+Perhaps if this technique were widely used, we would all be that much closer to safely getting on with our lives.&lt;/p&gt;
+&lt;section class=&#34;footnotes&#34; role=&#34;doc-endnotes&#34;&gt;
+&lt;hr&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2767513&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cherif et al. 2020&lt;/a&gt; detail a recent mathematical model for pool testing and 
+&lt;a href=&#34;https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yelin et al. 2020&lt;/a&gt; characterize its dilution and false-negative rates. The references in the Yelin paper also cover deeper mathematical analysis (e.g., 
+&lt;a href=&#34;https://projecteuclid.org/euclid.aoms/1177731363&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dorfman 1943&lt;/a&gt;) and how pool testing has been used to combat infectious disease in the past (e.g., for malaria in 
+&lt;a href=&#34;https://jcm.asm.org/content/48/2/512&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Taylor et al. 2010&lt;/a&gt;). &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;From my brief sifting of the literature, practical implementations of pool testing only use one round of pool tests: roughly $65\%$ of each sample is used in a pool test, and the remaining $35\%$ is saved for an individual test in case the pool comes back positive. Repeated pool testing doesn&amp;rsquo;t seem to be used in practice, presumably because it would rely on collecting additional swab samples per person. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;I&amp;rsquo;ve depicted the subpool tests in a &lt;em&gt;binary&lt;/em&gt; search kind of way where each positive pool is split in &lt;em&gt;half&lt;/em&gt; and retested, but they could be broken into any number of groups. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
+&lt;p&gt;
+&lt;a href=&#34;https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yelin et al. 2020&lt;/a&gt; estimate that the false-negative rates for pools as large as $16$ or $32$ is roughly $10\%$ based on their experiments. I chose not to do my speculative math for dilution and false-negative rates because I don&amp;rsquo;t understand how PCR tests actually work and don&amp;rsquo;t believe in blindly oversimplifying things for the sake of nice math. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
