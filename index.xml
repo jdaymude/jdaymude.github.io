@@ -5,12 +5,175 @@
     <link>https://jdaymude.github.io/</link>
       <atom:link href="https://jdaymude.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Joshua J. Daymude</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright>
     <image>
       <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
       <title>Joshua J. Daymude</title>
       <link>https://jdaymude.github.io/</link>
     </image>
+    
+    <item>
+      <title>Bio-Inspired Energy Distribution for Programmable Matter</title>
+      <link>https://jdaymude.github.io/talk/2021icdcn-energydistribution/</link>
+      <pubDate>Thu, 07 Jan 2021 09:35:00 +0900</pubDate>
+      <guid>https://jdaymude.github.io/talk/2021icdcn-energydistribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bio-Inspired Energy Distribution for Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-energydistribution/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-energydistribution/</guid>
+      <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;In short, individual bacterium that are metabolically stressed (lacking in nutrients) catalyze a wave of chemical signaling that inhibits the rest of the biofilm’s nutrient uptake. This allows more nutrients to flow to the stressed bacteria, effectively solving the energy distribution problem. We model energy constraints in the amoebot model by giving each particle a battery for storing energy that it can transfer to its neighbors or spend to perform actions. We assume at least one particle in the system has access to an &lt;em&gt;external energy source&lt;/em&gt; from which it can harvest energy. The goal of our energy distribution algorithm is to coordinate the transfer of energy between particles so that all particles meet their actions’ energy demands and at least one particle can actually perform its action within a bounded amount of time. After some initial setup, our &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm works in the following phases repeated by each particle individually:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Communication.&lt;/em&gt; Particles propagate &amp;ldquo;stress&amp;rdquo; and &amp;ldquo;inhibition&amp;rdquo; signals to communicate the energy states of starving particles throughout the system.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sharing.&lt;/em&gt; Particles harvest energy they lack from an external source (if they have access to one) and transfer energy to neighbors that need it.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Usage.&lt;/em&gt; Particles that are not inhibited spend their stored energy to perform actions, participating in the collective behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We prove that the &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm allows the particle system to meet its energy demands every ${\cal O}(n)$ asynchronous rounds, where $n$ is the number of particles in the system. A simulation of the &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm can be seen below, corresponding to Figure 2 in the paper. All particles are initially idle, with the exception of the root (with external energy access) shown with a gray/black ring. The setup phase establishes the spanning forest (or tree, in this case) rooted at particle(s) with energy access; a particle&amp;rsquo;s parent direction is shown as an arc. Since all particles start with empty batteries, stress flags (shown as red rings) quickly propagate throughout the system and inhibit flags soon follow. As energy is harvested by the root and shared throughout the system, some particles (shown with yellow rings) receive sufficient energy to meet the demand for their next action but remain inhibited from using it. This inhibition remains until all stressed particles in the system receive sufficient energy to meet their demands, at which point particles (shown with green rings) can reset their inhibit flags and use their energy. After using energy, these particles may again become stressed and trigger another stage of inhibition.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim_huadd53d25b4b78d7c355eb920cadde841_1928502_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim_huadd53d25b4b78d7c355eb920cadde841_1928502_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;div class=&#34;alert alert-warning&#34;&gt;
+  &lt;div&gt;
+    These GIFs are supposed to animate, but this is currently an &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5030&#34;&gt;open issue&lt;/a&gt; with Hugo. I&amp;rsquo;ll update this when the issue is fixed. In the meantime, feel free to read the (identical) version on our &lt;a href=&#34;https://sops.engineering.asu.edu/sops/energy-distribution/&#34;&gt;lab site&lt;/a&gt;.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;When communication of the stress/inhibit flags is disabled, the energy distribution strategy in Energy-Sharing fails (just as the bacterial biofilms fail to feed all bacteria when their signal relays are disabled). A simulation of this setting is shown below, corresponding to Figure 3 in the paper. Without the communication phase to inhibit particles from using energy while those that are stressed recharge, particles continuously share any energy they have with their descendants in the spanning forest. Thus, while the leaves of the spanning forest occasionally meet their energy demands(seen as the flickering darker green particles), even after 1000 rounds most particles have still not met their energy demand even once.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim_hue56c053e86b1d7752d82979042082b7b_1325790_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim_hue56c053e86b1d7752d82979042082b7b_1325790_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;As an independent but supporting result, we present the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm that enables a spanning forest of particles to self-repair in the presence of &lt;em&gt;crash failures&lt;/em&gt; so long as the set of non-faulty particles remains connected and there is at least one non-crashed root. We prove that this algorithm stabilizes in a spanning forest rooted at root particles in at most ${\cal O}(m^2)$ asynchronous rounds, where $m$ is the number of particles that are severed from the spanning forest by crash failures.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm relies on an underlying spanning forest structure to communicate its stress/inhibition signals. However, if particles move as they often do in collective behaviors, this disrupts the communication structure. Thus, the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm can be used as an underlying primitive in &lt;strong&gt;Energy-Sharing&lt;/strong&gt; so that &lt;strong&gt;Energy-Sharing&lt;/strong&gt; can be composed with existing amoebot model algorithms, extending them to consider energy constraints. Below is an example of &lt;strong&gt;Energy-Sharing&lt;/strong&gt; composed with 
+&lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#hexagonformation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Basic Shape Formation&lt;/a&gt;, corresponding to Figure 5 in the paper.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim_hu2fbc63d50825f3b5ab2ad0065393d5ce_7429658_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim_hu2fbc63d50825f3b5ab2ad0065393d5ce_7429658_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+&lt;p&gt;Since &lt;strong&gt;Energy-Sharing&lt;/strong&gt; meets the system’s energy demands every ${\cal O}(n)$ asynchronous rounds and &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; repairs any disruptions to the communication structure as particles move, a composed algorithm will not be impeded by the underlying energy distribution primitive, but may add significant overhead to its runtime. However, we observe reasonable performance in practice: for example, since hexagon formation terminates in ${\cal O}(n)$ rounds, our proven bounds suggest that the composed algorithm could terminate in time ${\cal O}(n^2)$ or worse but the graph below demonstrates an overhead that appears asymptotically sublinear. With the addition of more energy roots, the composed algorithm is dramatically faster, approaching the runtime achieved without energy constraints.&lt;/p&gt;
+&lt;img src=&#34;compgraph_time.png&#34; style=&#34;display: inline-block; width: 48%; margin-right: 1%&#34;/&gt;
+&lt;img src=&#34;compgraph_root.png&#34; style=&#34;display: inline-block; width: 48%; margin-left: 1%&#34;/&gt;
+&lt;p&gt;As a final, informal experiment, we performed a simulation where energy is used for &lt;em&gt;reproduction&lt;/em&gt;, mimicking the bacterial biofilms we were inspired by. In our preliminary experiments, we obtain behavior that is qualitatively similar to the biofilm growth patterns observed by 
+&lt;a href=&#34;https://www.nature.com/articles/nature14660&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liu&lt;/a&gt; and 
+&lt;a href=&#34;https://www.nature.com/articles/nature15709&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prindle&lt;/a&gt; et al.; in particular, the use of communication and inhibition leads to an oscillatory growth rate. The simulation below corresponds to Figure 7 in the paper.&lt;/p&gt;
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure &gt;
+
+
+  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim_hu54c245b987776be89a7b4b40994d7da0_9473274_2000x2000_fit_lanczos.gif&#34; &gt;
+
+
+  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim_hu54c245b987776be89a7b4b40994d7da0_9473274_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
+&lt;/a&gt;
+
+
+
+&lt;/figure&gt;
+
+</description>
+    </item>
     
     <item>
       <title>Spiritfarer</title>
@@ -451,161 +614,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Bio-Inspired Energy Distribution for Programmable Matter</title>
-      <link>https://jdaymude.github.io/publication/daymude2021-energydistribution/</link>
-      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/publication/daymude2021-energydistribution/</guid>
-      <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
-&lt;p&gt;In short, individual bacterium that are metabolically stressed (lacking in nutrients) catalyze a wave of chemical signaling that inhibits the rest of the biofilm’s nutrient uptake. This allows more nutrients to flow to the stressed bacteria, effectively solving the energy distribution problem. We model energy constraints in the amoebot model by giving each particle a battery for storing energy that it can transfer to its neighbors or spend to perform actions. We assume at least one particle in the system has access to an &lt;em&gt;external energy source&lt;/em&gt; from which it can harvest energy. The goal of our energy distribution algorithm is to coordinate the transfer of energy between particles so that all particles meet their actions’ energy demands and at least one particle can actually perform its action within a bounded amount of time. After some initial setup, our &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm works in the following phases repeated by each particle individually:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;Communication.&lt;/em&gt; Particles propagate &amp;ldquo;stress&amp;rdquo; and &amp;ldquo;inhibition&amp;rdquo; signals to communicate the energy states of starving particles throughout the system.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Sharing.&lt;/em&gt; Particles harvest energy they lack from an external source (if they have access to one) and transfer energy to neighbors that need it.&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;Usage.&lt;/em&gt; Particles that are not inhibited spend their stored energy to perform actions, participating in the collective behavior.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We prove that the &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm allows the particle system to meet its energy demands every ${\cal O}(n)$ asynchronous rounds, where $n$ is the number of particles in the system. A simulation of the &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm can be seen below, corresponding to Figure 2 in the paper. All particles are initially idle, with the exception of the root (with external energy access) shown with a gray/black ring. The setup phase establishes the spanning forest (or tree, in this case) rooted at particle(s) with energy access; a particle&amp;rsquo;s parent direction is shown as an arc. Since all particles start with empty batteries, stress flags (shown as red rings) quickly propagate throughout the system and inhibit flags soon follow. As energy is harvested by the root and shared throughout the system, some particles (shown with yellow rings) receive sufficient energy to meet the demand for their next action but remain inhibited from using it. This inhibition remains until all stressed particles in the system receive sufficient energy to meet their demands, at which point particles (shown with green rings) can reset their inhibit flags and use their energy. After using energy, these particles may again become stressed and trigger another stage of inhibition.&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim_huadd53d25b4b78d7c355eb920cadde841_1928502_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim_huadd53d25b4b78d7c355eb920cadde841_1928502_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;div class=&#34;alert alert-warning&#34;&gt;
-  &lt;div&gt;
-    These GIFs are supposed to animate, but this is currently an &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5030&#34;&gt;open issue&lt;/a&gt; with Hugo. I&amp;rsquo;ll update this when the issue is fixed. In the meantime, feel free to read the (identical) version on our &lt;a href=&#34;https://sops.engineering.asu.edu/sops/energy-distribution/&#34;&gt;lab site&lt;/a&gt;.
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;p&gt;When communication of the stress/inhibit flags is disabled, the energy distribution strategy in Energy-Sharing fails (just as the bacterial biofilms fail to feed all bacteria when their signal relays are disabled). A simulation of this setting is shown below, corresponding to Figure 3 in the paper. Without the communication phase to inhibit particles from using energy while those that are stressed recharge, particles continuously share any energy they have with their descendants in the spanning forest. Thus, while the leaves of the spanning forest occasionally meet their energy demands(seen as the flickering darker green particles), even after 1000 rounds most particles have still not met their energy demand even once.&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim_hue56c053e86b1d7752d82979042082b7b_1325790_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim_hue56c053e86b1d7752d82979042082b7b_1325790_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;As an independent but supporting result, we present the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm that enables a spanning forest of particles to self-repair in the presence of &lt;em&gt;crash failures&lt;/em&gt; so long as the set of non-faulty particles remains connected and there is at least one non-crashed root. We prove that this algorithm stabilizes in a spanning forest rooted at root particles in at most ${\cal O}(m^2)$ asynchronous rounds, where $m$ is the number of particles that are severed from the spanning forest by crash failures.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm relies on an underlying spanning forest structure to communicate its stress/inhibition signals. However, if particles move as they often do in collective behaviors, this disrupts the communication structure. Thus, the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm can be used as an underlying primitive in &lt;strong&gt;Energy-Sharing&lt;/strong&gt; so that &lt;strong&gt;Energy-Sharing&lt;/strong&gt; can be composed with existing amoebot model algorithms, extending them to consider energy constraints. Below is an example of &lt;strong&gt;Energy-Sharing&lt;/strong&gt; composed with 
-&lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#hexagonformation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Basic Shape Formation&lt;/a&gt;, corresponding to Figure 5 in the paper.&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim_hu2fbc63d50825f3b5ab2ad0065393d5ce_7429658_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim_hu2fbc63d50825f3b5ab2ad0065393d5ce_7429658_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;Since &lt;strong&gt;Energy-Sharing&lt;/strong&gt; meets the system’s energy demands every ${\cal O}(n)$ asynchronous rounds and &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; repairs any disruptions to the communication structure as particles move, a composed algorithm will not be impeded by the underlying energy distribution primitive, but may add significant overhead to its runtime. However, we observe reasonable performance in practice: for example, since hexagon formation terminates in ${\cal O}(n)$ rounds, our proven bounds suggest that the composed algorithm could terminate in time ${\cal O}(n^2)$ or worse but the graph below demonstrates an overhead that appears asymptotically sublinear. With the addition of more energy roots, the composed algorithm is dramatically faster, approaching the runtime achieved without energy constraints.&lt;/p&gt;
-&lt;img src=&#34;compgraph_time.png&#34; style=&#34;display: inline-block; width: 48%; margin-right: 1%&#34;/&gt;
-&lt;img src=&#34;compgraph_root.png&#34; style=&#34;display: inline-block; width: 48%; margin-left: 1%&#34;/&gt;
-&lt;p&gt;As a final, informal experiment, we performed a simulation where energy is used for &lt;em&gt;reproduction&lt;/em&gt;, mimicking the bacterial biofilms we were inspired by. In our preliminary experiments, we obtain behavior that is qualitatively similar to the biofilm growth patterns observed by 
-&lt;a href=&#34;https://www.nature.com/articles/nature14660&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liu&lt;/a&gt; and 
-&lt;a href=&#34;https://www.nature.com/articles/nature15709&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prindle&lt;/a&gt; et al.; in particular, the use of communication and inhibition leads to an oscillatory growth rate. The simulation below corresponds to Figure 7 in the paper.&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim_hu54c245b987776be89a7b4b40994d7da0_9473274_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim_hu54c245b987776be89a7b4b40994d7da0_9473274_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
 </description>
     </item>
     

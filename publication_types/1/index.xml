@@ -5,7 +5,7 @@
     <link>https://jdaymude.github.io/publication_types/1/</link>
       <atom:link href="https://jdaymude.github.io/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
     <description>1</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2020 Joshua J. Daymude</copyright><lastBuildDate>Tue, 07 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Tue, 05 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
       <title>1</title>
@@ -15,7 +15,7 @@
     <item>
       <title>Bio-Inspired Energy Distribution for Programmable Matter</title>
       <link>https://jdaymude.github.io/publication/daymude2021-energydistribution/</link>
-      <pubDate>Tue, 07 Jul 2020 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/daymude2021-energydistribution/</guid>
       <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
 &lt;p&gt;In short, individual bacterium that are metabolically stressed (lacking in nutrients) catalyze a wave of chemical signaling that inhibits the rest of the biofilm’s nutrient uptake. This allows more nutrients to flow to the stressed bacteria, effectively solving the energy distribution problem. We model energy constraints in the amoebot model by giving each particle a battery for storing energy that it can transfer to its neighbors or spend to perform actions. We assume at least one particle in the system has access to an &lt;em&gt;external energy source&lt;/em&gt; from which it can harvest energy. The goal of our energy distribution algorithm is to coordinate the transfer of energy between particles so that all particles meet their actions’ energy demands and at least one particle can actually perform its action within a bounded amount of time. After some initial setup, our &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm works in the following phases repeated by each particle individually:&lt;/p&gt;
