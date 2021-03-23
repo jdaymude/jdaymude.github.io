@@ -5,12 +5,20 @@
     <link>https://jdaymude.github.io/tags/programmable-matter/</link>
       <atom:link href="https://jdaymude.github.io/tags/programmable-matter/index.xml" rel="self" type="application/rss+xml" />
     <description>programmable-matter</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Thu, 07 Jan 2021 09:35:00 +0900</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Fri, 05 Mar 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
       <title>programmable-matter</title>
       <link>https://jdaymude.github.io/tags/programmable-matter/</link>
     </image>
+    
+    <item>
+      <title>Programming Active Cohesive Granular Matter with Mechanically Induced Phase Changes</title>
+      <link>https://jdaymude.github.io/publication/li2021-bobbots/</link>
+      <pubDate>Fri, 05 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/li2021-bobbots/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Bio-Inspired Energy Distribution for Programmable Matter</title>
@@ -173,14 +181,6 @@
 &lt;/figure&gt;
 
 </description>
-    </item>
-    
-    <item>
-      <title>Programming Active Granular Matter with Mechanically Induced Phase Changes</title>
-      <link>https://jdaymude.github.io/publication/li2021-bobbots/</link>
-      <pubDate>Sat, 12 Sep 2020 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/publication/li2021-bobbots/</guid>
-      <description></description>
     </item>
     
     <item>
