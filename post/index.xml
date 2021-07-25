@@ -5,9 +5,9 @@
     <link>https://jdaymude.github.io/post/</link>
       <atom:link href="https://jdaymude.github.io/post/index.xml" rel="self" type="application/rss+xml" />
     <description>Blog</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Thu, 09 Jul 2020 14:04:44 -0700</lastBuildDate>
     <image>
-      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
       <title>Blog</title>
       <link>https://jdaymude.github.io/post/</link>
     </image>
@@ -24,14 +24,11 @@ Otherwise, if the mixture comes back positive, then additional tests are needed 
 &lt;p&gt;I&amp;rsquo;m far from a public health and epidemiology expert, but as an enthusiastic computer scientist I can&amp;rsquo;t help but see &lt;em&gt;binary search&lt;/em&gt; (or more generally, $k$-ary search) all over this pool testing technique.
 My goal in this post is to draw out this connection, illustrating why the efficiency of $k$-ary search (and of pool testing, by extension) is so attractive.
 I&amp;rsquo;ll also do some crude math to explore what happens to pool testing if there are too many infections in the population and how many tests it could actually save.&lt;/p&gt;
-&lt;p&gt;If you&amp;rsquo;re not interested in any of that but want to know more about pool testing, NPR has a 
-&lt;a href=&#34;https://www.npr.org/sections/health-shots/2020/07/06/886886255/pooling-coronavirus-tests-can-spare-scarce-supplies-but-theres-a-catch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;short primer&lt;/a&gt; and the FDA has put out a 
-&lt;a href=&#34;https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-facilitating-diagnostic-test-availability-asymptomatic-testing-and&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;statement&lt;/a&gt; on the topic.
+&lt;p&gt;If you&amp;rsquo;re not interested in any of that but want to know more about pool testing, NPR has a &lt;a href=&#34;https://www.npr.org/sections/health-shots/2020/07/06/886886255/pooling-coronavirus-tests-can-spare-scarce-supplies-but-theres-a-catch&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;short primer&lt;/a&gt; and the FDA has put out a &lt;a href=&#34;https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-facilitating-diagnostic-test-availability-asymptomatic-testing-and&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;statement&lt;/a&gt; on the topic.
 On the other hand, if you&amp;rsquo;re interested in more serious research on the topic, this footnote&lt;sup id=&#34;fnref:1&#34;&gt;&lt;a href=&#34;#fn:1&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; is for you.&lt;/p&gt;
 &lt;h2 id=&#34;finding-things-fast&#34;&gt;Finding Things Fast&lt;/h2&gt;
 &lt;p&gt;In a &lt;em&gt;search problem&lt;/em&gt;, the goal is to find a specific item $x^*$ amidst a whole bunch of possibilities $(x_1, x_2, \ldots, x_n)$.
-It&amp;rsquo;s like 
-&lt;a href=&#34;https://waldo.fandom.com/wiki/Waldo_Wiki&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Where&amp;rsquo;s Waldo&lt;/a&gt; if Waldo were $x^*$ and each $x_i$ was a person on the page.
+It&amp;rsquo;s like &lt;a href=&#34;https://waldo.fandom.com/wiki/Waldo_Wiki&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Where&amp;rsquo;s Waldo&lt;/a&gt; if Waldo were $x^*$ and each $x_i$ was a person on the page.
 Or, perhaps more practically, it&amp;rsquo;s the way you give your favorite maps app a specific address $x^*$ and it has to find that place&amp;rsquo;s data (latitude/longitude, reviews, etc.) amongst all possible places $x_i$ in its gigantic database.&lt;/p&gt;
 &lt;p&gt;A not-so-great approach to playing Where&amp;rsquo;s Waldo is to make a list of every person on the page and check them one-by-one to see if they&amp;rsquo;re Waldo.
 (This is, perhaps, an entertaining way to play since you get to appreciate all the fun and ridiculous details, but we&amp;rsquo;re going for efficiency here).
@@ -51,13 +48,11 @@ So, if we were to use brute force search, we&amp;rsquo;d be looking through all 
 However, if we had our helpful friend to do binary search with us, we&amp;rsquo;d only need to ask their help $\log_2(500) \approx 9$ times before we found Waldo!
 Not bad, hey?&lt;/p&gt;
 &lt;p&gt;The key to binary search is in throwing away whole chunks of possibilities all at once, rapidly narrowing our search field.
-$k$-ary search is just a generalization, where instead of splitting the possibilities in half each time, we split them into $k$ equal parts. We then keep the $n/k$-sized section containing our target and repeat, requiring a total of $\log_k(n)$ search operations to find our target (which is even faster than binary search!). Before we call it quits with Waldo and get back to pool testing, it&amp;rsquo;s worth pointing out that there are plenty of ways to make searching even faster (especially with parallel algorithms). There are even search algorithms 
-&lt;a href=&#34;http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specifically for finding Waldo&lt;/a&gt;, if that&amp;rsquo;s your jam.&lt;/p&gt;
+$k$-ary search is just a generalization, where instead of splitting the possibilities in half each time, we split them into $k$ equal parts. We then keep the $n/k$-sized section containing our target and repeat, requiring a total of $\log_k(n)$ search operations to find our target (which is even faster than binary search!). Before we call it quits with Waldo and get back to pool testing, it&amp;rsquo;s worth pointing out that there are plenty of ways to make searching even faster (especially with parallel algorithms). There are even search algorithms &lt;a href=&#34;http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specifically for finding Waldo&lt;/a&gt;, if that&amp;rsquo;s your jam.&lt;/p&gt;
 &lt;h2 id=&#34;pool-testing-meet-k-ary-search&#34;&gt;Pool Testing, Meet k-ary Search&lt;/h2&gt;
 &lt;p&gt;Shifting our perspective on testing from personal experience (&amp;ldquo;Have I contracted COVID-19?&amp;quot;) to the population level (&amp;ldquo;Who in our communities are positive?&amp;quot;), we can frame testing as a search problem.
-Among all individuals $(x_1, x_2, \ldots, x_n)$, we want to find those $x_i$&#39;s that are positive for COVID-19 so they can isolate and get timely medical care.
-In this setting, brute force search would be individually testing every single person — and that&amp;rsquo;s 
-&lt;a href=&#34;https://www.nytimes.com/2020/07/06/us/coronavirus-test-shortage.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;way more tests&lt;/a&gt; than we have.
+Among all individuals $(x_1, x_2, \ldots, x_n)$, we want to find those $x_i$&amp;rsquo;s that are positive for COVID-19 so they can isolate and get timely medical care.
+In this setting, brute force search would be individually testing every single person — and that&amp;rsquo;s &lt;a href=&#34;https://www.nytimes.com/2020/07/06/us/coronavirus-test-shortage.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;way more tests&lt;/a&gt; than we have.
 The current US strategy of only testing symptomatic cases isn&amp;rsquo;t more &amp;ldquo;efficient&amp;rdquo; than brute force, it&amp;rsquo;s just brute force search on a (hopefully) small subset of the total population.&lt;/p&gt;
 &lt;p&gt;Pool testing, on the other hand, is similar to $k$-ary search.
 Just like our helpful friend telling us which half of the page Waldo isn&amp;rsquo;t on, a single pool test ideally shows us a whole group of people that we can declare COVID-19 negative; in our search for positive cases, we can look elsewhere.&lt;/p&gt;
@@ -66,8 +61,6 @@ Just like our helpful friend telling us which half of the page Waldo isn&amp;rsq
 
 
 
-  
-  
 
 
 
@@ -77,21 +70,17 @@ Just like our helpful friend telling us which half of the page Waldo isn&amp;rsq
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;3242&#34; height=&#34;1507&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_d893c5c675f1faec887bbbea523952bc.png 400w,
+               /post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_a6fd6dae15544600ded74901ce065f67.png 760w,
+               /post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_d893c5c675f1faec887bbbea523952bc.png&#34;
+               width=&#34;760&#34;
+               height=&#34;353&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Consider the situation depicted above, with $128$ total individuals needing tests but only $4$ of them COVID-19 positive (shown in red).
 If we tested all $128$ people individually (brute force), we would need $128$ tests.
 But suppose we could reliably test pools of up to $16$ people at once, as shown in the first row.
@@ -134,7 +123,7 @@ The table below compares the number of tests used by each testing strategy in th
 &lt;h2 id=&#34;what-can-go-wrong&#34;&gt;What Can Go Wrong?&lt;/h2&gt;
 &lt;p&gt;At least a few serious things:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Added logistical complications for labs, including tracking which individuals&amp;rsquo; samples are in which pools, added mixing steps, etc.&lt;/li&gt;
+&lt;li&gt;Added logistical complications for labs, including tracking which individuals&#39; samples are in which pools, added mixing steps, etc.&lt;/li&gt;
 &lt;li&gt;The possibility of larger &lt;em&gt;false-negative&lt;/em&gt; rates (i.e., testing negative when the sample was, in fact, positive) due to samples getting diluted when they&amp;rsquo;re mixed into pools.&lt;sup id=&#34;fnref:4&#34;&gt;&lt;a href=&#34;#fn:4&#34; class=&#34;footnote-ref&#34; role=&#34;doc-noteref&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/li&gt;
 &lt;li&gt;A loss of efficiency when there are too many positive samples.&lt;/li&gt;
 &lt;/ul&gt;
@@ -157,8 +146,6 @@ $$\begin{align*} (n/p)(1 - (1 - r)^p) &amp;amp;&amp;lt; (n/p)(1 - 1/p) \\ r &amp
 
 
 
-  
-  
 
 
 
@@ -168,27 +155,22 @@ $$\begin{align*} (n/p)(1 - (1 - r)^p) &amp;amp;&amp;lt; (n/p)(1 - 1/p) \\ r &amp
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1440&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_95bee3cac31fd27c744668969647b2bf.png 400w,
+               /post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_bc08555fd46905af4750f157cfdc0c66.png 760w,
+               /post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_95bee3cac31fd27c744668969647b2bf.png&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;The above graph plots this efficient region.
 The x-axis is the pool size $p$ and the y-axis is the infection rate $r$.
 Any point in the blue region represents a $(p,r)$ pair for which pool testing uses less tests than brute force in expectation.
 For example, with a pool size of $p = 16$, our crude math suggests that pool testing is more efficient for infection rates up to, coincidentally, $r \approx 16\%$.
-This would be a terrifyingly high infection rate (at the time of this writing, the CDC reports a $\approx 1\%$ 
-&lt;a href=&#34;https://www.cdc.gov/covid-data-tracker/#cases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;positive case rate&lt;/a&gt; in the US), so it seems that in realistic settings even one round of pool testing would save a lot of tests.&lt;/p&gt;
+This would be a terrifyingly high infection rate (at the time of this writing, the CDC reports a $\approx 1\%$ &lt;a href=&#34;https://www.cdc.gov/covid-data-tracker/#cases&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;positive case rate&lt;/a&gt; in the US), so it seems that in realistic settings even one round of pool testing would save a lot of tests.&lt;/p&gt;
 &lt;h2 id=&#34;taking-our-savings-to-the-bank&#34;&gt;Taking Our Savings to the Bank&lt;/h2&gt;
 &lt;p&gt;To recap, we&amp;rsquo;ve seen how pool testing is related to $k$-ary search, how both of these techniques leverage the ability to rule out large groups of possibilities to narrow things down quickly, and how pool testing will save us tests so long as the infection rate is low enough.
 The last thing to nail down is how many tests are actually saved.
@@ -201,8 +183,6 @@ The following plot shows this equation for different pool sizes $p$ as a functio
 
 
 
-  
-  
 
 
 
@@ -212,21 +192,17 @@ The following plot shows this equation for different pool sizes $p$ as a functio
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1440&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_8566ec12e810fe007a61095c9a21c56e.png 400w,
+               /post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_f3c789c9a66a37ba6b4ac7c12ab8f208.png 760w,
+               /post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_8566ec12e810fe007a61095c9a21c56e.png&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;This shows that larger pool sizes have the potential for saving more tests, but also degrade in their efficiency more rapidly as the infection rate $r$ grows.
 Eventually, if the infection rate becomes too large, all four curves become negative and pool testing ends up using more tests than brute force.
 This corresponds to leaving the efficient region shown in the previous graph.
@@ -263,21 +239,16 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 &lt;hr&gt;
 &lt;ol&gt;
 &lt;li id=&#34;fn:1&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2767513&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cherif et al. 2020&lt;/a&gt; detail a recent mathematical model for pool testing and 
-&lt;a href=&#34;https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yelin et al. 2020&lt;/a&gt; characterize its dilution and false-negative rates. The references in the Yelin paper also cover deeper mathematical analysis (e.g., 
-&lt;a href=&#34;https://projecteuclid.org/euclid.aoms/1177731363&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dorfman 1943&lt;/a&gt;) and how pool testing has been used to combat infectious disease in the past (e.g., for malaria in 
-&lt;a href=&#34;https://jcm.asm.org/content/48/2/512&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Taylor et al. 2010&lt;/a&gt;). &lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2767513&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Cherif et al. 2020&lt;/a&gt; detail a recent mathematical model for pool testing and &lt;a href=&#34;https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yelin et al. 2020&lt;/a&gt; characterize its dilution and false-negative rates. The references in the Yelin paper also cover deeper mathematical analysis (e.g., &lt;a href=&#34;https://projecteuclid.org/euclid.aoms/1177731363&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Dorfman 1943&lt;/a&gt;) and how pool testing has been used to combat infectious disease in the past (e.g., for malaria in &lt;a href=&#34;https://jcm.asm.org/content/48/2/512&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Taylor et al. 2010&lt;/a&gt;).&amp;#160;&lt;a href=&#34;#fnref:1&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:2&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;From my brief sifting of the literature, practical implementations of pool testing only use one round of pool tests: roughly $65\%$ of each sample is used in a pool test, and the remaining $35\%$ is saved for an individual test in case the pool comes back positive. Repeated pool testing doesn&amp;rsquo;t seem to be used in practice, presumably because it would rely on collecting additional swab samples per person. &lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;From my brief sifting of the literature, practical implementations of pool testing only use one round of pool tests: roughly $65\%$ of each sample is used in a pool test, and the remaining $35\%$ is saved for an individual test in case the pool comes back positive. Repeated pool testing doesn&amp;rsquo;t seem to be used in practice, presumably because it would rely on collecting additional swab samples per person.&amp;#160;&lt;a href=&#34;#fnref:2&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:3&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;I&amp;rsquo;ve depicted the subpool tests in a &lt;em&gt;binary&lt;/em&gt; search kind of way where each positive pool is split in &lt;em&gt;half&lt;/em&gt; and retested, but they could be broken into any number of groups. &lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve depicted the subpool tests in a &lt;em&gt;binary&lt;/em&gt; search kind of way where each positive pool is split in &lt;em&gt;half&lt;/em&gt; and retested, but they could be broken into any number of groups.&amp;#160;&lt;a href=&#34;#fnref:3&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li id=&#34;fn:4&#34; role=&#34;doc-endnote&#34;&gt;
-&lt;p&gt;
-&lt;a href=&#34;https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yelin et al. 2020&lt;/a&gt; estimate that the false-negative rates for pools as large as $16$ or $32$ is roughly $10\%$ based on their experiments. I chose not to do my speculative math for dilution and false-negative rates because I don&amp;rsquo;t understand how PCR tests actually work and don&amp;rsquo;t believe in blindly oversimplifying things for the sake of nice math. &lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Yelin et al. 2020&lt;/a&gt; estimate that the false-negative rates for pools as large as $16$ or $32$ is roughly $10\%$ based on their experiments. I chose not to do my speculative math for dilution and false-negative rates because I don&amp;rsquo;t understand how PCR tests actually work and don&amp;rsquo;t believe in blindly oversimplifying things for the sake of nice math.&amp;#160;&lt;a href=&#34;#fnref:4&#34; class=&#34;footnote-backref&#34; role=&#34;doc-backlink&#34;&gt;&amp;#x21a9;&amp;#xfe0e;&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -289,19 +260,13 @@ Perhaps if this technique were widely used, we would all be that much closer to 
       <link>https://jdaymude.github.io/post/announcing-reviews/</link>
       <pubDate>Fri, 29 May 2020 14:07:51 -0700</pubDate>
       <guid>https://jdaymude.github.io/post/announcing-reviews/</guid>
-      <description>&lt;p&gt;I&amp;rsquo;m excited to announce that I&amp;rsquo;ve added art and entertainment 
-&lt;a href=&#34;https://jdaymude.github.io/review/&#34;&gt;reviews&lt;/a&gt; to the site. I&amp;rsquo;ve posted 28 reviews of books, movies, and video games so far; I will likely extend this to also include TV shows and music in the future. This post is a brief look at why I review things (it&amp;rsquo;s not for glorification of my own hot takes, I promise) and a bit about my experience with hacking the 
-&lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic theme&lt;/a&gt; to support reviews.&lt;/p&gt;
+      <description>&lt;p&gt;I&amp;rsquo;m excited to announce that I&amp;rsquo;ve added art and entertainment &lt;a href=&#34;https://jdaymude.github.io/review/&#34;&gt;reviews&lt;/a&gt; to the site. I&amp;rsquo;ve posted 28 reviews of books, movies, and video games so far; I will likely extend this to also include TV shows and music in the future. This post is a brief look at why I review things (it&amp;rsquo;s not for glorification of my own hot takes, I promise) and a bit about my experience with hacking the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic theme&lt;/a&gt; to support reviews.&lt;/p&gt;
 &lt;p&gt;In case my philosophy behind reviews and hacking the site theme are less interesting to you than actual reviews, here are a few that I was particularly happy to rediscover:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://jdaymude.github.io/review/videogame-overcooked/&#34;&gt;&lt;em&gt;Overcooked&lt;/em&gt;&lt;/a&gt;, a review from 2016 about the frantic cooperative cooking game.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://jdaymude.github.io/review/book-half-the-sky/&#34;&gt;&lt;em&gt;Half the Sky&lt;/em&gt;&lt;/a&gt;, a review from 2017 about the book that played a pivotal role in my understanding and caring about the global state of women&amp;rsquo;s rights.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://jdaymude.github.io/review/book-the-phantom-tollbooth/&#34;&gt;&lt;em&gt;The Phantom Tollbooth&lt;/em&gt;&lt;/a&gt;, a review from 2019 about one of my favorite books.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://jdaymude.github.io/review/videogame-batman-arkham-city/&#34;&gt;&lt;em&gt;Batman: Arkham City&lt;/em&gt;&lt;/a&gt;, a review from 2019 in which I question Batman&amp;rsquo;s approach to criminal justice and our assumptions about video game minions.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jdaymude.github.io/review/videogame-overcooked/&#34;&gt;&lt;em&gt;Overcooked&lt;/em&gt;&lt;/a&gt;, a review from 2016 about the frantic cooperative cooking game.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jdaymude.github.io/review/book-half-the-sky/&#34;&gt;&lt;em&gt;Half the Sky&lt;/em&gt;&lt;/a&gt;, a review from 2017 about the book that played a pivotal role in my understanding and caring about the global state of women&amp;rsquo;s rights.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jdaymude.github.io/review/book-the-phantom-tollbooth/&#34;&gt;&lt;em&gt;The Phantom Tollbooth&lt;/em&gt;&lt;/a&gt;, a review from 2019 about one of my favorite books.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jdaymude.github.io/review/videogame-batman-arkham-city/&#34;&gt;&lt;em&gt;Batman: Arkham City&lt;/em&gt;&lt;/a&gt;, a review from 2019 in which I question Batman&amp;rsquo;s approach to criminal justice and our assumptions about video game minions.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;the-entertainment-backlog&#34;&gt;The Entertainment Backlog&lt;/h2&gt;
 &lt;p&gt;Over the last decade, I&amp;rsquo;ve been iterating over ways to track my progress and remember my experiences with various books, movies, TV shows, music, and video games. It bothers me that I own more content than I have time to experience and that I often forget my key takeaways just months after finishing something. What came of my efforts was the &lt;em&gt;entertainment backlog&lt;/em&gt;, an informal and messy system of spreadsheets, notes, and written reviews.&lt;/p&gt;
@@ -310,8 +275,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -321,40 +284,25 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1062&#34; height=&#34;320&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_2ec80f44449e427ca5d74afc5c6ae502.png 400w,
+               /post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_894ed79274b3bd8d97915ad02a46254c.png 760w,
+               /post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_2ec80f44449e427ca5d74afc5c6ae502.png&#34;
+               width=&#34;760&#34;
+               height=&#34;229&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;In concept, the backlog is simple: it&amp;rsquo;s a list of content (books, movies, music, games, etc.) organized by progression. When I&amp;rsquo;ve purchased something (or, in the streaming era, when I&amp;rsquo;m interested in it and have access to it), I add it to the backlog as &amp;ldquo;Owned.&amp;rdquo; When I start reading/watching/playing it, it becomes &amp;ldquo;In-Progress.&amp;rdquo; Once I&amp;rsquo;m done with it, it becomes &amp;ldquo;Completed.&amp;rdquo; With just these three stages, I&amp;rsquo;m able to keep track of what I&amp;rsquo;m engaging with and avoid forgetting about it and having to start over a year or more later. As a caveat, if ever something is boring me, I just drop it from the backlog altogether. The system is there to support me, not force me to complete uninteresting stuff.&lt;/p&gt;
-&lt;p&gt;Implementation of these three stages can come in a variety of formats. The gold standard would probably be some dedicated, slick piece of software. I&amp;rsquo;ve gotten by with a mix of spreadsheets, a 
-&lt;a href=&#34;https://trello.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trello board&lt;/a&gt; (Owned/In-Progress/Completed are lists, and each item is a card), and an &amp;ldquo;art and entertainment journal&amp;rdquo; where I write about what I engage with daily. Regardless of how it&amp;rsquo;s implemented, the point is to not let things go stale.&lt;/p&gt;
+&lt;p&gt;Implementation of these three stages can come in a variety of formats. The gold standard would probably be some dedicated, slick piece of software. I&amp;rsquo;ve gotten by with a mix of spreadsheets, a &lt;a href=&#34;https://trello.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trello board&lt;/a&gt; (Owned/In-Progress/Completed are lists, and each item is a card), and an &amp;ldquo;art and entertainment journal&amp;rdquo; where I write about what I engage with daily. Regardless of how it&amp;rsquo;s implemented, the point is to not let things go stale.&lt;/p&gt;
 &lt;h2 id=&#34;the-role-of-reviews&#34;&gt;The Role of Reviews&lt;/h2&gt;
 &lt;p&gt;The fourth and final stage of the backlog is &amp;ldquo;Reviewed,&amp;rdquo; which is where &amp;ldquo;Completed&amp;rdquo; items go once I&amp;rsquo;ve written some thoughts down about them. Traditionally, my reviews have had a numerical rating and a written portion, though as I get older I find that my ratings are less useful to me than my reflections.&lt;/p&gt;
 &lt;p&gt;I write reviews for two reasons: to &lt;em&gt;&lt;strong&gt;avoid forgetting my experiences&lt;/strong&gt;&lt;/em&gt; and to &lt;em&gt;&lt;strong&gt;combat entertainment consumerism with reflection&lt;/strong&gt;&lt;/em&gt;. These goals work together. When entertainment is reduced to &amp;ldquo;empty calories&amp;rdquo; because I don&amp;rsquo;t spend any time reflecting on it, I&amp;rsquo;m always hungry for more. When I know I will invest thought and energy into my entertainment, I can be more selective about committing to higher quality experiences. In turn, I can take the time to listen to and be impacted by what these experiences have to say in their stories and art.&lt;/p&gt;
 &lt;p&gt;Rest and play are non-negotiables in my life, but taking time to reflect thoughtfully on what I&amp;rsquo;m engaging with helps me keep a healthy relationship with less intentional entertainment and make space for more challenging and impactful art and nonfiction.&lt;/p&gt;
 &lt;h2 id=&#34;hacking-the-academic-theme&#34;&gt;Hacking the Academic Theme&lt;/h2&gt;
-&lt;p&gt;This was my first real attempt at working with HTML, CSS, and JavaScript beyond some 
-&lt;a href=&#34;https://www.codecademy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Codecademy&lt;/a&gt; lessons I did in undergrad, so building out reviews was an uphill climb, even when mostly working with preexisting structures provided by the Academic theme. No particular lesson learned is a big enough deal to write about, but I&amp;rsquo;m most proud of integrating third-party scripts 
-&lt;a href=&#34;https://kimmobrunfeldt.github.io/progressbar.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;progressbar.js&lt;/a&gt; and 
-&lt;a href=&#34;https://gka.github.io/chroma.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;chroma.js&lt;/a&gt; to help with the animation and coloring of the numerical ratings at the end of each review.&lt;/p&gt;
-
-
-
-
-
-  
-  
+&lt;p&gt;This was my first real attempt at working with HTML, CSS, and JavaScript beyond some &lt;a href=&#34;https://www.codecademy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Codecademy&lt;/a&gt; lessons I did in undergrad, so building out reviews was an uphill climb, even when mostly working with preexisting structures provided by the Academic theme. No particular lesson learned is a big enough deal to write about, but I&amp;rsquo;m most proud of integrating third-party scripts &lt;a href=&#34;https://kimmobrunfeldt.github.io/progressbar.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;progressbar.js&lt;/a&gt; and &lt;a href=&#34;https://gka.github.io/chroma.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;chroma.js&lt;/a&gt; to help with the animation and coloring of the numerical ratings at the end of each review.&lt;/p&gt;
 
 
 
@@ -366,21 +314,21 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;825&#34; height=&#34;275&#34;&gt;
-&lt;/a&gt;
 
 
 
-&lt;/figure&gt;
-
-&lt;p&gt;This is just a screenshot, but the real ratings animate when they&amp;rsquo;re first loaded. The animation is usually done by the time you scroll down to the bottom where the ratings actually are, but refreshing the page will let you see it in action! It&amp;rsquo;s potentially possible to 
-&lt;a href=&#34;https://github.com/kimmobrunfeldt/progressbar.js/issues/265&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;delay the animation&lt;/a&gt; until the ratings are scrolled into view, but my knowledge of jQuery is nonexistent so I&amp;rsquo;ll be leaving that as an improvement for another day.&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_3555c1b21eaddad5abcf6c4f194f1385.png 400w,
+               /post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_4c1ed8a2227db78b80cb39eb723a735d.png 760w,
+               /post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_3555c1b21eaddad5abcf6c4f194f1385.png&#34;
+               width=&#34;760&#34;
+               height=&#34;253&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;This is just a screenshot, but the real ratings animate when they&amp;rsquo;re first loaded. The animation is usually done by the time you scroll down to the bottom where the ratings actually are, but refreshing the page will let you see it in action! It&amp;rsquo;s potentially possible to &lt;a href=&#34;https://github.com/kimmobrunfeldt/progressbar.js/issues/265&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;delay the animation&lt;/a&gt; until the ratings are scrolled into view, but my knowledge of jQuery is nonexistent so I&amp;rsquo;ll be leaving that as an improvement for another day.&lt;/p&gt;
 </description>
     </item>
     
@@ -389,8 +337,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
       <link>https://jdaymude.github.io/post/solving-the-molecube-by-reduction/</link>
       <pubDate>Mon, 06 Jan 2020 13:00:00 -0700</pubDate>
       <guid>https://jdaymude.github.io/post/solving-the-molecube-by-reduction/</guid>
-      <description>&lt;p&gt;My sister-in-law surprised me with a 
-&lt;a href=&#34;http://www.recenttoys.com/meffert-molecube-twister-puzzle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Molecube&lt;/a&gt; for Christmas, which combines the logic of a Sudoku puzzle with the mechanics of a Rubik&amp;rsquo;s cube. Each ball on the Molecube is one of nine colors, and the goal is to reconfigure a shuffled Molecube so each of its faces has all nine colors on it.&lt;/p&gt;
+      <description>&lt;p&gt;My sister-in-law surprised me with a &lt;a href=&#34;http://www.recenttoys.com/meffert-molecube-twister-puzzle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Molecube&lt;/a&gt; for Christmas, which combines the logic of a Sudoku puzzle with the mechanics of a Rubik&amp;rsquo;s cube. Each ball on the Molecube is one of nine colors, and the goal is to reconfigure a shuffled Molecube so each of its faces has all nine colors on it.&lt;/p&gt;
 
 
 
@@ -405,20 +352,10 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;http://www.recenttoys.com/wp-content/uploads/2019/11/meffert-molecube-twister-puzzle-1200x900.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;http://www.recenttoys.com/wp-content/uploads/2019/11/meffert-molecube-twister-puzzle-1200x900.jpg&#34; alt=&#34;&#34; width=&#34;65%&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;http://www.recenttoys.com/wp-content/uploads/2019/11/meffert-molecube-twister-puzzle-1200x900.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;65%&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;It turns out that solving the Molecube is a wonderful exercise in what computer scientists call &lt;em&gt;reduction&lt;/em&gt;, which involves transforming a problem we don&amp;rsquo;t know how to solve into one that we do, solving that version, and then translating the solution back into the original problem. In this post, I&amp;rsquo;ll give a reader-friendly primer on reduction, outline a reduction from the Molecube to the Rubik&amp;rsquo;s cube, and then wrap up by solving the Molecube with a standard Rubik&amp;rsquo;s cube algorithm.&lt;/p&gt;
 &lt;p&gt;If you&amp;rsquo;re interested in solving the Molecube yourself (and perhaps you&amp;rsquo;re here looking for hints), I&amp;rsquo;ve created a &lt;a href=&#34;https://jdaymude.github.io/files/molecube_worksheet.pdf&#34; target=&#34;_blank&#34;&gt;worksheet&lt;/a&gt; you can use and will point out when you should skip ahead in the post so as to avoid spoiling this delightful puzzle.&lt;/p&gt;
 &lt;h2 id=&#34;reduction-there-and-back-again&#34;&gt;Reduction: There and Back Again&lt;/h2&gt;
@@ -450,7 +387,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 &lt;li&gt;There are nine colors on the Molecube, but only six on the Rubik&amp;rsquo;s cube.&lt;/li&gt;
 &lt;li&gt;A block on the Rubik&amp;rsquo;s cube has 1–3 colors (one for each face it touches), while a ball on the Molecube is the same color on all &amp;ldquo;sides&amp;rdquo;.&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;The similarities hint at a solution: though the goal configurations are different, the cubes&amp;rsquo; structures and mechanics are the same. So if I find a goal configuration for the Molecube, I can use the Rubik&amp;rsquo;s cube algorithm to handle all the tricky rearranging involved in actually getting there.&lt;/p&gt;
+&lt;p&gt;The similarities hint at a solution: though the goal configurations are different, the cubes&#39; structures and mechanics are the same. So if I find a goal configuration for the Molecube, I can use the Rubik&amp;rsquo;s cube algorithm to handle all the tricky rearranging involved in actually getting there.&lt;/p&gt;
 &lt;p&gt;If that&amp;rsquo;s enough of a framework for you to attempt your own solution, feel free to download the &lt;a href=&#34;https://jdaymude.github.io/files/molecube_worksheet.pdf&#34; target=&#34;_blank&#34;&gt;worksheet&lt;/a&gt; I&amp;rsquo;ve created to help you visualize the Molecube as a Sudoku puzzle (with colors instead of numbers). You&amp;rsquo;ll want to stop reading here and come back once you&amp;rsquo;ve completed a goal configuration or if you&amp;rsquo;re stuck and need hints.&lt;/p&gt;
 &lt;p&gt;Speaking of hints, the best way to unlock this tricky Sudoku-like color puzzle (getting one color on each face) is to study the Molecube&amp;rsquo;s colors and structure. I asked myself the following questions (which culminated in the table at the top of the &lt;a href=&#34;https://jdaymude.github.io/files/molecube_worksheet.pdf&#34; target=&#34;_blank&#34;&gt;worksheet&lt;/a&gt;):&lt;/p&gt;
 &lt;ul&gt;
@@ -474,8 +411,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 &lt;p&gt;With the difficult transformation step out of the way, the rest of the reduction is easy. You can solve any shuffled Molecube just like you would a Rubik&amp;rsquo;s cube (assuming you know how to do that), but instead of aiming to have faces with all the same color, you aim to build the goal configuration we got from the transformation (above, left). To make this easier for me to visualize, I made a 3D rendering of my solution (front view on the left, back view on the right).&lt;/p&gt;
 &lt;img src=&#34;featured.png&#34; style=&#34;display: inline-block; width: 47%; margin-right: 2%&#34;/&gt;
 &lt;img src=&#34;solved-back.png&#34; style=&#34;display: inline-block; width: 47%; margin-left: 2%&#34;/&gt;
-&lt;p&gt;I was pleasantly surprised at how much Rubik&amp;rsquo;s cube muscle memory I still had from speedcubing in junior high (though if you need a refresher, I found 
-&lt;a href=&#34;https://hobbylark.com/puzzles/Rubik-Cube-Algorithms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt; helpful). Interestingly, some of the steps in the Rubik&amp;rsquo;s cube &amp;ldquo;algorithm&amp;rdquo; are unnecessary for the Molecube. Remember the earlier observation that the Molecube&amp;rsquo;s balls are each a single color while the Rubik&amp;rsquo;s cube blocks can have 1–3 colors each? This means that the Molecube doesn&amp;rsquo;t care if its balls are rotated &amp;ldquo;in place&amp;rdquo;, though this is a problem for the Rubik&amp;rsquo;s cube (see the example below). So any steps in the Rubik&amp;rsquo;s cube algorithm that are meant to fix things like this can be skipped entirely.&lt;/p&gt;
+&lt;p&gt;I was pleasantly surprised at how much Rubik&amp;rsquo;s cube muscle memory I still had from speedcubing in junior high (though if you need a refresher, I found &lt;a href=&#34;https://hobbylark.com/puzzles/Rubik-Cube-Algorithms&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this tutorial&lt;/a&gt; helpful). Interestingly, some of the steps in the Rubik&amp;rsquo;s cube &amp;ldquo;algorithm&amp;rdquo; are unnecessary for the Molecube. Remember the earlier observation that the Molecube&amp;rsquo;s balls are each a single color while the Rubik&amp;rsquo;s cube blocks can have 1–3 colors each? This means that the Molecube doesn&amp;rsquo;t care if its balls are rotated &amp;ldquo;in place&amp;rdquo;, though this is a problem for the Rubik&amp;rsquo;s cube (see the example below). So any steps in the Rubik&amp;rsquo;s cube algorithm that are meant to fix things like this can be skipped entirely.&lt;/p&gt;
 
 
 
@@ -490,20 +426,10 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://usercontent2.hubstatic.com/14101285_f1024.jpg&#34; &gt;
-
-
-  &lt;img src=&#34;https://usercontent2.hubstatic.com/14101285_f1024.jpg&#34; alt=&#34;&#34; width=&#34;90%&#34; &gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img src=&#34;https://usercontent2.hubstatic.com/14101285_f1024.jpg&#34; alt=&#34;&#34; loading=&#34;lazy&#34; data-zoomable width=&#34;90%&#34; /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;but-does-it-work&#34;&gt;But Does It Work?&lt;/h2&gt;
 &lt;p&gt;To show that the reduction approach not only works but is also reasonably fast, here&amp;rsquo;s me solving the Molecube in just under 2 minutes.&lt;/p&gt;
 
@@ -512,9 +438,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 &lt;/div&gt;
 
 &lt;br/&gt;
-&lt;p&gt;There are a &lt;em&gt;lot&lt;/em&gt; of Rubik&amp;rsquo;s cube-inspired puzzles these days (for example, the 
-&lt;a href=&#34;http://www.recenttoys.com/meffert-ghost-cube-twister-puzzle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ghost Cube&lt;/a&gt; and the 
-&lt;a href=&#34;http://www.recenttoys.com/meffert-pyraminx-twister-puzzle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pyraminx&lt;/a&gt;). But solving the Molecube by reduction makes me wonder just how many of these new puzzles share a similar relationship to the original Rubik&amp;rsquo;s cube. If these relationships exist, we&amp;rsquo;d find that these new puzzles aren&amp;rsquo;t really new at all; they&amp;rsquo;re just an old puzzle we know how to solve, but with new names and nice packaging.&lt;/p&gt;
+&lt;p&gt;There are a &lt;em&gt;lot&lt;/em&gt; of Rubik&amp;rsquo;s cube-inspired puzzles these days (for example, the &lt;a href=&#34;http://www.recenttoys.com/meffert-ghost-cube-twister-puzzle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ghost Cube&lt;/a&gt; and the &lt;a href=&#34;http://www.recenttoys.com/meffert-pyraminx-twister-puzzle/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Pyraminx&lt;/a&gt;). But solving the Molecube by reduction makes me wonder just how many of these new puzzles share a similar relationship to the original Rubik&amp;rsquo;s cube. If these relationships exist, we&amp;rsquo;d find that these new puzzles aren&amp;rsquo;t really new at all; they&amp;rsquo;re just an old puzzle we know how to solve, but with new names and nice packaging.&lt;/p&gt;
 </description>
     </item>
     
@@ -529,8 +453,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -540,25 +462,18 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/the-three-academics/the-three-academics-lowres_huc2345e23d7c9b85a48da5ce8d8476a68_168428_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/the-three-academics/the-three-academics-lowres_huc2345e23d7c9b85a48da5ce8d8476a68_168428_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;850&#34; height=&#34;1100&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;This is my first contribution to the world of webcomics, a medium I&amp;rsquo;ve long admired for being able to deliver witty, weird reflections on life in simple packages. Giving credit where it&amp;rsquo;s due, this &amp;ldquo;joke&amp;rdquo; is adapted from 
-&lt;a href=&#34;https://www.goodreads.com/book/show/1618.The_Curious_Incident_of_the_Dog_in_the_Night_Time&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;The Curious Case of the Dog in the Night-Time&lt;/em&gt;&lt;/a&gt; by Mark Haddon and the art style takes after 
-&lt;a href=&#34;https://www.instagram.com/poorlydrawnlines/?hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poorlydrawnlines&lt;/a&gt; by Reza Farazmand. In living out 
-&lt;a href=&#34;https://www.alabasterco.com/blogs/articles/all-that-is-made&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;generous making&lt;/a&gt;, this comic is available as a high resolution &lt;a href=&#34;https://jdaymude.github.io/files/the-three-academics-highres.png&#34; target=&#34;_blank&#34;&gt;PNG&lt;/a&gt; or &lt;a href=&#34;https://jdaymude.github.io/files/the-three-academics.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; for you to use as you&amp;rsquo;d like. (Just keep my authorship in the corner intact, please!)&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/the-three-academics/the-three-academics-lowres_huc2345e23d7c9b85a48da5ce8d8476a68_168428_4f17334aea9310bd9c7aa31446707618.png 400w,
+               /post/the-three-academics/the-three-academics-lowres_huc2345e23d7c9b85a48da5ce8d8476a68_168428_141baf6ae9c3a125432b27dadfc380a3.png 760w,
+               /post/the-three-academics/the-three-academics-lowres_huc2345e23d7c9b85a48da5ce8d8476a68_168428_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/the-three-academics/the-three-academics-lowres_huc2345e23d7c9b85a48da5ce8d8476a68_168428_4f17334aea9310bd9c7aa31446707618.png&#34;
+               width=&#34;587&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;This is my first contribution to the world of webcomics, a medium I&amp;rsquo;ve long admired for being able to deliver witty, weird reflections on life in simple packages. Giving credit where it&amp;rsquo;s due, this &amp;ldquo;joke&amp;rdquo; is adapted from &lt;a href=&#34;https://www.goodreads.com/book/show/1618.The_Curious_Incident_of_the_Dog_in_the_Night_Time&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;The Curious Case of the Dog in the Night-Time&lt;/em&gt;&lt;/a&gt; by Mark Haddon and the art style takes after &lt;a href=&#34;https://www.instagram.com/poorlydrawnlines/?hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poorlydrawnlines&lt;/a&gt; by Reza Farazmand. In living out &lt;a href=&#34;https://www.alabasterco.com/blogs/articles/all-that-is-made&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;generous making&lt;/a&gt;, this comic is available as a high resolution &lt;a href=&#34;https://jdaymude.github.io/files/the-three-academics-highres.png&#34; target=&#34;_blank&#34;&gt;PNG&lt;/a&gt; or &lt;a href=&#34;https://jdaymude.github.io/files/the-three-academics.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; for you to use as you&amp;rsquo;d like. (Just keep my authorship in the corner intact, please!)&lt;/p&gt;
 &lt;p&gt;And hey, to the economists out there: if you&amp;rsquo;ve got any good roasts of mathematicians, I&amp;rsquo;m all ears.&lt;/p&gt;
 </description>
     </item>
@@ -571,15 +486,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
       <description>&lt;p&gt;Health insurance is confusing. Last year, after Annie and I got married and she started a new job, she came home from orientation day with &lt;em&gt;the book&lt;/em&gt;. The book of health insurance plans, complete with overcomplicated tables of costs and percentages, interspersed with pictures of smiling people. I assume they&amp;rsquo;re smiling either to make me — the daunted reader — feel assured, or because they know they&amp;rsquo;d be screwed in the U.S. without health insurance. But that&amp;rsquo;s another issue.&lt;/p&gt;
 &lt;h2 id=&#34;choices-choices&#34;&gt;Choices, Choices&lt;/h2&gt;
 &lt;p&gt;The problem with displaying a health insurance plan using many tables is that it&amp;rsquo;s very difficult to make comparisons between plans. One plan might be more costly than another in certain categories but not in others. One might have a low deductible while the other has a high co-pay. Yet a third plan might have a very middling premium and comes with a Flexible Savings Account. Even if I know what all these terms mean and how they interact with one another, it&amp;rsquo;s still hard to discern which would be best for our family&amp;rsquo;s specific health needs. And, to top it all off, I can&amp;rsquo;t know if I&amp;rsquo;m getting a good deal since insurance rates are negotiated between insurance companies and employers, and there&amp;rsquo;s very little info available online to compare with.&lt;/p&gt;
-&lt;p&gt;This, I think, is where uncertainty sets in and some word-of-mouth advice can end up replacing mathematical reasoning for some people. (Or, for those who grew up in the 2000s, maybe you have a vaguely negative feeling about HMOs because of 
-&lt;a href=&#34;https://youtu.be/MHQnTZ2hAgI?t=52&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Melman&lt;/a&gt; from &lt;em&gt;Madagascar&lt;/em&gt;.) But Annie and I wanted grounded answers, so we went to our whiteboard, scribbled a ton of math and graphs, argued about said scribbles, eventually came to realize we agreed about everything we were arguing over (classic), and got to work.&lt;/p&gt;
-
-
-
-
-
-  
-  
+&lt;p&gt;This, I think, is where uncertainty sets in and some word-of-mouth advice can end up replacing mathematical reasoning for some people. (Or, for those who grew up in the 2000s, maybe you have a vaguely negative feeling about HMOs because of &lt;a href=&#34;https://youtu.be/MHQnTZ2hAgI?t=52&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Melman&lt;/a&gt; from &lt;em&gt;Madagascar&lt;/em&gt;.) But Annie and I wanted grounded answers, so we went to our whiteboard, scribbled a ton of math and graphs, argued about said scribbles, eventually came to realize we agreed about everything we were arguing over (classic), and got to work.&lt;/p&gt;
 
 
 
@@ -591,19 +498,20 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;4032&#34; height=&#34;3024&#34;&gt;
-&lt;/a&gt;
 
 
 
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_f92de1d39274d52eab009233a5251cc7.jpg 400w,
+               /post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_fac9f84bfcf7f6286e25144152f470f9.jpg 760w,
+               /post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/surechoice/whiteboard_hu33e8a36b393a6ce43c03d74995a3870c_1598695_f92de1d39274d52eab009233a5251cc7.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;cutting-through-the-jargon&#34;&gt;Cutting Through the Jargon&lt;/h2&gt;
 &lt;p&gt;A big part of this for me was simply understanding what all these health insurance words meant. Here&amp;rsquo;s what I learned (feel free to skip if you know this already).&lt;/p&gt;
 &lt;ul&gt;
@@ -642,8 +550,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -653,21 +559,17 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_2000x2000_fit_q90_lanczos.jpg&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_2000x2000_fit_q90_lanczos.jpg&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1416&#34; height=&#34;1190&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_ed59721bec3e451d74a7c7adabbe595b.jpg 400w,
+               /post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_29b3023b91b6cee84897f22e9f93c532.jpg 760w,
+               /post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/surechoice/piecewise_hud87a9595c36e2e9b086233bf7e273ba5_88289_ed59721bec3e451d74a7c7adabbe595b.jpg&#34;
+               width=&#34;760&#34;
+               height=&#34;638&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Once Annie and I saw this, we realized we could plot all of our plan options onto one graph and immediately be able to see what would cost us the most depending on the medical costs we incurred. We only needed to add in the annual premium costs to see a decent approximation of everything we&amp;rsquo;d spend on health insurance in a year with each plan.&lt;/p&gt;
 &lt;h2 id=&#34;building-surechoice&#34;&gt;Building SureChoice&lt;/h2&gt;
 &lt;p&gt;I quickly threw together some MATLAB code to compute and plot the piecewise cost function for each of our possible plans. What we found cut straight through the sales language in our plans booklet and made everything quite concrete: the best plan for us had everything to do with the medical costs we would have. Here&amp;rsquo;s an example plot:&lt;/p&gt;
@@ -676,8 +578,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -687,24 +587,19 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1440&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_61711b061c8e55c32016071282505406.png 400w,
+               /post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_e43fee18d0a2bab560721d4ba8c3f192.png 760w,
+               /post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/surechoice/featured_hud85f394eef86c84953f26804802d17b0_140831_61711b061c8e55c32016071282505406.png&#34;
+               width=&#34;760&#34;
+               height=&#34;570&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Every line in the plot shows how expensive that plan would be if we had the total annual medical costs shown on the x-axis. The HMO plan (blue), for example, is almost always the most expensive plan (except for the $\$3000$–$\$9000$ range, where it&amp;rsquo;s better than the HDHP plan). If we knew we were going to have over $\$30000$ in costs, the HDHP plan is the best. If we were going to have under $\$5000$ in costs, everything but the HMO plan is roughly the same. The EPO plan basically wins out in all other cost ranges. All in all, this kind of visualization helped us to make the most cost-effective choice for our expected medical expenses.&lt;/p&gt;
-&lt;p&gt;I&amp;rsquo;ve recently cleaned up my code, ported it to Python, and put it up on 
-&lt;a href=&#34;https://github.com/jdaymude/SureChoice&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; for anyone to use (&amp;hellip;assuming you know how to run Python code). Hopefully it can help you like it helped us, and if you have the skills to turn this into something easier to use (a web app, etc.) go for it! We might not be able to change these confusing systems, but we can at least make them easier to navigate.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve recently cleaned up my code, ported it to Python, and put it up on &lt;a href=&#34;https://github.com/jdaymude/SureChoice&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt; for anyone to use (&amp;hellip;assuming you know how to run Python code). Hopefully it can help you like it helped us, and if you have the skills to turn this into something easier to use (a web app, etc.) go for it! We might not be able to change these confusing systems, but we can at least make them easier to navigate.&lt;/p&gt;
 </description>
     </item>
     
@@ -713,16 +608,10 @@ Perhaps if this technique were widely used, we would all be that much closer to 
       <link>https://jdaymude.github.io/post/git-going-with-gitkraken/</link>
       <pubDate>Tue, 22 Jan 2019 12:40:00 -0700</pubDate>
       <guid>https://jdaymude.github.io/post/git-going-with-gitkraken/</guid>
-      <description>&lt;p&gt;Our team over at the 
-&lt;a href=&#34;https://sops.engineering.asu.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SOPS Lab&lt;/a&gt; has been writing a lot of code lately as part of an ongoing effort to make our AmoebotSim simulator publicly available through an open source release. There&amp;rsquo;s a lot of diversity in coding/software engineering experience among our team members — from finishing a first course in C++ to completing several internships in big tech — so I&amp;rsquo;ve been spending some time thinking about how to make on-boarding easier, forming new students into conceptual thinkers and proficient programmers as quickly as possible. This tutorial on the basics of Git is meant to help with that.&lt;/p&gt;
+      <description>&lt;p&gt;Our team over at the &lt;a href=&#34;https://sops.engineering.asu.edu/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SOPS Lab&lt;/a&gt; has been writing a lot of code lately as part of an ongoing effort to make our AmoebotSim simulator publicly available through an open source release. There&amp;rsquo;s a lot of diversity in coding/software engineering experience among our team members — from finishing a first course in C++ to completing several internships in big tech — so I&amp;rsquo;ve been spending some time thinking about how to make on-boarding easier, forming new students into conceptual thinkers and proficient programmers as quickly as possible. This tutorial on the basics of Git is meant to help with that.&lt;/p&gt;
 &lt;h2 id=&#34;necessary-disclaimers&#34;&gt;Necessary Disclaimers&lt;/h2&gt;
-&lt;p&gt;We have to get two things out of the way up front. First, this is not really the &amp;ldquo;accessible to anyone, technical or not&amp;rdquo; kind of post that I usually aim for. While it is meant to be simpler than the average Git tutorial, it&amp;rsquo;s still going to talk about software skills that are, by nature, technical. Speaking of other Git tutorials: yes, I do know how many Git tutorials already exist. Many of them are ones I&amp;rsquo;ve learned from and am inspired by. Some are far more 
-&lt;a href=&#34;https://jwiegley.github.io/git-from-the-bottom-up/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;complete&lt;/a&gt;, more 
-&lt;a href=&#34;https://chris.beams.io/posts/git-commit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specific&lt;/a&gt;, more 
-&lt;a href=&#34;https://www.atlassian.com/git/tutorials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;polished&lt;/a&gt;, and even more 
-&lt;a href=&#34;https://www.youtube.com/watch?v=1ffBJ4sVUb4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;craftsy&lt;/a&gt; than what I intend to do here. The point of this tutorial is to distill all that wonderful material into something that gets students (and other newcomers) acquainted with basic Git concepts and comfortable with a great Git client all in one sitting.&lt;/p&gt;
-&lt;p&gt;As a last bit of housekeeping, I&amp;rsquo;d like to credit Rachel M. Carmena, whose 
-&lt;a href=&#34;https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;methodology&lt;/a&gt; I&amp;rsquo;m following quite closely.&lt;/p&gt;
+&lt;p&gt;We have to get two things out of the way up front. First, this is not really the &amp;ldquo;accessible to anyone, technical or not&amp;rdquo; kind of post that I usually aim for. While it is meant to be simpler than the average Git tutorial, it&amp;rsquo;s still going to talk about software skills that are, by nature, technical. Speaking of other Git tutorials: yes, I do know how many Git tutorials already exist. Many of them are ones I&amp;rsquo;ve learned from and am inspired by. Some are far more &lt;a href=&#34;https://jwiegley.github.io/git-from-the-bottom-up/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;complete&lt;/a&gt;, more &lt;a href=&#34;https://chris.beams.io/posts/git-commit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;specific&lt;/a&gt;, more &lt;a href=&#34;https://www.atlassian.com/git/tutorials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;polished&lt;/a&gt;, and even more &lt;a href=&#34;https://www.youtube.com/watch?v=1ffBJ4sVUb4&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;craftsy&lt;/a&gt; than what I intend to do here. The point of this tutorial is to distill all that wonderful material into something that gets students (and other newcomers) acquainted with basic Git concepts and comfortable with a great Git client all in one sitting.&lt;/p&gt;
+&lt;p&gt;As a last bit of housekeeping, I&amp;rsquo;d like to credit Rachel M. Carmena, whose &lt;a href=&#34;https://rachelcarmena.github.io/2018/12/12/how-to-teach-git.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;methodology&lt;/a&gt; I&amp;rsquo;m following quite closely.&lt;/p&gt;
 &lt;h2 id=&#34;gits-view-of-the-world&#34;&gt;Git&amp;rsquo;s View of the World&lt;/h2&gt;
 &lt;p&gt;Git sees a software project loosely like this:&lt;/p&gt;
 
@@ -730,8 +619,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -741,29 +628,23 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1042&#34; height=&#34;527&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_7360b822a929d24f70068d4ba74e6029.png 400w,
+               /post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_d485b9b5f2f65f943f1826f85f9c9afd.png 760w,
+               /post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview1_hub13eecc48a7da159c36df9e38fb25fc7_21091_7360b822a929d24f70068d4ba74e6029.png&#34;
+               width=&#34;760&#34;
+               height=&#34;384&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Big picture: there&amp;rsquo;s the remote server that houses the full software project and all the changes that have been made to it so far, and then there&amp;rsquo;s your computer where you implement new features and code changes. Now, Git is usually used when writing software collaboratively, so while the above picture is all that you have to worry about, the real setting is more like this:&lt;/p&gt;
 
 
 
 
 
-  
-  
 
 
 
@@ -773,35 +654,24 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1293&#34; height=&#34;555&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_d91519c499ddd497f2e745872d24540b.png 400w,
+               /post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_b38b1f73815419bd936e5845416f87e4.png 760w,
+               /post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview2_huc8ef78e1cac3bdcd4fd7c5ce51e22d60_35358_d91519c499ddd497f2e745872d24540b.png&#34;
+               width=&#34;760&#34;
+               height=&#34;326&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;hold-up-whats-git&#34;&gt;Hold Up, What&amp;rsquo;s Git?&lt;/h2&gt;
 &lt;p&gt;Git is just a piece of software that&amp;rsquo;s openly available for anyone to use. (Aside: it&amp;rsquo;s not a company or something that&amp;rsquo;s sold commercially, though this is often confusing because of companies/services like GitHub and GitLab). The problem Git is trying to solve, informally, is to support many people editing the same set of files concurrently while causing as few conflicts and headaches as possible. You might recognize that Google Docs and Dropbox try to solve a similar problem, but with a different strategy that makes them poorly suited for software development. Imagine for a moment that you were trying to use Google Docs for writing real code. Say you&amp;rsquo;ve been up all night working on a cool new feature, tracking down all its subtle and frustrating bugs, and now you want to compile and test it one last time to make sure it&amp;rsquo;s all good to go.&lt;/p&gt;
 &lt;p&gt;But right as you go to compile, your teammate gets in there and starts writing some other code, which naturally isn&amp;rsquo;t complete yet and doesn&amp;rsquo;t build! What do you do? Do you hit them up on Slack and ask them to stop coding while you test your feature? (If so, that essentially means only one person can be working at a time). Do you just keep trying to compile over and over until you get lucky and it builds? (If problems arise in testing, you won&amp;rsquo;t be sure if it&amp;rsquo;s your code that&amp;rsquo;s causing issues or someone else&amp;rsquo;s). This is nightmarish and no one does this. (I hope).&lt;/p&gt;
-&lt;p&gt;Git is an example of &lt;em&gt;distributed version control software&lt;/em&gt;, a type of software meant to make these kinds of situations much easier to handle by giving each user more control over their own version of the files and when to incorporate the changes made by other people. (For the record, there are 
-&lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_version-control_software#Distributed_model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;other choices&lt;/a&gt; for distributed version control, but Git is by far the most popular).&lt;/p&gt;
+&lt;p&gt;Git is an example of &lt;em&gt;distributed version control software&lt;/em&gt;, a type of software meant to make these kinds of situations much easier to handle by giving each user more control over their own version of the files and when to incorporate the changes made by other people. (For the record, there are &lt;a href=&#34;https://en.wikipedia.org/wiki/List_of_version-control_software#Distributed_model&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;other choices&lt;/a&gt; for distributed version control, but Git is by far the most popular).&lt;/p&gt;
 &lt;h2 id=&#34;tools-of-the-trade&#34;&gt;Tools of the Trade&lt;/h2&gt;
-&lt;p&gt;In Git, the remote repository contains the current version of the shared code. Remote repositories can be set up on any server (or even your own workstation), but most people prefer to use a service like 
-&lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;, 
-&lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bitbucket&lt;/a&gt;, or 
-&lt;a href=&#34;https://about.gitlab.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab&lt;/a&gt; to host their projects for them, which makes life easier. Think of it like this: GitHub is to Git repositories as WordPress is to websites. You can certainly host your own website, but using a service like WordPress saves you the trouble of maintaining a web server yourself. Our team uses Bitbucket for our AmoebotSim project, so that&amp;rsquo;s what&amp;rsquo;ll be in the screenshots.&lt;/p&gt;
-&lt;p&gt;An additional way to simplify using Git is to get a nice Git client like 
-&lt;a href=&#34;https://www.gitkraken.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitKraken&lt;/a&gt; or 
-&lt;a href=&#34;https://desktop.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Desktop&lt;/a&gt; instead of interfacing with Git on the 
-&lt;a href=&#34;https://blog.axosoft.com/gitkraken-vs-cli/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;command line&lt;/a&gt; (which many hardcore users will tell you is the only way to &lt;em&gt;really&lt;/em&gt; learn Git). Using the website analogy again, Git clients are to Git repositories like themes and rich-text editors are to websites. Could you put a stellar website together writing your own HTML, CSS, and JavaScript? Sure. Would you learn a lot more about how websites work doing it this way? Of course. But it takes a lot longer, and there&amp;rsquo;s much more room to make mistakes. In general, Git clients make understanding your repository a breeze with nice graphical representations and controls. I&amp;rsquo;ll be using GitKraken here, and I highly recommend you do too!&lt;/p&gt;
+&lt;p&gt;In Git, the remote repository contains the current version of the shared code. Remote repositories can be set up on any server (or even your own workstation), but most people prefer to use a service like &lt;a href=&#34;https://github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub&lt;/a&gt;, &lt;a href=&#34;https://bitbucket.org/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bitbucket&lt;/a&gt;, or &lt;a href=&#34;https://about.gitlab.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitLab&lt;/a&gt; to host their projects for them, which makes life easier. Think of it like this: GitHub is to Git repositories as WordPress is to websites. You can certainly host your own website, but using a service like WordPress saves you the trouble of maintaining a web server yourself. Our team uses Bitbucket for our AmoebotSim project, so that&amp;rsquo;s what&amp;rsquo;ll be in the screenshots.&lt;/p&gt;
+&lt;p&gt;An additional way to simplify using Git is to get a nice Git client like &lt;a href=&#34;https://www.gitkraken.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitKraken&lt;/a&gt; or &lt;a href=&#34;https://desktop.github.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;GitHub Desktop&lt;/a&gt; instead of interfacing with Git on the &lt;a href=&#34;https://blog.axosoft.com/gitkraken-vs-cli/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;command line&lt;/a&gt; (which many hardcore users will tell you is the only way to &lt;em&gt;really&lt;/em&gt; learn Git). Using the website analogy again, Git clients are to Git repositories like themes and rich-text editors are to websites. Could you put a stellar website together writing your own HTML, CSS, and JavaScript? Sure. Would you learn a lot more about how websites work doing it this way? Of course. But it takes a lot longer, and there&amp;rsquo;s much more room to make mistakes. In general, Git clients make understanding your repository a breeze with nice graphical representations and controls. I&amp;rsquo;ll be using GitKraken here, and I highly recommend you do too!&lt;/p&gt;
 &lt;h2 id=&#34;cloning-a-repository&#34;&gt;Cloning a Repository&lt;/h2&gt;
 &lt;p&gt;Getting a copy of a repository from a remote server onto your machine is called &lt;em&gt;cloning&lt;/em&gt; a repository.&lt;/p&gt;
 
@@ -809,8 +679,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -820,21 +688,17 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1038&#34; height=&#34;527&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_bfb4883daee032c89f9563c0b177930c.png 400w,
+               /post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_33cc21783cc1f53b5be6f9ba6ca975f9.png 760w,
+               /post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/featured_hu8b2ce5082bc18ebcc1bb4ed8ae5cc997_25331_bfb4883daee032c89f9563c0b177930c.png&#34;
+               width=&#34;760&#34;
+               height=&#34;386&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Cloning makes a copy of the remote repository to your local repository. This not only includes the most recent version of the files but also the entire version history (list of changes) for every file, who made those changes, when those changes were made, and all the different &lt;em&gt;branches&lt;/em&gt; of those files that your collaborators may be working on (we&amp;rsquo;ll come back to branching in a future post). The clone operation also puts the most recent version of the files in your working directory, where you can open them up in your file system and start making changes.&lt;/p&gt;
 &lt;p&gt;This is pretty easy to do with GitKraken:&lt;/p&gt;
 
@@ -842,8 +706,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -853,34 +715,18 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/cloneurl_hu88767fc4f30b03d661e088fef7bbea0c_1378198_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/cloneurl_hu88767fc4f30b03d661e088fef7bbea0c_1378198_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1920&#34; height=&#34;1036&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;div class=&#34;alert alert-warning&#34;&gt;
-  &lt;div&gt;
-    These GIFs are supposed to animate, but this is currently an &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5030&#34;&gt;open issue&lt;/a&gt; with Hugo. I&amp;rsquo;ll update this when the issue is fixed.
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/cloneurl.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;And it&amp;rsquo;s even easier if you&amp;rsquo;ve already signed into your hosting platform (e.g., Bitbucket) in GitKraken:&lt;/p&gt;
 
 
 
 
 
-  
-  
 
 
 
@@ -890,21 +736,12 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/clonebitbucket_hu61ae0670c5c4b7a187bbbb5430688efa_1263001_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/clonebitbucket_hu61ae0670c5c4b7a187bbbb5430688efa_1263001_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1270&#34; height=&#34;887&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/clonebitbucket.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;making-and-submitting-changes&#34;&gt;Making and Submitting Changes&lt;/h2&gt;
 &lt;p&gt;Now that the code is in my working directory, I can make my edits. From Git&amp;rsquo;s perspective, changes can either be &lt;em&gt;tracked&lt;/em&gt;, meaning Git knows about them, or &lt;em&gt;untracked&lt;/em&gt;, meaning the changes are in new files that haven&amp;rsquo;t been added to Git yet. Either way, I can add all the changes I&amp;rsquo;ve made to Git&amp;rsquo;s &lt;em&gt;staging area&lt;/em&gt; in a process called &lt;em&gt;staging&lt;/em&gt;:&lt;/p&gt;
 
@@ -912,8 +749,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -923,30 +758,40 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_d55a385144b2101df929760642d8b972.png 400w,
+               /post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_7a15de763dbe4ef89f778f803435d287.png 760w,
+               /post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_d55a385144b2101df929760642d8b972.png&#34;
+               width=&#34;760&#34;
+               height=&#34;389&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;To illustrate this, I&amp;rsquo;ll be adding license and copyright information to AmoebotSim (a &lt;a href=&#34;https://choosealicense.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;very important&lt;/a&gt; part of going open source). I&amp;rsquo;ll be making these edits in three parts: (1) adding a LICENSE file, (2) adding a copyright notice to our main.cpp file, and (3) adding an abbreviated copyright notice to the other source files. Adding the LICENSE file will initially be an untracked change (it&amp;rsquo;s a new file), while the other changes that edit existing files will be tracked.&lt;/p&gt;
 
 
-&lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_2000x2000_fit_lanczos_2.png&#34; &gt;
 
 
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview4_hu256a8b59baa77d267bac69972f20125b_45816_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1881&#34; height=&#34;963&#34;&gt;
-&lt;/a&gt;
 
 
 
-&lt;/figure&gt;
 
-&lt;p&gt;To illustrate this, I&amp;rsquo;ll be adding license and copyright information to AmoebotSim (a 
-&lt;a href=&#34;https://choosealicense.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;very important&lt;/a&gt; part of going open source). I&amp;rsquo;ll be making these edits in three parts: (1) adding a LICENSE file, (2) adding a copyright notice to our main.cpp file, and (3) adding an abbreviated copyright notice to the other source files. Adding the LICENSE file will initially be an untracked change (it&amp;rsquo;s a new file), while the other changes that edit existing files will be tracked.&lt;/p&gt;
 
 
 
 
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/editstage.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Now that the changes are staged, we can &lt;em&gt;commit&lt;/em&gt; them to our local repository. A commit is essentially a batch of changes with a description known as a &lt;em&gt;commit message&lt;/em&gt;. In general, a commit message should clearly and concisely describe the changes its commit contains (see &lt;a href=&#34;https://chris.beams.io/posts/git-commit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this post&lt;/a&gt; for best practices). Once that message is done, we can commit, adding our changes to the version history.&lt;/p&gt;
 
-  
-  
 
 
 
@@ -958,60 +803,25 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-&lt;figure &gt;
 
 
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/editstage_hu72ef1d6834c1591d8efffa868800f53e_1005933_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/editstage_hu72ef1d6834c1591d8efffa868800f53e_1005933_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2523&#34; height=&#34;1619&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;Now that the changes are staged, we can &lt;em&gt;commit&lt;/em&gt; them to our local repository. A commit is essentially a batch of changes with a description known as a &lt;em&gt;commit message&lt;/em&gt;. In general, a commit message should clearly and concisely describe the changes its commit contains (see 
-&lt;a href=&#34;https://chris.beams.io/posts/git-commit/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this post&lt;/a&gt; for best practices). Once that message is done, we can commit, adding our changes to the version history.&lt;/p&gt;
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1884&#34; height=&#34;956&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_32366a24bf4432ea41a9e035508d6acc.png 400w,
+               /post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_6b5c7ea27f3cac04681e14f518c79a73.png 760w,
+               /post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview5_huf9ac3978c316dd0c10eb7a03f5514ebe_45225_32366a24bf4432ea41a9e035508d6acc.png&#34;
+               width=&#34;760&#34;
+               height=&#34;386&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;This is, per usual, easy to do and visualize in GitKraken:&lt;/p&gt;
 
 
 
 
 
-  
-  
 
 
 
@@ -1021,29 +831,38 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/commit_hu4ee087eae0050b5d158cfb372d84b967_726365_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/commit_hu4ee087eae0050b5d158cfb372d84b967_726365_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2523&#34; height=&#34;1619&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/commit.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;But committing only puts our changes in the local repository (shown by the little computer icon in GitKraken), not the remote repository where everyone else can see them (shown by the profile picture of the repository owner). Updating the remote repository with new commits from our local repository is called &lt;em&gt;pushing&lt;/em&gt;.&lt;/p&gt;
 
 
 
 
 
-  
-  
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_b901406f732b82d5e85c7cf0f75a9324.png 400w,
+               /post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_798e0c2aae30b63f381e0ecfb14ff091.png 760w,
+               /post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_b901406f732b82d5e85c7cf0f75a9324.png&#34;
+               width=&#34;760&#34;
+               height=&#34;387&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 
 
 
@@ -1055,50 +874,15 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview6_hu3a415b6ddcf0e96dab0cfcc3331ab0d8_45316_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1880&#34; height=&#34;957&#34;&gt;
-&lt;/a&gt;
 
 
 
-&lt;/figure&gt;
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/push_hubd8f869157e9186c3221db1f52038603_600533_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/push_hubd8f869157e9186c3221db1f52038603_600533_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2523&#34; height=&#34;1619&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/push.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Once commits have been pushed, they&amp;rsquo;re out there for other repository members to see and use. Be sure that your code builds and is bug-free before you commit and push; otherwise, you&amp;rsquo;ll break everyone else&amp;rsquo;s builds and get a lot of angry messages asking you to fix your issues quickly! (There are ways to mitigate these kinds of problems, like branch/fork-based workflows with approval processes, but I&amp;rsquo;m saving those more advanced topics for a future post).&lt;/p&gt;
 &lt;h2 id=&#34;getting-other-peoples-changes&#34;&gt;Getting Other People&amp;rsquo;s Changes&lt;/h2&gt;
 &lt;p&gt;Say that you were offline for a couple hours (or days…) and are just returning to your project. Your teammates may have committed and pushed code while you were away, and you want to get all their changes. Git gives you two ways to do this: &lt;em&gt;fetch&lt;/em&gt; and &lt;em&gt;pull&lt;/em&gt;.&lt;/p&gt;
@@ -1108,8 +892,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -1119,22 +901,18 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1035&#34; height=&#34;526&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;p&gt;This can potentially cause &lt;em&gt;merge conflicts&lt;/em&gt; if both you and your teammates&amp;rsquo; commits changed the same lines of code. (Although, to be honest, Git can get confused and think all kinds of things are &amp;ldquo;conflicts&amp;rdquo; even when they&amp;rsquo;re not, so watch out for that). Thankfully, GitKraken has a slick tool for helping you fix your merge conflicts (this was, by far, the #1 reason our team recently switched to GitKraken from Sourcetree):&lt;/p&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_e9c0671a88849a00d6207fcf96c624ee.png 400w,
+               /post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_4e9a143f269b6651d98aab62d3085948.png 760w,
+               /post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview7_huac5dddf64e5f42c1357b0a6fce4de759_25204_e9c0671a88849a00d6207fcf96c624ee.png&#34;
+               width=&#34;760&#34;
+               height=&#34;386&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;This can potentially cause &lt;em&gt;merge conflicts&lt;/em&gt; if both you and your teammates&#39; commits changed the same lines of code. (Although, to be honest, Git can get confused and think all kinds of things are &amp;ldquo;conflicts&amp;rdquo; even when they&amp;rsquo;re not, so watch out for that). Thankfully, GitKraken has a slick tool for helping you fix your merge conflicts (this was, by far, the #1 reason our team recently switched to GitKraken from Sourcetree):&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/R1iWJNyRpQE&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -1147,8 +925,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -1158,29 +934,23 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1036&#34; height=&#34;528&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_e017a8286fecac1023bf59a73998c9af.png 400w,
+               /post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_81a9a5c9f5696502450ba90476d9783c.png 760w,
+               /post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/overview8_hubd69aaa45d75cd156217dc1d4527d004_25115_e017a8286fecac1023bf59a73998c9af.png&#34;
+               width=&#34;760&#34;
+               height=&#34;387&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;In GitKraken, both fetching and pulling can be performed using the top toolbar. The following example shows a pull, though you can see for a brief moment how it first fetches the new commit before merging it in.&lt;/p&gt;
 
 
 
 
 
-  
-  
 
 
 
@@ -1190,21 +960,12 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/pull_hu0b3e34fdb26186edc7251f8f2c58e820_774784_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/pull_hu0b3e34fdb26186edc7251f8f2c58e820_774784_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;2531&#34; height=&#34;1589&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/post/git-going-with-gitkraken/pull.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;h2 id=&#34;git-out-there&#34;&gt;Git Out There&lt;/h2&gt;
 &lt;p&gt;I&amp;rsquo;ve covered the rudimentary operations of Git and how to do them in GitKraken, but there&amp;rsquo;s much more to learn! In a future post I hope to cover branch/fork-based workflows, pull requests, and rebasing, all of which can play a role in using Git for larger projects.&lt;/p&gt;
 &lt;p&gt;As always, I welcome your feedback and questions. Happy coding!&lt;/p&gt;
@@ -1216,8 +977,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
       <link>https://jdaymude.github.io/post/oh-the-places-youll-go/</link>
       <pubDate>Fri, 21 Dec 2018 12:15:00 -0700</pubDate>
       <guid>https://jdaymude.github.io/post/oh-the-places-youll-go/</guid>
-      <description>&lt;p&gt;As a PhD student, I get to travel quite a bit. In just the last two years, I&amp;rsquo;ve been to Atlanta (a few times, once as a visiting researcher to GaTech for 3 months), Austin, Vienna, Dagstuhl, and — most recently — Tokyo. I get to meet interesting researchers on every trip, whether it be during a conference coffee break (where &amp;ldquo;meeting&amp;rdquo; people occasionally feels like getting interrogated about research) or by running into each other while meandering through a 
-&lt;a href=&#34;https://www.japan-guide.com/e/e3034_001.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;national park&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;As a PhD student, I get to travel quite a bit. In just the last two years, I&amp;rsquo;ve been to Atlanta (a few times, once as a visiting researcher to GaTech for 3 months), Austin, Vienna, Dagstuhl, and — most recently — Tokyo. I get to meet interesting researchers on every trip, whether it be during a conference coffee break (where &amp;ldquo;meeting&amp;rdquo; people occasionally feels like getting interrogated about research) or by running into each other while meandering through a &lt;a href=&#34;https://www.japan-guide.com/e/e3034_001.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;national park&lt;/a&gt;.&lt;/p&gt;
 
 &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
   &lt;iframe src=&#34;https://www.youtube.com/embed/vyza5tbx-qc&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
@@ -1240,8 +1000,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
       <link>https://jdaymude.github.io/post/on-your-marks-get-set-coat/</link>
       <pubDate>Mon, 11 Dec 2017 09:05:00 -0700</pubDate>
       <guid>https://jdaymude.github.io/post/on-your-marks-get-set-coat/</guid>
-      <description>&lt;p&gt;My first journal paper was 
-&lt;a href=&#34;http://rdcu.be/zOaK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;published&lt;/a&gt; early last week, marking a milestone in the winding forest path that is my PhD. The paper has some nice ideas and results I&amp;rsquo;m proud of, but — regrettably — the writing style and level of mathematical rigor needed for publication can make it pretty hard to decipher for anyone not familiar with our niche of computer science. I&amp;rsquo;m of the opinion that ideas are only useful if people can understand them, so to that end I&amp;rsquo;m going to explain this paper in a way that&amp;rsquo;s a bit less formal and academic. With a little effort, I think we&amp;rsquo;ll both learn something new here. (And if it&amp;rsquo;s still all Greek to you, I&amp;rsquo;ll happily answer questions you leave in the comments).&lt;/p&gt;
+      <description>&lt;p&gt;My first journal paper was &lt;a href=&#34;http://rdcu.be/zOaK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;published&lt;/a&gt; early last week, marking a milestone in the winding forest path that is my PhD. The paper has some nice ideas and results I&amp;rsquo;m proud of, but — regrettably — the writing style and level of mathematical rigor needed for publication can make it pretty hard to decipher for anyone not familiar with our niche of computer science. I&amp;rsquo;m of the opinion that ideas are only useful if people can understand them, so to that end I&amp;rsquo;m going to explain this paper in a way that&amp;rsquo;s a bit less formal and academic. With a little effort, I think we&amp;rsquo;ll both learn something new here. (And if it&amp;rsquo;s still all Greek to you, I&amp;rsquo;ll happily answer questions you leave in the comments).&lt;/p&gt;
 &lt;h2 id=&#34;the-nickel-version-tldr&#34;&gt;The Nickel Version (TL;DR)&lt;/h2&gt;
 &lt;p&gt;The paper (whose title is mathy and unimportant) is all about programming futuristic, sci-fi materials that don&amp;rsquo;t exist yet to coat other objects in even layers as (relatively) fast as possible.&lt;/p&gt;
 &lt;h2 id=&#34;the-uh-dollar-version&#34;&gt;The, Uh, Dollar(?) Version&lt;/h2&gt;
@@ -1252,8 +1011,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-  
-  
 
 
 
@@ -1263,29 +1020,23 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1200&#34; height=&#34;500&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_463e832ee3e11f196d1a814633b6e635.png 400w,
+               /post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_43f7aed6ae179137eb8905b6c4b365d3.png 760w,
+               /post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_463e832ee3e11f196d1a814633b6e635.png&#34;
+               width=&#34;760&#34;
+               height=&#34;317&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;em&gt;Programmable matter&lt;/em&gt; broadly describes any kind of physical material that can change itself as a reaction to what&amp;rsquo;s around it without human interaction. It&amp;rsquo;s a bit sci-fi, but imagine a future in which roads fill their own potholes and cracks after wear and tear, clothes heal themselves from fraying and holes, or artificial cells isolate and neutralize malignant tumors in the human body. It sounds crazy and is definitely out there, but that&amp;rsquo;s what we&amp;rsquo;re talking about here.&lt;/p&gt;
 
 
 
 
 
-  
-  
 
 
 
@@ -1295,29 +1046,23 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1200&#34; height=&#34;500&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_01705d0dc4cb7b8051eef406ca66d3cb.png 400w,
+               /post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_ba5b21ab1a072095349a7a938d122ae6.png 760w,
+               /post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_01705d0dc4cb7b8051eef406ca66d3cb.png&#34;
+               width=&#34;760&#34;
+               height=&#34;317&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;&lt;em&gt;Universal Coating&lt;/em&gt; is the action we&amp;rsquo;re trying to do. In this context, we mean &amp;ldquo;coating&amp;rdquo; like a coat of paint; we want to cover something as evenly as possible. (Nobody likes a lumpy paint job). &amp;ldquo;Universal,&amp;rdquo; as a math word, means that a technique works in many/all cases. Here, we&amp;rsquo;re talking about a single approach to coating that works no matter what the object to be coated looks like. (Which is pretty cool).&lt;/p&gt;
 
 
 
 
 
-  
-  
 
 
 
@@ -1327,25 +1072,20 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_2000x2000_fit_lanczos_2.png&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_2000x2000_fit_lanczos_2.png&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;1200&#34; height=&#34;500&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_6ec75bda627dc562e11886e0a53097b5.png 400w,
+               /post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_9ada2ea019ee7f5cac346ca2d97982e1.png 760w,
+               /post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_6ec75bda627dc562e11886e0a53097b5.png&#34;
+               width=&#34;760&#34;
+               height=&#34;317&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;So, all together, this paper is about analyzing the speed of a particular approach to using futuristic materials for coating any kind of object in nice, even layers. (Ok, so even the one sentence wrap up is a mouthful). Also, a big thank you to Annie Carson for the great illustrations!&lt;/p&gt;
 &lt;h2 id=&#34;so-how-does-it-work&#34;&gt;So How Does It Work?&lt;/h2&gt;
-&lt;p&gt;I&amp;rsquo;m really glad you asked. Actually, I&amp;rsquo;m really glad you&amp;rsquo;re still here after that heavy appetizer of an overview; hopefully it didn&amp;rsquo;t spoil your appetite before our main course, which starts right now! Take a look at a simulation of the Universal Coating algorithm over on our 
-&lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#universalcoating&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lab site&lt;/a&gt;, and keep it open for the rest of this section so you can refer back to it.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m really glad you asked. Actually, I&amp;rsquo;m really glad you&amp;rsquo;re still here after that heavy appetizer of an overview; hopefully it didn&amp;rsquo;t spoil your appetite before our main course, which starts right now! Take a look at a simulation of the Universal Coating algorithm over on our &lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#universalcoating&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lab site&lt;/a&gt;, and keep it open for the rest of this section so you can refer back to it.&lt;/p&gt;
 &lt;p&gt;We need a bit of terminology before I explain what&amp;rsquo;s going on with all those dots and colors. There are two main &amp;ldquo;things&amp;rdquo; in this algorithm. Thing 1 is the &lt;em&gt;object&lt;/em&gt;, which is the cluster of dots with black circles in the middle. We&amp;rsquo;re keeping things nice and simple in this example by making the object a hexagon, but it can be essentially any shape you want (&amp;ldquo;universal&amp;rdquo;, remember?). Thing 2 is the &lt;em&gt;particle system&lt;/em&gt;, which are all the other dots that move around and change color. &amp;ldquo;Particle system&amp;rdquo; is just the term we use for the programmable matter stuff we talked about before: we&amp;rsquo;re trying to coat the object with these particles.&lt;/p&gt;
 &lt;p&gt;In really broad strokes, the algorithm can be broken down into four major steps:&lt;/p&gt;
 &lt;ol&gt;
@@ -1354,14 +1094,12 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 &lt;li&gt;Decide on a position to be the start/end of each layer. Choosing this &lt;em&gt;marker position&lt;/em&gt; plays a big role in helping the particles learn when one layer is finished so they can start forming the next one. In the video (0:02–0:07), this decision process is shown with the line segments around the object changing colors. At 0:07, the particle occupying the marker position turns a light grey color.&lt;/li&gt;
 &lt;li&gt;Coat the object in more layers one by one until all particles have been used. The video (0:08–0:20) shows this quite clearly, with finished particles turning green. The grey line of particles growing from the object towards the bottom are the particles from Step 3 which mark the start/end of each layer.&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;And that&amp;rsquo;s it! Perhaps as a point of pride, I have to mention that — although simple to describe — this algorithm is really involved. One of the main difficulties is that each particle runs this algorithm individually, so instead of Steps 1–4 happening nice and sequentially, they can actually all happen at once. And… yeah, it&amp;rsquo;s as chaotic as it sounds. The good news is that, in a 
-&lt;a href=&#34;https://sops.engineering.asu.edu/sops/universal-coating/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous paper&lt;/a&gt;, our group proved this algorithm always works, no matter what. Going forward, we&amp;rsquo;ll just take the fact that it works for granted.&lt;/p&gt;
+&lt;p&gt;And that&amp;rsquo;s it! Perhaps as a point of pride, I have to mention that — although simple to describe — this algorithm is really involved. One of the main difficulties is that each particle runs this algorithm individually, so instead of Steps 1–4 happening nice and sequentially, they can actually all happen at once. And… yeah, it&amp;rsquo;s as chaotic as it sounds. The good news is that, in a &lt;a href=&#34;https://sops.engineering.asu.edu/sops/universal-coating/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous paper&lt;/a&gt;, our group proved this algorithm always works, no matter what. Going forward, we&amp;rsquo;ll just take the fact that it works for granted.&lt;/p&gt;
 &lt;h2 id=&#34;quick-get-your-coat&#34;&gt;(Quick) Get Your Coat!&lt;/h2&gt;
 &lt;p&gt;I can&amp;rsquo;t remember how many times I got in the car to go somewhere as a kid only to be sent back inside to get a jacket. Mom never said the &amp;ldquo;quick&amp;rdquo; part, but it was definitely implied!&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;re going to shift our discussion to the real work of this new paper: proving that our Universal Coating algorithm runs reasonably fast. Let&amp;rsquo;s start with a motivating example for why you might do this kind of analysis:&lt;/p&gt;
 &lt;p&gt;Pretend there&amp;rsquo;s a secret technique for earning $1,000,000. Maybe it even comes with a guarantee that it will always work. We might get excited about something like that, or at least want to know more. But what if we found out that no one knew how long it would take to work? Or even worse, what if the fine print said it would take more days than the number of atoms in the universe? Well. We might still be waiting for our payout long after inflation turns a million dollars into pocket change, the cows come home, and the sun expands to consume the earth.&lt;/p&gt;
-&lt;p&gt;The lesson to be learned here: we need to know both that an algorithm works &lt;strong&gt;and&lt;/strong&gt; that it won&amp;rsquo;t take a ridiculously long time. So how do we analyze the algorithm&amp;rsquo;s runtime? There&amp;rsquo;s often more than one way to crack that coconut, but the techniques can get pretty involved. Even getting a mastery over the most fundamental techniques can take the larger part of most undergraduate Computer Science (CS) programs. (Fun fact: this side of CS doesn&amp;rsquo;t even have to involve programming, contrary to the popular belief that CS people are a bunch of tech support code monkeys. Yes, I probably can 
-&lt;a href=&#34;https://www.xkcd.com/627/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fix your iPhone&lt;/a&gt;. No, I didn&amp;rsquo;t learn that in school.)&lt;/p&gt;
+&lt;p&gt;The lesson to be learned here: we need to know both that an algorithm works &lt;strong&gt;and&lt;/strong&gt; that it won&amp;rsquo;t take a ridiculously long time. So how do we analyze the algorithm&amp;rsquo;s runtime? There&amp;rsquo;s often more than one way to crack that coconut, but the techniques can get pretty involved. Even getting a mastery over the most fundamental techniques can take the larger part of most undergraduate Computer Science (CS) programs. (Fun fact: this side of CS doesn&amp;rsquo;t even have to involve programming, contrary to the popular belief that CS people are a bunch of tech support code monkeys. Yes, I probably can &lt;a href=&#34;https://www.xkcd.com/627/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fix your iPhone&lt;/a&gt;. No, I didn&amp;rsquo;t learn that in school.)&lt;/p&gt;
 &lt;p&gt;To explain both why analyzing our particular algorithm was nasty and how we ended up doing it, I&amp;rsquo;ll use a quick allegory. Imagine a race between two teams: Team Red and Team Blue. Team Red works like a machine: everyone comes to practice and trains hard, they perform well in events, and — most importantly — they run in perfect lock step, starting together and finishing together. Team Blue, on the other hand, is more about the individual effort. They also perform well in events, but have a mix of sprinters, endurance runners, runners who like to stop and smell the roses, and so on. Some of Team Blue&amp;rsquo;s runners end up finishing really fast, while others take longer.&lt;/p&gt;
 &lt;p&gt;Our particle systems are, essentially, Team Blue. We don&amp;rsquo;t make any assumptions about how fast each particle works relative to the others, and it&amp;rsquo;s entirely possible that a particle can suddenly go faster or slower than usual without following a pattern. This makes it hard to figure out when the last Blue runner (or particle) will cross the finish line. So, instead of directly analyzing our system (Team Blue), we proved two things:&lt;/p&gt;
 &lt;ol&gt;
@@ -1370,9 +1108,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 &lt;/ol&gt;
 &lt;p&gt;Therefore, as a nice logical result, Team Blue also runs &amp;ldquo;fast&amp;rdquo;. In fact, it&amp;rsquo;s entirely possible it even runs &lt;em&gt;really&lt;/em&gt; fast!&lt;/p&gt;
 &lt;h2 id=&#34;good-job-out-there-get-some-water&#34;&gt;Good Job Out There, Get Some Water&lt;/h2&gt;
-&lt;p&gt;As a recap, we have an algorithm for programmable matter which coats objects of all shapes and sizes. We showed that this algorithm always works in an 
-&lt;a href=&#34;https://sops.engineering.asu.edu/sops/universal-coating/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;older paper&lt;/a&gt;, and that it runs pretty fast in this new 
-&lt;a href=&#34;http://rdcu.be/zOaK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;journal paper&lt;/a&gt;. This runtime analysis boiled down to showing that a simplified version of our particle system runs the algorithm quickly, and that the real particle system always runs it even faster. (For my CS people out there, we showed that the Universal Coating algorithm runs in $\mathcal{O}(n)$ asynchronous rounds with high probability, where $n$ is the number of particles in the system).&lt;/p&gt;
+&lt;p&gt;As a recap, we have an algorithm for programmable matter which coats objects of all shapes and sizes. We showed that this algorithm always works in an &lt;a href=&#34;https://sops.engineering.asu.edu/sops/universal-coating/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;older paper&lt;/a&gt;, and that it runs pretty fast in this new &lt;a href=&#34;http://rdcu.be/zOaK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;journal paper&lt;/a&gt;. This runtime analysis boiled down to showing that a simplified version of our particle system runs the algorithm quickly, and that the real particle system always runs it even faster. (For my CS people out there, we showed that the Universal Coating algorithm runs in $\mathcal{O}(n)$ asynchronous rounds with high probability, where $n$ is the number of particles in the system).&lt;/p&gt;
 &lt;p&gt;Thanks for reading, and feel free to comment with your thoughts, ideas, and questions!&lt;/p&gt;
 </description>
     </item>

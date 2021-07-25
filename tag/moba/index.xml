@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>moba | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/moba/</link>
+      <atom:link href="https://jdaymude.github.io/tag/moba/index.xml" rel="self" type="application/rss+xml" />
+    <description>moba</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Tue, 03 Jan 2017 12:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>moba</title>
+      <link>https://jdaymude.github.io/tag/moba/</link>
+    </image>
+    
+    <item>
+      <title>Heroes of the Storm</title>
+      <link>https://jdaymude.github.io/review/videogame-heroes-of-the-storm/</link>
+      <pubDate>Tue, 03 Jan 2017 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-heroes-of-the-storm/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Note: This review reflects the state of Heroes just after the Nexus Challenge and the Feast of the Winter Veil 2016.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Heroes of the Storm&lt;/em&gt; is a MOBA that felt fresh and exciting at the time of its debut, pitting itself against the genre giants &lt;em&gt;Dota 2&lt;/em&gt; and &lt;em&gt;League of Legends&lt;/em&gt;. It offered many maps with varying level design and side objectives which added to the standard formula of tower/base pushing, and — if nothing else — provided Blizzard fans a battleground on which characters from all their favorite games could slash, shoot, claw, hook, and magic their way to victory.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Heroes&lt;/em&gt; does many things well. Its gameplay is, at worst, a well polished MOBA experience. At best, teams move between mercenary camps, team fights, and side objectives with fluidity, emphasizing just how natural the game has made it for players to act as a unit, rather than individuals. XP and levelling is done as a team, so excessive farm management or kill-stealing are nonfactors. Mounts allow for quick traversal of the map, which is an engaging alternative to stocking up on teleport scrolls in fear of not being able to assist your team in times of need (&lt;em&gt;Dota 2&lt;/em&gt;) or, even worse, walking on foot back to the action after every death (&lt;em&gt;Overwatch&lt;/em&gt;). In a similar vein of encouraging cooperation and limiting toxicity, the lack of an all-chat stops players from flaming their opponents. Aesthetically, every character is reconstructed with love and integrity to their original game representations, and the worlds, music, and announcers feel right at home in the Blizzard universe.&lt;/p&gt;
+&lt;p&gt;Player progression is satisfactory. In what effectively reduces to grinding, players gain XP for their account and per hero by playing matches. A small amount of gold is also earned at the end of each match, and can be used to buy heroes from the roster and certain items from the shop. Quests provide a more substantial source of gold revenue, but also err on the side of grinding instead of skill. Compared to compendium challenges in &lt;em&gt;Dota 2&lt;/em&gt; which push the player to actually do something (e.g., &amp;ldquo;stun for a total of x seconds&amp;rdquo;), &amp;ldquo;play 8 games&amp;rdquo; feels like a grab for time. Still, the promise of being able to unlock the full roster of heroes and a limited variety of cosmetics (e.g., a hero&amp;rsquo;s &amp;ldquo;master skin&amp;rdquo; at level 10) offers some reward for an otherwise repetitive structure.&lt;/p&gt;
+&lt;p&gt;Repetition is hardly the mark of a bad game, however. Instead, &lt;em&gt;Heroes&lt;/em&gt; fails most notably in its inability to provide the player with a meaningful representation of what all that repetition has summed to. The statistics hardly even deserve that name; they simply count how many games and kills a player has achieved with each hero, and win rates per map. Match histories only display whether it was a win or a loss, with no details on how the player performed, what talents were selected, or even the gamertags of the other players involved. There is no doubt in my mind that this data is available to the developers (as such data is often a driving force in informing hero balances), so including it in the UI seems like an obvious area of needed improvement for the &lt;em&gt;Heroes&lt;/em&gt; team.&lt;/p&gt;
+&lt;p&gt;Today, in a post-&lt;em&gt;Overwatch&lt;/em&gt;, MOBA-crowded gaming scene, &lt;em&gt;Heroes&lt;/em&gt; struggles to find its place. Several of its most innovative elements such as mounts and talents have been copied by other games (&lt;em&gt;Paladins&lt;/em&gt; and &lt;em&gt;Dota 2: The New Journey&lt;/em&gt;, respectively). Its &amp;ldquo;statistics&amp;rdquo; are laughably barebones, especially for a Blizzard game. Yet its gameplay remains highly polished and its community relatively non-toxic, establishing &lt;em&gt;Heroes&lt;/em&gt; as a place that&amp;rsquo;s inviting to return to from time to time.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

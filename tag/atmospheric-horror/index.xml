@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>atmospheric-horror | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/atmospheric-horror/</link>
+      <atom:link href="https://jdaymude.github.io/tag/atmospheric-horror/index.xml" rel="self" type="application/rss+xml" />
+    <description>atmospheric-horror</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Sun, 16 Jul 2017 12:00:00 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>atmospheric-horror</title>
+      <link>https://jdaymude.github.io/tag/atmospheric-horror/</link>
+    </image>
+    
+    <item>
+      <title>We Were Here</title>
+      <link>https://jdaymude.github.io/review/videogame-we-were-here/</link>
+      <pubDate>Sun, 16 Jul 2017 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-we-were-here/</guid>
+      <description>&lt;p&gt;In this two-player, cooperative, escape-the-room-like adventure, players take the roles of the Librarian and the Explorer. The two begin the game stranded in an unspecified snowy region, and upon discovering and entering a foreboding castle, they are knocked out and placed in separate rooms, connected only by a pair of walkie-talkies. The Librarian is primarily responsible for supplying information to the Explorer, who in turn navigates deadly traps and dimly lit mazes to reach new areas. By piecing together visual clues from both players&#39; environments, puzzles are solved cooperatively, opening doors to new challenges.&lt;/p&gt;
+&lt;p&gt;For a free-to-play game, this was a surprisingly enjoyable and well-constructed experience (albeit a relatively short one, with an imperfect run taking roughly two hours). The crux of the gameplay rests on using voice-only communication to navigate inherently visual puzzles, which are fairly high-quality. Each puzzle balances complexity with difficulty in a pleasing way, and remains sufficiently independent of the rest, ensuring that each sequence is fresh and surprising. Even so, the overall experience was cohesive, rewarding attention to detail even when the details weren&amp;rsquo;t immediately relevant. Making the roles unique gives the game replay value as well; even though both players know the puzzle solutions after one successful run, switching roles gives a satisfying &amp;ldquo;ah, that&amp;rsquo;s what you were confused about!&amp;rdquo; kind of feeling.&lt;/p&gt;
+&lt;p&gt;The graphics are lacking in polish, but this is hardly a complaint given the game is free. In some senses, the lower quality textures add to the experience; I don&amp;rsquo;t really like horror games, but the use of creepy atmospheric elements and the ever-present sense that my partner was in danger was enough to create the right amount of suspense.&lt;/p&gt;
+&lt;p&gt;My real complaints are lodged against the bugs we encountered in our play-through, which (as of Update Five) required my Explorer to kill himself so we could restart from the checkpoint. This sort of broke the feeling of the overall experience, as death became a necessary means to an end instead of something worth fearing.&lt;/p&gt;
+&lt;p&gt;Finally, as a matter of opinion and not of critique, I wonder if the story could have offered any more resolution than what was hinted at in the final theatre sequence. Who was the shadowy figure that placed us here? What drives it to such strange games of mind-over-matter? And what does it want with the one left behind?&lt;/p&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;p&gt;As of Update Five, the introductory video has audio buffering issues. The chess puzzle has a couple bugs: the librarian often drops the film reel for no reason, and it is possible to get the film reel to play its spinning animation on the table itself if the Explorer applies the power too early.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

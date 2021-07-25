@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Joshua J. Daymude</title>
+    <title>Marta Andrés Arroyo | Joshua J. Daymude</title>
     <link>https://jdaymude.github.io/authors/mandresarroyo/</link>
       <atom:link href="https://jdaymude.github.io/authors/mandresarroyo/index.xml" rel="self" type="application/rss+xml" />
-    <description>Joshua J. Daymude</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright>
+    <description>Marta Andrés Arroyo</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Fri, 28 Sep 2018 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
-      <title>Joshua J. Daymude</title>
+      <url>https://jdaymude.github.io/authors/mandresarroyo/avatar_hueef835ccb4667440fb3306915b732471_87217_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Marta Andrés Arroyo</title>
       <link>https://jdaymude.github.io/authors/mandresarroyo/</link>
     </image>
     
@@ -25,8 +25,7 @@
       <link>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</link>
       <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</guid>
-      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from 
-&lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from &lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -35,7 +34,7 @@
       <link>https://jdaymude.github.io/project/active-matter/</link>
       <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/project/active-matter/</guid>
-      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&amp;rsquo; rules and our robots&amp;rsquo; designs. This allows us to critically examine our theoretical algorithms&amp;rsquo; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
 </description>
     </item>
     

@@ -5,12 +5,20 @@
     <link>https://jdaymude.github.io/publication/</link>
       <atom:link href="https://jdaymude.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
       <title>Publications</title>
       <link>https://jdaymude.github.io/publication/</link>
     </image>
+    
+    <item>
+      <title>The Canonical Amoebot Model: Algorithms and Concurrency Control</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Programming Active Cohesive Granular Matter with Mechanically Induced Phase Changes</title>
@@ -19,8 +27,8 @@
       <guid>https://jdaymude.github.io/publication/li2021-bobbots/</guid>
       <description>&lt;h3 id=&#34;related-press&#34;&gt;Related Press&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://fullcircle.asu.edu/research/greater-than-the-sum-of-its-parts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Greater Than the Sum of Its Parts.&lt;/a&gt; Gary Werner. &lt;em&gt;ASU FullCircle&lt;/em&gt;, April 2021.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://news.gatech.edu/2021/04/29/simple-robots-smart-algorithms-meet-bobbots&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Simple Robots, Smart Algorithms: Meet the BOBbots&lt;/a&gt; Dana Randall. &lt;em&gt;Georgia Tech News Center&lt;/em&gt;, April 2021. (Also featured in &lt;a href=&#34;https://www.eurekalert.org/pub_releases/2021-04/giot-srs042321.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;EurekaAlert!&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fullcircle.asu.edu/research/greater-than-the-sum-of-its-parts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Greater Than the Sum of Its Parts.&lt;/a&gt; Gary Werner. &lt;em&gt;ASU FullCircle&lt;/em&gt;, April 2021. (Also featured in &lt;a href=&#34;https://news.asu.edu/20210426-greater-sum-its-parts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ASU News&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -31,6 +39,20 @@
       <pubDate>Tue, 23 Mar 2021 07:43:30 -0700</pubDate>
       <guid>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Collaborating in Motion: Distributed and Stochastic Algorithms for Emergent Behavior in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-phdthesis/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-phdthesis/</guid>
+      <description>&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;The world is filled with systems of entities that collaborate in motion, both natural and engineered. These cooperative distributed systems are capable of sophisticated emergent behavior arising from the comparatively simple interactions of their members. A model system for emergent collective behavior is programmable matter, a physical substance capable of autonomously changing its properties in response to user input or environmental stimuli. This dissertation studies distributed and stochastic algorithms that control the local behaviors of individual modules of programmable matter to induce complex collective behavior at the macroscale. It consists of four parts.&lt;/p&gt;
+&lt;p&gt;In the first, the canonical amoebot model of programmable matter is proposed. A key goal of this model is to bring algorithmic theory closer to the physical realities of programmable matter hardware, especially with respect to concurrency and energy distribution. Two protocols are presented that together extend sequential, energy-agnostic algorithms to the more realistic concurrent, energy-constrained setting without sacrificing correctness, assuming the original algorithms satisfy certain conventions.&lt;/p&gt;
+&lt;p&gt;In the second part, stateful distributed algorithms using amoebot memory and communication are presented for leader election, object coating, convex hull formation, and hexagon formation. The first three algorithms are proven to have linear runtimes when assuming a simplified sequential setting. The final algorithm for hexagon formation is instead proven to be correct under unfair asynchronous adversarial activation, the most general of all adversarial activation models.&lt;/p&gt;
+&lt;p&gt;In the third part, distributed algorithms are combined with ideas from statistical physics and Markov chain design to replace algorithm reliance on memory and communication with biased random decisions, gaining inherent self-stabilizing and fault-tolerant properties. Using this stochastic approach, algorithms for compression, shortcut bridging, and separation are designed and analyzed.&lt;/p&gt;
+&lt;p&gt;Finally, a two-pronged approach to &amp;quot;programming&amp;quot; physical ensembles is presented. This approach leverages the physics of local interactions to pair theoretical abstractions of self-organizing particle systems with experimental robot systems of active granular matter that intentionally lack digital computation and communication. By physically embodying the salient features of an algorithm in robot design, the algorithm&amp;rsquo;s theoretical analysis can predict the robot ensemble&amp;rsquo;s behavior. This approach is applied to phototaxing, aggregation, dispersion, and object transport.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -51,8 +73,6 @@
 
 
 
-  
-  
 
 
 
@@ -62,34 +82,18 @@
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim_huadd53d25b4b78d7c355eb920cadde841_1928502_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim_huadd53d25b4b78d7c355eb920cadde841_1928502_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;div class=&#34;alert alert-warning&#34;&gt;
-  &lt;div&gt;
-    These GIFs are supposed to animate, but this is currently an &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5030&#34;&gt;open issue&lt;/a&gt; with Hugo. I&amp;rsquo;ll update this when the issue is fixed. In the meantime, feel free to read the (identical) version on our &lt;a href=&#34;https://sops.engineering.asu.edu/sops/energy-distribution/&#34;&gt;lab site&lt;/a&gt;.
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;When communication of the stress/inhibit flags is disabled, the energy distribution strategy in Energy-Sharing fails (just as the bacterial biofilms fail to feed all bacteria when their signal relays are disabled). A simulation of this setting is shown below, corresponding to Figure 3 in the paper. Without the communication phase to inhibit particles from using energy while those that are stressed recharge, particles continuously share any energy they have with their descendants in the spanning forest. Thus, while the leaves of the spanning forest occasionally meet their energy demands(seen as the flickering darker green particles), even after 1000 rounds most particles have still not met their energy demand even once.&lt;/p&gt;
 
 
 
 
 
-  
-  
 
 
 
@@ -99,31 +103,14 @@
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim_hue56c053e86b1d7752d82979042082b7b_1325790_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim_hue56c053e86b1d7752d82979042082b7b_1325790_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;As an independent but supporting result, we present the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm that enables a spanning forest of particles to self-repair in the presence of &lt;em&gt;crash failures&lt;/em&gt; so long as the set of non-faulty particles remains connected and there is at least one non-crashed root. We prove that this algorithm stabilizes in a spanning forest rooted at root particles in at most ${\cal O}(m^2)$ asynchronous rounds, where $m$ is the number of particles that are severed from the spanning forest by crash failures.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm relies on an underlying spanning forest structure to communicate its stress/inhibition signals. However, if particles move as they often do in collective behaviors, this disrupts the communication structure. Thus, the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm can be used as an underlying primitive in &lt;strong&gt;Energy-Sharing&lt;/strong&gt; so that &lt;strong&gt;Energy-Sharing&lt;/strong&gt; can be composed with existing amoebot model algorithms, extending them to consider energy constraints. Below is an example of &lt;strong&gt;Energy-Sharing&lt;/strong&gt; composed with 
-&lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#hexagonformation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Basic Shape Formation&lt;/a&gt;, corresponding to Figure 5 in the paper.&lt;/p&gt;
-
-
-
-
-
-  
-  
+&lt;p&gt;The &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm relies on an underlying spanning forest structure to communicate its stress/inhibition signals. However, if particles move as they often do in collective behaviors, this disrupts the communication structure. Thus, the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm can be used as an underlying primitive in &lt;strong&gt;Energy-Sharing&lt;/strong&gt; so that &lt;strong&gt;Energy-Sharing&lt;/strong&gt; can be composed with existing amoebot model algorithms, extending them to consider energy constraints. Below is an example of &lt;strong&gt;Energy-Sharing&lt;/strong&gt; composed with &lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#hexagonformation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Basic Shape Formation&lt;/a&gt;, corresponding to Figure 5 in the paper.&lt;/p&gt;
 
 
 
@@ -135,32 +122,19 @@
 
 
 
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim_hu2fbc63d50825f3b5ab2ad0065393d5ce_7429658_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim_hu2fbc63d50825f3b5ab2ad0065393d5ce_7429658_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
 
 
 
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Since &lt;strong&gt;Energy-Sharing&lt;/strong&gt; meets the system’s energy demands every ${\cal O}(n)$ asynchronous rounds and &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; repairs any disruptions to the communication structure as particles move, a composed algorithm will not be impeded by the underlying energy distribution primitive, but may add significant overhead to its runtime. However, we observe reasonable performance in practice: for example, since hexagon formation terminates in ${\cal O}(n)$ rounds, our proven bounds suggest that the composed algorithm could terminate in time ${\cal O}(n^2)$ or worse but the graph below demonstrates an overhead that appears asymptotically sublinear. With the addition of more energy roots, the composed algorithm is dramatically faster, approaching the runtime achieved without energy constraints.&lt;/p&gt;
 &lt;img src=&#34;compgraph_time.png&#34; style=&#34;display: inline-block; width: 48%; margin-right: 1%&#34;/&gt;
 &lt;img src=&#34;compgraph_root.png&#34; style=&#34;display: inline-block; width: 48%; margin-left: 1%&#34;/&gt;
-&lt;p&gt;As a final, informal experiment, we performed a simulation where energy is used for &lt;em&gt;reproduction&lt;/em&gt;, mimicking the bacterial biofilms we were inspired by. In our preliminary experiments, we obtain behavior that is qualitatively similar to the biofilm growth patterns observed by 
-&lt;a href=&#34;https://www.nature.com/articles/nature14660&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liu&lt;/a&gt; and 
-&lt;a href=&#34;https://www.nature.com/articles/nature15709&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prindle&lt;/a&gt; et al.; in particular, the use of communication and inhibition leads to an oscillatory growth rate. The simulation below corresponds to Figure 7 in the paper.&lt;/p&gt;
-
-
-
-
-
-  
-  
+&lt;p&gt;As a final, informal experiment, we performed a simulation where energy is used for &lt;em&gt;reproduction&lt;/em&gt;, mimicking the bacterial biofilms we were inspired by. In our preliminary experiments, we obtain behavior that is qualitatively similar to the biofilm growth patterns observed by &lt;a href=&#34;https://www.nature.com/articles/nature14660&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liu&lt;/a&gt; and &lt;a href=&#34;https://www.nature.com/articles/nature15709&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prindle&lt;/a&gt; et al.; in particular, the use of communication and inhibition leads to an oscillatory growth rate. The simulation below corresponds to Figure 7 in the paper.&lt;/p&gt;
 
 
 
@@ -172,19 +146,15 @@
 
 
 
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim_hu54c245b987776be89a7b4b40994d7da0_9473274_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim_hu54c245b987776be89a7b4b40994d7da0_9473274_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
 
 
 
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 </description>
     </item>
     
@@ -235,9 +205,7 @@
       <guid>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</guid>
       <description>&lt;h3 id=&#34;related-press&#34;&gt;Related Press&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://www.quantamagazine.org/smart-swarms-of-robots-seek-better-algorithms-20180214&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Smart Swarms Seek New Ways to Cooperate.&lt;/a&gt; Kevin Hartnett. &lt;em&gt;Quanta Magazine&lt;/em&gt;, February 2018. (Also featured in 
-&lt;a href=&#34;https://technews.acm.org/archives.cfm?fo=2018-02-feb/feb-16-2018.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.quantamagazine.org/smart-swarms-of-robots-seek-better-algorithms-20180214&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Smart Swarms Seek New Ways to Cooperate.&lt;/a&gt; Kevin Hartnett. &lt;em&gt;Quanta Magazine&lt;/em&gt;, February 2018. (Also featured in &lt;a href=&#34;https://technews.acm.org/archives.cfm?fo=2018-02-feb/feb-16-2018.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -265,9 +233,7 @@
       <guid>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</guid>
       <description>&lt;h3 id=&#34;related-press&#34;&gt;Related Press&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://asunow.asu.edu/20170306-opening-paths-progress-programmable-materials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opening Paths to Progress with Programmable Materials.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU Now&lt;/em&gt;, March 2017. (Also featured in 
-&lt;a href=&#34;http://technews.acm.org/archives.cfm?fo=2017-03-mar/mar-13-2017.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://asunow.asu.edu/20170306-opening-paths-progress-programmable-materials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opening Paths to Progress with Programmable Materials.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU Now&lt;/em&gt;, March 2017. (Also featured in &lt;a href=&#34;http://technews.acm.org/archives.cfm?fo=2017-03-mar/mar-13-2017.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -277,8 +243,7 @@
       <link>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</link>
       <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</guid>
-      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from 
-&lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from &lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
@@ -289,13 +254,9 @@
       <guid>https://jdaymude.github.io/publication/cannon2016-compression/</guid>
       <description>&lt;h3 id=&#34;related-press&#34;&gt;Related Press&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://discrete-notes.github.io/sss-2020-2-compression&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SSS 2020 Report 2: Compression of programmable matter.&lt;/a&gt; Laurent Feuilloley. &lt;em&gt;Discrete Notes&lt;/em&gt;, November 2020.&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://asunow.asu.edu/20170306-opening-paths-progress-programmable-materials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opening Paths to Progress with Programmable Materials.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU Now&lt;/em&gt;, March 2017. (Also featured in 
-&lt;a href=&#34;http://technews.acm.org/archives.cfm?fo=2017-03-mar/mar-13-2017.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://rjlipton.wordpress.com/2016/09/25/a-creeping-model-of-computation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Creeping Model of Computation.&lt;/a&gt; Dick Lipton and Ken Regan. &lt;em&gt;Gödel’s Lost Letter and P=NP&lt;/em&gt;, September 2016.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://discrete-notes.github.io/sss-2020-2-compression&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SSS 2020 Report 2: Compression of programmable matter.&lt;/a&gt; Laurent Feuilloley. &lt;em&gt;Discrete Notes&lt;/em&gt;, November 2020.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://asunow.asu.edu/20170306-opening-paths-progress-programmable-materials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opening Paths to Progress with Programmable Materials.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU Now&lt;/em&gt;, March 2017. (Also featured in &lt;a href=&#34;http://technews.acm.org/archives.cfm?fo=2017-03-mar/mar-13-2017.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rjlipton.wordpress.com/2016/09/25/a-creeping-model-of-computation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Creeping Model of Computation.&lt;/a&gt; Dick Lipton and Ken Regan. &lt;em&gt;Gödel’s Lost Letter and P=NP&lt;/em&gt;, September 2016.&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

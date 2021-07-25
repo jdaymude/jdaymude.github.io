@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>distributed-algorithms | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/distributed-algorithms/</link>
+      <atom:link href="https://jdaymude.github.io/tag/distributed-algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <description>distributed-algorithms</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>distributed-algorithms</title>
+      <link>https://jdaymude.github.io/tag/distributed-algorithms/</link>
+    </image>
+    
+    <item>
+      <title>The Canonical Amoebot Model: Algorithms and Concurrency Control</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithmic Foundations of Emergent Behavior in Analog Collectives</title>
+      <link>https://jdaymude.github.io/event/2021sfi-analogcollectives/</link>
+      <pubDate>Wed, 14 Jul 2021 12:15:00 -0600</pubDate>
+      <guid>https://jdaymude.github.io/event/2021sfi-analogcollectives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collaborating in Motion: Distributed and Stochastic Algorithms for Emergent Behavior in Programmable Matter</title>
+      <link>https://jdaymude.github.io/event/2021asu-dissertationdefense/</link>
+      <pubDate>Mon, 15 Mar 2021 09:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/event/2021asu-dissertationdefense/</guid>
+      <description>&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Our world is filled with systems of entities that collaborate in motion, both natural and engineered. These cooperative distributed systems are capable of sophisticated and surprising &lt;em&gt;emergent behavior&lt;/em&gt; that arises from the comparatively simple interactions of their members. A model system for emergent collective behavior is &lt;em&gt;programmable matter&lt;/em&gt;, a physical substance capable of autonomously changing its properties in response to user input or stimuli from its environment. This dissertation studies &lt;em&gt;distributed and stochastic algorithms&lt;/em&gt; that control the local behaviors and interactions of individual modules of programmable matter to induce complex collective behavior at the macroscale. It consists of four parts.&lt;/p&gt;
+&lt;p&gt;In the first, a new distributed computing model of programmable matter called the &lt;em&gt;canonical amoebot model&lt;/em&gt; is proposed. A key goal of the canonical amoebot model is to bring algorithmic theory closer to the physical realities of programmable matter hardware, especially with respect to &lt;em&gt;concurrency&lt;/em&gt; and &lt;em&gt;energy distribution&lt;/em&gt;. Two complementary protocols are presented that together can extend existing sequential, energy-agnostic algorithms for programmable matter to the more realistic concurrent, energy-constrained setting without sacrificing correctness, assuming the original algorithms satisfy certain conventions.&lt;/p&gt;
+&lt;p&gt;In the second part, &lt;em&gt;stateful distributed algorithms&lt;/em&gt; that use amoebot memory and communication are presented for &lt;em&gt;leader election&lt;/em&gt;, &lt;em&gt;object coating&lt;/em&gt;, &lt;em&gt;convex hull formation&lt;/em&gt;, and &lt;em&gt;asynchronous hexagon formation&lt;/em&gt;. The first three algorithms are proven to have runtimes that are linear in the amoebot system size when assuming a simplified sequential setting. The final algorithm for hexagon formation is instead proven to be correct under unfair asynchronous adversarial activation, the most general of all adversarial activation models.&lt;/p&gt;
+&lt;p&gt;In the third part, the &lt;em&gt;stochastic approach to self-organizing particle systems&lt;/em&gt; is presented. This approach combines distributed algorithms with ideas from statistical physics and Markov chain design to replace algorithm reliance on memory and communication with biased random decisions, requiring little to no memory and gaining inherent self-stabilizing and fault-tolerant properties. Using this stochastic approach, algorithms for &lt;em&gt;compression&lt;/em&gt;, &lt;em&gt;shortcut bridging&lt;/em&gt;, and &lt;em&gt;separation&lt;/em&gt; are designed and analyzed.&lt;/p&gt;
+&lt;p&gt;Finally, a two-pronged approach to &amp;quot;programming&amp;quot; physical ensembles across scales is presented. This approach leverages the &lt;em&gt;physics of local interactions&lt;/em&gt; to pair theoretical, algorithmic abstractions of self-organizing particle systems with experimental robot systems of &lt;em&gt;active granular matter&lt;/em&gt; that intentionally lack digital computation and communication. We demonstrate how the behavior of robots whose design &lt;em&gt;physically embodies&lt;/em&gt; salient features of an algorithm can be predicted by the algorithm&amp;rsquo;s theoretical analysis, treating the ensemble behaviors of &lt;em&gt;phototaxing&lt;/em&gt;, &lt;em&gt;aggregation&lt;/em&gt;, &lt;em&gt;dispersion&lt;/em&gt;, and &lt;em&gt;object transport&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Collaborating in Motion: Distributed and Stochastic Algorithms for Emergent Behavior in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-phdthesis/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-phdthesis/</guid>
+      <description>&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;The world is filled with systems of entities that collaborate in motion, both natural and engineered. These cooperative distributed systems are capable of sophisticated emergent behavior arising from the comparatively simple interactions of their members. A model system for emergent collective behavior is programmable matter, a physical substance capable of autonomously changing its properties in response to user input or environmental stimuli. This dissertation studies distributed and stochastic algorithms that control the local behaviors of individual modules of programmable matter to induce complex collective behavior at the macroscale. It consists of four parts.&lt;/p&gt;
+&lt;p&gt;In the first, the canonical amoebot model of programmable matter is proposed. A key goal of this model is to bring algorithmic theory closer to the physical realities of programmable matter hardware, especially with respect to concurrency and energy distribution. Two protocols are presented that together extend sequential, energy-agnostic algorithms to the more realistic concurrent, energy-constrained setting without sacrificing correctness, assuming the original algorithms satisfy certain conventions.&lt;/p&gt;
+&lt;p&gt;In the second part, stateful distributed algorithms using amoebot memory and communication are presented for leader election, object coating, convex hull formation, and hexagon formation. The first three algorithms are proven to have linear runtimes when assuming a simplified sequential setting. The final algorithm for hexagon formation is instead proven to be correct under unfair asynchronous adversarial activation, the most general of all adversarial activation models.&lt;/p&gt;
+&lt;p&gt;In the third part, distributed algorithms are combined with ideas from statistical physics and Markov chain design to replace algorithm reliance on memory and communication with biased random decisions, gaining inherent self-stabilizing and fault-tolerant properties. Using this stochastic approach, algorithms for compression, shortcut bridging, and separation are designed and analyzed.&lt;/p&gt;
+&lt;p&gt;Finally, a two-pronged approach to &amp;quot;programming&amp;quot; physical ensembles is presented. This approach leverages the physics of local interactions to pair theoretical abstractions of self-organizing particle systems with experimental robot systems of active granular matter that intentionally lack digital computation and communication. By physically embodying the salient features of an algorithm in robot design, the algorithm&amp;rsquo;s theoretical analysis can predict the robot ensemble&amp;rsquo;s behavior. This approach is applied to phototaxing, aggregation, dispersion, and object transport.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bio-Inspired Energy Distribution for Programmable Matter</title>
+      <link>https://jdaymude.github.io/event/2021icdcn-energydistribution/</link>
+      <pubDate>Thu, 07 Jan 2021 09:35:00 +0900</pubDate>
+      <guid>https://jdaymude.github.io/event/2021icdcn-energydistribution/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bio-Inspired Energy Distribution for Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-energydistribution/</link>
+      <pubDate>Tue, 05 Jan 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-energydistribution/</guid>
+      <description>&lt;h3 id=&#34;summary&#34;&gt;Summary&lt;/h3&gt;
+&lt;p&gt;In short, individual bacterium that are metabolically stressed (lacking in nutrients) catalyze a wave of chemical signaling that inhibits the rest of the biofilm’s nutrient uptake. This allows more nutrients to flow to the stressed bacteria, effectively solving the energy distribution problem. We model energy constraints in the amoebot model by giving each particle a battery for storing energy that it can transfer to its neighbors or spend to perform actions. We assume at least one particle in the system has access to an &lt;em&gt;external energy source&lt;/em&gt; from which it can harvest energy. The goal of our energy distribution algorithm is to coordinate the transfer of energy between particles so that all particles meet their actions’ energy demands and at least one particle can actually perform its action within a bounded amount of time. After some initial setup, our &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm works in the following phases repeated by each particle individually:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Communication.&lt;/em&gt; Particles propagate &amp;ldquo;stress&amp;rdquo; and &amp;ldquo;inhibition&amp;rdquo; signals to communicate the energy states of starving particles throughout the system.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Sharing.&lt;/em&gt; Particles harvest energy they lack from an external source (if they have access to one) and transfer energy to neighbors that need it.&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;Usage.&lt;/em&gt; Particles that are not inhibited spend their stored energy to perform actions, participating in the collective behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We prove that the &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm allows the particle system to meet its energy demands every ${\cal O}(n)$ asynchronous rounds, where $n$ is the number of particles in the system. A simulation of the &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm can be seen below, corresponding to Figure 2 in the paper. All particles are initially idle, with the exception of the root (with external energy access) shown with a gray/black ring. The setup phase establishes the spanning forest (or tree, in this case) rooted at particle(s) with energy access; a particle&amp;rsquo;s parent direction is shown as an arc. Since all particles start with empty batteries, stress flags (shown as red rings) quickly propagate throughout the system and inhibit flags soon follow. As energy is harvested by the root and shared throughout the system, some particles (shown with yellow rings) receive sufficient energy to meet the demand for their next action but remain inhibited from using it. This inhibition remains until all stressed particles in the system receive sufficient energy to meet their demands, at which point particles (shown with green rings) can reset their inhibit flags and use their energy. After using energy, these particles may again become stressed and trigger another stage of inhibition.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;When communication of the stress/inhibit flags is disabled, the energy distribution strategy in Energy-Sharing fails (just as the bacterial biofilms fail to feed all bacteria when their signal relays are disabled). A simulation of this setting is shown below, corresponding to Figure 3 in the paper. Without the communication phase to inhibit particles from using energy while those that are stressed recharge, particles continuously share any energy they have with their descendants in the spanning forest. Thus, while the leaves of the spanning forest occasionally meet their energy demands(seen as the flickering darker green particles), even after 1000 rounds most particles have still not met their energy demand even once.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;As an independent but supporting result, we present the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm that enables a spanning forest of particles to self-repair in the presence of &lt;em&gt;crash failures&lt;/em&gt; so long as the set of non-faulty particles remains connected and there is at least one non-crashed root. We prove that this algorithm stabilizes in a spanning forest rooted at root particles in at most ${\cal O}(m^2)$ asynchronous rounds, where $m$ is the number of particles that are severed from the spanning forest by crash failures.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm relies on an underlying spanning forest structure to communicate its stress/inhibition signals. However, if particles move as they often do in collective behaviors, this disrupts the communication structure. Thus, the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm can be used as an underlying primitive in &lt;strong&gt;Energy-Sharing&lt;/strong&gt; so that &lt;strong&gt;Energy-Sharing&lt;/strong&gt; can be composed with existing amoebot model algorithms, extending them to consider energy constraints. Below is an example of &lt;strong&gt;Energy-Sharing&lt;/strong&gt; composed with &lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#hexagonformation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Basic Shape Formation&lt;/a&gt;, corresponding to Figure 5 in the paper.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Since &lt;strong&gt;Energy-Sharing&lt;/strong&gt; meets the system’s energy demands every ${\cal O}(n)$ asynchronous rounds and &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; repairs any disruptions to the communication structure as particles move, a composed algorithm will not be impeded by the underlying energy distribution primitive, but may add significant overhead to its runtime. However, we observe reasonable performance in practice: for example, since hexagon formation terminates in ${\cal O}(n)$ rounds, our proven bounds suggest that the composed algorithm could terminate in time ${\cal O}(n^2)$ or worse but the graph below demonstrates an overhead that appears asymptotically sublinear. With the addition of more energy roots, the composed algorithm is dramatically faster, approaching the runtime achieved without energy constraints.&lt;/p&gt;
+&lt;img src=&#34;compgraph_time.png&#34; style=&#34;display: inline-block; width: 48%; margin-right: 1%&#34;/&gt;
+&lt;img src=&#34;compgraph_root.png&#34; style=&#34;display: inline-block; width: 48%; margin-left: 1%&#34;/&gt;
+&lt;p&gt;As a final, informal experiment, we performed a simulation where energy is used for &lt;em&gt;reproduction&lt;/em&gt;, mimicking the bacterial biofilms we were inspired by. In our preliminary experiments, we obtain behavior that is qualitatively similar to the biofilm growth patterns observed by &lt;a href=&#34;https://www.nature.com/articles/nature14660&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liu&lt;/a&gt; and &lt;a href=&#34;https://www.nature.com/articles/nature15709&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prindle&lt;/a&gt; et al.; in particular, the use of communication and inhibition leads to an oscillatory growth rate. The simulation below corresponds to Figure 7 in the paper.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Convex Hull Formation for Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2020-convexhull/</link>
+      <pubDate>Sat, 04 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2020-convexhull/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/event/2019random-separation/</link>
+      <pubDate>Sat, 21 Sep 2019 09:00:00 -0400</pubDate>
+      <guid>https://jdaymude.github.io/event/2019random-separation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2019-separation/</link>
+      <pubDate>Fri, 20 Sep 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2019-separation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Stochastic Algorithms for Programmable Matter</title>
+      <link>https://jdaymude.github.io/event/2019discretemath-stochastic/</link>
+      <pubDate>Wed, 03 Apr 2019 13:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/event/2019discretemath-stochastic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Computing by Programmable Particles</title>
+      <link>https://jdaymude.github.io/publication/daymude2019-computingparticles/</link>
+      <pubDate>Sun, 13 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2019-computingparticles/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems: an Algorithmic Approach to Programmable Matter</title>
+      <link>https://jdaymude.github.io/event/2018wssr-sops/</link>
+      <pubDate>Sun, 04 Nov 2018 16:00:00 +0900</pubDate>
+      <guid>https://jdaymude.github.io/event/2018wssr-sops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</link>
+      <pubDate>Fri, 28 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Brief Announcement: A Local Stochastic Algorithm for Separation in Heterogeneous Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2018-separationba/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2018-separationba/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Improved Leader Election for Self-Organizing Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2017-improvedleaderelection/</link>
+      <pubDate>Sun, 31 Dec 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2017-improvedleaderelection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>On the Runtime of Universal Coating for Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</link>
+      <pubDate>Tue, 28 Nov 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</guid>
+      <description>&lt;h3 id=&#34;related-press&#34;&gt;Related Press&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://asunow.asu.edu/20170306-opening-paths-progress-programmable-materials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opening Paths to Progress with Programmable Materials.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU Now&lt;/em&gt;, March 2017. (Also featured in &lt;a href=&#34;http://technews.acm.org/archives.cfm?fo=2017-03-mar/mar-13-2017.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/event/2017acoseminar-bridging/</link>
+      <pubDate>Fri, 06 Oct 2017 13:00:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/event/2017acoseminar-bridging/</guid>
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from &lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Stochastic Approach to Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</link>
+      <pubDate>Thu, 24 Aug 2017 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</guid>
+      <description>&lt;p&gt;Image of &lt;em&gt;Eciton&lt;/em&gt; army ants forming a shortcut bridge is reproduced with permission from &lt;a href=&#34;https://doi.org/10.1073/pnas.1512241112&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reid et al. (PNAS, 2015)&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Local Stochastic Algorithms for Compression and Shortcut Bridging in Programmable Matter</title>
+      <link>https://jdaymude.github.io/event/2017bda-compression/</link>
+      <pubDate>Fri, 28 Jul 2017 14:05:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/event/2017bda-compression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Convex Hull Formation for Programmable Matter</title>
+      <link>https://jdaymude.github.io/event/2017bda-convexhull/</link>
+      <pubDate>Fri, 28 Jul 2017 13:40:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/event/2017bda-convexhull/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A Distributed, Stochastic Framework for Active Matter</title>
+      <link>https://jdaymude.github.io/project/active-matter/</link>
+      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/active-matter/</guid>
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Markov Chain Algorithm for Compression in Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/cannon2016-compression/</link>
+      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/cannon2016-compression/</guid>
+      <description>&lt;h3 id=&#34;related-press&#34;&gt;Related Press&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://discrete-notes.github.io/sss-2020-2-compression&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;SSS 2020 Report 2: Compression of programmable matter.&lt;/a&gt; Laurent Feuilloley. &lt;em&gt;Discrete Notes&lt;/em&gt;, November 2020.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://asunow.asu.edu/20170306-opening-paths-progress-programmable-materials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opening Paths to Progress with Programmable Materials.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU Now&lt;/em&gt;, March 2017. (Also featured in &lt;a href=&#34;http://technews.acm.org/archives.cfm?fo=2017-03-mar/mar-13-2017.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://rjlipton.wordpress.com/2016/09/25/a-creeping-model-of-computation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;A Creeping Model of Computation.&lt;/a&gt; Dick Lipton and Ken Regan. &lt;em&gt;Gödel’s Lost Letter and P=NP&lt;/em&gt;, September 2016.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Compression in Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/publication/daymude2016-undergradthesis/</link>
+      <pubDate>Tue, 31 May 2016 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2016-undergradthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Compression in Self-Organizing Particle Systems</title>
+      <link>https://jdaymude.github.io/event/2016asu-undergradthesis/</link>
+      <pubDate>Wed, 06 Apr 2016 11:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/event/2016asu-undergradthesis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems (SOPS)</title>
+      <link>https://jdaymude.github.io/project/sops/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/sops/</guid>
+      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
+&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

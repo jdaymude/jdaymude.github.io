@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dominance-argument | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/dominance-argument/</link>
+      <atom:link href="https://jdaymude.github.io/tag/dominance-argument/index.xml" rel="self" type="application/rss+xml" />
+    <description>dominance-argument</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Mon, 11 Dec 2017 09:05:00 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>dominance-argument</title>
+      <link>https://jdaymude.github.io/tag/dominance-argument/</link>
+    </image>
+    
+    <item>
+      <title>On Your Marks, Get Set, Coat!</title>
+      <link>https://jdaymude.github.io/post/on-your-marks-get-set-coat/</link>
+      <pubDate>Mon, 11 Dec 2017 09:05:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/on-your-marks-get-set-coat/</guid>
+      <description>&lt;p&gt;My first journal paper was &lt;a href=&#34;http://rdcu.be/zOaK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;published&lt;/a&gt; early last week, marking a milestone in the winding forest path that is my PhD. The paper has some nice ideas and results I&amp;rsquo;m proud of, but — regrettably — the writing style and level of mathematical rigor needed for publication can make it pretty hard to decipher for anyone not familiar with our niche of computer science. I&amp;rsquo;m of the opinion that ideas are only useful if people can understand them, so to that end I&amp;rsquo;m going to explain this paper in a way that&amp;rsquo;s a bit less formal and academic. With a little effort, I think we&amp;rsquo;ll both learn something new here. (And if it&amp;rsquo;s still all Greek to you, I&amp;rsquo;ll happily answer questions you leave in the comments).&lt;/p&gt;
+&lt;h2 id=&#34;the-nickel-version-tldr&#34;&gt;The Nickel Version (TL;DR)&lt;/h2&gt;
+&lt;p&gt;The paper (whose title is mathy and unimportant) is all about programming futuristic, sci-fi materials that don&amp;rsquo;t exist yet to coat other objects in even layers as (relatively) fast as possible.&lt;/p&gt;
+&lt;h2 id=&#34;the-uh-dollar-version&#34;&gt;The, Uh, Dollar(?) Version&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s take a look at the paper&amp;rsquo;s title (&lt;em&gt;emphasis&lt;/em&gt; added): &amp;ldquo;On the &lt;em&gt;Runtime&lt;/em&gt; of &lt;em&gt;Universal Coating&lt;/em&gt; for &lt;em&gt;Programmable Matter&lt;/em&gt;.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Runtime&lt;/em&gt; is a word we use to talk about how fast an algorithm is. As in many other aspects of life, faster is better and more efficient. So this paper is about how fast &amp;ldquo;Universal Coating for Programmable Matter&amp;rdquo; is.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_463e832ee3e11f196d1a814633b6e635.png 400w,
+               /post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_43f7aed6ae179137eb8905b6c4b365d3.png 760w,
+               /post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/featured_hu6c163cf7af4fbe950083c652bb55d01a_505426_463e832ee3e11f196d1a814633b6e635.png&#34;
+               width=&#34;760&#34;
+               height=&#34;317&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;Programmable matter&lt;/em&gt; broadly describes any kind of physical material that can change itself as a reaction to what&amp;rsquo;s around it without human interaction. It&amp;rsquo;s a bit sci-fi, but imagine a future in which roads fill their own potholes and cracks after wear and tear, clothes heal themselves from fraying and holes, or artificial cells isolate and neutralize malignant tumors in the human body. It sounds crazy and is definitely out there, but that&amp;rsquo;s what we&amp;rsquo;re talking about here.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_01705d0dc4cb7b8051eef406ca66d3cb.png 400w,
+               /post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_ba5b21ab1a072095349a7a938d122ae6.png 760w,
+               /post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/artificialcells_hu20929dbf7529e69106953818f1a68422_348174_01705d0dc4cb7b8051eef406ca66d3cb.png&#34;
+               width=&#34;760&#34;
+               height=&#34;317&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;Universal Coating&lt;/em&gt; is the action we&amp;rsquo;re trying to do. In this context, we mean &amp;ldquo;coating&amp;rdquo; like a coat of paint; we want to cover something as evenly as possible. (Nobody likes a lumpy paint job). &amp;ldquo;Universal,&amp;rdquo; as a math word, means that a technique works in many/all cases. Here, we&amp;rsquo;re talking about a single approach to coating that works no matter what the object to be coated looks like. (Which is pretty cool).&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_6ec75bda627dc562e11886e0a53097b5.png 400w,
+               /post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_9ada2ea019ee7f5cac346ca2d97982e1.png 760w,
+               /post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/on-your-marks-get-set-coat/newpaint_hu9d7b855bc80a92d321e5cedaf16add02_541206_6ec75bda627dc562e11886e0a53097b5.png&#34;
+               width=&#34;760&#34;
+               height=&#34;317&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;So, all together, this paper is about analyzing the speed of a particular approach to using futuristic materials for coating any kind of object in nice, even layers. (Ok, so even the one sentence wrap up is a mouthful). Also, a big thank you to Annie Carson for the great illustrations!&lt;/p&gt;
+&lt;h2 id=&#34;so-how-does-it-work&#34;&gt;So How Does It Work?&lt;/h2&gt;
+&lt;p&gt;I&amp;rsquo;m really glad you asked. Actually, I&amp;rsquo;m really glad you&amp;rsquo;re still here after that heavy appetizer of an overview; hopefully it didn&amp;rsquo;t spoil your appetite before our main course, which starts right now! Take a look at a simulation of the Universal Coating algorithm over on our &lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#universalcoating&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;lab site&lt;/a&gt;, and keep it open for the rest of this section so you can refer back to it.&lt;/p&gt;
+&lt;p&gt;We need a bit of terminology before I explain what&amp;rsquo;s going on with all those dots and colors. There are two main &amp;ldquo;things&amp;rdquo; in this algorithm. Thing 1 is the &lt;em&gt;object&lt;/em&gt;, which is the cluster of dots with black circles in the middle. We&amp;rsquo;re keeping things nice and simple in this example by making the object a hexagon, but it can be essentially any shape you want (&amp;ldquo;universal&amp;rdquo;, remember?). Thing 2 is the &lt;em&gt;particle system&lt;/em&gt;, which are all the other dots that move around and change color. &amp;ldquo;Particle system&amp;rdquo; is just the term we use for the programmable matter stuff we talked about before: we&amp;rsquo;re trying to coat the object with these particles.&lt;/p&gt;
+&lt;p&gt;In really broad strokes, the algorithm can be broken down into four major steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Get all the particles oriented towards the object using something like follow-the-leader. In the simulation video (0:00–0:02), this is when they all turn yellow. If you start at any yellow particle and follow its pointer to the next particle and so on, you&amp;rsquo;ll always end up at the object.&lt;/li&gt;
+&lt;li&gt;Coat the object&amp;rsquo;s first layer. This happens insanely fast in the video (0:01–0:02) but there are actually a couple particles that turn red and fill in the few positions on the object&amp;rsquo;s first layer that weren&amp;rsquo;t already filled. You can see them if you pause the video and drag the slider back and forth around 0:01.&lt;/li&gt;
+&lt;li&gt;Decide on a position to be the start/end of each layer. Choosing this &lt;em&gt;marker position&lt;/em&gt; plays a big role in helping the particles learn when one layer is finished so they can start forming the next one. In the video (0:02–0:07), this decision process is shown with the line segments around the object changing colors. At 0:07, the particle occupying the marker position turns a light grey color.&lt;/li&gt;
+&lt;li&gt;Coat the object in more layers one by one until all particles have been used. The video (0:08–0:20) shows this quite clearly, with finished particles turning green. The grey line of particles growing from the object towards the bottom are the particles from Step 3 which mark the start/end of each layer.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;And that&amp;rsquo;s it! Perhaps as a point of pride, I have to mention that — although simple to describe — this algorithm is really involved. One of the main difficulties is that each particle runs this algorithm individually, so instead of Steps 1–4 happening nice and sequentially, they can actually all happen at once. And… yeah, it&amp;rsquo;s as chaotic as it sounds. The good news is that, in a &lt;a href=&#34;https://sops.engineering.asu.edu/sops/universal-coating/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;previous paper&lt;/a&gt;, our group proved this algorithm always works, no matter what. Going forward, we&amp;rsquo;ll just take the fact that it works for granted.&lt;/p&gt;
+&lt;h2 id=&#34;quick-get-your-coat&#34;&gt;(Quick) Get Your Coat!&lt;/h2&gt;
+&lt;p&gt;I can&amp;rsquo;t remember how many times I got in the car to go somewhere as a kid only to be sent back inside to get a jacket. Mom never said the &amp;ldquo;quick&amp;rdquo; part, but it was definitely implied!&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re going to shift our discussion to the real work of this new paper: proving that our Universal Coating algorithm runs reasonably fast. Let&amp;rsquo;s start with a motivating example for why you might do this kind of analysis:&lt;/p&gt;
+&lt;p&gt;Pretend there&amp;rsquo;s a secret technique for earning $1,000,000. Maybe it even comes with a guarantee that it will always work. We might get excited about something like that, or at least want to know more. But what if we found out that no one knew how long it would take to work? Or even worse, what if the fine print said it would take more days than the number of atoms in the universe? Well. We might still be waiting for our payout long after inflation turns a million dollars into pocket change, the cows come home, and the sun expands to consume the earth.&lt;/p&gt;
+&lt;p&gt;The lesson to be learned here: we need to know both that an algorithm works &lt;strong&gt;and&lt;/strong&gt; that it won&amp;rsquo;t take a ridiculously long time. So how do we analyze the algorithm&amp;rsquo;s runtime? There&amp;rsquo;s often more than one way to crack that coconut, but the techniques can get pretty involved. Even getting a mastery over the most fundamental techniques can take the larger part of most undergraduate Computer Science (CS) programs. (Fun fact: this side of CS doesn&amp;rsquo;t even have to involve programming, contrary to the popular belief that CS people are a bunch of tech support code monkeys. Yes, I probably can &lt;a href=&#34;https://www.xkcd.com/627/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;fix your iPhone&lt;/a&gt;. No, I didn&amp;rsquo;t learn that in school.)&lt;/p&gt;
+&lt;p&gt;To explain both why analyzing our particular algorithm was nasty and how we ended up doing it, I&amp;rsquo;ll use a quick allegory. Imagine a race between two teams: Team Red and Team Blue. Team Red works like a machine: everyone comes to practice and trains hard, they perform well in events, and — most importantly — they run in perfect lock step, starting together and finishing together. Team Blue, on the other hand, is more about the individual effort. They also perform well in events, but have a mix of sprinters, endurance runners, runners who like to stop and smell the roses, and so on. Some of Team Blue&amp;rsquo;s runners end up finishing really fast, while others take longer.&lt;/p&gt;
+&lt;p&gt;Our particle systems are, essentially, Team Blue. We don&amp;rsquo;t make any assumptions about how fast each particle works relative to the others, and it&amp;rsquo;s entirely possible that a particle can suddenly go faster or slower than usual without following a pattern. This makes it hard to figure out when the last Blue runner (or particle) will cross the finish line. So, instead of directly analyzing our system (Team Blue), we proved two things:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Team Red — a simpler version of our particle systems where everyone progresses through the algorithm at the same rate — runs &amp;ldquo;fast&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Team Blue (our particle system) always runs faster than Team Red.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Therefore, as a nice logical result, Team Blue also runs &amp;ldquo;fast&amp;rdquo;. In fact, it&amp;rsquo;s entirely possible it even runs &lt;em&gt;really&lt;/em&gt; fast!&lt;/p&gt;
+&lt;h2 id=&#34;good-job-out-there-get-some-water&#34;&gt;Good Job Out There, Get Some Water&lt;/h2&gt;
+&lt;p&gt;As a recap, we have an algorithm for programmable matter which coats objects of all shapes and sizes. We showed that this algorithm always works in an &lt;a href=&#34;https://sops.engineering.asu.edu/sops/universal-coating/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;older paper&lt;/a&gt;, and that it runs pretty fast in this new &lt;a href=&#34;http://rdcu.be/zOaK&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;journal paper&lt;/a&gt;. This runtime analysis boiled down to showing that a simplified version of our particle system runs the algorithm quickly, and that the real particle system always runs it even faster. (For my CS people out there, we showed that the Universal Coating algorithm runs in $\mathcal{O}(n)$ asynchronous rounds with high probability, where $n$ is the number of particles in the system).&lt;/p&gt;
+&lt;p&gt;Thanks for reading, and feel free to comment with your thoughts, ideas, and questions!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

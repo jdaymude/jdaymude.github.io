@@ -1,1095 +1,672 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
-    <loc>https://jdaymude.github.io/courses/2019fall-cse598-mcmc/</loc>
-    <lastmod>2020-03-25T15:21:33-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication_types/2/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/active-matter/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/aggregation/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
+    <loc>https://jdaymude.github.io/course/2019fall-cse598-mcmc/</loc>
+    <lastmod>2019-12-05T15:57:00-07:00</lastmod>
+  </url><url>
     <loc>https://jdaymude.github.io/authors/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/bobbots/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/categories/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/dispersion/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/programmable-matter/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/li2021-bobbots/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication_types/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/categories/research/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/swarm-robotics/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication_types/3/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/agent-based-model/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/opinion-dynamics/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/polarization/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/action/</loc>
-    <lastmod>2021-01-24T12:54:30-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/adventure/</loc>
-    <lastmod>2021-01-24T12:54:30-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-jedi-fallen-order/</loc>
-    <lastmod>2021-01-24T12:54:30-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/role-playing/</loc>
-    <lastmod>2021-01-24T12:54:30-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/space/</loc>
-    <lastmod>2021-01-24T12:54:30-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/categories/videogame-review/</loc>
-    <lastmod>2021-01-24T12:54:30-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/bio-inspired/</loc>
-    <lastmod>2021-01-04T17:57:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/talk/2021icdcn-energydistribution/</loc>
-    <lastmod>2021-01-04T17:57:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/bio-inspired-algorithms/</loc>
-    <lastmod>2021-01-04T17:57:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/biofilms/</loc>
-    <lastmod>2021-01-04T17:57:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/distributed-algorithms/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/energy/</loc>
-    <lastmod>2021-01-04T17:57:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/self-organization/</loc>
-    <lastmod>2021-01-04T17:57:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication_types/1/</loc>
-    <lastmod>2021-01-04T17:57:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/daymude2021-energydistribution/</loc>
-    <lastmod>2021-01-04T17:57:00-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/management/</loc>
-    <lastmod>2020-10-08T13:31:45-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/metroidvania/</loc>
-    <lastmod>2020-10-08T13:31:45-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/platformer/</loc>
-    <lastmod>2020-10-08T13:31:45-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-spiritfarer/</loc>
-    <lastmod>2020-10-08T13:31:45-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/covid-19/</loc>
-    <lastmod>2020-07-14T11:45:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/post/pool-testing-is-kary-search/</loc>
-    <lastmod>2020-07-14T11:45:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/pool-testing/</loc>
-    <lastmod>2020-07-14T11:45:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/search-algorithms/</loc>
-    <lastmod>2020-07-14T11:45:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/categories/teaching/</loc>
-    <lastmod>2020-07-14T11:45:47-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-ori-and-the-will-of-the-wisps/</loc>
-    <lastmod>2020-06-08T17:24:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/post/announcing-reviews/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/categories/creative/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/programming/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/writing/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/categories/book-review/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/climate-change/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/history/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/science/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/book-the-story-of-more/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/movie-dan-in-real-life/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/drama/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/categories/movie-review/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/romance/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/animation/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/sci-fi/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/movie-star-wars-the-clone-wars/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/choices-matter/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-the-outer-worlds/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/computer-science/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/mathematics/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/molecube/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/puzzle/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/reduction/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/post/solving-the-molecube-by-reduction/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/categories/tutorial/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/binary-counter/</loc>
-    <lastmod>2020-07-10T06:58:39-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/computational-geometry/</loc>
-    <lastmod>2020-07-10T06:58:39-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/daymude2020-convexhull/</loc>
-    <lastmod>2020-07-10T06:58:39-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/convex-hull/</loc>
-    <lastmod>2020-07-10T06:58:39-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/casual/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-hidden-my-game-by-mom/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/hidden-object/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/idle/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-tap-dig-my-museum/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/talk/2019random-separation/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/cluster-expansion/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/markov-chains/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/separation/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/cannon2019-separation/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-batman-arkham-city/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/open-world/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/academia/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/post/the-three-academics/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/webcomic/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/amoebot-model/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/self-assembly/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/simulation/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/alumbaugh2019-tilesimulation/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/tile-automata/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/autism/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/literary-fiction/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/mystery/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/book-the-curious-incident-of-the-dog-in-the-nighttime/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/book-all-that-is-made/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/art/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/christianity/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/creativity/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/health-insurance/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/python/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/categories/software/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/post/surechoice/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/bridging/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/compression/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/talk/2019discretemath-stochastic/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/git/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/post/git-going-with-gitkraken/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/gitkraken/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication_types/6/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/coating/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/daymude2019-computingparticles/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/leader-election/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/shape-formation/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/shape-recognition/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/fable/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/fantasy/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/book-the-phantom-tollbooth/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/free-to-play/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-marvel-strike-force/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/turn-based-strategy/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/coming-of-age/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/historical-fiction/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/book-sing-unburied-sing/</loc>
-    <lastmod>2020-05-29T13:56:13-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/post/oh-the-places-youll-go/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/tokyo/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/travel/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/videography/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/locomotion/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/phototaxing/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/talk/2018wssr-sops/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/smarticles/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-splashy-dots/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-undertale/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/cannon2018-separationba/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/movie-isle-of-dogs/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/stop-motion/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-a-way-out/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/co-op/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/crime/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/interactive-story/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/espionage/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/period-piece/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/thriller/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/movie-tinker-tailor-soldier-spy/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/daymude2017-improvedleaderelection/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-blendoku-2/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/feminism/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/book-half-the-sky/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/politics/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/social-justice/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/dominance-argument/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/post/on-your-marks-get-set-coat/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/comedy/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/superhero/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/movie-thor-ragnarok/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/city-builder/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-junes-journey/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/talk/2017acoseminar-bridging/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/book-mapping-your-academic-career/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/cooking/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-overcooked/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/talk/2017bda-compression/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/talk/2017bda-convexhull/</loc>
-    <lastmod>2020-03-24T07:50:51-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/atmospheric-horror/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-we-were-here/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/marriage/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/book-the-meaning-of-marriage/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/book-the-bronze-bow/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-heroes-of-the-storm/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/tags/moba/</loc>
-    <lastmod>2020-05-30T11:41:36-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/project/active-matter/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/cannon2016-compression/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/project/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication_types/7/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/publication/daymude2016-undergradthesis/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/review/videogame-sputnik-eyes/</loc>
-    <lastmod>2020-05-29T13:56:13-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/talk/2016barrett-thesis/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/project/sops/</loc>
-    <lastmod>2020-03-25T12:58:40-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/aporter/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication-type/1/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/amoebot-model/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jdaymude.github.io/authors/aricha/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/bdutta/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/cgokmen/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/categories/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jdaymude.github.io/authors/cscheideler/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/dgoldman/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/drandall/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/eaydin/</loc>
-    <lastmod>2020-09-29T15:35:49-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/edemaine/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/ikostitsyna/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/jcalumbaugh/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/jdaymude/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/jweber/</loc>
-    <lastmod>2020-07-09T17:46:17-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/khinnenthal/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/mandresarroyo/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/mpatitz/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/ravinery/</loc>
-    <lastmod>2020-09-29T15:35:49-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/raxelrod/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/rgmyr/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/rwarkentin/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/scannon/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/sforrest/</loc>
-    <lastmod>2021-03-23T08:09:37-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/sli/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/tstrothmann/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/wsavoie/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/authors/zderakhshandeh/</loc>
-    <lastmod>2020-03-24T09:35:11-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/post/</loc>
-    <lastmod>2020-03-23T15:39:37-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/concurrency/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/distributed-algorithms/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jdaymude.github.io/</loc>
-    <lastmod>2019-03-17T20:39:18+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/press/</loc>
-    <lastmod>2020-12-27T16:01:57-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/jdaymude/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/programmable-matter/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication_types/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jdaymude.github.io/publication/</loc>
-    <lastmod>2020-03-25T14:40:56-07:00</lastmod>
-  </url>
-  
-  <url>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/category/research/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/self-organization/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/shape-formation/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tags/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</loc>
+    <lastmod>2021-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/active-matter/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/aggregation/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2021sfi-analogcollectives/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/bobbots/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/bridging/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/coating/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/compression/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/convex-hull/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/dispersion/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/leader-election/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/markov-chains/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/phototaxing/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/separation/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/smarticles/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/swarm-robotics/</loc>
+    <lastmod>2021-07-14T12:15:00-06:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication-type/2/</loc>
+    <lastmod>2021-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/bdutta/</loc>
+    <lastmod>2021-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/drandall/</loc>
+    <lastmod>2021-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/dgoldman/</loc>
+    <lastmod>2021-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/eaydin/</loc>
+    <lastmod>2021-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/li2021-bobbots/</loc>
+    <lastmod>2021-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/ravinery/</loc>
+    <lastmod>2021-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/scannon/</loc>
+    <lastmod>2021-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/sli/</loc>
+    <lastmod>2021-04-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/agent-based-model/</loc>
+    <lastmod>2021-03-23T07:43:30-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/opinion-dynamics/</loc>
+    <lastmod>2021-03-23T07:43:30-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/polarization/</loc>
+    <lastmod>2021-03-23T07:43:30-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</loc>
+    <lastmod>2021-03-23T07:43:30-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/raxelrod/</loc>
+    <lastmod>2021-03-23T07:43:30-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/sforrest/</loc>
+    <lastmod>2021-03-23T07:43:30-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/binary-counter/</loc>
+    <lastmod>2021-03-15T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/bio-inspired-algorithms/</loc>
+    <lastmod>2021-03-15T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2021asu-dissertationdefense/</loc>
+    <lastmod>2021-03-15T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/energy/</loc>
+    <lastmod>2021-03-15T09:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication-type/7/</loc>
+    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/daymude2021-phdthesis/</loc>
+    <lastmod>2021-03-15T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/action/</loc>
+    <lastmod>2021-01-22T22:09:15-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/adventure/</loc>
+    <lastmod>2021-01-22T22:09:15-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-jedi-fallen-order/</loc>
+    <lastmod>2021-01-22T22:09:15-07:00</lastmod>
+  </url><url>
     <loc>https://jdaymude.github.io/review/</loc>
-    <lastmod>2020-05-28T12:56:09-07:00</lastmod>
+    <lastmod>2021-01-22T22:09:15-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/role-playing/</loc>
+    <lastmod>2021-01-22T22:09:15-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/space/</loc>
+    <lastmod>2021-01-22T22:09:15-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/category/videogame-review/</loc>
+    <lastmod>2021-01-22T22:09:15-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2021icdcn-energydistribution/</loc>
+    <lastmod>2021-01-07T09:35:00+09:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/biofilms/</loc>
+    <lastmod>2021-01-07T09:35:00+09:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/jweber/</loc>
+    <lastmod>2021-01-07T09:35:00+09:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/daymude2021-energydistribution/</loc>
+    <lastmod>2021-01-05T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/management/</loc>
+    <lastmod>2020-10-07T21:12:52-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/metroidvania/</loc>
+    <lastmod>2020-10-07T21:12:52-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/platformer/</loc>
+    <lastmod>2020-10-07T21:12:52-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-spiritfarer/</loc>
+    <lastmod>2020-10-07T21:12:52-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/post/</loc>
+    <lastmod>2020-07-09T14:04:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/covid-19/</loc>
+    <lastmod>2020-07-09T14:04:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/post/pool-testing-is-kary-search/</loc>
+    <lastmod>2020-07-09T14:04:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/pool-testing/</loc>
+    <lastmod>2020-07-09T14:04:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/search-algorithms/</loc>
+    <lastmod>2020-07-09T14:04:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/category/teaching/</loc>
+    <lastmod>2020-07-09T14:04:44-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-ori-and-the-will-of-the-wisps/</loc>
+    <lastmod>2020-06-07T21:58:21-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/post/announcing-reviews/</loc>
+    <lastmod>2020-05-29T14:07:51-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/category/creative/</loc>
+    <lastmod>2020-05-29T14:07:51-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/programming/</loc>
+    <lastmod>2020-05-29T14:07:51-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/writing/</loc>
+    <lastmod>2020-05-29T14:07:51-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/category/book-review/</loc>
+    <lastmod>2020-05-26T13:52:54-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/climate-change/</loc>
+    <lastmod>2020-05-26T13:52:54-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/history/</loc>
+    <lastmod>2020-05-26T13:52:54-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/science/</loc>
+    <lastmod>2020-05-26T13:52:54-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/book-the-story-of-more/</loc>
+    <lastmod>2020-05-26T13:52:54-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/movie-dan-in-real-life/</loc>
+    <lastmod>2020-03-21T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/drama/</loc>
+    <lastmod>2020-03-21T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/category/movie-review/</loc>
+    <lastmod>2020-03-21T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/romance/</loc>
+    <lastmod>2020-03-21T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/animation/</loc>
+    <lastmod>2020-01-19T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/sci-fi/</loc>
+    <lastmod>2020-01-19T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/movie-star-wars-the-clone-wars/</loc>
+    <lastmod>2020-01-19T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/choices-matter/</loc>
+    <lastmod>2020-01-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-the-outer-worlds/</loc>
+    <lastmod>2020-01-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/computer-science/</loc>
+    <lastmod>2020-01-06T13:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/mathematics/</loc>
+    <lastmod>2020-01-06T13:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/molecube/</loc>
+    <lastmod>2020-01-06T13:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/puzzle/</loc>
+    <lastmod>2020-01-06T13:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/reduction/</loc>
+    <lastmod>2020-01-06T13:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/post/solving-the-molecube-by-reduction/</loc>
+    <lastmod>2020-01-06T13:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/category/tutorial/</loc>
+    <lastmod>2020-01-06T13:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/computational-geometry/</loc>
+    <lastmod>2020-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/daymude2020-convexhull/</loc>
+    <lastmod>2020-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/ikostitsyna/</loc>
+    <lastmod>2020-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/khinnenthal/</loc>
+    <lastmod>2020-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/rgmyr/</loc>
+    <lastmod>2020-01-04T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/casual/</loc>
+    <lastmod>2019-12-15T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-hidden-my-game-by-mom/</loc>
+    <lastmod>2019-12-15T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/hidden-object/</loc>
+    <lastmod>2019-12-15T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/idle/</loc>
+    <lastmod>2019-12-03T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-tap-dig-my-museum/</loc>
+    <lastmod>2019-12-03T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2019random-separation/</loc>
+    <lastmod>2019-09-21T09:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/cluster-expansion/</loc>
+    <lastmod>2019-09-21T09:00:00-04:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/cannon2019-separation/</loc>
+    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/cgokmen/</loc>
+    <lastmod>2019-09-20T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-batman-arkham-city/</loc>
+    <lastmod>2019-08-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/open-world/</loc>
+    <lastmod>2019-08-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/academia/</loc>
+    <lastmod>2019-07-30T09:15:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/post/the-three-academics/</loc>
+    <lastmod>2019-07-30T09:15:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/webcomic/</loc>
+    <lastmod>2019-07-30T09:15:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/edemaine/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/jcalumbaugh/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/mpatitz/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/self-assembly/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/simulation/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/alumbaugh2019-tilesimulation/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/tile-automata/</loc>
+    <lastmod>2019-07-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/autism/</loc>
+    <lastmod>2019-07-13T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/literary-fiction/</loc>
+    <lastmod>2019-07-13T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/mystery/</loc>
+    <lastmod>2019-07-13T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/book-the-curious-incident-of-the-dog-in-the-nighttime/</loc>
+    <lastmod>2019-07-13T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/book-all-that-is-made/</loc>
+    <lastmod>2019-07-09T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/art/</loc>
+    <lastmod>2019-07-09T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/christianity/</loc>
+    <lastmod>2019-07-09T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/creativity/</loc>
+    <lastmod>2019-07-09T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/health-insurance/</loc>
+    <lastmod>2019-06-29T22:21:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/python/</loc>
+    <lastmod>2019-06-29T22:21:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/category/software/</loc>
+    <lastmod>2019-06-29T22:21:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/post/surechoice/</loc>
+    <lastmod>2019-06-29T22:21:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/course/</loc>
+    <lastmod>2019-12-05T15:57:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/bio-inspired/</loc>
+    <lastmod>2019-04-03T13:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2019discretemath-stochastic/</loc>
+    <lastmod>2019-04-03T13:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/git/</loc>
+    <lastmod>2019-01-22T12:40:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/post/git-going-with-gitkraken/</loc>
+    <lastmod>2019-01-22T12:40:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/gitkraken/</loc>
+    <lastmod>2019-01-22T12:40:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication-type/6/</loc>
+    <lastmod>2019-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/daymude2019-computingparticles/</loc>
+    <lastmod>2019-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/shape-recognition/</loc>
+    <lastmod>2019-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/fable/</loc>
+    <lastmod>2019-01-04T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/fantasy/</loc>
+    <lastmod>2019-01-04T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/book-the-phantom-tollbooth/</loc>
+    <lastmod>2019-01-04T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/free-to-play/</loc>
+    <lastmod>2019-01-02T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-marvel-strike-force/</loc>
+    <lastmod>2019-01-02T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/turn-based-strategy/</loc>
+    <lastmod>2019-01-02T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/coming-of-age/</loc>
+    <lastmod>2018-12-27T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/historical-fiction/</loc>
+    <lastmod>2018-12-27T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/book-sing-unburied-sing/</loc>
+    <lastmod>2018-12-27T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/post/oh-the-places-youll-go/</loc>
+    <lastmod>2018-12-21T12:15:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/tokyo/</loc>
+    <lastmod>2018-12-21T12:15:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/travel/</loc>
+    <lastmod>2018-12-21T12:15:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/videography/</loc>
+    <lastmod>2018-12-21T12:15:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/locomotion/</loc>
+    <lastmod>2018-11-04T16:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2018wssr-sops/</loc>
+    <lastmod>2018-11-04T16:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-splashy-dots/</loc>
+    <lastmod>2018-11-02T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-undertale/</loc>
+    <lastmod>2018-10-23T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/andresarroyo2018-bridging/</loc>
+    <lastmod>2018-09-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/mandresarroyo/</loc>
+    <lastmod>2018-09-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</loc>
+    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/rwarkentin/</loc>
+    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/wsavoie/</loc>
+    <lastmod>2018-09-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/cannon2018-separationba/</loc>
+    <lastmod>2018-07-23T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/movie-isle-of-dogs/</loc>
+    <lastmod>2018-06-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/stop-motion/</loc>
+    <lastmod>2018-06-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-a-way-out/</loc>
+    <lastmod>2018-04-04T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/co-op/</loc>
+    <lastmod>2018-04-04T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/crime/</loc>
+    <lastmod>2018-04-04T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/interactive-story/</loc>
+    <lastmod>2018-04-04T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/espionage/</loc>
+    <lastmod>2018-02-20T12:24:36-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/period-piece/</loc>
+    <lastmod>2018-02-20T12:24:36-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/thriller/</loc>
+    <lastmod>2018-02-20T12:24:36-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/movie-tinker-tailor-soldier-spy/</loc>
+    <lastmod>2018-02-20T12:24:36-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/daymude2017-improvedleaderelection/</loc>
+    <lastmod>2017-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/tstrothmann/</loc>
+    <lastmod>2017-12-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-blendoku-2/</loc>
+    <lastmod>2017-12-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/feminism/</loc>
+    <lastmod>2017-12-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/book-half-the-sky/</loc>
+    <lastmod>2017-12-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/politics/</loc>
+    <lastmod>2017-12-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/social-justice/</loc>
+    <lastmod>2017-12-17T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/dominance-argument/</loc>
+    <lastmod>2017-12-11T09:05:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/post/on-your-marks-get-set-coat/</loc>
+    <lastmod>2017-12-11T09:05:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/aporter/</loc>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</loc>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/authors/zderakhshandeh/</loc>
+    <lastmod>2017-11-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/comedy/</loc>
+    <lastmod>2017-11-21T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/superhero/</loc>
+    <lastmod>2017-11-21T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/movie-thor-ragnarok/</loc>
+    <lastmod>2017-11-21T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/city-builder/</loc>
+    <lastmod>2017-10-25T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-junes-journey/</loc>
+    <lastmod>2017-10-25T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2017acoseminar-bridging/</loc>
+    <lastmod>2017-10-06T13:00:00-05:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/book-mapping-your-academic-career/</loc>
+    <lastmod>2017-09-29T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/cooking/</loc>
+    <lastmod>2017-09-11T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-overcooked/</loc>
+    <lastmod>2017-09-11T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/andresarroyo2017-bridging/</loc>
+    <lastmod>2017-08-24T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2017bda-compression/</loc>
+    <lastmod>2017-07-28T14:05:00-05:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2017bda-convexhull/</loc>
+    <lastmod>2017-07-28T13:40:00-05:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/atmospheric-horror/</loc>
+    <lastmod>2017-07-16T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-we-were-here/</loc>
+    <lastmod>2017-07-16T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/marriage/</loc>
+    <lastmod>2017-07-01T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/book-the-meaning-of-marriage/</loc>
+    <lastmod>2017-07-01T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/book-the-bronze-bow/</loc>
+    <lastmod>2017-01-18T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-heroes-of-the-storm/</loc>
+    <lastmod>2017-01-03T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/tag/moba/</loc>
+    <lastmod>2017-01-03T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/project/active-matter/</loc>
+    <lastmod>2016-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/cannon2016-compression/</loc>
+    <lastmod>2016-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/project/</loc>
+    <lastmod>2016-07-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/publication/daymude2016-undergradthesis/</loc>
+    <lastmod>2016-05-31T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/review/videogame-sputnik-eyes/</loc>
+    <lastmod>2016-04-13T12:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/event/2016asu-undergradthesis/</loc>
+    <lastmod>2016-04-06T11:00:00-07:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/project/sops/</loc>
+    <lastmod>2015-04-01T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jdaymude.github.io/admin/</loc>
+  </url><url>
+    <loc>https://jdaymude.github.io/press/</loc>
   </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/talk/</loc>
-    <lastmod>2020-03-24T17:45:17-07:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jdaymude.github.io/courses/</loc>
-    <lastmod>2021-01-24T12:54:30-07:00</lastmod>
-  </url>
-  
 </urlset>

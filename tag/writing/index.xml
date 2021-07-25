@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>writing | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/writing/</link>
+      <atom:link href="https://jdaymude.github.io/tag/writing/index.xml" rel="self" type="application/rss+xml" />
+    <description>writing</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Fri, 29 May 2020 14:07:51 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>writing</title>
+      <link>https://jdaymude.github.io/tag/writing/</link>
+    </image>
+    
+    <item>
+      <title>Announcing Reviews</title>
+      <link>https://jdaymude.github.io/post/announcing-reviews/</link>
+      <pubDate>Fri, 29 May 2020 14:07:51 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/announcing-reviews/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m excited to announce that I&amp;rsquo;ve added art and entertainment &lt;a href=&#34;https://jdaymude.github.io/review/&#34;&gt;reviews&lt;/a&gt; to the site. I&amp;rsquo;ve posted 28 reviews of books, movies, and video games so far; I will likely extend this to also include TV shows and music in the future. This post is a brief look at why I review things (it&amp;rsquo;s not for glorification of my own hot takes, I promise) and a bit about my experience with hacking the &lt;a href=&#34;https://sourcethemes.com/academic/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Hugo Academic theme&lt;/a&gt; to support reviews.&lt;/p&gt;
+&lt;p&gt;In case my philosophy behind reviews and hacking the site theme are less interesting to you than actual reviews, here are a few that I was particularly happy to rediscover:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jdaymude.github.io/review/videogame-overcooked/&#34;&gt;&lt;em&gt;Overcooked&lt;/em&gt;&lt;/a&gt;, a review from 2016 about the frantic cooperative cooking game.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jdaymude.github.io/review/book-half-the-sky/&#34;&gt;&lt;em&gt;Half the Sky&lt;/em&gt;&lt;/a&gt;, a review from 2017 about the book that played a pivotal role in my understanding and caring about the global state of women&amp;rsquo;s rights.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jdaymude.github.io/review/book-the-phantom-tollbooth/&#34;&gt;&lt;em&gt;The Phantom Tollbooth&lt;/em&gt;&lt;/a&gt;, a review from 2019 about one of my favorite books.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://jdaymude.github.io/review/videogame-batman-arkham-city/&#34;&gt;&lt;em&gt;Batman: Arkham City&lt;/em&gt;&lt;/a&gt;, a review from 2019 in which I question Batman&amp;rsquo;s approach to criminal justice and our assumptions about video game minions.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;the-entertainment-backlog&#34;&gt;The Entertainment Backlog&lt;/h2&gt;
+&lt;p&gt;Over the last decade, I&amp;rsquo;ve been iterating over ways to track my progress and remember my experiences with various books, movies, TV shows, music, and video games. It bothers me that I own more content than I have time to experience and that I often forget my key takeaways just months after finishing something. What came of my efforts was the &lt;em&gt;entertainment backlog&lt;/em&gt;, an informal and messy system of spreadsheets, notes, and written reviews.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_2ec80f44449e427ca5d74afc5c6ae502.png 400w,
+               /post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_894ed79274b3bd8d97915ad02a46254c.png 760w,
+               /post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/announcing-reviews/backlog_huf9ba52e8be594dc786ac117f88e9927c_14836_2ec80f44449e427ca5d74afc5c6ae502.png&#34;
+               width=&#34;760&#34;
+               height=&#34;229&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;In concept, the backlog is simple: it&amp;rsquo;s a list of content (books, movies, music, games, etc.) organized by progression. When I&amp;rsquo;ve purchased something (or, in the streaming era, when I&amp;rsquo;m interested in it and have access to it), I add it to the backlog as &amp;ldquo;Owned.&amp;rdquo; When I start reading/watching/playing it, it becomes &amp;ldquo;In-Progress.&amp;rdquo; Once I&amp;rsquo;m done with it, it becomes &amp;ldquo;Completed.&amp;rdquo; With just these three stages, I&amp;rsquo;m able to keep track of what I&amp;rsquo;m engaging with and avoid forgetting about it and having to start over a year or more later. As a caveat, if ever something is boring me, I just drop it from the backlog altogether. The system is there to support me, not force me to complete uninteresting stuff.&lt;/p&gt;
+&lt;p&gt;Implementation of these three stages can come in a variety of formats. The gold standard would probably be some dedicated, slick piece of software. I&amp;rsquo;ve gotten by with a mix of spreadsheets, a &lt;a href=&#34;https://trello.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Trello board&lt;/a&gt; (Owned/In-Progress/Completed are lists, and each item is a card), and an &amp;ldquo;art and entertainment journal&amp;rdquo; where I write about what I engage with daily. Regardless of how it&amp;rsquo;s implemented, the point is to not let things go stale.&lt;/p&gt;
+&lt;h2 id=&#34;the-role-of-reviews&#34;&gt;The Role of Reviews&lt;/h2&gt;
+&lt;p&gt;The fourth and final stage of the backlog is &amp;ldquo;Reviewed,&amp;rdquo; which is where &amp;ldquo;Completed&amp;rdquo; items go once I&amp;rsquo;ve written some thoughts down about them. Traditionally, my reviews have had a numerical rating and a written portion, though as I get older I find that my ratings are less useful to me than my reflections.&lt;/p&gt;
+&lt;p&gt;I write reviews for two reasons: to &lt;em&gt;&lt;strong&gt;avoid forgetting my experiences&lt;/strong&gt;&lt;/em&gt; and to &lt;em&gt;&lt;strong&gt;combat entertainment consumerism with reflection&lt;/strong&gt;&lt;/em&gt;. These goals work together. When entertainment is reduced to &amp;ldquo;empty calories&amp;rdquo; because I don&amp;rsquo;t spend any time reflecting on it, I&amp;rsquo;m always hungry for more. When I know I will invest thought and energy into my entertainment, I can be more selective about committing to higher quality experiences. In turn, I can take the time to listen to and be impacted by what these experiences have to say in their stories and art.&lt;/p&gt;
+&lt;p&gt;Rest and play are non-negotiables in my life, but taking time to reflect thoughtfully on what I&amp;rsquo;m engaging with helps me keep a healthy relationship with less intentional entertainment and make space for more challenging and impactful art and nonfiction.&lt;/p&gt;
+&lt;h2 id=&#34;hacking-the-academic-theme&#34;&gt;Hacking the Academic Theme&lt;/h2&gt;
+&lt;p&gt;This was my first real attempt at working with HTML, CSS, and JavaScript beyond some &lt;a href=&#34;https://www.codecademy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Codecademy&lt;/a&gt; lessons I did in undergrad, so building out reviews was an uphill climb, even when mostly working with preexisting structures provided by the Academic theme. No particular lesson learned is a big enough deal to write about, but I&amp;rsquo;m most proud of integrating third-party scripts &lt;a href=&#34;https://kimmobrunfeldt.github.io/progressbar.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;progressbar.js&lt;/a&gt; and &lt;a href=&#34;https://gka.github.io/chroma.js/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;chroma.js&lt;/a&gt; to help with the animation and coloring of the numerical ratings at the end of each review.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_3555c1b21eaddad5abcf6c4f194f1385.png 400w,
+               /post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_4c1ed8a2227db78b80cb39eb723a735d.png 760w,
+               /post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/post/announcing-reviews/rating_hu7038b241120a37a417eeefe912ff6036_21825_3555c1b21eaddad5abcf6c4f194f1385.png&#34;
+               width=&#34;760&#34;
+               height=&#34;253&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;This is just a screenshot, but the real ratings animate when they&amp;rsquo;re first loaded. The animation is usually done by the time you scroll down to the bottom where the ratings actually are, but refreshing the page will let you see it in action! It&amp;rsquo;s potentially possible to &lt;a href=&#34;https://github.com/kimmobrunfeldt/progressbar.js/issues/265&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;delay the animation&lt;/a&gt; until the ratings are scrolled into view, but my knowledge of jQuery is nonexistent so I&amp;rsquo;ll be leaving that as an improvement for another day.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

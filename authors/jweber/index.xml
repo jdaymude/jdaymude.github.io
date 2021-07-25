@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Joshua J. Daymude</title>
+    <title>Jamison W. Weber | Joshua J. Daymude</title>
     <link>https://jdaymude.github.io/authors/jweber/</link>
       <atom:link href="https://jdaymude.github.io/authors/jweber/index.xml" rel="self" type="application/rss+xml" />
-    <description>Joshua J. Daymude</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright>
+    <description>Jamison W. Weber</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Thu, 07 Jan 2021 09:35:00 +0900</lastBuildDate>
     <image>
-      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
-      <title>Joshua J. Daymude</title>
+      <url>https://jdaymude.github.io/authors/jweber/avatar_hu51aa07727656e984e8c5c8ee3635030a_287093_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Jamison W. Weber</title>
       <link>https://jdaymude.github.io/authors/jweber/</link>
     </image>
     
     <item>
       <title>Bio-Inspired Energy Distribution for Programmable Matter</title>
-      <link>https://jdaymude.github.io/talk/2021icdcn-energydistribution/</link>
+      <link>https://jdaymude.github.io/event/2021icdcn-energydistribution/</link>
       <pubDate>Thu, 07 Jan 2021 09:35:00 +0900</pubDate>
-      <guid>https://jdaymude.github.io/talk/2021icdcn-energydistribution/</guid>
+      <guid>https://jdaymude.github.io/event/2021icdcn-energydistribution/</guid>
       <description></description>
     </item>
     
@@ -38,8 +38,6 @@
 
 
 
-  
-  
 
 
 
@@ -49,34 +47,18 @@
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim_huadd53d25b4b78d7c355eb920cadde841_1928502_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim_huadd53d25b4b78d7c355eb920cadde841_1928502_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
-&lt;div class=&#34;alert alert-warning&#34;&gt;
-  &lt;div&gt;
-    These GIFs are supposed to animate, but this is currently an &lt;a href=&#34;https://github.com/gohugoio/hugo/issues/5030&#34;&gt;open issue&lt;/a&gt; with Hugo. I&amp;rsquo;ll update this when the issue is fixed. In the meantime, feel free to read the (identical) version on our &lt;a href=&#34;https://sops.engineering.asu.edu/sops/energy-distribution/&#34;&gt;lab site&lt;/a&gt;.
-  &lt;/div&gt;
-&lt;/div&gt;
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/energysim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;When communication of the stress/inhibit flags is disabled, the energy distribution strategy in Energy-Sharing fails (just as the bacterial biofilms fail to feed all bacteria when their signal relays are disabled). A simulation of this setting is shown below, corresponding to Figure 3 in the paper. Without the communication phase to inhibit particles from using energy while those that are stressed recharge, particles continuously share any energy they have with their descendants in the spanning forest. Thus, while the leaves of the spanning forest occasionally meet their energy demands(seen as the flickering darker green particles), even after 1000 rounds most particles have still not met their energy demand even once.&lt;/p&gt;
 
 
 
 
 
-  
-  
 
 
 
@@ -86,31 +68,14 @@
 
 
 
-
-
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim_hue56c053e86b1d7752d82979042082b7b_1325790_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim_hue56c053e86b1d7752d82979042082b7b_1325790_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
-
-
-
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/nocommsim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;As an independent but supporting result, we present the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm that enables a spanning forest of particles to self-repair in the presence of &lt;em&gt;crash failures&lt;/em&gt; so long as the set of non-faulty particles remains connected and there is at least one non-crashed root. We prove that this algorithm stabilizes in a spanning forest rooted at root particles in at most ${\cal O}(m^2)$ asynchronous rounds, where $m$ is the number of particles that are severed from the spanning forest by crash failures.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm relies on an underlying spanning forest structure to communicate its stress/inhibition signals. However, if particles move as they often do in collective behaviors, this disrupts the communication structure. Thus, the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm can be used as an underlying primitive in &lt;strong&gt;Energy-Sharing&lt;/strong&gt; so that &lt;strong&gt;Energy-Sharing&lt;/strong&gt; can be composed with existing amoebot model algorithms, extending them to consider energy constraints. Below is an example of &lt;strong&gt;Energy-Sharing&lt;/strong&gt; composed with 
-&lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#hexagonformation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Basic Shape Formation&lt;/a&gt;, corresponding to Figure 5 in the paper.&lt;/p&gt;
-
-
-
-
-
-  
-  
+&lt;p&gt;The &lt;strong&gt;Energy-Sharing&lt;/strong&gt; algorithm relies on an underlying spanning forest structure to communicate its stress/inhibition signals. However, if particles move as they often do in collective behaviors, this disrupts the communication structure. Thus, the &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; algorithm can be used as an underlying primitive in &lt;strong&gt;Energy-Sharing&lt;/strong&gt; so that &lt;strong&gt;Energy-Sharing&lt;/strong&gt; can be composed with existing amoebot model algorithms, extending them to consider energy constraints. Below is an example of &lt;strong&gt;Energy-Sharing&lt;/strong&gt; composed with &lt;a href=&#34;https://sops.engineering.asu.edu/simulations/#hexagonformation&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Basic Shape Formation&lt;/a&gt;, corresponding to Figure 5 in the paper.&lt;/p&gt;
 
 
 
@@ -122,32 +87,19 @@
 
 
 
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim_hu2fbc63d50825f3b5ab2ad0065393d5ce_7429658_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim_hu2fbc63d50825f3b5ab2ad0065393d5ce_7429658_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
 
 
 
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/compsim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
 &lt;p&gt;Since &lt;strong&gt;Energy-Sharing&lt;/strong&gt; meets the system’s energy demands every ${\cal O}(n)$ asynchronous rounds and &lt;strong&gt;Forest-Prune-Repair&lt;/strong&gt; repairs any disruptions to the communication structure as particles move, a composed algorithm will not be impeded by the underlying energy distribution primitive, but may add significant overhead to its runtime. However, we observe reasonable performance in practice: for example, since hexagon formation terminates in ${\cal O}(n)$ rounds, our proven bounds suggest that the composed algorithm could terminate in time ${\cal O}(n^2)$ or worse but the graph below demonstrates an overhead that appears asymptotically sublinear. With the addition of more energy roots, the composed algorithm is dramatically faster, approaching the runtime achieved without energy constraints.&lt;/p&gt;
 &lt;img src=&#34;compgraph_time.png&#34; style=&#34;display: inline-block; width: 48%; margin-right: 1%&#34;/&gt;
 &lt;img src=&#34;compgraph_root.png&#34; style=&#34;display: inline-block; width: 48%; margin-left: 1%&#34;/&gt;
-&lt;p&gt;As a final, informal experiment, we performed a simulation where energy is used for &lt;em&gt;reproduction&lt;/em&gt;, mimicking the bacterial biofilms we were inspired by. In our preliminary experiments, we obtain behavior that is qualitatively similar to the biofilm growth patterns observed by 
-&lt;a href=&#34;https://www.nature.com/articles/nature14660&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liu&lt;/a&gt; and 
-&lt;a href=&#34;https://www.nature.com/articles/nature15709&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prindle&lt;/a&gt; et al.; in particular, the use of communication and inhibition leads to an oscillatory growth rate. The simulation below corresponds to Figure 7 in the paper.&lt;/p&gt;
-
-
-
-
-
-  
-  
+&lt;p&gt;As a final, informal experiment, we performed a simulation where energy is used for &lt;em&gt;reproduction&lt;/em&gt;, mimicking the bacterial biofilms we were inspired by. In our preliminary experiments, we obtain behavior that is qualitatively similar to the biofilm growth patterns observed by &lt;a href=&#34;https://www.nature.com/articles/nature14660&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Liu&lt;/a&gt; and &lt;a href=&#34;https://www.nature.com/articles/nature15709&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Prindle&lt;/a&gt; et al.; in particular, the use of communication and inhibition leads to an oscillatory growth rate. The simulation below corresponds to Figure 7 in the paper.&lt;/p&gt;
 
 
 
@@ -159,19 +111,25 @@
 
 
 
-&lt;figure &gt;
-
-
-  &lt;a data-fancybox=&#34;&#34; href=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim_hu54c245b987776be89a7b4b40994d7da0_9473274_2000x2000_fit_lanczos.gif&#34; &gt;
-
-
-  &lt;img data-src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim_hu54c245b987776be89a7b4b40994d7da0_9473274_2000x2000_fit_lanczos.gif&#34; class=&#34;lazyload&#34; alt=&#34;&#34; width=&#34;904&#34; height=&#34;660&#34;&gt;
-&lt;/a&gt;
 
 
 
-&lt;/figure&gt;
-
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34;
+           src=&#34;https://jdaymude.github.io/publication/daymude2021-energydistribution/growthsim.gif&#34;
+           loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems (SOPS)</title>
+      <link>https://jdaymude.github.io/project/sops/</link>
+      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/sops/</guid>
+      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
+&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
 </description>
     </item>
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>simulation | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/simulation/</link>
+      <atom:link href="https://jdaymude.github.io/tag/simulation/index.xml" rel="self" type="application/rss+xml" />
+    <description>simulation</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Wed, 24 Jul 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>simulation</title>
+      <link>https://jdaymude.github.io/tag/simulation/</link>
+    </image>
+    
+    <item>
+      <title>Simulation of Programmable Matter Systems Using Active Tile-Based Self-Assembly</title>
+      <link>https://jdaymude.github.io/publication/alumbaugh2019-tilesimulation/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/alumbaugh2019-tilesimulation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

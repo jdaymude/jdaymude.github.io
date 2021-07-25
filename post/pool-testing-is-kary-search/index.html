@@ -1,12 +1,14 @@
-<!DOCTYPE html>
-<html lang="en-us">
+<!DOCTYPE html><html lang="en-us" >
 
 <head>
-
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Source Themes Academic 4.8.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
 
   
 
@@ -21,41 +23,71 @@
   
   
 
-  <meta name="author" content="Joshua J. Daymude">
+  <meta name="author" content="Joshua J. Daymude" />
 
   
   
   
     
   
-  <meta name="description" content="&#34;Pool testing&#34; has been getting media attention lately as a technique for stretching our limited supply of COVID-19 test kits while delivering accurate results. In this post, I connect pool testing to the classical k-ary search algorithm and analyze its advantages over traditional testing.">
+  <meta name="description" content="&#34;Pool testing&#34; has been getting media attention lately as a technique for stretching our limited supply of COVID-19 test kits while delivering accurate results. In this post, I connect pool testing to the classical k-ary search algorithm and analyze its advantages over traditional testing." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://jdaymude.github.io/post/pool-testing-is-kary-search/">
+  <link rel="alternate" hreflang="en-us" href="https://jdaymude.github.io/post/pool-testing-is-kary-search/" />
 
   
 
 
+
+
+
+
+
+
+
+  
+
+
+
+
   
   
-  
-  <meta name="theme-color" content="#3DAAD9">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   
 
   
   
   
-  <script src="/js/mathjax-config.js"></script>
+    <meta name="theme-color" content="#3DAAD9" />
   
 
   
+  
+    
+    <script src="/js/mathjax-config.js"></script>
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
   
   
   
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-1/css/all.min.css" integrity="sha256-4w9DunooKSr3MFXHXWyFER38WmPdm361bQS/2KUWZbU=" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
 
     
     
@@ -66,14 +98,14 @@
       
       
         
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/github.min.css" crossorigin="anonymous" title="hl-light" disabled>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'" disabled>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'">
         
       
     
 
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
+    
     
 
     
@@ -81,12 +113,6 @@
     
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -95,12 +121,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -109,12 +129,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -123,12 +137,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -137,12 +145,6 @@
       
     
       
-
-      
-      
-
-      
-    
       
 
       
@@ -151,14 +153,6 @@
       
     
       
-
-      
-      
-
-      
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js" integrity="sha256-Md1qLToewPeKjfAHU1zyPwOutccPAm5tahnaw7Osw0A=" crossorigin="anonymous" async></script>
-      
-    
       
 
       
@@ -167,12 +161,54 @@
       
     
       
+      
 
       
       
 
       
     
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
       
 
       
@@ -183,29 +219,41 @@
       
     
       
+      
 
       
       
 
       
     
+      
+      
+
+      
+      
+
+      
+    
+  
 
   
-
   
   
-  
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,400italic,700%7CLato:400,400italic,700,700italic%7CSource+Code+Pro&display=swap">
-  
-
-  
-  
-  
-  
-  <link rel="stylesheet" href="/css/academic.css">
-
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&family=Raleway:ital,wght@0,400;0,700;1,400&family=Source+Code+Pro&display=swap" media="print" onload="this.media='all'">
+    
   
 
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.4787a1ee096667abb09ee0d8df627890.css" />
+
+  
 
 
 
@@ -241,6 +289,7 @@
 
   gtag('js', new Date());
   gtag('config', 'UA-161914201-1', {});
+  gtag('set', {'cookie_flags': 'SameSite=None;Secure'});
 
   
   document.addEventListener('click', onClickCallback, false);
@@ -249,15 +298,31 @@
 
   
 
+  
 
   
 
-  <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu1dc8deb1865675db905a286e8af9308b_16380_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu1dc8deb1865675db905a286e8af9308b_16380_192x192_fill_lanczos_center_2.png">
 
-  <link rel="canonical" href="https://jdaymude.github.io/post/pool-testing-is-kary-search/">
 
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu1dc8deb1865675db905a286e8af9308b_16380_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu1dc8deb1865675db905a286e8af9308b_16380_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://jdaymude.github.io/post/pool-testing-is-kary-search/" />
+
+  
+  
+  
   
   
   
@@ -266,21 +331,21 @@
     
   
   
-  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:card" content="summary_large_image" />
   
-  <meta property="twitter:site" content="@joshdaymude">
-  <meta property="twitter:creator" content="@joshdaymude">
-  
-  <meta property="og:site_name" content="Joshua J. Daymude">
-  <meta property="og:url" content="https://jdaymude.github.io/post/pool-testing-is-kary-search/">
-  <meta property="og:title" content="Pool Testing is k-ary Search for COVID-19 | Joshua J. Daymude">
-  <meta property="og:description" content="&#34;Pool testing&#34; has been getting media attention lately as a technique for stretching our limited supply of COVID-19 test kits while delivering accurate results. In this post, I connect pool testing to the classical k-ary search algorithm and analyze its advantages over traditional testing."><meta property="og:image" content="https://jdaymude.github.io/post/pool-testing-is-kary-search/featured.png">
-  <meta property="twitter:image" content="https://jdaymude.github.io/post/pool-testing-is-kary-search/featured.png"><meta property="og:locale" content="en-us">
+  <meta property="og:site_name" content="Joshua J. Daymude" />
+  <meta property="og:url" content="https://jdaymude.github.io/post/pool-testing-is-kary-search/" />
+  <meta property="og:title" content="Pool Testing is k-ary Search for COVID-19 | Joshua J. Daymude" />
+  <meta property="og:description" content="&#34;Pool testing&#34; has been getting media attention lately as a technique for stretching our limited supply of COVID-19 test kits while delivering accurate results. In this post, I connect pool testing to the classical k-ary search algorithm and analyze its advantages over traditional testing." /><meta property="og:image" content="https://jdaymude.github.io/post/pool-testing-is-kary-search/featured.png" />
+    <meta property="twitter:image" content="https://jdaymude.github.io/post/pool-testing-is-kary-search/featured.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="article:published_time" content="2020-07-09T14:04:44-07:00">
+      <meta
+        property="article:published_time"
+        content="2020-07-09T14:04:44-07:00"
+      />
     
-    <meta property="article:modified_time" content="2020-07-14T11:45:47-07:00">
+    <meta property="article:modified_time" content="2020-07-09T14:04:44-07:00">
   
 
   
@@ -313,7 +378,7 @@
   ],
   
   "datePublished": "2020-07-09T14:04:44-07:00",
-  "dateModified": "2020-07-14T11:45:47-07:00",
+  "dateModified": "2020-07-09T14:04:44-07:00",
   
   "author": {
     "@type": "Person",
@@ -325,7 +390,7 @@
     "name": "Joshua J. Daymude",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_192x192_fit_lanczos_2.png"
+      "url": "https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_192x192_fit_lanczos_3.png"
     }
   },
   "description": "\"Pool testing\" has been getting media attention lately as a technique for stretching our limited supply of COVID-19 test kits while delivering accurate results. In this post, I connect pool testing to the classical k-ary search algorithm and analyze its advantages over traditional testing."
@@ -336,9 +401,7 @@
 
   
 
-
   
-
 
   
 <script id="progressbar" src="https://cdn.rawgit.com/kimmobrunfeldt/progressbar.js/1.1.0/dist/progressbar.js"></script>
@@ -348,12 +411,26 @@
 
 
   <title>Pool Testing is k-ary Search for COVID-19 | Joshua J. Daymude</title>
-
 </head>
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="dark">
 
-  <aside class="search-results" id="search">
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper dark " data-wc-page-id="0b95edb72f5345714bdd478f3fb04a2b">
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.f576c78741b69f0746956feb3feacdee.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
   <div class="container">
     <section class="search-header">
 
@@ -362,16 +439,22 @@
           <h1>Search</h1>
         </div>
         <div class="col-6 col-search-close">
-          <a class="js-search" href="#"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
         </div>
       </div>
 
       <div id="search-box">
         
         <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
-        autocomplete="off" autocorrect="off" spellcheck="false" type="search">
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
         
       </div>
+
+      
+      
+
+      
 
     </section>
     <section class="section-search-results">
@@ -385,7 +468,14 @@
 </aside>
 
 
-  
+
+  <div class="page-header">
+    
+
+
+
+
+
 
 
 
@@ -396,24 +486,24 @@
 
 
 <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
-  <div class="container">
+  <div class="container-xl">
 
     
     <div class="d-none d-lg-inline-flex">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_0x70_resize_lanczos_2.png" alt="Joshua J. Daymude"></a>
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_0x70_resize_lanczos_3.png" alt="Joshua J. Daymude"></a>
     </div>
     
 
     
     <button type="button" class="navbar-toggler" data-toggle="collapse"
-            data-target="#navbar-content" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
     <span><i class="fas fa-bars"></i></span>
     </button>
     
 
     
     <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-      <a class="navbar-brand" href="/"><img src="/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_0x70_resize_lanczos_2.png" alt="Joshua J. Daymude"></a>
+      <a class="navbar-brand" href="/"><img src="/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_0x70_resize_lanczos_3.png" alt="Joshua J. Daymude"></a>
     </div>
     
 
@@ -434,16 +524,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -463,16 +561,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -492,16 +598,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -521,16 +635,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -550,16 +672,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -579,16 +709,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -608,16 +746,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -637,16 +783,24 @@
         
 
         
+
         
         
         
         
+
         
           
+            
+            
           
           
             
-          
+            
+            
+              
+            
+            
           
         
 
@@ -666,14 +820,22 @@
         
 
         
-        
+
         
         
         
         
 
+        
+          
+            
+            
+          
+          
+        
+
         <li class="nav-item">
-          <a class="nav-link " href="/files/jdaymude_cv.pdf"><span>CV</span></a>
+          <a class="nav-link " href="/uploads/jdaymude_cv.pdf"><span>CV</span></a>
         </li>
 
         
@@ -686,14 +848,23 @@
     </div>
 
     <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
       
       <li class="nav-item">
-        <a class="nav-link js-search" href="#"><i class="fas fa-search" aria-hidden="true"></i></a>
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
       </li>
       
 
       
+      
 
+      
       
 
     </ul>
@@ -702,7 +873,10 @@
 </nav>
 
 
-  <article class="article">
+  </div>
+
+  <div class="page-body">
+    <article class="article">
 
   
 
@@ -748,8 +922,8 @@
   <div>
     
 
-  
-  <span><a href="/authors/jdaymude/">Joshua J. Daymude</a></span>
+  <span class="author-highlighted">
+      <a href="/authors/jdaymude/">Joshua J. Daymude</a></span>
   </div>
   
   
@@ -759,10 +933,8 @@
     
     
       
-          Last updated on
-      
     
-    July 14, 2020
+    July 9, 2020
   </span>
   
 
@@ -778,26 +950,20 @@
   
   
   
+  
+  
+  
 
   
   
   <span class="middot-divider"></span>
   <span class="article-categories">
-    <i class="fas fa-folder mr-1"></i><a href="/categories/teaching/">teaching</a></span>
+    <i class="fas fa-folder mr-1"></i><a href="/category/teaching/">teaching</a></span>
   
 
 </div>
 
   
-
-
-
-
-
-
-
-
-
 
 
 
@@ -808,7 +974,7 @@
 
 <div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 522px;">
   <div style="position: relative">
-    <img src="/post/pool-testing-is-kary-search/featured_hu876e62b5141c4511414fb871920ac937_123529_720x0_resize_lanczos_2.png" alt="" class="featured-image">
+    <img src="/post/pool-testing-is-kary-search/featured_hu876e62b5141c4511414fb871920ac937_123529_720x0_resize_lanczos_3.png" alt="" class="featured-image">
     
   </div>
 </div>
@@ -825,14 +991,11 @@ Otherwise, if the mixture comes back positive, then additional tests are needed 
 <p>I&rsquo;m far from a public health and epidemiology expert, but as an enthusiastic computer scientist I can&rsquo;t help but see <em>binary search</em> (or more generally, $k$-ary search) all over this pool testing technique.
 My goal in this post is to draw out this connection, illustrating why the efficiency of $k$-ary search (and of pool testing, by extension) is so attractive.
 I&rsquo;ll also do some crude math to explore what happens to pool testing if there are too many infections in the population and how many tests it could actually save.</p>
-<p>If you&rsquo;re not interested in any of that but want to know more about pool testing, NPR has a 
-<a href="https://www.npr.org/sections/health-shots/2020/07/06/886886255/pooling-coronavirus-tests-can-spare-scarce-supplies-but-theres-a-catch" target="_blank" rel="noopener">short primer</a> and the FDA has put out a 
-<a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-facilitating-diagnostic-test-availability-asymptomatic-testing-and" target="_blank" rel="noopener">statement</a> on the topic.
+<p>If you&rsquo;re not interested in any of that but want to know more about pool testing, NPR has a <a href="https://www.npr.org/sections/health-shots/2020/07/06/886886255/pooling-coronavirus-tests-can-spare-scarce-supplies-but-theres-a-catch" target="_blank" rel="noopener">short primer</a> and the FDA has put out a <a href="https://www.fda.gov/news-events/press-announcements/coronavirus-covid-19-update-facilitating-diagnostic-test-availability-asymptomatic-testing-and" target="_blank" rel="noopener">statement</a> on the topic.
 On the other hand, if you&rsquo;re interested in more serious research on the topic, this footnote<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup> is for you.</p>
 <h2 id="finding-things-fast">Finding Things Fast</h2>
 <p>In a <em>search problem</em>, the goal is to find a specific item $x^*$ amidst a whole bunch of possibilities $(x_1, x_2, \ldots, x_n)$.
-It&rsquo;s like 
-<a href="https://waldo.fandom.com/wiki/Waldo_Wiki" target="_blank" rel="noopener">Where&rsquo;s Waldo</a> if Waldo were $x^*$ and each $x_i$ was a person on the page.
+It&rsquo;s like <a href="https://waldo.fandom.com/wiki/Waldo_Wiki" target="_blank" rel="noopener">Where&rsquo;s Waldo</a> if Waldo were $x^*$ and each $x_i$ was a person on the page.
 Or, perhaps more practically, it&rsquo;s the way you give your favorite maps app a specific address $x^*$ and it has to find that place&rsquo;s data (latitude/longitude, reviews, etc.) amongst all possible places $x_i$ in its gigantic database.</p>
 <p>A not-so-great approach to playing Where&rsquo;s Waldo is to make a list of every person on the page and check them one-by-one to see if they&rsquo;re Waldo.
 (This is, perhaps, an entertaining way to play since you get to appreciate all the fun and ridiculous details, but we&rsquo;re going for efficiency here).
@@ -852,13 +1015,11 @@ So, if we were to use brute force search, we&rsquo;d be looking through all $n =
 However, if we had our helpful friend to do binary search with us, we&rsquo;d only need to ask their help $\log_2(500) \approx 9$ times before we found Waldo!
 Not bad, hey?</p>
 <p>The key to binary search is in throwing away whole chunks of possibilities all at once, rapidly narrowing our search field.
-$k$-ary search is just a generalization, where instead of splitting the possibilities in half each time, we split them into $k$ equal parts. We then keep the $n/k$-sized section containing our target and repeat, requiring a total of $\log_k(n)$ search operations to find our target (which is even faster than binary search!). Before we call it quits with Waldo and get back to pool testing, it&rsquo;s worth pointing out that there are plenty of ways to make searching even faster (especially with parallel algorithms). There are even search algorithms 
-<a href="http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/" target="_blank" rel="noopener">specifically for finding Waldo</a>, if that&rsquo;s your jam.</p>
+$k$-ary search is just a generalization, where instead of splitting the possibilities in half each time, we split them into $k$ equal parts. We then keep the $n/k$-sized section containing our target and repeat, requiring a total of $\log_k(n)$ search operations to find our target (which is even faster than binary search!). Before we call it quits with Waldo and get back to pool testing, it&rsquo;s worth pointing out that there are plenty of ways to make searching even faster (especially with parallel algorithms). There are even search algorithms <a href="http://www.randalolson.com/2015/02/03/heres-waldo-computing-the-optimal-search-strategy-for-finding-waldo/" target="_blank" rel="noopener">specifically for finding Waldo</a>, if that&rsquo;s your jam.</p>
 <h2 id="pool-testing-meet-k-ary-search">Pool Testing, Meet k-ary Search</h2>
 <p>Shifting our perspective on testing from personal experience (&ldquo;Have I contracted COVID-19?&quot;) to the population level (&ldquo;Who in our communities are positive?&quot;), we can frame testing as a search problem.
-Among all individuals $(x_1, x_2, \ldots, x_n)$, we want to find those $x_i$'s that are positive for COVID-19 so they can isolate and get timely medical care.
-In this setting, brute force search would be individually testing every single person — and that&rsquo;s 
-<a href="https://www.nytimes.com/2020/07/06/us/coronavirus-test-shortage.html" target="_blank" rel="noopener">way more tests</a> than we have.
+Among all individuals $(x_1, x_2, \ldots, x_n)$, we want to find those $x_i$&rsquo;s that are positive for COVID-19 so they can isolate and get timely medical care.
+In this setting, brute force search would be individually testing every single person — and that&rsquo;s <a href="https://www.nytimes.com/2020/07/06/us/coronavirus-test-shortage.html" target="_blank" rel="noopener">way more tests</a> than we have.
 The current US strategy of only testing symptomatic cases isn&rsquo;t more &ldquo;efficient&rdquo; than brute force, it&rsquo;s just brute force search on a (hopefully) small subset of the total population.</p>
 <p>Pool testing, on the other hand, is similar to $k$-ary search.
 Just like our helpful friend telling us which half of the page Waldo isn&rsquo;t on, a single pool test ideally shows us a whole group of people that we can declare COVID-19 negative; in our search for positive cases, we can look elsewhere.</p>
@@ -867,8 +1028,6 @@ Just like our helpful friend telling us which half of the page Waldo isn&rsquo;t
 
 
 
-  
-  
 
 
 
@@ -878,21 +1037,17 @@ Just like our helpful friend telling us which half of the page Waldo isn&rsquo;t
 
 
 
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="3242" height="1507">
-</a>
-
-
-
-</figure>
-
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_d893c5c675f1faec887bbbea523952bc.png 400w,
+               /post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_a6fd6dae15544600ded74901ce065f67.png 760w,
+               /post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_1200x1200_fit_lanczos_3.png 1200w"
+               src="/post/pool-testing-is-kary-search/pooltest_hub8d5ccf727d58e61b91e4b04452d5a8c_507898_d893c5c675f1faec887bbbea523952bc.png"
+               width="760"
+               height="353"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
 <p>Consider the situation depicted above, with $128$ total individuals needing tests but only $4$ of them COVID-19 positive (shown in red).
 If we tested all $128$ people individually (brute force), we would need $128$ tests.
 But suppose we could reliably test pools of up to $16$ people at once, as shown in the first row.
@@ -935,7 +1090,7 @@ The table below compares the number of tests used by each testing strategy in th
 <h2 id="what-can-go-wrong">What Can Go Wrong?</h2>
 <p>At least a few serious things:</p>
 <ul>
-<li>Added logistical complications for labs, including tracking which individuals&rsquo; samples are in which pools, added mixing steps, etc.</li>
+<li>Added logistical complications for labs, including tracking which individuals' samples are in which pools, added mixing steps, etc.</li>
 <li>The possibility of larger <em>false-negative</em> rates (i.e., testing negative when the sample was, in fact, positive) due to samples getting diluted when they&rsquo;re mixed into pools.<sup id="fnref:4"><a href="#fn:4" class="footnote-ref" role="doc-noteref">4</a></sup></li>
 <li>A loss of efficiency when there are too many positive samples.</li>
 </ul>
@@ -958,8 +1113,6 @@ $$\begin{align*} (n/p)(1 - (1 - r)^p) &amp;&lt; (n/p)(1 - 1/p) \\ r &amp;&lt; 1 
 
 
 
-  
-  
 
 
 
@@ -969,27 +1122,22 @@ $$\begin{align*} (n/p)(1 - (1 - r)^p) &amp;&lt; (n/p)(1 - 1/p) \\ r &amp;&lt; 1 
 
 
 
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1920" height="1440">
-</a>
-
-
-
-</figure>
-
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_95bee3cac31fd27c744668969647b2bf.png 400w,
+               /post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_bc08555fd46905af4750f157cfdc0c66.png 760w,
+               /post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_1200x1200_fit_lanczos_3.png 1200w"
+               src="/post/pool-testing-is-kary-search/efficientplot_hubbab132a171178a63e8c403eaeaedda1_112102_95bee3cac31fd27c744668969647b2bf.png"
+               width="760"
+               height="570"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
 <p>The above graph plots this efficient region.
 The x-axis is the pool size $p$ and the y-axis is the infection rate $r$.
 Any point in the blue region represents a $(p,r)$ pair for which pool testing uses less tests than brute force in expectation.
 For example, with a pool size of $p = 16$, our crude math suggests that pool testing is more efficient for infection rates up to, coincidentally, $r \approx 16\%$.
-This would be a terrifyingly high infection rate (at the time of this writing, the CDC reports a $\approx 1\%$ 
-<a href="https://www.cdc.gov/covid-data-tracker/#cases" target="_blank" rel="noopener">positive case rate</a> in the US), so it seems that in realistic settings even one round of pool testing would save a lot of tests.</p>
+This would be a terrifyingly high infection rate (at the time of this writing, the CDC reports a $\approx 1\%$ <a href="https://www.cdc.gov/covid-data-tracker/#cases" target="_blank" rel="noopener">positive case rate</a> in the US), so it seems that in realistic settings even one round of pool testing would save a lot of tests.</p>
 <h2 id="taking-our-savings-to-the-bank">Taking Our Savings to the Bank</h2>
 <p>To recap, we&rsquo;ve seen how pool testing is related to $k$-ary search, how both of these techniques leverage the ability to rule out large groups of possibilities to narrow things down quickly, and how pool testing will save us tests so long as the infection rate is low enough.
 The last thing to nail down is how many tests are actually saved.
@@ -1002,8 +1150,6 @@ The following plot shows this equation for different pool sizes $p$ as a functio
 
 
 
-  
-  
 
 
 
@@ -1013,21 +1159,17 @@ The following plot shows this equation for different pool sizes $p$ as a functio
 
 
 
-
-
-<figure >
-
-
-  <a data-fancybox="" href="/post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_2000x2000_fit_lanczos_2.png" >
-
-
-  <img data-src="/post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_2000x2000_fit_lanczos_2.png" class="lazyload" alt="" width="1920" height="1440">
-</a>
-
-
-
-</figure>
-
+<figure  >
+  <div class="d-flex justify-content-center">
+    <div class="w-100" ><img alt="" srcset="
+               /post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_8566ec12e810fe007a61095c9a21c56e.png 400w,
+               /post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_f3c789c9a66a37ba6b4ac7c12ab8f208.png 760w,
+               /post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_1200x1200_fit_lanczos_3.png 1200w"
+               src="/post/pool-testing-is-kary-search/savingsplot_hu0b73f0fe4a2adce77317aafa0603f92a_185079_8566ec12e810fe007a61095c9a21c56e.png"
+               width="760"
+               height="570"
+               loading="lazy" data-zoomable /></div>
+  </div></figure>
 <p>This shows that larger pool sizes have the potential for saving more tests, but also degrade in their efficiency more rapidly as the infection rate $r$ grows.
 Eventually, if the infection rate becomes too large, all four curves become negative and pool testing ends up using more tests than brute force.
 This corresponds to leaving the efficient region shown in the previous graph.
@@ -1064,21 +1206,16 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 <hr>
 <ol>
 <li id="fn:1" role="doc-endnote">
-<p>
-<a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2767513" target="_blank" rel="noopener">Cherif et al. 2020</a> detail a recent mathematical model for pool testing and 
-<a href="https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059" target="_blank" rel="noopener">Yelin et al. 2020</a> characterize its dilution and false-negative rates. The references in the Yelin paper also cover deeper mathematical analysis (e.g., 
-<a href="https://projecteuclid.org/euclid.aoms/1177731363" target="_blank" rel="noopener">Dorfman 1943</a>) and how pool testing has been used to combat infectious disease in the past (e.g., for malaria in 
-<a href="https://jcm.asm.org/content/48/2/512" target="_blank" rel="noopener">Taylor et al. 2010</a>). <a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2767513" target="_blank" rel="noopener">Cherif et al. 2020</a> detail a recent mathematical model for pool testing and <a href="https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059" target="_blank" rel="noopener">Yelin et al. 2020</a> characterize its dilution and false-negative rates. The references in the Yelin paper also cover deeper mathematical analysis (e.g., <a href="https://projecteuclid.org/euclid.aoms/1177731363" target="_blank" rel="noopener">Dorfman 1943</a>) and how pool testing has been used to combat infectious disease in the past (e.g., for malaria in <a href="https://jcm.asm.org/content/48/2/512" target="_blank" rel="noopener">Taylor et al. 2010</a>).&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:2" role="doc-endnote">
-<p>From my brief sifting of the literature, practical implementations of pool testing only use one round of pool tests: roughly $65\%$ of each sample is used in a pool test, and the remaining $35\%$ is saved for an individual test in case the pool comes back positive. Repeated pool testing doesn&rsquo;t seem to be used in practice, presumably because it would rely on collecting additional swab samples per person. <a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>From my brief sifting of the literature, practical implementations of pool testing only use one round of pool tests: roughly $65\%$ of each sample is used in a pool test, and the remaining $35\%$ is saved for an individual test in case the pool comes back positive. Repeated pool testing doesn&rsquo;t seem to be used in practice, presumably because it would rely on collecting additional swab samples per person.&#160;<a href="#fnref:2" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:3" role="doc-endnote">
-<p>I&rsquo;ve depicted the subpool tests in a <em>binary</em> search kind of way where each positive pool is split in <em>half</em> and retested, but they could be broken into any number of groups. <a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>I&rsquo;ve depicted the subpool tests in a <em>binary</em> search kind of way where each positive pool is split in <em>half</em> and retested, but they could be broken into any number of groups.&#160;<a href="#fnref:3" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 <li id="fn:4" role="doc-endnote">
-<p>
-<a href="https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059" target="_blank" rel="noopener">Yelin et al. 2020</a> estimate that the false-negative rates for pools as large as $16$ or $32$ is roughly $10\%$ based on their experiments. I chose not to do my speculative math for dilution and false-negative rates because I don&rsquo;t understand how PCR tests actually work and don&rsquo;t believe in blindly oversimplifying things for the sake of nice math. <a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p><a href="https://academic.oup.com/cid/article/doi/10.1093/cid/ciaa531/5828059" target="_blank" rel="noopener">Yelin et al. 2020</a> estimate that the false-negative rates for pools as large as $16$ or $32$ is roughly $10\%$ based on their experiments. I chose not to do my speculative math for dilution and false-negative rates because I don&rsquo;t understand how PCR tests actually work and don&rsquo;t believe in blindly oversimplifying things for the sake of nice math.&#160;<a href="#fnref:4" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </section>
@@ -1089,13 +1226,16 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
+
+
+
 <div class="article-tags">
   
-  <a class="badge badge-light" href="/tags/covid-19/">covid-19</a>
+  <a class="badge badge-light" href="/tag/covid-19/">covid-19</a>
   
-  <a class="badge badge-light" href="/tags/pool-testing/">pool-testing</a>
+  <a class="badge badge-light" href="/tag/pool-testing/">pool-testing</a>
   
-  <a class="badge badge-light" href="/tags/search-algorithms/">search-algorithms</a>
+  <a class="badge badge-light" href="/tag/search-algorithms/">search-algorithms</a>
   
 </div>
 
@@ -1182,12 +1322,9 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
-
+  
   
     
-    
-
-
 
 
 
@@ -1201,7 +1338,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
   <div class="media author-card content-widget-hr">
     
       
-      <img class="avatar mr-3 avatar-circle" src="/authors/jdaymude/avatar_hu4d7d01c1aaa3ea1eb29c77aa3e89f777_905663_270x270_fill_q90_lanczos_center.jpg" alt="Joshua J. Daymude">
+      <a href="https://jdaymude.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/jdaymude/avatar_hu4d7d01c1aaa3ea1eb29c77aa3e89f777_905663_270x270_fill_q75_lanczos_center.jpg" alt="Joshua J. Daymude"></a>
     
 
     <div class="media-body">
@@ -1220,7 +1357,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
       
     
     <li>
-      <a href="/files/jdaymude_cv.pdf" >
+      <a href="/uploads/jdaymude_cv.pdf" >
         <i class="ai ai-cv"></i>
       </a>
     </li>
@@ -1254,23 +1391,6 @@ Perhaps if this technique were widely used, we would all be that much closer to 
     <li>
       <a href="https://twitter.com/joshdaymude" target="_blank" rel="noopener">
         <i class="fab fa-twitter"></i>
-      </a>
-    </li>
-  
-    
-    
-    
-      
-    
-    
-    
-    
-    
-      
-    
-    <li>
-      <a href="https://www.instagram.com/joshdaymude" target="_blank" rel="noopener">
-        <i class="fab fa-instagram"></i>
       </a>
     </li>
   
@@ -1342,149 +1462,67 @@ Perhaps if this technique were widely used, we would all be that much closer to 
 
 
 
+
+
+
+
   
   
+
+
 
 
 
   </div>
 </article>
+  </div>
 
-      
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
 
-    
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
-
-      
-
-      
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/highlight.min.js" integrity="sha256-eOgo0OtLL4cdq7RdwRUiGKLX9XsIJ7nGhWEKbohmVAQ=" crossorigin="anonymous"></script>
-        
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.1/languages/python.min.js"></script>
-        
-      
-
-    
-
-    
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
-    
-
-    
-    
-    <script>const code_highlighting = true;</script>
-    
-
-    
-    
-    <script>const isSiteThemeDark = true;</script>
-    
-
-    
-    
-    
-    
-    
-    
-    <script>
-      const search_config = {"indexURI":"/index.json","minLength":1,"threshold":0.3};
-      const i18n = {"no_results":"No results found","placeholder":"Search...","results":"results found"};
-      const content_type = {
-        'post': "Posts",
-        'project': "Projects",
-        'publication' : "Publications",
-        'talk' : "Talks"
-        };
-    </script>
-    
-
-    
-    
-
-    
-    
-    <script id="search-hit-fuse-template" type="text/x-template">
-      <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">{{type}}</div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-      </div>
-    </script>
-    
-
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
-    
-
-    
-    
-
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-      
-    
-    
-    
-    
-    <script src="/js/academic.min.37431be2d92d7fb0160054761ab79602.js"></script>
-
-    
-
-
-
+  
 
 
 
   
+
   
-  <div class="container">
-    <footer class="site-footer">
+
   
+  <p class="powered-by">
+    © 2021 Joshua J. Daymude
+  </p>
+  
+
+  
+  
+
+
+
+
+
 
   <p class="powered-by">
-    © 2021 Joshua J. Daymude &middot; 
-
-    Powered by the
-    <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
-    <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
-
     
-    <span class="float-right" aria-hidden="true">
-      <a href="#" class="back-to-top">
-        <span class="button_icon">
-          <i class="fas fa-chevron-up fa-2x"></i>
-        </span>
-      </a>
-    </span>
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-modules" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
     
   </p>
 </footer>
 
+    </div>
+    
   </div>
-  
 
   
 <div id="modal" class="modal fade" role="dialog">
@@ -1511,6 +1549,106 @@ Perhaps if this technique were widely used, we would all be that much closer to 
     </div>
   </div>
 </div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" crossorigin="anonymous"></script>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js" integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js" integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.8859d3cf6e5d748215fea2814e2e9c7f.js"></script>
+
+    
+
+
+
+
+
 
 </body>
 </html>

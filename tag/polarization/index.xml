@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>polarization | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/polarization/</link>
+      <atom:link href="https://jdaymude.github.io/tag/polarization/index.xml" rel="self" type="application/rss+xml" />
+    <description>polarization</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Tue, 23 Mar 2021 07:43:30 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>polarization</title>
+      <link>https://jdaymude.github.io/tag/polarization/</link>
+    </image>
+    
+    <item>
+      <title>Preventing Extreme Polarization of Political Attitudes</title>
+      <link>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</link>
+      <pubDate>Tue, 23 Mar 2021 07:43:30 -0700</pubDate>
+      <guid>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

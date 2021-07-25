@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Joshua J. Daymude</title>
+    <title>Christian Scheideler | Joshua J. Daymude</title>
     <link>https://jdaymude.github.io/authors/cscheideler/</link>
       <atom:link href="https://jdaymude.github.io/authors/cscheideler/index.xml" rel="self" type="application/rss+xml" />
-    <description>Joshua J. Daymude</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright>
+    <description>Christian Scheideler</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jdaymude.github.io/images/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_2.png</url>
-      <title>Joshua J. Daymude</title>
+      <url>https://jdaymude.github.io/authors/cscheideler/avatar_hu2e12bfcec5696882d7fc82f21c2c4035_314631_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Christian Scheideler</title>
       <link>https://jdaymude.github.io/authors/cscheideler/</link>
     </image>
+    
+    <item>
+      <title>The Canonical Amoebot Model: Algorithms and Concurrency Control</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Convex Hull Formation for Programmable Matter</title>
@@ -43,9 +51,7 @@
       <guid>https://jdaymude.github.io/publication/daymude2018-coatingruntime/</guid>
       <description>&lt;h3 id=&#34;related-press&#34;&gt;Related Press&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;a href=&#34;https://asunow.asu.edu/20170306-opening-paths-progress-programmable-materials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opening Paths to Progress with Programmable Materials.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU Now&lt;/em&gt;, March 2017. (Also featured in 
-&lt;a href=&#34;http://technews.acm.org/archives.cfm?fo=2017-03-mar/mar-13-2017.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://asunow.asu.edu/20170306-opening-paths-progress-programmable-materials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opening Paths to Progress with Programmable Materials.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU Now&lt;/em&gt;, March 2017. (Also featured in &lt;a href=&#34;http://technews.acm.org/archives.cfm?fo=2017-03-mar/mar-13-2017.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

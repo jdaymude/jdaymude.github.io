@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>amoebot-model | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/amoebot-model/</link>
+      <atom:link href="https://jdaymude.github.io/tag/amoebot-model/index.xml" rel="self" type="application/rss+xml" />
+    <description>amoebot-model</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>amoebot-model</title>
+      <link>https://jdaymude.github.io/tag/amoebot-model/</link>
+    </image>
+    
+    <item>
+      <title>The Canonical Amoebot Model: Algorithms and Concurrency Control</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</link>
+      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithmic Foundations of Emergent Behavior in Analog Collectives</title>
+      <link>https://jdaymude.github.io/event/2021sfi-analogcollectives/</link>
+      <pubDate>Wed, 14 Jul 2021 12:15:00 -0600</pubDate>
+      <guid>https://jdaymude.github.io/event/2021sfi-analogcollectives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Collaborating in Motion: Distributed and Stochastic Algorithms for Emergent Behavior in Programmable Matter</title>
+      <link>https://jdaymude.github.io/event/2021asu-dissertationdefense/</link>
+      <pubDate>Mon, 15 Mar 2021 09:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/event/2021asu-dissertationdefense/</guid>
+      <description>&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;Our world is filled with systems of entities that collaborate in motion, both natural and engineered. These cooperative distributed systems are capable of sophisticated and surprising &lt;em&gt;emergent behavior&lt;/em&gt; that arises from the comparatively simple interactions of their members. A model system for emergent collective behavior is &lt;em&gt;programmable matter&lt;/em&gt;, a physical substance capable of autonomously changing its properties in response to user input or stimuli from its environment. This dissertation studies &lt;em&gt;distributed and stochastic algorithms&lt;/em&gt; that control the local behaviors and interactions of individual modules of programmable matter to induce complex collective behavior at the macroscale. It consists of four parts.&lt;/p&gt;
+&lt;p&gt;In the first, a new distributed computing model of programmable matter called the &lt;em&gt;canonical amoebot model&lt;/em&gt; is proposed. A key goal of the canonical amoebot model is to bring algorithmic theory closer to the physical realities of programmable matter hardware, especially with respect to &lt;em&gt;concurrency&lt;/em&gt; and &lt;em&gt;energy distribution&lt;/em&gt;. Two complementary protocols are presented that together can extend existing sequential, energy-agnostic algorithms for programmable matter to the more realistic concurrent, energy-constrained setting without sacrificing correctness, assuming the original algorithms satisfy certain conventions.&lt;/p&gt;
+&lt;p&gt;In the second part, &lt;em&gt;stateful distributed algorithms&lt;/em&gt; that use amoebot memory and communication are presented for &lt;em&gt;leader election&lt;/em&gt;, &lt;em&gt;object coating&lt;/em&gt;, &lt;em&gt;convex hull formation&lt;/em&gt;, and &lt;em&gt;asynchronous hexagon formation&lt;/em&gt;. The first three algorithms are proven to have runtimes that are linear in the amoebot system size when assuming a simplified sequential setting. The final algorithm for hexagon formation is instead proven to be correct under unfair asynchronous adversarial activation, the most general of all adversarial activation models.&lt;/p&gt;
+&lt;p&gt;In the third part, the &lt;em&gt;stochastic approach to self-organizing particle systems&lt;/em&gt; is presented. This approach combines distributed algorithms with ideas from statistical physics and Markov chain design to replace algorithm reliance on memory and communication with biased random decisions, requiring little to no memory and gaining inherent self-stabilizing and fault-tolerant properties. Using this stochastic approach, algorithms for &lt;em&gt;compression&lt;/em&gt;, &lt;em&gt;shortcut bridging&lt;/em&gt;, and &lt;em&gt;separation&lt;/em&gt; are designed and analyzed.&lt;/p&gt;
+&lt;p&gt;Finally, a two-pronged approach to &amp;quot;programming&amp;quot; physical ensembles across scales is presented. This approach leverages the &lt;em&gt;physics of local interactions&lt;/em&gt; to pair theoretical, algorithmic abstractions of self-organizing particle systems with experimental robot systems of &lt;em&gt;active granular matter&lt;/em&gt; that intentionally lack digital computation and communication. We demonstrate how the behavior of robots whose design &lt;em&gt;physically embodies&lt;/em&gt; salient features of an algorithm can be predicted by the algorithm&amp;rsquo;s theoretical analysis, treating the ensemble behaviors of &lt;em&gt;phototaxing&lt;/em&gt;, &lt;em&gt;aggregation&lt;/em&gt;, &lt;em&gt;dispersion&lt;/em&gt;, and &lt;em&gt;object transport&lt;/em&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Collaborating in Motion: Distributed and Stochastic Algorithms for Emergent Behavior in Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-phdthesis/</link>
+      <pubDate>Mon, 15 Mar 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-phdthesis/</guid>
+      <description>&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
+&lt;p&gt;The world is filled with systems of entities that collaborate in motion, both natural and engineered. These cooperative distributed systems are capable of sophisticated emergent behavior arising from the comparatively simple interactions of their members. A model system for emergent collective behavior is programmable matter, a physical substance capable of autonomously changing its properties in response to user input or environmental stimuli. This dissertation studies distributed and stochastic algorithms that control the local behaviors of individual modules of programmable matter to induce complex collective behavior at the macroscale. It consists of four parts.&lt;/p&gt;
+&lt;p&gt;In the first, the canonical amoebot model of programmable matter is proposed. A key goal of this model is to bring algorithmic theory closer to the physical realities of programmable matter hardware, especially with respect to concurrency and energy distribution. Two protocols are presented that together extend sequential, energy-agnostic algorithms to the more realistic concurrent, energy-constrained setting without sacrificing correctness, assuming the original algorithms satisfy certain conventions.&lt;/p&gt;
+&lt;p&gt;In the second part, stateful distributed algorithms using amoebot memory and communication are presented for leader election, object coating, convex hull formation, and hexagon formation. The first three algorithms are proven to have linear runtimes when assuming a simplified sequential setting. The final algorithm for hexagon formation is instead proven to be correct under unfair asynchronous adversarial activation, the most general of all adversarial activation models.&lt;/p&gt;
+&lt;p&gt;In the third part, distributed algorithms are combined with ideas from statistical physics and Markov chain design to replace algorithm reliance on memory and communication with biased random decisions, gaining inherent self-stabilizing and fault-tolerant properties. Using this stochastic approach, algorithms for compression, shortcut bridging, and separation are designed and analyzed.&lt;/p&gt;
+&lt;p&gt;Finally, a two-pronged approach to &amp;quot;programming&amp;quot; physical ensembles is presented. This approach leverages the physics of local interactions to pair theoretical abstractions of self-organizing particle systems with experimental robot systems of active granular matter that intentionally lack digital computation and communication. By physically embodying the salient features of an algorithm in robot design, the algorithm&amp;rsquo;s theoretical analysis can predict the robot ensemble&amp;rsquo;s behavior. This approach is applied to phototaxing, aggregation, dispersion, and object transport.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Simulation of Programmable Matter Systems Using Active Tile-Based Self-Assembly</title>
+      <link>https://jdaymude.github.io/publication/alumbaugh2019-tilesimulation/</link>
+      <pubDate>Wed, 24 Jul 2019 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/alumbaugh2019-tilesimulation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

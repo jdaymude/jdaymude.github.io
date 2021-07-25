@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>videogame-review | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/category/videogame-review/</link>
+      <atom:link href="https://jdaymude.github.io/category/videogame-review/index.xml" rel="self" type="application/rss+xml" />
+    <description>videogame-review</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Fri, 22 Jan 2021 22:09:15 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>videogame-review</title>
+      <link>https://jdaymude.github.io/category/videogame-review/</link>
+    </image>
+    
+    <item>
+      <title>Jedi: Fallen Order</title>
+      <link>https://jdaymude.github.io/review/videogame-jedi-fallen-order/</link>
+      <pubDate>Fri, 22 Jan 2021 22:09:15 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-jedi-fallen-order/</guid>
+      <description>&lt;p&gt;I&amp;rsquo;m not ashamed to admit that I spent much of my childhood wanting to be a Jedi.
+My sister and I would duel for hours in the backyard with our plastic lightsabers, having to pause between whacks and parries to negotiate whose limbs were still attached or how far back we were supposed to move when the other pushed with the Force.
+As a teenager, &lt;em&gt;The Force Unleashed&lt;/em&gt; on the Wii was magic: my remote was my lightsaber, my nunchuk was my connection to the Force, and the galaxy was filled with Stormtroopers to send flying.
+(Too bad it &lt;a href=&#34;https://www.escapistmagazine.com/v2/explaining-star-wars-the-force-unleashed-controversial-place-in-the-expanded-universe/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;kind of sort of isn&amp;rsquo;t canon&lt;/a&gt;.)
+Now, as an adult and a whole sequel trilogy and two seasons of &lt;em&gt;The Mandalorian&lt;/em&gt; later — not to mention the nine seasons of &lt;em&gt;The Clone Wars&lt;/em&gt; that I&amp;rsquo;m still catching up on — I&amp;rsquo;m all in on Star Wars growing up with me, learning how to tell new and more mature stories.
+&lt;em&gt;Jedi: Fallen Order&lt;/em&gt; is exactly that, putting the player at the center of a decent Jedi story with slick Jedi combat.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-jedi-fallen-order/boganovault_hu58287486998c194fffaf63e800bd9874_2899197_5824f396544b564802cb9d22a41e1dc7.png 400w,
+               /review/videogame-jedi-fallen-order/boganovault_hu58287486998c194fffaf63e800bd9874_2899197_3fcba4cbdca54ced68040e15734231d5.png 760w,
+               /review/videogame-jedi-fallen-order/boganovault_hu58287486998c194fffaf63e800bd9874_2899197_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-jedi-fallen-order/boganovault_hu58287486998c194fffaf63e800bd9874_2899197_5824f396544b564802cb9d22a41e1dc7.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-jedi-fallen-order/scouttroopers_hude06c35df865cbabc11390a267dc31da_3295951_fa83fb7b01a81ee177e02bb8e27933e3.png 400w,
+               /review/videogame-jedi-fallen-order/scouttroopers_hude06c35df865cbabc11390a267dc31da_3295951_7db9523515466bfdf3def10a43b487a4.png 760w,
+               /review/videogame-jedi-fallen-order/scouttroopers_hude06c35df865cbabc11390a267dc31da_3295951_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-jedi-fallen-order/scouttroopers_hude06c35df865cbabc11390a267dc31da_3295951_fa83fb7b01a81ee177e02bb8e27933e3.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;Jedi: Fallen Order&lt;/em&gt; takes place during The Purge, which for the uninitiated is a period of Star Wars history just after the majority of Jedi are executed by their clone allies in &lt;em&gt;Revenge of the Sith&lt;/em&gt; (Order 66).
+The fledgling Empire casts the few Jedi who survive as traitors to the Republic, hunting them down to either kill them or turn them to the Dark Side as Inquisitors (ex-Jedi who hunt Jedi).
+You play as Cal Kestis, a padawan who experienced deep personal loss and trauma during Order 66 and has been concealing his powers to survive The Purge.
+Other major characters include Cere Junda, an ex-Jedi Master who severed her connection with the Force after an especially traumatic event during The Purge, and a Nightsister whose people were killed in genocide during the Clone Wars.
+This is a Star Wars story where nobody&amp;rsquo;s okay and the heroes are the ones who are brave enough to believe in one another as they heal.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-jedi-fallen-order/ilumbattle_hu09f15c0bcdcda375de7ea645566f48cd_3799220_a45f7e936f319b6dce9bd0e56da1bc78.png 400w,
+               /review/videogame-jedi-fallen-order/ilumbattle_hu09f15c0bcdcda375de7ea645566f48cd_3799220_1f5066f3f9f160ec519b48d97f36b4a3.png 760w,
+               /review/videogame-jedi-fallen-order/ilumbattle_hu09f15c0bcdcda375de7ea645566f48cd_3799220_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-jedi-fallen-order/ilumbattle_hu09f15c0bcdcda375de7ea645566f48cd_3799220_a45f7e936f319b6dce9bd0e56da1bc78.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;The gameplay absolutely does what it needs to do to make you feel like a Jedi, from customizing your lightsaber to dueling against powerful adversaries to bonding with a droid companion.
+I think all of those things were non-negotiables for a modern Star Wars game, and as such, it suffices to say that &lt;em&gt;Jedi: Fallen Order&lt;/em&gt; does them well.
+What&amp;rsquo;s really special about this game is how cool it makes you feel despite Cal not being the greatest of Jedi.
+He&amp;rsquo;s hidden his abilities for years, presumably.
+At best, he&amp;rsquo;s just rusty and has forgotten a lot of his training; at worst, his trauma and guilt pushes his connection with the Force towards fear and unpolished lack of control.
+In the early stages of the game, Cal can&amp;rsquo;t even move stuff around with the Force; he can wall-run, however (Respawn just couldn&amp;rsquo;t resist sprinkling in a little &lt;em&gt;Titanfall&lt;/em&gt;, could they?).
+His best ability, psychometry, makes him a better anthropologist than Stormtrooper-slayer: he can sense an object&amp;rsquo;s history by touching it, filling out the backstory of the different planets and societies he interacts with.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-jedi-fallen-order/dathomir_hu1243943952a5fdf76277be63ba3703ec_2975053_36cccd48889df386deb784ed787d2a9e.png 400w,
+               /review/videogame-jedi-fallen-order/dathomir_hu1243943952a5fdf76277be63ba3703ec_2975053_7c36f9fb4c68b40f7630d86f61fd32d3.png 760w,
+               /review/videogame-jedi-fallen-order/dathomir_hu1243943952a5fdf76277be63ba3703ec_2975053_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-jedi-fallen-order/dathomir_hu1243943952a5fdf76277be63ba3703ec_2975053_36cccd48889df386deb784ed787d2a9e.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;The five playable planets in this galaxy far, far away are largely linear, keeping you moving towards your next plot point.
+There&amp;rsquo;s not a side quest to be seen, and the only exploration Cal can do is to veer off the main path for a slightly less obvious path where he might find a secret or unlockable cosmetic.
+(As an aside, I love that Cal wears ponchos — as opposed to, I don&amp;rsquo;t know, Jedi robes? — but I can&amp;rsquo;t get over how over half of them are badly-fitting, hoodless, plastic raincoats.)
+100%-ing &lt;em&gt;Jedi: Fallen Order&lt;/em&gt; is a fine and relatively quick experience (except for the very Star Wars and very bad &lt;a href=&#34;https://game-maps.com/SWJFO/Jedi-Fallen-Order-Maps.asp&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;holomaps&lt;/a&gt;), revisiting planets when equipped with new Force abilities to get into previously inaccessible nooks and crannies.
+This feels less like a chore and more like virtual space-tourism, giving players a second chance to appreciate the beautifully crafted set design and try out the very nicely implemented photo mode.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-jedi-fallen-order/fortressinquisitoris_hud5dd9248f697357f9555c538c13da0e0_3009625_f8b3050f6dabbb7365fa50aee6bd4876.png 400w,
+               /review/videogame-jedi-fallen-order/fortressinquisitoris_hud5dd9248f697357f9555c538c13da0e0_3009625_5259c7f9db81f72ee99e203d476d2d15.png 760w,
+               /review/videogame-jedi-fallen-order/fortressinquisitoris_hud5dd9248f697357f9555c538c13da0e0_3009625_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-jedi-fallen-order/fortressinquisitoris_hud5dd9248f697357f9555c538c13da0e0_3009625_f8b3050f6dabbb7365fa50aee6bd4876.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;All in all, &lt;em&gt;Jedi: Fallen Order&lt;/em&gt; does what it came to do: put players in the shoes of a Jedi powered by the best of what 2019 tech could offer.
+The experience certainly feels more self-contained and linear than what we may have hoped, but it&amp;rsquo;s good for what it is.
+With EA&amp;rsquo;s Star Wars exclusivity &lt;a href=&#34;https://www.wired.com/story/lucasfilm-games-star-wars-ubisoft-indiana-jones-bethesda/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;now expired&lt;/a&gt;, maybe Ubisoft&amp;rsquo;s Massive Entertainment will give us the beautiful, open-world Star Wars playground of little-Josh&amp;rsquo;s dreams.&lt;/p&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;p&gt;I know this isn&amp;rsquo;t a bug but it&amp;rsquo;s so bad that I&amp;rsquo;m calling it one: every sad excuse for a Wookiee in this game (except Tarfull) looks like a stick with clumpy fur.
+To the developers at Respawn, Chewbacca would be disappointed in you.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-jedi-fallen-order/wookiee_hu78d9a4a2ecba7e87b86359930f979412_3375027_e34c7bc312e800556d389b8babb74a27.png 400w,
+               /review/videogame-jedi-fallen-order/wookiee_hu78d9a4a2ecba7e87b86359930f979412_3375027_62cbf9d69accb4001bb597d29495be7a.png 760w,
+               /review/videogame-jedi-fallen-order/wookiee_hu78d9a4a2ecba7e87b86359930f979412_3375027_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-jedi-fallen-order/wookiee_hu78d9a4a2ecba7e87b86359930f979412_3375027_e34c7bc312e800556d389b8babb74a27.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Spiritfarer</title>
+      <link>https://jdaymude.github.io/review/videogame-spiritfarer/</link>
+      <pubDate>Wed, 07 Oct 2020 21:12:52 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-spiritfarer/</guid>
+      <description>&lt;p&gt;The world of &lt;em&gt;Spiritfarer&lt;/em&gt; is in between life and the afterlife, where the spirits of the dead run lemonade stands, go on meditation retreats, and look down on the less fortunate from skyscrapers while they prepare emotionally to pass on to the beyond. As the Spiritfarer, our protagonist Stella and her cat Daffodil are tasked with supporting reluctant spirits on their journey to the Everdoor. By building each spirit a unique home, cooking them their favorite meals, and giving them &lt;em&gt;the best video game hugs I have ever seen&lt;/em&gt;, each spirit gradually comes to deal with their unique and challenging vestiges from the life before.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-spiritfarer/charon_hu9a87c5e1f88957c09600be8ba28547b3_1916812_e44ffc2f1bc8b431c11cc81c9ddbfb68.png 400w,
+               /review/videogame-spiritfarer/charon_hu9a87c5e1f88957c09600be8ba28547b3_1916812_acaf83cef29a6453f709e123af0748ec.png 760w,
+               /review/videogame-spiritfarer/charon_hu9a87c5e1f88957c09600be8ba28547b3_1916812_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-spiritfarer/charon_hu9a87c5e1f88957c09600be8ba28547b3_1916812_e44ffc2f1bc8b431c11cc81c9ddbfb68.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Substance aside, &lt;em&gt;Spritfarer&lt;/em&gt; is absolutely beautiful. The hand-drawn assets and delightful animations make the game feel like a living storybook. For a game billed as &amp;ldquo;a cozy management game about dying,&amp;rdquo; the art is remarkably bright and lighthearted. It even has its own &lt;a href=&#34;https://thunderlotus.itch.io/spiritfarer-art-book&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;art book&lt;/a&gt;, which is an accomplishment for a small indie studio. The clip below has a bunch of my favorite animations, starting with a hug (I&amp;rsquo;m telling you, the hugs are bomb) and ending with the hidden gem of Daffodil&amp;rsquo;s yawn.&lt;/p&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/NA4hANZWn1I&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;p&gt;&lt;em&gt;Spiritfarer&lt;/em&gt; balances its predilection for waxing philosophical on death with self-aware humor that is packed with internet in-jokes and a dash of anti-corporate sentiment. Midway through the game, Stella meets an NPC with the genre-typical responsibility of rewarding 100% completion: collect all that the game has to offer, and this spirit will give you rewards. But in a fun twist, this spirit hates her job and finds your catching, asphyxiating, cooking, and eating of &amp;ldquo;all the fish in the ocean&amp;rdquo; to be horrifying. (As an aside, &lt;em&gt;Spiritfarer&lt;/em&gt; is yet another game that simultaneously promotes non-violence but imposes a &lt;a href=&#34;https://link.springer.com/article/10.1007/s40869-018-0055-x&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;hierarchy on nonhuman animal species&lt;/a&gt; that deems it non-problematic for anthropomorphic animals to kill and consume marine life including fish, squid, and octopi.)&lt;/p&gt;
+&lt;p&gt;As another example, we get an early nod to &lt;a href=&#34;https://www.polygon.com/videos/2020/5/18/21257219/tom-nook-animal-crossing-good-evil-landlord&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Tom Nook&lt;/a&gt; of &lt;em&gt;Animal Crossing&lt;/em&gt; that lands not just for the many gamers who have spent most of their 2020 in &lt;em&gt;New Horizons&lt;/em&gt;, but also for those of us who are growing increasingly concerned with the ethics of big corporations and poor treatment of workers.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-spiritfarer/raccooninc_hu505484d949edc711b370a72cec88d6d5_1987505_03c4d1aab59c6d0922780fa535292ecf.png 400w,
+               /review/videogame-spiritfarer/raccooninc_hu505484d949edc711b370a72cec88d6d5_1987505_2367339c49312a0738472bd913af0137.png 760w,
+               /review/videogame-spiritfarer/raccooninc_hu505484d949edc711b370a72cec88d6d5_1987505_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-spiritfarer/raccooninc_hu505484d949edc711b370a72cec88d6d5_1987505_03c4d1aab59c6d0922780fa535292ecf.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;The extent to which the developers succeed in promoting positive change is mixed. Within the first five-ish hours of gameplay, &lt;em&gt;Spiritfarer&lt;/em&gt; establishes solid representation: Stella is a Black woman, two characters are LGBTQ, and several characters struggling with their mental health are portrayed compassionately. There&amp;rsquo;s the aforementioned focus on the plight of the worker, as we meet one character leading a protest against unjust labor practices and another who was a union leader in his past life. And, of course, there is the overarching goal of helping and caring for others as they seek peace.&lt;/p&gt;
+&lt;p&gt;The problem is that none of these key issues feel fully fleshed out; they&amp;rsquo;re simply presented and then brushed aside by &lt;em&gt;Spiritfarer&lt;/em&gt;&amp;rsquo;s prevailing lightness. The labor dispute is resolved by the CEO&amp;rsquo;s comedic need to use the restroom overcoming his callous business sense. Mental health struggles are seemingly assuaged by Stella&amp;rsquo;s care and comfort. It is as if the core message of the game, intended or not, is that no injustice is too big to be solved by the benevolence and persistence of the oppressed: just cook someone their favorite foods and hug them often enough, and all their internalized trauma will simply disappear.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;m all for meeting individual, tangible needs and loving our neighbors, but this must be done in concert with iterative, systems-level change. I won&amp;rsquo;t hold a video game to the unreasonably high standard of enacting real-world change, but if &lt;em&gt;Spiritfarer&lt;/em&gt; is going to talk about real stuff, I will too.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-spiritfarer/meditation_huf4597e38d94b98f06d683eb118cb9ef4_1474970_ba1554f54213d002146dda93762c354d.png 400w,
+               /review/videogame-spiritfarer/meditation_huf4597e38d94b98f06d683eb118cb9ef4_1474970_6fc5815f03b734675ee944bef8058bee.png 760w,
+               /review/videogame-spiritfarer/meditation_huf4597e38d94b98f06d683eb118cb9ef4_1474970_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-spiritfarer/meditation_huf4597e38d94b98f06d683eb118cb9ef4_1474970_ba1554f54213d002146dda93762c354d.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Returning to gameplay, &lt;em&gt;Spiritfarer&lt;/em&gt; has a very satisfying play loop where each task hooks into the next. It&amp;rsquo;s quite easy to loose track of time while playing: Travel somewhere new to find new spirits and materials. Use new materials to build, grow, and craft new things. Take those new things and cook and chop and weave and smelt and crush them into yet other things. Realize that you don&amp;rsquo;t have the things to meet your spirit passengers&#39; food/improvement requests. Travel to a new place in search of those things. Repeat.&lt;/p&gt;
+&lt;p&gt;This satisfying loop lasts until roughly 75% through the game, at which point you and your ship become so capable of overproducing that many of the management tasks become irrelevant. I just had to remember to feed people during my obsession with secret-hunting, hopping between islands and doing very little to advance the story.&lt;/p&gt;
+&lt;p&gt;The platforming/metroidvania aspects of the game come in exploring the various islands, where new abilities allow you to reach literally greater heights in your search for materials, side quests, and upgrade blueprints. This never feels particularly overwhelming (like having to remember a specific location with a specific secret to come back to), though the quest log and the mail inventory could have been far better organized. (Also, Thunder Lotus, would it have been narrative breaking to let me check the ship&amp;rsquo;s map without having to go back to the Captain&amp;rsquo;s chamber? I know it&amp;rsquo;s powered by the Everlight, but Stella always has the Everlight on her&amp;hellip;)&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-spiritfarer/fishing_hu816391143ad5f60e34c823998845babc_1008006_7dafa4c7146b4d1c5c32372c79aa40fd.png 400w,
+               /review/videogame-spiritfarer/fishing_hu816391143ad5f60e34c823998845babc_1008006_f8dc91cac5ab637d0f65182ff244a13f.png 760w,
+               /review/videogame-spiritfarer/fishing_hu816391143ad5f60e34c823998845babc_1008006_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-spiritfarer/fishing_hu816391143ad5f60e34c823998845babc_1008006_7dafa4c7146b4d1c5c32372c79aa40fd.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;Spritfarer&lt;/em&gt; didn&amp;rsquo;t quite live up to the deeply thoughtful reflection on life and dying that I expected it to be, but it was a delightful game. I enjoyed the little moments — passing jokes, conversations with my spirit passengers, and &lt;em&gt;those hugs&lt;/em&gt; — despite the fact that the narrative could have been a bit more explicit and punchy with its key points. As I write this, I realize I likely missed a small handful of those meandering, serendipitous moments that end up being the most memorable. In that sense, my take on &lt;em&gt;Spiritfarer&lt;/em&gt; can be summed up by one of the first lines from Charon, Stella&amp;rsquo;s predecessor:&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;I cannot say that I am sad to leave, but I still had a few things left to do here.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;Take care of each other.&lt;/p&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;p&gt;I only encountered two bugs during my playthrough, and both were minor.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;After rearranging the buildings on my ship, one of my passengers became stranded in the attic of the chicken coop, inaccessible to me and seemingly unaware of their predicament. This reset after quitting to the main menu.&lt;/li&gt;
+&lt;li&gt;While running back and forth between the bellows in the Forge, Daffodil glitched. Her positioning reset after leaving the Forge.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/wzwQ9jPNXmA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;br/&gt;
+&lt;p&gt;Finally, a mini-rant on something that isn&amp;rsquo;t so much a technical bug as a design flaw: the secret achievements &amp;ldquo;Loose Lips&amp;rdquo; and &amp;ldquo;Sealed Lips&amp;rdquo; should absolutely not be in the game. Without spoilers, these achievements are unlocked based on engaging in a main quest conversation that — depending on how you play — can occur quite late in the game. Choose one dialogue option, you get &amp;ldquo;Loose Lips&amp;rdquo;; choose the other, you get &amp;ldquo;Sealed Lips.&amp;rdquo; Unless you know this ahead of time and do a &lt;a href=&#34;https://www.trueachievements.com/a306628/sealed-lips-achievement?gamerid=900962&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;janky hack&lt;/a&gt; of getting one achievement to pop, immediately quitting the game, and then redoing the conversation the other way, getting both achievements requires two playthroughs. These are the only achievements that cannot be obtained in a single run, and &lt;em&gt;Spiritfarer&lt;/em&gt; is not a game with significant replay potential. This feels like a design flaw, where user experience clashes with the game&amp;rsquo;s systems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ori and the Will of the Wisps</title>
+      <link>https://jdaymude.github.io/review/videogame-ori-and-the-will-of-the-wisps/</link>
+      <pubDate>Sun, 07 Jun 2020 21:58:21 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-ori-and-the-will-of-the-wisps/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Ori and the Will of the Wisps&lt;/em&gt; was released on March 10, 2020 — one day before many in the United States were put under stay-at-home orders to slow the spread of COVID-19. In the following months, our leaders abdicated their responsibility to coordinate a comprehensive response as the non-essential of us remained at home, wringing our hands and feeling powerless to stop our world from slipping into shambles. So when &lt;em&gt;Ori&lt;/em&gt; opened with Naru, Gumo, and Ori working to restore Ku — a young owl with a malformed wing — my emotions were immediately invested. When the first major chapter involved ridding a historic watermill/library of a corrupted monster poisoning the water, my determination was fixed. And when Grom asked Ori &amp;ldquo;Want to make [the Wellspring Glades] a better place?&amp;rdquo; I nearly shouted &amp;ldquo;yes!&amp;rdquo; at the screen. Beautiful graphics, slick gameplay, and huge improvements over the original game aside, &lt;em&gt;Ori and the Will of the Wisps&lt;/em&gt; is a game about healing, restoration, and hope — three things that run at a high premium in today&amp;rsquo;s world.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-ori-and-the-will-of-the-wisps/spirittree_hu26a2b2080d6a223eeafa0ab3069efaee_2292382_efac639ac9b81ea7510c7294048abccc.png 400w,
+               /review/videogame-ori-and-the-will-of-the-wisps/spirittree_hu26a2b2080d6a223eeafa0ab3069efaee_2292382_069629848b4e56a1e1ca972d868f9188.png 760w,
+               /review/videogame-ori-and-the-will-of-the-wisps/spirittree_hu26a2b2080d6a223eeafa0ab3069efaee_2292382_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-ori-and-the-will-of-the-wisps/spirittree_hu26a2b2080d6a223eeafa0ab3069efaee_2292382_efac639ac9b81ea7510c7294048abccc.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;One more philosophical point before moving on to gameplay: I was pleased to see the thought given to the nature of evil and the role of violence in resisting it. While killing corrupted creatures is commonplace in the &lt;em&gt;Ori&lt;/em&gt; series, there is also a consistent gravity around death and loss. This sequel explores these themes more thoroughly than the original. Without giving specifics away, only one enemy boss is actually murdered (and, interestingly, not by Ori). Moreover, the main antagonist is one that deserves the player&amp;rsquo;s hate and empathy equally, as summed up in this bit of dialogue:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;I heard what happened to your friend, and I am sorry. Sorry for your friend, and for the one that hurt her. Nothing&amp;rsquo;s fouler than when the strong hurt the weak.&lt;/p&gt;
+&lt;p&gt;— Tokk, &lt;em&gt;Ori and the Will of the Wisps&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;There&amp;rsquo;s a &amp;ldquo;we hurt ourselves when we hurt others&amp;rdquo; in here that&amp;rsquo;s revisited later in the game, when a character who once wanted the warmth of the light rejects it and chooses instead to remain isolated in darkness. I was left with the impression that this was an emotionally heavier fate than death.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-ori-and-the-will-of-the-wisps/spiritlight_hu8a35b21c17581add946ecb858fa2fbe5_1529683_775379132827bc4dc8a06aa2dc442efa.png 400w,
+               /review/videogame-ori-and-the-will-of-the-wisps/spiritlight_hu8a35b21c17581add946ecb858fa2fbe5_1529683_eeab4611356b33b7f34294c6a19babbf.png 760w,
+               /review/videogame-ori-and-the-will-of-the-wisps/spiritlight_hu8a35b21c17581add946ecb858fa2fbe5_1529683_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-ori-and-the-will-of-the-wisps/spiritlight_hu8a35b21c17581add946ecb858fa2fbe5_1529683_775379132827bc4dc8a06aa2dc442efa.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;In terms of gameplay and design, &lt;em&gt;Ori and the Will of the Wisps&lt;/em&gt; surpasses its predecessor (&lt;em&gt;Ori and the Blind Forest&lt;/em&gt;) in every way, and then some. In short, this is a must-play if you liked the original, and is the place you should start if you&amp;rsquo;re new to the series. Much has already been written about these improvements, like how Moon Studios created entirely new technologies to fit its beautifully crafted &lt;a href=&#34;https://www.rockpapershotgun.com/2020/04/10/how-animation-powers-ori-and-the-will-of-the-wisps/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;3D assets in a 2D world&lt;/a&gt;. The world is filled with expressive characters, vibrant and responsive foliage, and gorgeous foreground/background effects that express depth. Role-playing elements give players newfound choice over Ori&amp;rsquo;s evolution. The boss fights blend the newly fluid combat system with the series&#39; emblematic choreographed escape sequences. Gareth Coker returns with a triumph of a soundtrack that is &lt;a href=&#34;https://www.lacedrecords.com/blogs/news/ori-composer-gareth-coker-is-happy-to-make-players-sad&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;deeply integrated&lt;/a&gt; with the rest of the game&amp;rsquo;s design.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-ori-and-the-will-of-the-wisps/lumapools_hud518339447da2cc114de1dc0a7419af6_2106687_9efefce2bc6b80265436976de695015f.png 400w,
+               /review/videogame-ori-and-the-will-of-the-wisps/lumapools_hud518339447da2cc114de1dc0a7419af6_2106687_0a3550ad897d60a27a91b27ac75f8761.png 760w,
+               /review/videogame-ori-and-the-will-of-the-wisps/lumapools_hud518339447da2cc114de1dc0a7419af6_2106687_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-ori-and-the-will-of-the-wisps/lumapools_hud518339447da2cc114de1dc0a7419af6_2106687_9efefce2bc6b80265436976de695015f.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Improved replayability deserves its own treatment. In &lt;em&gt;Ori and the Blind Forest&lt;/em&gt;, collectibles were limited to Life and Energy Cells that increase the amount of health and ability energy Ori has, respectively. After finishing the main story, achievements and 100%-ing the game are the only incentives for finding all these secrets. In &lt;em&gt;Ori and the Will of the Wisps&lt;/em&gt;, however, side quests and new collectibles give meaning to the secret hunting. With Gorlek Ore that Ori collects, Grom builds new structures in the Wellspring Glades for Moki to live in. Tolek plants Seeds that synergize with Ori&amp;rsquo;s abilities to make new areas of the Glades accessible. Ability Shards unlock useful augmentations of Ori&amp;rsquo;s abilities. Hardcore fans can take on the &amp;ldquo;*-less run,&amp;rdquo; requiring a complete run in under 4 hours without dying, spending Spirit Light, or equipping shards. These goals enhance the actual play experience, greatly improving the replay value.&lt;/p&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;p&gt;In what is otherwise an pristine and polished experience, &lt;em&gt;Ori and the Will of the Wisps&lt;/em&gt; has several frustrating bugs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Spirit Charge is a mid-game ability whose primary purpose is to toss projectiles that fall back down, allowing Ori to Bash off of them and reach new heights. The &amp;ldquo;Spirit Rocket&amp;rdquo; bug causes all charges to instead fire off like missiles, happily ignoring gravity and stranding Ori without a lift. Thankfully, this bug seems to fix itself after a full game quit-and-restart.&lt;/li&gt;
+&lt;li&gt;There were occasional rendering issues. After a long play session, the game would freeze and lag (again, quitting and restarting seemed to fix the problem). Later, after unlocking the Launch ability, Ori seemingly could move faster than the game could handle: Ori could Launch off-screen without the camera following, and once the camera caught up the environment occasionally wouldn&amp;rsquo;t render.&lt;/li&gt;
+&lt;li&gt;Even after 100%-ing a run (and getting the corresponding achievements), the Energy Cell counter stays at 19/20, capping the progress tracker at 99% complete. This is uniquely maddening for people like me who live for the 100% completion.&lt;/li&gt;
+&lt;/ul&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-ori-and-the-will-of-the-wisps/99percent_hu7e4734bca109e3b50b5ea038214740c7_1875673_4b25d9ef9d0a062fd104a187021819c1.png 400w,
+               /review/videogame-ori-and-the-will-of-the-wisps/99percent_hu7e4734bca109e3b50b5ea038214740c7_1875673_e518d7924490f73485bbbec90552bceb.png 760w,
+               /review/videogame-ori-and-the-will-of-the-wisps/99percent_hu7e4734bca109e3b50b5ea038214740c7_1875673_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-ori-and-the-will-of-the-wisps/99percent_hu7e4734bca109e3b50b5ea038214740c7_1875673_4b25d9ef9d0a062fd104a187021819c1.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Outer Worlds</title>
+      <link>https://jdaymude.github.io/review/videogame-the-outer-worlds/</link>
+      <pubDate>Fri, 17 Jan 2020 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-the-outer-worlds/</guid>
+      <description>&lt;p&gt;&lt;em&gt;The Outer Worlds&lt;/em&gt; promised to let you, &amp;ldquo;the unknown variable,&amp;rdquo; truly role-play in the wild world of Halycon. Want to be the hero and save the world? Sure, who doesn&amp;rsquo;t? Want to steer your jaded friends towards self-awareness and hope? Just might work. Want to murder everyone on sight, including major companions and story-critical characters? Have a great time, you monster. Streamers have basically tried it all, and the game does indeed deliver. I particularly enjoyed embodying some kind of scientist/intellectual with an aversion for violence and a deep need to screw some corporate tools over.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-the-outer-worlds/edgewaternight_hua95115548d781dc70255b1e6927bd015_2440629_0e3e112676b707e1ec91757638b3e391.png 400w,
+               /review/videogame-the-outer-worlds/edgewaternight_hua95115548d781dc70255b1e6927bd015_2440629_1da8e0ff2167d5242fb7ef445a610fdd.png 760w,
+               /review/videogame-the-outer-worlds/edgewaternight_hua95115548d781dc70255b1e6927bd015_2440629_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-the-outer-worlds/edgewaternight_hua95115548d781dc70255b1e6927bd015_2440629_0e3e112676b707e1ec91757638b3e391.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;What most impressed me was the world building packed into this tight, 40-ish hour experience. Every character looks different, has their own believable personality, and acts based on real fears and hopes. Most remember past encounters with you and have whole conversations scripted for the late-game, even when they&amp;rsquo;re just &amp;ldquo;extras&amp;rdquo; that have nothing to do with the ongoing story. Your companions are the best examples of the developers&#39; care and attention to detail: one companion develops a love interest and wants to grab drinks with you to get your thoughts — this leads to a tipsy bar visit where you get to give dating advice. Other characters are working through past hurts and losses that shape who they are in the current narrative. It all feels very &lt;em&gt;human&lt;/em&gt;, and that aspect alone (against the stark contrast of the very inhumane slave-like colony townships) is enough to pull you into the first several hours of gameplay and give gravity to the difficult choices you have to make.&lt;/p&gt;
+&lt;p&gt;The characters made me savor conversations, walking up to every NPC just to make sure I wasn&amp;rsquo;t missing personal backstories or historical context. I found myself imagining those who would be unjustly punished for my decisions to stir up trouble, or who I could win over by showing some semblance of kindness. The world felt open and full of possibility, while harboring many situations with hidden consequences.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-the-outer-worlds/lavaflows_hu69c586f845e63269f64449ba8b24ebf9_2669693_873668b5252ba8bd609e1a31ad17cb04.png 400w,
+               /review/videogame-the-outer-worlds/lavaflows_hu69c586f845e63269f64449ba8b24ebf9_2669693_62873ae67f596a5eca1ebcbb22f09199.png 760w,
+               /review/videogame-the-outer-worlds/lavaflows_hu69c586f845e63269f64449ba8b24ebf9_2669693_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-the-outer-worlds/lavaflows_hu69c586f845e63269f64449ba8b24ebf9_2669693_873668b5252ba8bd609e1a31ad17cb04.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Unfortunately, some of this delightful, game-outside-the-game enchantment faded when I realized a very simple reality: what felt like a cliff of consequence was really just a short ledge, and every mistake I made could usually be solved by shooting my way through. This wasn&amp;rsquo;t necessarily the only solution (for example, I appreciated the go-and-kill quests that offered diplomacy as a non-violent alternative), but violence was often the path of least resistance. I slowly deteriorated from a hero who respected life — killing only when just or necessary — to a skilled mercenary with a vague conscience who also happened to enjoy conversation. The magic wasn&amp;rsquo;t there in the same way after that reality set in.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-the-outer-worlds/scylla_hu224bb35c97e260bf23d205f44c29c329_2845510_8b45913c3f9764b211c65f0e1649118f.png 400w,
+               /review/videogame-the-outer-worlds/scylla_hu224bb35c97e260bf23d205f44c29c329_2845510_f93bfc4e294cac2ad0ac03f0691a1781.png 760w,
+               /review/videogame-the-outer-worlds/scylla_hu224bb35c97e260bf23d205f44c29c329_2845510_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-the-outer-worlds/scylla_hu224bb35c97e260bf23d205f44c29c329_2845510_8b45913c3f9764b211c65f0e1649118f.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Perhaps this is what &lt;em&gt;The Outer Worlds&lt;/em&gt; had promised all along: that there would be many paths that one could fully explore, even if not all of are equally satisfying. It&amp;rsquo;s less that you live with your choices and more that your choices happen to the game, forcing it to bend and twist around you. And in that way, it really is a wonderful role-playing experience.&lt;/p&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;I had a syncing issue with save files between different Xbox consoles, but this may have been a fluke.&lt;/li&gt;
+&lt;li&gt;There was one view on Monarch where the environment didn&amp;rsquo;t render correctly, and whole stone structures seemed to disappear.&lt;/li&gt;
+&lt;li&gt;I was awarded one achievement (&amp;ldquo;Pirate Radio&amp;rdquo;) out of the blue, unsure what exactly I did to get it.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hidden My Game By Mom!</title>
+      <link>https://jdaymude.github.io/review/videogame-hidden-my-game-by-mom/</link>
+      <pubDate>Sun, 15 Dec 2019 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-hidden-my-game-by-mom/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Hidden My Game By Mom&lt;/em&gt; is a quick, quirky, and delightful little puzzle starring a boy addicted to his handheld gaming device and his mother&amp;rsquo;s attempts to hide it from him in increasingly bizarre ways. You, the real-life gamer that you are, vicariously strike back against the parental anti-game tyranny you may or may not have actually experienced by interacting with the scene to find this boy&amp;rsquo;s game. The core gameplay revolves around collecting items and using them in clever and silly ways to reveal where the boy&amp;rsquo;s game was hidden, but this comes with a catch: Mom is also hiding in nearly every level, often in more absurd places than the game. Find the game, win the level; find Mom, you&amp;rsquo;re busted.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-hidden-my-game-by-mom/lady_game_hucbecac82dffa2954be84ac6a98c31075_55374_d758a1579abf3ead9e7d4c25182fb09e.jpg 400w,
+               /review/videogame-hidden-my-game-by-mom/lady_game_hucbecac82dffa2954be84ac6a98c31075_55374_d4c77700780e1f81a614a2743562dec0.jpg 760w,
+               /review/videogame-hidden-my-game-by-mom/lady_game_hucbecac82dffa2954be84ac6a98c31075_55374_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-hidden-my-game-by-mom/lady_game_hucbecac82dffa2954be84ac6a98c31075_55374_d758a1579abf3ead9e7d4c25182fb09e.jpg&#34;
+               width=&#34;735&#34;
+               height=&#34;474&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;This simple hidden object puzzle takes on another level of meaning when moving past the zaniness of the &lt;em&gt;what&lt;/em&gt; and moving into the relational &lt;em&gt;why&lt;/em&gt;. &lt;em&gt;Hidden My Game By Mom&lt;/em&gt; proposes the simple premise of Mom as antagonist, someone to be outsmarted and evaded. But as we progress, it&amp;rsquo;s difficult to leave the boy&amp;rsquo;s motives unquestioned. At one point, we distract the boy&amp;rsquo;s older sister from doing her homework so our boy can get back to his gaming. In another level, the boy digs through literal poop to be reunited with his cherished handheld. This is a caricature of both the boy&amp;rsquo;s love for his game and the lengths his mom would go to stop him, to be sure, but something rings true about his mom&amp;rsquo;s implicit concern that this all might be getting out of hand. And after a surprising and emotional gut punch of a finale, no amount of broken English in the UI can hide &lt;em&gt;Hidden My Game By Mom&lt;/em&gt;&amp;rsquo;s core message.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-hidden-my-game-by-mom/giraffe_hud367643ae2fb92fc2e6db2eaeec3a712_86123_070a9edb8ff42039a206e371c9714832.jpg 400w,
+               /review/videogame-hidden-my-game-by-mom/giraffe_hud367643ae2fb92fc2e6db2eaeec3a712_86123_b978df786d50c0b8a4109c80f914683f.jpg 760w,
+               /review/videogame-hidden-my-game-by-mom/giraffe_hud367643ae2fb92fc2e6db2eaeec3a712_86123_1200x1200_fit_q75_lanczos.jpg 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-hidden-my-game-by-mom/giraffe_hud367643ae2fb92fc2e6db2eaeec3a712_86123_070a9edb8ff42039a206e371c9714832.jpg&#34;
+               width=&#34;646&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;A parent&amp;rsquo;s love might come out as riding a giraffe&amp;rsquo;s head or feeding an elephant your gaming device, but it&amp;rsquo;s love all the same. We can argue with the methods and the logic, but (at some level) we should try to appreciate that they were doing the best they knew how.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Tap! Dig! My Museum!</title>
+      <link>https://jdaymude.github.io/review/videogame-tap-dig-my-museum/</link>
+      <pubDate>Tue, 03 Dec 2019 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-tap-dig-my-museum/</guid>
+      <description>&lt;p&gt;It&amp;rsquo;s difficult to overstate just how much of &lt;em&gt;Tap! Dig! My Museum!&lt;/em&gt; is in its title. In this free mobile idler, you play as an aspiring dinosaur archaeologist and newfound owner of a museum in disrepair. By enticing patrons to your museum, you collect the coins they drop as they react to your dinosaurs. In turn, you invest your cash into archaeological digs — where you tap away at sand to uncover hidden bones — and upgrades which make said digs easier. The more dinosaurs you complete, the more people come flooding in to see them, which in turn leads to more money, which in turn leads to more dinosaurs. You get the idea.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-tap-dig-my-museum/museum_hu258252aad6c4944f58e890ada42e6efb_245093_767982c9c283fda0b6a1b9259508a02d.png 400w,
+               /review/videogame-tap-dig-my-museum/museum_hu258252aad6c4944f58e890ada42e6efb_245093_de6d337e318e53c99b344a26b3966425.png 760w,
+               /review/videogame-tap-dig-my-museum/museum_hu258252aad6c4944f58e890ada42e6efb_245093_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-tap-dig-my-museum/museum_hu258252aad6c4944f58e890ada42e6efb_245093_767982c9c283fda0b6a1b9259508a02d.png&#34;
+               width=&#34;527&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;&lt;em&gt;Tap! Dig! My Museum!&lt;/em&gt; is a perfect free game in the sense that it never artificially handicaps the player&amp;rsquo;s progress. If you want to keep unearthing dinosaur fossils, nobody&amp;rsquo;s stopping you. Mandatory ads are never longer than 15 seconds, and ads that grant bonuses (like a school bus that brings a swarm of visitors to boost your income) are never longer than 30. As of version 1.3.0 (which added a second floor to the museum and oceanic dinos!), the whole experience only took about 18 hours to complete — ads and plenty of AFK coin collecting included. After being burned by many a &amp;ldquo;free-to-play&amp;rdquo; mobile game, it was nice to actually finish one fair and square.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-tap-dig-my-museum/level_hu64f74bbabc863a7488cd82b6207ef236_101245_c46c76448e510414a4f960a9346f89f4.png 400w,
+               /review/videogame-tap-dig-my-museum/level_hu64f74bbabc863a7488cd82b6207ef236_101245_6ddd96a1b4f47eb87bea39ae1c93c5c3.png 760w,
+               /review/videogame-tap-dig-my-museum/level_hu64f74bbabc863a7488cd82b6207ef236_101245_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-tap-dig-my-museum/level_hu64f74bbabc863a7488cd82b6207ef236_101245_c46c76448e510414a4f960a9346f89f4.png&#34;
+               width=&#34;565&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;There is exactly one interesting wrinkle that shook up gameplay in what was otherwise an enjoyable but repetitive experience. Occasionally, while on a dig, I&amp;rsquo;d uncover a bone fragment that didn’t belong to the dinosaur I was excavating. These remained elusive until finding more across other dig sites, as &lt;em&gt;Tap! Dig! My Museum!&lt;/em&gt; began to drop subtle clues about where I could find others. I soon found myself flipping through the in-game dinosaur book with newfound importance, trying to track down mysterious new creatures. In those moments, even if it was in a cartoonish, silly kind of way, I felt like I was solving a pre-historic mystery. And, after all, that’s what this is all about.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Batman: Arkham City</title>
+      <link>https://jdaymude.github.io/review/videogame-batman-arkham-city/</link>
+      <pubDate>Sat, 17 Aug 2019 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-batman-arkham-city/</guid>
+      <description>&lt;p&gt;I played &lt;em&gt;Arkham Asylum&lt;/em&gt; back in summer of 2015, so it somehow seems fitting for this much busier stage of my life that it took me four years to play the sequel. That being said, the gap I&amp;rsquo;ve taken from the &lt;em&gt;Batman: Arkham&lt;/em&gt; series may ultimately have been to my benefit, given just how similar &lt;em&gt;Arkham City&lt;/em&gt; feels to &lt;em&gt;Arkham Asylum&lt;/em&gt;. We&amp;rsquo;re still beating the crap out of every other living character in the game (who all seem inexplicably hostile towards us on sight), we&amp;rsquo;re still uncovering a diabolical plot that features an all-star cast of Batman villains, and we&amp;rsquo;re still tracking down every Riddler secret using every piece of WayneTech we can get our hands on.&lt;/p&gt;
+&lt;p&gt;The thing is, all of it is &lt;em&gt;great&lt;/em&gt;. Very few superhero games, especially those being made back in the early 2010s, can hold a candle to the experience that &lt;em&gt;Arkham City&lt;/em&gt; provides. From gliding and grappling through the city to using detective mode to solve crimes, every moment feels like an authentic, exhilarating experience of donning the cape and cowl of the Dark Knight. Catwoman, Robin, and Nightwing are also playable characters for smaller segments, each with their own exciting gadgets and play styles. A huge amount of the game&amp;rsquo;s success can be credited to the immersive open-world of &lt;em&gt;Arkham City&lt;/em&gt;, greatly improving over the labyrinth Metroidvania-like level design of &lt;em&gt;Arkham Asylum&lt;/em&gt;. Adding a mix of outdoor and indoor locations to the game adds further opportunities for the mechanics and side missions to enrich the overall experience.&lt;/p&gt;
+&lt;p&gt;But this brings me to a point of &lt;em&gt;Arkham City&lt;/em&gt; I was surprised by, and one that I would have only picked up on now, in 2019. Thanks to the open-world design, we get a lot of radio chatter from various inmates and characters to make the solo experience feel more alive. Most of what they say is fine but forgettable, like &amp;ldquo;I wonder what&amp;rsquo;s on TV right now,&amp;rdquo; or self-dating to an era where Facebook was still a novelty: &amp;ldquo;How am I supposed to update my status? &amp;hellip;Oh yeah, I&amp;rsquo;m still stuck here in this stinking prison.&amp;rdquo; But a lot of it hints at something much more sinister, not originating from the inmates themselves, but from their experience.&lt;/p&gt;
+&lt;p&gt;You see, the plot of the game is that Prof. Hugo Strange gets Gotham City to agree to a pretty bonkers plan wherein they wall off a huge part of the city, throw all the inmates and supervillains from Arkham Asylum inside, and seal it shut. Strange likes this because he gets to &amp;ldquo;study&amp;rdquo; the criminally insane (for the good of science, I&amp;rsquo;m sure), and because the prison is a perfect way of making sure anyone who knows the truth of his nefarious purposes (like Bruce Wayne) are never heard from again. But in an age where we&amp;rsquo;re talking a lot more about racial discrimination, police brutality, and other failures of our criminal justice system, you start to wonder why in the world Batman feels the need to be inside this prison, beating the pulp out of everyone he sees. A decent number of inmates will yell &amp;ldquo;What&amp;rsquo;s Batman doing here?&amp;rdquo; when you start a fight. Others get picked up by your police scanner: &amp;ldquo;Why&amp;rsquo;s Batman in here anyway, aren&amp;rsquo;t we already locked up?&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;I get that a lot of these inmates are bad people, especially the more ruthless ones who work closely with the big bads (Penguin, Two-Face, Joker, etc.). But my guess is that a lot of the inmates joined up with some villain&amp;rsquo;s faction just so they had food to eat, or so they wouldn&amp;rsquo;t get killed in the streets. And while I know Batman will never be compassionate, I wonder if he couldn&amp;rsquo;t be just a bit more conscientious. Otherwise, I worry that Joker&amp;rsquo;s right when he says Batman belongs inside with the rest of them.&lt;/p&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;p&gt;The game would occasionally crash with some pretty unreadable error messages, but was otherwise flawless.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>MARVEL Strike Force</title>
+      <link>https://jdaymude.github.io/review/videogame-marvel-strike-force/</link>
+      <pubDate>Wed, 02 Jan 2019 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-marvel-strike-force/</guid>
+      <description>&lt;p&gt;After reading a particularly deep and persuasive Game Informer &lt;a href=&#34;https://www.gameinformer.com/opinion/2018/06/08/opinion-marvel-strike-force-is-one-of-the-most-addictive-games-ive-played-all&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;opinion piece&lt;/a&gt;, I decided to download &lt;em&gt;MARVEL Strike Force&lt;/em&gt; as a way to take occasional breaks from the stress of planning our wedding. In a polished experience centering on collecting and upgrading MARVEL characters, I soon found myself assembling five-character teams of heroes, villains, and minions whose compositions rivalled even the wildest Cinematic Universe crossovers to date. My early game mashup team of Spiderman, Elektra, Crossbones, Luke Cage, and an unnamed S.H.E.I.L.D. Medic was soon taking on the likes of Ultron, Hydra, and other players&#39; amalgamations in an effort to — as always — save the world.&lt;/p&gt;
+&lt;p&gt;The campaign offers a barebones and comic-book-absurd explanation of what&amp;rsquo;s going on: a new villain named Ultimus (who was invented for this game) has a Conversion Device that he uses to corrupt heroes and villains alike to join his cause. Ultimus conveniently also has the ability to open interdimensional portals, so he makes a habit of converting whole armies of Avengers, Guardians, Hydra, Kree, etc. in his ongoing conquest of the multiverse. Naturally, our dimension — and specifically, our Earth — contains Nexus portals that guard the way to all other dimensions, so Ultimus sees our dimension as his prize. Conveniently, our dimension&amp;rsquo;s Nick Fury secretly started a S.H.E.I.L.D. division called S.T.R.I.K.E. to monitor and defend against inter-dimensional threats, hence the whole &amp;ldquo;Strike Force&amp;rdquo; thing. So, in a classic &amp;ldquo;the enemy of my enemy is my friend&amp;rdquo; narrative, our dimension&amp;rsquo;s heroes and villains team up under the Strike Commander (that&amp;rsquo;s you) to fight Ultimus and — cue the heroic fanfare — save the multiverse!&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-marvel-strike-force/roster_hu883ecfa106ac3c6ecf4aebdf3eaac0ea_2231390_184149cbe4d2206e2d5e8f750d151ae2.png 400w,
+               /review/videogame-marvel-strike-force/roster_hu883ecfa106ac3c6ecf4aebdf3eaac0ea_2231390_5bcd6d1de7c34418dd633a0139273390.png 760w,
+               /review/videogame-marvel-strike-force/roster_hu883ecfa106ac3c6ecf4aebdf3eaac0ea_2231390_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-marvel-strike-force/roster_hu883ecfa106ac3c6ecf4aebdf3eaac0ea_2231390_184149cbe4d2206e2d5e8f750d151ae2.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;I&amp;rsquo;m just going to get this out of the way now: &lt;em&gt;MARVEL Strike Force&lt;/em&gt;&amp;rsquo;s main story (and many side- and event-stories) are terrible. The writers can&amp;rsquo;t seem to decide if they&amp;rsquo;re self-aware of how silly the whole setup is or if they take it very seriously, which leads to almost all the characters delivering similar, melodramatic lines. Even characters who were created to leverage our cracking suspension of disbelief (like Deadpool and Star Lord) fall flat. That being said, &lt;em&gt;MARVEL Strike Force&lt;/em&gt; is primarily made up of its many well-executed variations of the same core, turn-based strategy gameplay, and the forgettable story is really just there to tie everything together.&lt;/p&gt;
+&lt;p&gt;With that negative aside, let&amp;rsquo;s talk about a bunch of things &lt;em&gt;MARVEL Strike Force&lt;/em&gt; does really well. First, as hinted at before, it has a lot of different game modes. And somehow, almost all of them feel enjoyable and distinct despite not being terribly different from one another. For example, the Campaign mode tasks the player with using different subsets of characters (only heroes, only villains, only characters from space, etc.) to play though a sequence of levels. In the Arena, players fight for better ladder rank by pitting their best five-character team against those of higher-ranked players. In Blitz, players use their entire collection of characters to win as many battles as they can in the period of a couple days. In Raids, players work with their alliance to collectively complete a map of difficult battles.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-marvel-strike-force/shards_hu092108550f5d4d605ea6f1ce419717b4_2205241_3122f688e98b7bdaac08dfab20345803.png 400w,
+               /review/videogame-marvel-strike-force/shards_hu092108550f5d4d605ea6f1ce419717b4_2205241_ea7cc3a338ba65c02115c9a80e80a21b.png 760w,
+               /review/videogame-marvel-strike-force/shards_hu092108550f5d4d605ea6f1ce419717b4_2205241_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-marvel-strike-force/shards_hu092108550f5d4d605ea6f1ce419717b4_2205241_3122f688e98b7bdaac08dfab20345803.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;You might be thinking &amp;ldquo;Okay, we get it, every mode is basically a different framework for battles. Doesn&amp;rsquo;t that get old? Why play all the different modes?&amp;rdquo; The best answer I can give is that &lt;em&gt;MARVEL Strike Force&lt;/em&gt;&amp;rsquo;s many modes enable and encourage progression in a way that is exceptionally better than many of its free-to-play peers. In order to explain how it does this, we need to understand how characters are upgraded. First, a character has to be unlocked by collecting some number of that character&amp;rsquo;s &amp;ldquo;shards.&amp;rdquo; Some shards can be obtained through completing/replaying Campaign levels, while others come as rewards from orb drops (&lt;em&gt;MARVEL Strike Force&lt;/em&gt;&amp;rsquo;s equivalent of a loot box). Once a character&amp;rsquo;s been unlocked, they can be upgraded in five ways:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Stars: Gaining additional shards periodically increases a character&amp;rsquo;s star level (up to star level 7), which increases the character&amp;rsquo;s power.&lt;/li&gt;
+&lt;li&gt;Red Stars: Random drops that dramatically increase character power (and the one and only pay-to-win feature of this game).&lt;/li&gt;
+&lt;li&gt;Level: Players can spend gold and &amp;ldquo;training modules&amp;rdquo; to increase the character&amp;rsquo;s level, which maxes out at the player&amp;rsquo;s level (which is increased by gaining XP).&lt;/li&gt;
+&lt;li&gt;Abilities: Each character has up to three active abilities and one passive to use in battles, and each ability can be upgraded using &amp;ldquo;ability materials&amp;rdquo;.&lt;/li&gt;
+&lt;li&gt;Gear: A character&amp;rsquo;s stats (health, damage, armor, etc.) can be increased by upgrading their gear, which can be obtained from Campaign levels.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;This may all feel overly complicated, but the reality is that these convoluted systems encourage players to engage in everything the game has to offer, all while rewarding that engagement with tangible and meaningful upgrades to their characters. Being a free-to-play game, this approach helps players remain relatively competitive without having to empty their wallets. (There&amp;rsquo;s one necessary caveat to this point: for those who do want to shell out some cash, the in-app purchases in &lt;em&gt;MARVEL Strike Force&lt;/em&gt; are &lt;a href=&#34;https://www.polygon.com/2018/8/24/17776974/marvel-strike-force-microtransactions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;stupidly expensive&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;The second free-to-play sin that &lt;em&gt;MARVEL Strike Force&lt;/em&gt; neatly avoids is unnecessary grinding (especially for free players to progress). Instead of making you play Campaign level over and over again, for example, beating a level without any of your characters dying unlocks an &amp;ldquo;auto-win&amp;rdquo; of that level, where you can simply spend Campaign energy and immediately get the rewards (shards, gold, gear, etc.). With a tap of a button, I can auto-win a level ten times, a task that would usually take at least 10 minutes. Other small details like this one really add up in a way that makes me feel good about playing (instead of worrying that I&amp;rsquo;m falling prey to time-sucking strategies the developer may be employing).&lt;/p&gt;
+&lt;p&gt;The meta-game has pretty severe balance issues (at the time of writing, Defenders and S.H.E.I.L.D. teams have been essentially unbeatable at the highest levels of competition for months) and the main UI is unnecessarily cumbersome, but if you&amp;rsquo;re looking to play with a wide cut of MARVEL&amp;rsquo;s roster for free in a pretty friendly community, I&amp;rsquo;d be hard pressed to find a better recommendation than &lt;em&gt;MARVEL Strike Force&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;notes&#34;&gt;Notes&lt;/h2&gt;
+&lt;p&gt;As of writing this review, I&amp;rsquo;ve been playing &lt;em&gt;MARVEL Strike Force&lt;/em&gt; for 6.5 months, have been in two alliances (other than the default one), have reached the maximum level (70), and am easily completing Ultimus V raids. I have not completed any of The Dark Dimension. Alliance War was added after this was written.&lt;/p&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;p&gt;Occasionally, after certain updates, battles can hang indefinitely, where either the AI never takes their turn or the player is never presented with their actions. This is usually fixable by force-quitting the game and restarting.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Splashy Dots</title>
+      <link>https://jdaymude.github.io/review/videogame-splashy-dots/</link>
+      <pubDate>Fri, 02 Nov 2018 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-splashy-dots/</guid>
+      <description>&lt;p&gt;Creating an iOS puzzle game with minimalist design and the latest iOS features (3D Touch, Haptic, etc.) seems to be the surefire strategy for getting featured by Apple in the App Store in the late 2010s. But despite attaining that all-important medal of honor, &lt;em&gt;Splashy Dots&lt;/em&gt; serves, at best, a bland and lightly logical time-waster.&lt;/p&gt;
+&lt;p&gt;At its core, &lt;em&gt;Splashy Dots&lt;/em&gt; is about connecting dots on a grid, starting and ending at specified locations without being allowed to backtrack. Its aesthetic is vaguely reminiscent of an art gallery, and connecting the colored dots is something like &amp;ldquo;paint through all the colors without lifting your paintbrush&amp;rdquo;. Except the colors don&amp;rsquo;t matter, and the &amp;ldquo;paintings&amp;rdquo; that comprise the levels never end up looking like anything nice (unless you really like abstract art, in which case, knock yourself out).&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-splashy-dots/featured_huf8ddd504f1fd6f9554863764a44c44c0_729320_51a918d4b8d05fd829e6f4c2869b1e2f.png 400w,
+               /review/videogame-splashy-dots/featured_huf8ddd504f1fd6f9554863764a44c44c0_729320_896a885e1153a979107e02d6ccf843b6.png 760w,
+               /review/videogame-splashy-dots/featured_huf8ddd504f1fd6f9554863764a44c44c0_729320_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-splashy-dots/featured_huf8ddd504f1fd6f9554863764a44c44c0_729320_51a918d4b8d05fd829e6f4c2869b1e2f.png&#34;
+               width=&#34;530&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;It&amp;rsquo;s difficult not to compare &lt;em&gt;Splashy Dots&lt;/em&gt; to other casual puzzle games that are unequivocally richer experiences. Take &lt;em&gt;Dots&lt;/em&gt; and its excellent sequel &lt;em&gt;Two Dots&lt;/em&gt;, for example. &lt;em&gt;Splashy Dots&lt;/em&gt; seems to be a carbon copy when it comes to the &lt;em&gt;Dots&lt;/em&gt; games&#39; minimalist designs, but replaces the innovative and progressively more difficult gameplay with an inane, repetitive experience. Or, if we want to focus more on the &amp;ldquo;art&amp;rdquo; aspect, consider any Picross game. Despite being quite repetitive, Picross stays engaging by promising the player that all the numbers and squares will eventually depict something. It&amp;rsquo;s a promise that the experience will be rewarding, even if that reward is just a pixelated happy face. &lt;em&gt;Splashy Dots&lt;/em&gt;, in turn, offers every combination of colored lines imaginable. And something about discovering hundreds of crappy paintings just isn&amp;rsquo;t a formula that keeps me coming back for more.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Undertale</title>
+      <link>https://jdaymude.github.io/review/videogame-undertale/</link>
+      <pubDate>Tue, 23 Oct 2018 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-undertale/</guid>
+      <description>&lt;p&gt;Every review for Toby Fox&amp;rsquo;s &lt;em&gt;Undertale&lt;/em&gt; seems to somehow impart a deep seeded conviction that this truly is one of the most emotional, clever, unexpected games of all time. That conviction is so powerful that by the time I metaphorically pulled this title off the shelf and gave it a good dusting (months after I got it as a much wanted gift), the idea that I was going to be blown away by this little indie game was all but a concrete expectation. That hope only grew when, after falling in love with &amp;ldquo;His Theme&amp;rdquo; when it was used as a backing track behind some &lt;em&gt;Overwatch&lt;/em&gt; &lt;a href=&#34;https://www.youtube.com/watch?v=NjgokkTtniY&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;voice lines&lt;/a&gt;, I found &lt;em&gt;Undertale&lt;/em&gt;&amp;rsquo;s soundtrack to be incredible in its own right.&lt;/p&gt;
+&lt;p&gt;Perhaps by osmosis, I had come to respect the vague, sacred secrecy the community held around the game&amp;rsquo;s details. But it wasn&amp;rsquo;t until I fired it up for the first time that I realized I&amp;rsquo;d never even seen a screenshot of &lt;em&gt;Undertale&lt;/em&gt; before, and it was honestly a jarring experience. Playing on my 3000x2000 Surface Book display, &lt;em&gt;Undertale&lt;/em&gt; loaded as a little box of pixel graphics that only occupied a ninth of my screen, and it took me a solid amount of Googling to figure out if it even had a fullscreen mode (it does, press &lt;code&gt;F4&lt;/code&gt;). Once it was big enough to actually see, it was a whole other struggle to figure out how to control stuff, as &lt;em&gt;Undertale&lt;/em&gt; offers you no real tutorial whatsoever (arrow keys to walk, and &lt;code&gt;Z&lt;/code&gt;, &lt;code&gt;X&lt;/code&gt;, and &lt;code&gt;Ctrl&lt;/code&gt; for pretty much everything else). In fact, the initial feeling I had was one of deflation; this supposedly perfect game was actually a time machine back to the days of pixel art and text-based RPGs with a bad on-ramping experience.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-undertale/judgement_hu6a228774f549573fbecc8eaf41cdd971_135799_a8bf3ae1caf1acd05114557c3803998a.png 400w,
+               /review/videogame-undertale/judgement_hu6a228774f549573fbecc8eaf41cdd971_135799_9860648261eeaae0d8c5cdd6d9ad53b4.png 760w,
+               /review/videogame-undertale/judgement_hu6a228774f549573fbecc8eaf41cdd971_135799_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-undertale/judgement_hu6a228774f549573fbecc8eaf41cdd971_135799_a8bf3ae1caf1acd05114557c3803998a.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;And that brings us to the paradox of &lt;em&gt;Undertale&lt;/em&gt;: in order to give it all the praise it deserves, to show off all the things that make it both sharply witty and warmly endearing, and to convince a newcomer to push past the honestly confounding first 10 minutes of play, I&amp;rsquo;d have to spoil a little of the game. And that is something I should absolutely not do. Because realizing what &lt;em&gt;Undertale&lt;/em&gt; is, living out the experience of a truly beautiful game revealing itself to you in the subtlest of character dialogue, and feeling your assumptions about how it should be played slip away — all of this must be yours and only yours.&lt;/p&gt;
+&lt;p&gt;So have a little hope, press on, and stay determined. You&amp;rsquo;ll be so happy you did.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>A Way Out</title>
+      <link>https://jdaymude.github.io/review/videogame-a-way-out/</link>
+      <pubDate>Wed, 04 Apr 2018 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-a-way-out/</guid>
+      <description>&lt;p&gt;After Josef Fares&amp;rsquo;s emotionally stunning success with &lt;em&gt;Brothers: A Tale of Two Sons&lt;/em&gt;, I honestly wasn&amp;rsquo;t sure how his new team at Hazelight Studios could follow it up with their first game. Certainly there would have to be a solid story at its heart, but what else? As another story about two male co-lead characters, could &lt;em&gt;A Way Out&lt;/em&gt; invent new and fresh co-op mechanics? Could it evoke emotional responses on par with those in &lt;em&gt;Brothers&lt;/em&gt; without recycling too much material? Most importantly, could it — like &lt;em&gt;Brothers&lt;/em&gt; — ask thematic questions that pierce beyond the screen and into reality?&lt;/p&gt;
+&lt;p&gt;The answer to all three of these questions is a resounding yes. In &lt;em&gt;A Way Out&lt;/em&gt;, two players (either locally or online) each control one of Vincent and Leo, the story&amp;rsquo;s protagonists. At the story&amp;rsquo;s start, Vincent is going to jail while Leo has already been in for several months. As they slowly begin to trust one another, they learn that they both have it out for a crime boss named Harvey, the man who got them both canned. United by a desire to find their own justice, the pair hatch a plan to escape.&lt;/p&gt;
+&lt;p&gt;The story unfolds as our protagonists interact with one another and others in their environment, tasking players with surviving harrowing combat, pulling off pieces of an escape plan, and solving puzzles using their surroundings. But these elements can be found in many games; the differentiating factor for &lt;em&gt;A Way Out&lt;/em&gt; is the way in which it demands cooperation from the players, even in the most mundane tasks. Especially in the first half of the game, every situation is an opportunity to synergize in new ways. As Vincent and Leo learn to trust one another and work together, so do the players controlling them.&lt;/p&gt;
+&lt;p&gt;It is worth mentioning, though not in any spoiler-revealing detail, that the gameplay is both surprisingly clever and spans many different game genres. Though most of the game takes place in a split-screen, third-person perspective, particular sequences play out like moments from &lt;em&gt;Grand Theft Auto&lt;/em&gt;, &lt;em&gt;Battlefield&lt;/em&gt;, &lt;em&gt;Uncharted&lt;/em&gt;, &lt;em&gt;Assassins&#39; Creed&lt;/em&gt;, and even &lt;em&gt;Street Fighter&lt;/em&gt;. Beyond the main game itself, many refreshing and somewhat odd mini-game experiences are scattered throughout the story: Leo and Vincent can challenge one another in brawn (in an arm-wrestling match), brains (in a game of Connect Four), and everything in between.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;WARNING: This part of the review contains game-ruining spoilers.&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;But the glory of this game lies in its story&amp;rsquo;s false resolution. After brutally murdering Harvey in his safe house in Mexico and reclaiming the Orlov diamond whose sale Harvey sabotaged, Leo and Vincent land stateside. Perhaps we should have expected otherwise, but it felt like the game was coming to a close and both characters would go back to their wives and children happy, scores settled. Instead, a band of police storm the runway, and our protagonists have nowhere left to go. Instead of emerging victorious, the pointed guns and blue and red lights spell a return to where this adventure started.&lt;/p&gt;
+&lt;p&gt;If only, though, that were the only twist. In one painful blow, the writers destroy everything the players have learned to trust: the characters they control, and one another. When the supposed chief of police approaches to arrest the pair, a simple &amp;ldquo;Good work, Vincent&amp;rdquo; turns the entire game on its head. Everything following that point drives the pain of betraying a friend and being betrayed deeper and deeper until the players are forced to control Vincent and Leo in a 1v1 gunfight: the antithesis of every cooperative wall climb, every narrow escape, every emotional vulnerability.&lt;/p&gt;
+&lt;p&gt;Even with spoilers disclaimed, it feels wrong to give away the game&amp;rsquo;s final emotional gut-punch. Suffice it to say that it hits just as hard as the infamous sequence in &lt;em&gt;Brothers&lt;/em&gt; where the little brother has to swim on his own. Even the way we&amp;rsquo;ve learned to control our characters and interact in this game&amp;rsquo;s world is questioned and systematically torn down.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Spoiler section over!&lt;/strong&gt;&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;This game is everything you could want from an interactive story, and the masterful way that everything is built up around cooperation makes it even better. While it doesn&amp;rsquo;t fully achieve complete emotional synchronization between players and their characters (I found myself protesting loudly and angrily throughout the end sequence), the storytelling is among the finest I&amp;rsquo;ve had the pleasure to experience in a video game.&lt;/p&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;p&gt;Many of the character&amp;rsquo;s voice lines were not accurately timed, and would often trigger at irrelevant moments. This may not be a bug so much as a way the experience could be polished further.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Blendoku 2</title>
+      <link>https://jdaymude.github.io/review/videogame-blendoku-2/</link>
+      <pubDate>Sun, 17 Dec 2017 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-blendoku-2/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Blendoku 2&lt;/em&gt; is an excellent example of a free, mobile puzzle game done right. Based on the deceptively simple concept of sorting colors, &lt;em&gt;Blendoku 2&lt;/em&gt; offers great depth of content and innovative mechanics to a mobile puzzle scene overrun by match-three spinoffs and their ilk.&lt;/p&gt;
+&lt;p&gt;Gameplay is straightforward: a crossword-like board is presented with a small number of colored tiles already filled in. Players must then place the remaining colors into the correct spaces so that the resulting board follows some sort of color gradient. Variants on this basic formula include &amp;ldquo;Keyless&amp;rdquo;, where the original board has no preset tiles; &amp;ldquo;Decoys,&amp;rdquo; where some tiles are red herrings and not part of the end configuration, and &amp;ldquo;Clones,&amp;rdquo; where a color corresponds to multiple spaces on the board. Completionists can challenge themselves to beat levels faster than the world average time and do so perfectly, avoiding putting any colors in incorrect locations. Achievements accompany these feats and more (and all are possible without payment).&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-blendoku-2/thanks_41_hu2af550c75d92bbda05ddca25a13227dd_7952_2eefcd7c1224974a5b6b4421a66afe57.png 400w,
+               /review/videogame-blendoku-2/thanks_41_hu2af550c75d92bbda05ddca25a13227dd_7952_bbb7cef94443b9923740b5ab3828bdca.png 760w,
+               /review/videogame-blendoku-2/thanks_41_hu2af550c75d92bbda05ddca25a13227dd_7952_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-blendoku-2/thanks_41_hu2af550c75d92bbda05ddca25a13227dd_7952_2eefcd7c1224974a5b6b4421a66afe57.png&#34;
+               width=&#34;676&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Levels are organized by difficulty. The base game, which is completely free, includes generous amounts of content: 150 &amp;ldquo;simple&amp;rdquo; levels, 150 &amp;ldquo;medium,&amp;rdquo; 100 &amp;ldquo;hard,&amp;rdquo; 100 &amp;ldquo;master,&amp;rdquo; and 50 bonus &amp;ldquo;thanks&amp;rdquo; levels. This was more than enough to provide a satisfying experience, and interested players can more than double the number of levels by purchasing level packs. Monetization, per usual, comes from ads played between levels.&lt;/p&gt;
+&lt;p&gt;There are a variety of other game modes and perks to discover throughout the game, including a multiplayer versus mode, &amp;ldquo;painting&amp;rdquo; levels, a &amp;ldquo;color IQ&amp;rdquo; test, and a daily challenge level. These are all nice enough experiences, demonstrating the developers’ abilities to strike a near-perfect balance between providing abundant content and remaining focused on their core gameplay. As a result, &lt;em&gt;Blendoku 2&lt;/em&gt; feels full without trying to do too much.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-blendoku-2/painting_15_hu4beddca54a96b73bca0c1dc2c9d3133c_647481_76c2b81d33a2ed9286f4a2ad318c0208.png 400w,
+               /review/videogame-blendoku-2/painting_15_hu4beddca54a96b73bca0c1dc2c9d3133c_647481_fd7cfbb4eee3c59c86bd08991b14f53d.png 760w,
+               /review/videogame-blendoku-2/painting_15_hu4beddca54a96b73bca0c1dc2c9d3133c_647481_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-blendoku-2/painting_15_hu4beddca54a96b73bca0c1dc2c9d3133c_647481_76c2b81d33a2ed9286f4a2ad318c0208.png&#34;
+               width=&#34;518&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;All in all, &lt;em&gt;Blendoku 2&lt;/em&gt;’s commitment to simplicity in design and mechanics combined with its plethora of free content makes it a must-try for puzzle lovers.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>June&#39;s Journey</title>
+      <link>https://jdaymude.github.io/review/videogame-junes-journey/</link>
+      <pubDate>Wed, 25 Oct 2017 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-junes-journey/</guid>
+      <description>&lt;p&gt;Hidden object games moved from their old dwellings in children&amp;rsquo;s sections of newspapers to new homes on touchscreens in the early iOS era, and every generation of the operating system sees a new app iterate over the same mechanics. More of the same isn&amp;rsquo;t always bad — it&amp;rsquo;s nice to have new apps with refreshed graphics to replace aging legacy games that are no longer supported — but nevertheless, newcomers must somehow justify their existence. &lt;em&gt;June&amp;rsquo;s Journey&lt;/em&gt; had a promising plan to do so: wrap classic hidden object gameplay in a mystery story and toss in some city building-esque filler as a bonus. But it ultimately commits too many sins of other free-to-play, casual games to remain enjoyable, and a poorly executed progression system subjects players to numbing repetition.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-junes-journey/level_hufdef2b02222c20c1955cf8924e6e35d4_5019216_206d0f8aafddc8dd81b98a9d96738a03.png 400w,
+               /review/videogame-junes-journey/level_hufdef2b02222c20c1955cf8924e6e35d4_5019216_b153d9051b1fb330658273f831674ee7.png 760w,
+               /review/videogame-junes-journey/level_hufdef2b02222c20c1955cf8924e6e35d4_5019216_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-junes-journey/level_hufdef2b02222c20c1955cf8924e6e35d4_5019216_206d0f8aafddc8dd81b98a9d96738a03.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;The setting is fairly simple. June is a British WWI veteran nurse with a knack for quick thinking and insightful observations. Upon learning that her sister and brother-in-law were murdered, purportedly in a murder-suicide by her brother-in-law&amp;rsquo;s own hand, she travels to New York to find answers. Your mission quite literally becomes June&amp;rsquo;s: find hidden clues which steadily reveal more of the mystery, bringing you closer to the only answers that will make sense of the violence. As an aside, the family estate has fallen into some disrepair, so coins and resources gained from completing levels can be put towards decorating and renovating dilapidated structures.&lt;/p&gt;
+&lt;p&gt;The progression system is superficial, to say the least. Each hidden object scene can only be accessed after the player reaches the corresponding player level. Player level increases with flowers, a strange disguise for a typical XP/leveling system. But instead of earning flowers through playing levels and finding objects (which one could argue is the whole point), flowers are rewarded for buying decorations and upgrading buildings on the estate. This creates an illogical and contrived system of currencies: playing levels rewards coins and materials, which in turn are used to buy decorations and building upgrades, which in turn reward flowers that sum to higher player levels, which in turn unlock new levels one-by-one. If that sounds unnecessarily complicated, it&amp;rsquo;s because it is. Very little is gained from each currency exchange, and binding a player&amp;rsquo;s story progression to the number of trellises built and bushes planted can only be seen as a ploy to make content last longer.&lt;/p&gt;
+&lt;p&gt;The joy of a hidden object game is in finding things. There&amp;rsquo;s nothing wrong with adding extra elements to the gameplay; a good story is a boon to any game, and rewarding players with an increasingly sprawling and beautiful estate to mark their time investment is quite nice. But when grinding for levels and resources reduces finding hidden objects to memorizing where on the screen to tap, there can be no arguing that &lt;em&gt;June&amp;rsquo;s Journey&lt;/em&gt; lost sight of its core gameplay which should have remained its soul.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Overcooked</title>
+      <link>https://jdaymude.github.io/review/videogame-overcooked/</link>
+      <pubDate>Mon, 11 Sep 2017 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-overcooked/</guid>
+      <description>&lt;p&gt;I am a panda wielding a kitchen knife, desperately hacking away at as many onions as physically possible and subsequently littering the floor with chopped produce. The noise level in our living room steadily rises as my sister and I frantically shout back and forth at each other; the culinary space station we&amp;rsquo;ve been thrust into is about to rotate, and we&amp;rsquo;ll have a very narrow window before the station rotates again to ferry all the onions into another room where pots will transform them into delicious soups. But the discord is quickly joined by my brother, finding himself caught on the wrong side of an airlock, holding clean bowls for a set of soups that are nearly finished cooking. In a few moments, those soups will burn and set that section of the kitchen on fire; onions are bumped and kicked aside as my panda and my sister&amp;rsquo;s black bear accidentally dash into one another in our simultaneous attempts to get to the fire extinguisher. Orders are being missed, dirty dishes are piling up, soups are burning, tempers are fraying, and — most importantly — hilarity is ensuing. This is &lt;em&gt;Overcooked&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Set with the task of avoiding certain apocalyptic doom caused by the appearance of a spaghetti monster that cannot be sated, players (controlling cartoon people and anthropomorphic animals) are sent back in time to hone their teamwork and culinary abilities. These cooperative teams of 1–4 players face challenges in cooking a variety of dishes, each introducing its own unique mechanics, in a variety of environments, each with its own hazards. Continuous failure to learn each level&amp;rsquo;s unspoken rules and strategies quickly is more often a source of comedy than of frustration, and any attempts to rely on a comfort strategy are almost always usurped by little surprises to further refine your growing culinary expertise.&lt;/p&gt;
+&lt;p&gt;For the most part, each level is fairly straightforward: obtain ingredients, chop them, assemble them into dishes, cook those dishes, plate them, serve them, and literally rinse and repeat by washing the dirty plates when they&amp;rsquo;re returned. The faster dishes are served, the more money they&amp;rsquo;re worth, and a score of 1 (passing) to 3 (perfect) stars can be scored on each level depending on the total money earned. The numerous ways each stage of preparation overlaps with the others offers more than enough material for flustering and amusing kitchen accidents, but it&amp;rsquo;s the small mechanics tweaks and zany interactions between the players and their environment that keep the already incredible core experience fresh throughout the course of the game. Mishaps abound, such as accidentally throwing away clean dishes instead of handing them to another player or slipping off an iceberg holding a finished pizza.&lt;/p&gt;
+&lt;p&gt;Although the game can be played alone (wherein a single player controls multiple avatars and switches between them), &lt;em&gt;Overcooked&lt;/em&gt;&amp;rsquo;s hilarity of mistakes (and mistakes on top of mistakes) combined with the thrill of (eventual) success is best experienced with friends. In an age where couch co-op is largely ignored in the wake of big screen multiplayer titles, &lt;em&gt;Overcooked&lt;/em&gt; not only succeeds in creating a satisfying co-op experience but adds innovative elements beyond the usual cooking game. If &lt;em&gt;Overcooked&lt;/em&gt; were a meal, then Ghost Town Games has prepared us something truly wonderful and family-style; my compliments to the chefs.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>We Were Here</title>
+      <link>https://jdaymude.github.io/review/videogame-we-were-here/</link>
+      <pubDate>Sun, 16 Jul 2017 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-we-were-here/</guid>
+      <description>&lt;p&gt;In this two-player, cooperative, escape-the-room-like adventure, players take the roles of the Librarian and the Explorer. The two begin the game stranded in an unspecified snowy region, and upon discovering and entering a foreboding castle, they are knocked out and placed in separate rooms, connected only by a pair of walkie-talkies. The Librarian is primarily responsible for supplying information to the Explorer, who in turn navigates deadly traps and dimly lit mazes to reach new areas. By piecing together visual clues from both players&#39; environments, puzzles are solved cooperatively, opening doors to new challenges.&lt;/p&gt;
+&lt;p&gt;For a free-to-play game, this was a surprisingly enjoyable and well-constructed experience (albeit a relatively short one, with an imperfect run taking roughly two hours). The crux of the gameplay rests on using voice-only communication to navigate inherently visual puzzles, which are fairly high-quality. Each puzzle balances complexity with difficulty in a pleasing way, and remains sufficiently independent of the rest, ensuring that each sequence is fresh and surprising. Even so, the overall experience was cohesive, rewarding attention to detail even when the details weren&amp;rsquo;t immediately relevant. Making the roles unique gives the game replay value as well; even though both players know the puzzle solutions after one successful run, switching roles gives a satisfying &amp;ldquo;ah, that&amp;rsquo;s what you were confused about!&amp;rdquo; kind of feeling.&lt;/p&gt;
+&lt;p&gt;The graphics are lacking in polish, but this is hardly a complaint given the game is free. In some senses, the lower quality textures add to the experience; I don&amp;rsquo;t really like horror games, but the use of creepy atmospheric elements and the ever-present sense that my partner was in danger was enough to create the right amount of suspense.&lt;/p&gt;
+&lt;p&gt;My real complaints are lodged against the bugs we encountered in our play-through, which (as of Update Five) required my Explorer to kill himself so we could restart from the checkpoint. This sort of broke the feeling of the overall experience, as death became a necessary means to an end instead of something worth fearing.&lt;/p&gt;
+&lt;p&gt;Finally, as a matter of opinion and not of critique, I wonder if the story could have offered any more resolution than what was hinted at in the final theatre sequence. Who was the shadowy figure that placed us here? What drives it to such strange games of mind-over-matter? And what does it want with the one left behind?&lt;/p&gt;
+&lt;h2 id=&#34;bugs&#34;&gt;Bugs&lt;/h2&gt;
+&lt;p&gt;As of Update Five, the introductory video has audio buffering issues. The chess puzzle has a couple bugs: the librarian often drops the film reel for no reason, and it is possible to get the film reel to play its spinning animation on the table itself if the Explorer applies the power too early.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Heroes of the Storm</title>
+      <link>https://jdaymude.github.io/review/videogame-heroes-of-the-storm/</link>
+      <pubDate>Tue, 03 Jan 2017 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-heroes-of-the-storm/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Note: This review reflects the state of Heroes just after the Nexus Challenge and the Feast of the Winter Veil 2016.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Heroes of the Storm&lt;/em&gt; is a MOBA that felt fresh and exciting at the time of its debut, pitting itself against the genre giants &lt;em&gt;Dota 2&lt;/em&gt; and &lt;em&gt;League of Legends&lt;/em&gt;. It offered many maps with varying level design and side objectives which added to the standard formula of tower/base pushing, and — if nothing else — provided Blizzard fans a battleground on which characters from all their favorite games could slash, shoot, claw, hook, and magic their way to victory.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Heroes&lt;/em&gt; does many things well. Its gameplay is, at worst, a well polished MOBA experience. At best, teams move between mercenary camps, team fights, and side objectives with fluidity, emphasizing just how natural the game has made it for players to act as a unit, rather than individuals. XP and levelling is done as a team, so excessive farm management or kill-stealing are nonfactors. Mounts allow for quick traversal of the map, which is an engaging alternative to stocking up on teleport scrolls in fear of not being able to assist your team in times of need (&lt;em&gt;Dota 2&lt;/em&gt;) or, even worse, walking on foot back to the action after every death (&lt;em&gt;Overwatch&lt;/em&gt;). In a similar vein of encouraging cooperation and limiting toxicity, the lack of an all-chat stops players from flaming their opponents. Aesthetically, every character is reconstructed with love and integrity to their original game representations, and the worlds, music, and announcers feel right at home in the Blizzard universe.&lt;/p&gt;
+&lt;p&gt;Player progression is satisfactory. In what effectively reduces to grinding, players gain XP for their account and per hero by playing matches. A small amount of gold is also earned at the end of each match, and can be used to buy heroes from the roster and certain items from the shop. Quests provide a more substantial source of gold revenue, but also err on the side of grinding instead of skill. Compared to compendium challenges in &lt;em&gt;Dota 2&lt;/em&gt; which push the player to actually do something (e.g., &amp;ldquo;stun for a total of x seconds&amp;rdquo;), &amp;ldquo;play 8 games&amp;rdquo; feels like a grab for time. Still, the promise of being able to unlock the full roster of heroes and a limited variety of cosmetics (e.g., a hero&amp;rsquo;s &amp;ldquo;master skin&amp;rdquo; at level 10) offers some reward for an otherwise repetitive structure.&lt;/p&gt;
+&lt;p&gt;Repetition is hardly the mark of a bad game, however. Instead, &lt;em&gt;Heroes&lt;/em&gt; fails most notably in its inability to provide the player with a meaningful representation of what all that repetition has summed to. The statistics hardly even deserve that name; they simply count how many games and kills a player has achieved with each hero, and win rates per map. Match histories only display whether it was a win or a loss, with no details on how the player performed, what talents were selected, or even the gamertags of the other players involved. There is no doubt in my mind that this data is available to the developers (as such data is often a driving force in informing hero balances), so including it in the UI seems like an obvious area of needed improvement for the &lt;em&gt;Heroes&lt;/em&gt; team.&lt;/p&gt;
+&lt;p&gt;Today, in a post-&lt;em&gt;Overwatch&lt;/em&gt;, MOBA-crowded gaming scene, &lt;em&gt;Heroes&lt;/em&gt; struggles to find its place. Several of its most innovative elements such as mounts and talents have been copied by other games (&lt;em&gt;Paladins&lt;/em&gt; and &lt;em&gt;Dota 2: The New Journey&lt;/em&gt;, respectively). Its &amp;ldquo;statistics&amp;rdquo; are laughably barebones, especially for a Blizzard game. Yet its gameplay remains highly polished and its community relatively non-toxic, establishing &lt;em&gt;Heroes&lt;/em&gt; as a place that&amp;rsquo;s inviting to return to from time to time.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Sputnik Eyes</title>
+      <link>https://jdaymude.github.io/review/videogame-sputnik-eyes/</link>
+      <pubDate>Wed, 13 Apr 2016 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-sputnik-eyes/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Sputnik Eyes&lt;/em&gt; is a puzzle game adorned with a playful atmosphere in which you&amp;rsquo;re tasked with guiding exploratory colored robots to matching color positions in order to discover new planets. The aesthetic is greatly inspired by space exploration and the mathematical field of graph theory, which delivers enjoyable mechanics for mathy logic puzzles in minimalist artwork and easily understood controls. The UI is full of adorable artwork, reminiscent of cartoon depictions of outer space that might decorate a child&amp;rsquo;s bedroom. The soundtrack is similarly dreamy, leveraging a handful of light, instrumental electronic songs on rotation to keep any one from becoming overplayed.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-sputnik-eyes/level_hu4b4ff64bd98f5c51248ec04c7cd85531_222619_6a26b4128c9b22a4c816c798d1ddd973.png 400w,
+               /review/videogame-sputnik-eyes/level_hu4b4ff64bd98f5c51248ec04c7cd85531_222619_8d5250ef489b43569b5e6b8d194c8cb1.png 760w,
+               /review/videogame-sputnik-eyes/level_hu4b4ff64bd98f5c51248ec04c7cd85531_222619_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-sputnik-eyes/level_hu4b4ff64bd98f5c51248ec04c7cd85531_222619_6a26b4128c9b22a4c816c798d1ddd973.png&#34;
+               width=&#34;428&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Although the levels vary in the layout of finishing positions and the number of robots, gameplay does have the potential to get somewhat repetitive, which I feel the game designer — Shelly Alon, who developed this game singlehandedly — was likely aware of. Completed levels form constellations (out of planets, not stars), and the game ends after just 65 planets — setting itself apart from content-vomiters like &lt;em&gt;Candy Crush&lt;/em&gt; — and doesn&amp;rsquo;t force players to replay levels extensively to achieve some unlikely high score. Instead, there are challenges to complete levels under a (generous) time limit, and to do so in the minimum possible number of robot moves, providing a shallow level of replayability for those who want it.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-sputnik-eyes/constellation_huec79b848a40fbc6e180e238cf7544ebf_147126_e6bf3aec57ab147e9593b86c57a013f8.png 400w,
+               /review/videogame-sputnik-eyes/constellation_huec79b848a40fbc6e180e238cf7544ebf_147126_3b9036ae65742f576766aa804edbbcda.png 760w,
+               /review/videogame-sputnik-eyes/constellation_huec79b848a40fbc6e180e238cf7544ebf_147126_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-sputnik-eyes/constellation_huec79b848a40fbc6e180e238cf7544ebf_147126_e6bf3aec57ab147e9593b86c57a013f8.png&#34;
+               width=&#34;428&#34;
+               height=&#34;760&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;All in all, &lt;em&gt;Sputnik Eyes&lt;/em&gt; is a satisfying puzzle game resulting from heartfelt, thoughtful work that turns a hopeful eye to what lies beyond our atmosphere.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

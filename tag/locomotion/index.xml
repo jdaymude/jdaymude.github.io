@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>locomotion | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/locomotion/</link>
+      <atom:link href="https://jdaymude.github.io/tag/locomotion/index.xml" rel="self" type="application/rss+xml" />
+    <description>locomotion</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Sun, 04 Nov 2018 16:00:00 +0900</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>locomotion</title>
+      <link>https://jdaymude.github.io/tag/locomotion/</link>
+    </image>
+    
+    <item>
+      <title>Self-Organizing Particle Systems: an Algorithmic Approach to Programmable Matter</title>
+      <link>https://jdaymude.github.io/event/2018wssr-sops/</link>
+      <pubDate>Sun, 04 Nov 2018 16:00:00 +0900</pubDate>
+      <guid>https://jdaymude.github.io/event/2018wssr-sops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phototactic Supersmarticles</title>
+      <link>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</link>
+      <pubDate>Tue, 25 Sep 2018 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/savoie2018-supersmarticles/</guid>
+      <description>&lt;h3 id=&#34;related-press&#34;&gt;Related Press&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.quantamagazine.org/smart-swarms-of-robots-seek-better-algorithms-20180214&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Smart Swarms Seek New Ways to Cooperate.&lt;/a&gt; Kevin Hartnett. &lt;em&gt;Quanta Magazine&lt;/em&gt;, February 2018. (Also featured in &lt;a href=&#34;https://technews.acm.org/archives.cfm?fo=2018-02-feb/feb-16-2018.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
