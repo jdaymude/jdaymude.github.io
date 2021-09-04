@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ryan Yiu | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/authors/ryiu/</link>
+      <atom:link href="https://jdaymude.github.io/authors/ryiu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ryan Yiu</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/authors/ryiu/avatar_hu1c187c4c1f1bd74e8474a4dfce309516_275528_270x270_fill_q75_lanczos_center.jpg</url>
+      <title>Ryan Yiu</title>
+      <link>https://jdaymude.github.io/authors/ryiu/</link>
+    </image>
+    
+    <item>
+      <title>Deadlock and Noise in Self-Organized Aggregation Without Computation</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-deadlockaggregation/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-deadlockaggregation/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

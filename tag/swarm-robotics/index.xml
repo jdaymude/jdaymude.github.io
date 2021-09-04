@@ -5,12 +5,20 @@
     <link>https://jdaymude.github.io/tag/swarm-robotics/</link>
       <atom:link href="https://jdaymude.github.io/tag/swarm-robotics/index.xml" rel="self" type="application/rss+xml" />
     <description>swarm-robotics</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Wed, 14 Jul 2021 12:15:00 -0600</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
       <title>swarm-robotics</title>
       <link>https://jdaymude.github.io/tag/swarm-robotics/</link>
     </image>
+    
+    <item>
+      <title>Deadlock and Noise in Self-Organized Aggregation Without Computation</title>
+      <link>https://jdaymude.github.io/publication/daymude2021-deadlockaggregation/</link>
+      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2021-deadlockaggregation/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Algorithmic Foundations of Emergent Behavior in Analog Collectives</title>
