@@ -30,10 +30,10 @@
   
     
   
-  <meta name="description" content="PhD, Computer Science" />
+  <meta name="description" content="This talk introduces the *canonical amoebot model* of programmable matter, a revision of the amoebot model that standardizes a hierarchy of assumption variants and treats all amoebot communication as message passing to facilitate studies of concurrency. I then present two complementary approaches to designing concurrent amoebot algorithms." />
 
   
-  <link rel="alternate" hreflang="en-us" href="https://jdaymude.github.io/authors/" />
+  <link rel="alternate" hreflang="en-us" href="https://jdaymude.github.io/event/2021disc-canonicalamoebot/" />
 
   
 
@@ -310,8 +310,6 @@
   
 
   
-    <link rel="alternate" href="/authors/index.xml" type="application/rss+xml" title="Joshua J. Daymude" />
-  
 
   
     <link rel="manifest" href="/manifest.webmanifest" />
@@ -320,7 +318,7 @@
   <link rel="icon" type="image/png" href="/media/icon_hu1dc8deb1865675db905a286e8af9308b_16380_32x32_fill_lanczos_center_3.png" />
   <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu1dc8deb1865675db905a286e8af9308b_16380_180x180_fill_lanczos_center_3.png" />
 
-  <link rel="canonical" href="https://jdaymude.github.io/authors/" />
+  <link rel="canonical" href="https://jdaymude.github.io/event/2021disc-canonicalamoebot/" />
 
   
   
@@ -331,25 +329,77 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:card" content="summary_large_image" />
   
   <meta property="og:site_name" content="Joshua J. Daymude" />
-  <meta property="og:url" content="https://jdaymude.github.io/authors/" />
-  <meta property="og:title" content=" | Joshua J. Daymude" />
-  <meta property="og:description" content="PhD, Computer Science" /><meta property="og:image" content="https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png" />
-    <meta property="twitter:image" content="https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png" /><meta property="og:locale" content="en-us" />
+  <meta property="og:url" content="https://jdaymude.github.io/event/2021disc-canonicalamoebot/" />
+  <meta property="og:title" content="The Canonical Amoebot Model: Algorithms and Concurrency Control | Joshua J. Daymude" />
+  <meta property="og:description" content="This talk introduces the *canonical amoebot model* of programmable matter, a revision of the amoebot model that standardizes a hierarchy of assumption variants and treats all amoebot communication as message passing to facilitate studies of concurrency. I then present two complementary approaches to designing concurrent amoebot algorithms." /><meta property="og:image" content="https://jdaymude.github.io/event/2021disc-canonicalamoebot/featured.png" />
+    <meta property="twitter:image" content="https://jdaymude.github.io/event/2021disc-canonicalamoebot/featured.png" /><meta property="og:locale" content="en-us" />
   
     
-      <meta property="og:updated_time" content="2021-10-05T18:20:00&#43;02:00" />
+      <meta
+        property="article:published_time"
+        content="2021-10-05T18:20:00&#43;02:00"
+      />
     
+    <meta property="article:modified_time" content="2021-10-05T18:20:00&#43;02:00">
   
 
   
 
 
+
+  
+    
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://jdaymude.github.io/event/2021disc-canonicalamoebot/"
+  },
+  "name": "The Canonical Amoebot Model: Algorithms and Concurrency Control",
+  
+  "location": {
+    "@type": "Place",
+    "name": "University of Freiburg (Hybrid Event)",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "",
+      "addressLocality": "Freiburg",
+      "postalCode": "",
+      "addressRegion": "",
+      "addressCountry": "Germany"
+    }
+    
+  },
+  
+  
+  "image": [
+    "https://jdaymude.github.io/event/2021disc-canonicalamoebot/featured.png"
+  ],
+  
+  "startDate": "2021-10-05T18:20:00+02:00",
+  
+  
+  "performer": {
+    "@type": "Person",
+    "name": "Joshua J. Daymude"
+  },
+  
+  "description": "This talk introduces the *canonical amoebot model* of programmable matter, a revision of the amoebot model that standardizes a hierarchy of assumption variants and treats all amoebot communication as message passing to facilitate studies of concurrency. I then present two complementary approaches to designing concurrent amoebot algorithms."
+}
+</script>
+
+  
 
   
 
@@ -360,11 +410,11 @@
 <script id="chroma" src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script>
 
 
-  <title> | Joshua J. Daymude</title>
+  <title>The Canonical Amoebot Model: Algorithms and Concurrency Control | Joshua J. Daymude</title>
 </head>
 
 
-<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper dark " data-wc-page-id="c6a72605ae78ed9155e0cc8112d190d2">
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper dark " data-wc-page-id="65800c96af64abff8f42c456a82199f4">
 
   
   
@@ -826,6 +876,235 @@
   </div>
 
   <div class="page-body">
+    <div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>The Canonical Amoebot Model: Algorithms and Concurrency Control</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span class="author-highlighted">
+      <a href="/authors/jdaymude/">Joshua J. Daymude</a></span>
+  </div>
+  
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+  <span class="middot-divider"></span>
+  <span class="article-categories">
+    <i class="fas fa-folder mr-1"></i><a href="/category/research/">research</a></span>
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/project/sops/">
+    Project
+  </a>
+  
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="/event/2021disc-canonicalamoebot/slides.pdf" target="_blank" rel="noopener">
+  Slides
+</a>
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://youtu.be/L76EuAmpTL0" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+  
+  
+  
+    
+  
+  
+  
+  
+  
+    
+    
+      
+    
+  
+  <a class="btn btn-outline-primary btn-page-header" href="/publication/daymude2021-canonicalamoebot" >
+    
+    Paper
+  </a>
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 524px;">
+  <div style="position: relative">
+    <img src="/event/2021disc-canonicalamoebot/featured_hu7e6cb2f113ed070f3720f3fe516abde7_117685_720x0_resize_lanczos_3.png" alt="" class="featured-image">
+    
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    
+      <h3>Abstract</h3>
+      <p class="pub-abstract">Since the amoebot model of programmable matter was introduced in 2014, it has been extended and modified over ~30 papers to a wide variety of problems. In this talk, I present the <em>canonical amoebot model</em> which unifies the amoebot model&rsquo;s many assumption variants and addresses the key issue of <em>concurrency</em>. Reimplementing all amoebot communication as message passing allows us to consider traditional adversarial models of concurrency (e.g., synchronous, asynchronous) in addition to the amoebot model&rsquo;s usual sequential activations where at most one amoebot acts at a time. I then present two complementary approaches to designing concurrent amoebot algorithms: (1) sufficient conditions for concurrent directness embedded directly in an algorithm, and (2) a general framework that uses locks to transform algorithms that are correct in the sequential setting and satisfy certain conventions into algorithms with equivalent behavior in the asynchronous setting.</p>
+    
+
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Date</div>
+          <div class="col-12 col-md-9">
+            October 5, 2021 6:20 PM
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Event</div>
+          <div class="col-12 col-md-9">
+            <a href="http://www.disc-conference.org/wp/disc2021/" target="_blank" rel="noopener">
+            35th International Symposium on Distributed Computing (DISC 2021)
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Location</div>
+          <div class="col-12 col-md-9">University of Freiburg (Hybrid Event)</div>
+          
+            <div class="col-md-3"></div>
+            <div class="col-12 col-md-9">Freiburg, Germany</div>
+          
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style">
+      
+    </div>
+
     
 
 
@@ -833,84 +1112,274 @@
 
 
 
-
-
+<div class="article-tags">
   
-
-
-
-
-
-
-
+  <a class="badge badge-light" href="/tag/programmable-matter/">programmable-matter</a>
   
-
+  <a class="badge badge-light" href="/tag/self-organization/">self-organization</a>
   
+  <a class="badge badge-light" href="/tag/distributed-algorithms/">distributed-algorithms</a>
   
+  <a class="badge badge-light" href="/tag/amoebot-model/">amoebot-model</a>
   
-    
+  <a class="badge badge-light" href="/tag/concurrency/">concurrency</a>
   
-<div class="universal-wrapper pt-3">
-  <h1></h1>
-
-  
-
+  <a class="badge badge-light" href="/tag/shape-formation/">shape-formation</a>
   
 </div>
 
 
 
-<div class="universal-wrapper">
-  
-
-  <ul>
-    
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
     
       
-      <li><a href="https://jdaymude.github.io/authors/scannon/">Sarah Cannon</a></li>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=The%20Canonical%20Amoebot%20Model:%20Algorithms%20and%20Concurrency%20Control&amp;body=https://jdaymude.github.io/event/2021disc-canonicalamoebot/" target="_blank" rel="noopener" class="share-btn-email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
     
       
-      <li><a href="https://jdaymude.github.io/authors/sli/">Shengkai Li</a></li>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://jdaymude.github.io/event/2021disc-canonicalamoebot/&amp;text=The%20Canonical%20Amoebot%20Model:%20Algorithms%20and%20Concurrency%20Control" target="_blank" rel="noopener" class="share-btn-twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
     
       
-      <li><a href="https://jdaymude.github.io/authors/raxelrod/">Robert Axelrod</a></li>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://jdaymude.github.io/event/2021disc-canonicalamoebot/&amp;t=The%20Canonical%20Amoebot%20Model:%20Algorithms%20and%20Concurrency%20Control" target="_blank" rel="noopener" class="share-btn-facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
     
       
-      <li><a href="https://jdaymude.github.io/authors/sforrest/">Stephanie Forrest</a></li>
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://jdaymude.github.io/event/2021disc-canonicalamoebot/&amp;title=The%20Canonical%20Amoebot%20Model:%20Algorithms%20and%20Concurrency%20Control" target="_blank" rel="noopener" class="share-btn-linkedin">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
     
       
-      <li><a href="https://jdaymude.github.io/authors/jweber/">Jamison W. Weber</a></li>
-    
       
-      <li><a href="https://jdaymude.github.io/authors/ikostitsyna/">Irina Kostitsyna</a></li>
-    
       
-      <li><a href="https://jdaymude.github.io/authors/khinnenthal/">Kristian Hinnenthal</a></li>
-    
+        
       
-      <li><a href="https://jdaymude.github.io/authors/rgmyr/">Robert Gmyr</a></li>
-    
       
-      <li><a href="https://jdaymude.github.io/authors/cgokmen/">Cem Gökmen</a></li>
-    
       
-      <li><a href="https://jdaymude.github.io/authors/edemaine/">Erik D. Demaine</a></li>
+      <li>
+        <a href="https://reddit.com/submit?url=https://jdaymude.github.io/event/2021disc-canonicalamoebot/&amp;title=The%20Canonical%20Amoebot%20Model:%20Algorithms%20and%20Concurrency%20Control" target="_blank" rel="noopener" class="share-btn-reddit">
+          <i class="fab fa-reddit-alien"></i>
+        </a>
+      </li>
     
   </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
 
   
-<nav class="mt-1">
-  <ul class="pagination justify-content-center">
+  
     
-    <li class="page-item"><a class="page-link" href="/authors/">&laquo;</a></li>
-    
-    
-    <li class="page-item"><a class="page-link" href="/authors/page/3/">&raquo;</a></li>
-    
-  </ul>
-</nav>
 
 
+
+  
+  
+  
+    
+  
+  
+  
+  <div class="media author-card content-widget-hr">
+    
+      
+      <a href="https://jdaymude.github.io/"><img class="avatar mr-3 avatar-circle" src="/authors/jdaymude/avatar_hu4d7d01c1aaa3ea1eb29c77aa3e89f777_905663_270x270_fill_q75_lanczos_center.jpg" alt="Joshua J. Daymude"></a>
+    
+
+    <div class="media-body">
+      <h5 class="card-title"><a href="https://jdaymude.github.io/">Joshua J. Daymude</a></h5>
+      <h6 class="card-subtitle">PhD, Computer Science</h6>
+      <p class="card-text">I am a Christian and postdoc in computer science studying collective emergent behavior and programmable matter through the lens of distributed computing, stochastic processes, and bio-inspired algorithms. I also love gaming and playing music.</p>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/uploads/jdaymude_cv.pdf" >
+        <i class="ai ai-cv"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.com/citations?user=CQNOJjgAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/joshdaymude" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/jdaymude" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://account.xbox.com/en-us/profile?gamertag=Iltrivosk" target="_blank" rel="noopener">
+        <i class="fab fa-xbox"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://steamcommunity.com/id/iltrivosk/" target="_blank" rel="noopener">
+        <i class="fab fa-steam"></i>
+      </a>
+    </li>
+  
+</ul>
+
+    </div>
+  </div>
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <div class="article-widget content-widget-hr">
+    <h3>Related</h3>
+    <ul>
+      
+      <li><a href="/publication/daymude2021-canonicalamoebot/">The Canonical Amoebot Model: Algorithms and Concurrency Control</a></li>
+      
+      <li><a href="/event/2021sfi-analogcollectives/">Algorithmic Foundations of Emergent Behavior in Analog Collectives</a></li>
+      
+      <li><a href="/event/2021asu-dissertationdefense/">Collaborating in Motion: Distributed and Stochastic Algorithms for Emergent Behavior in Programmable Matter</a></li>
+      
+      <li><a href="/publication/daymude2021-phdthesis/">Collaborating in Motion: Distributed and Stochastic Algorithms for Emergent Behavior in Programmable Matter</a></li>
+      
+      <li><a href="/event/2021icdcn-energydistribution/">Bio-Inspired Energy Distribution for Programmable Matter</a></li>
+      
+    </ul>
+  </div>
+  
+
+
+
+
+
+  </div>
 </div>
   </div>
 

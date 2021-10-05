@@ -5,7 +5,7 @@
     <link>https://jdaymude.github.io/tag/amoebot-model/</link>
       <atom:link href="https://jdaymude.github.io/tag/amoebot-model/index.xml" rel="self" type="application/rss+xml" />
     <description>amoebot-model</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Fri, 23 Jul 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Tue, 05 Oct 2021 18:20:00 +0200</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
       <title>amoebot-model</title>
@@ -14,8 +14,16 @@
     
     <item>
       <title>The Canonical Amoebot Model: Algorithms and Concurrency Control</title>
+      <link>https://jdaymude.github.io/event/2021disc-canonicalamoebot/</link>
+      <pubDate>Tue, 05 Oct 2021 18:20:00 +0200</pubDate>
+      <guid>https://jdaymude.github.io/event/2021disc-canonicalamoebot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The Canonical Amoebot Model: Algorithms and Concurrency Control</title>
       <link>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</link>
-      <pubDate>Fri, 23 Jul 2021 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 04 Oct 2021 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/daymude2021-canonicalamoebot/</guid>
       <description></description>
     </item>
