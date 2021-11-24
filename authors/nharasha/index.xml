@@ -5,7 +5,7 @@
     <link>https://jdaymude.github.io/authors/nharasha/</link>
       <atom:link href="https://jdaymude.github.io/authors/nharasha/index.xml" rel="self" type="application/rss+xml" />
     <description>Noble C. Harasha</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Tue, 24 Aug 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Wed, 17 Nov 2021 09:40:00 -0500</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/authors/nharasha/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Noble C. Harasha</title>
@@ -14,8 +14,16 @@
     
     <item>
       <title>Deadlock and Noise in Self-Organized Aggregation Without Computation</title>
+      <link>https://jdaymude.github.io/event/2021sss-deadlockaggregation/</link>
+      <pubDate>Wed, 17 Nov 2021 09:40:00 -0500</pubDate>
+      <guid>https://jdaymude.github.io/event/2021sss-deadlockaggregation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deadlock and Noise in Self-Organized Aggregation Without Computation</title>
       <link>https://jdaymude.github.io/publication/daymude2021-deadlockaggregation/</link>
-      <pubDate>Tue, 24 Aug 2021 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 09 Nov 2021 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/daymude2021-deadlockaggregation/</guid>
       <description></description>
     </item>

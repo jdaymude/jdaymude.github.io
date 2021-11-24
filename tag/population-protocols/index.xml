@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>population-protocols | Joshua J. Daymude</title>
+    <link>https://jdaymude.github.io/tag/population-protocols/</link>
+      <atom:link href="https://jdaymude.github.io/tag/population-protocols/index.xml" rel="self" type="application/rss+xml" />
+    <description>population-protocols</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Mon, 22 Nov 2021 16:01:44 -0700</lastBuildDate>
+    <image>
+      <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
+      <title>population-protocols</title>
+      <link>https://jdaymude.github.io/tag/population-protocols/</link>
+    </image>
+    
+    <item>
+      <title>Local Mutual Exclusion for Dynamic, Anonymous, Bounded Memory Message Passing Systems</title>
+      <link>https://jdaymude.github.io/publication/daymude2022-localmutual/</link>
+      <pubDate>Mon, 22 Nov 2021 16:01:44 -0700</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2022-localmutual/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
