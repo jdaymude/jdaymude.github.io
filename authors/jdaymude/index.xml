@@ -5,12 +5,95 @@
     <link>https://jdaymude.github.io/authors/jdaymude/</link>
       <atom:link href="https://jdaymude.github.io/authors/jdaymude/index.xml" rel="self" type="application/rss+xml" />
     <description>Joshua J. Daymude</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Mon, 22 Nov 2021 16:01:44 -0700</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Tue, 30 Nov 2021 11:57:40 -0700</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/authors/jdaymude/avatar_hudc6139071599df06305f24f0bbe0bef5_92978_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Joshua J. Daymude</title>
       <link>https://jdaymude.github.io/authors/jdaymude/</link>
     </image>
+    
+    <item>
+      <title>Elegant Derivatives of Large Products</title>
+      <link>https://jdaymude.github.io/post/elegant-derivatives-of-large-products/</link>
+      <pubDate>Tue, 30 Nov 2021 11:57:40 -0700</pubDate>
+      <guid>https://jdaymude.github.io/post/elegant-derivatives-of-large-products/</guid>
+      <description>&lt;p&gt;An ongoing research project on modeling computer security has thrown me back into calculus for the first time since my undergraduate differential equations course in 2014, which as an aside was the only college course that forced me to buy the professor&amp;rsquo;s custom textbook just to get access to homework problems.
+(I&amp;rsquo;m still mad about that.)
+Anyway, my research led me to take the derivative of an expression of the form:&lt;/p&gt;
+&lt;p&gt;$$\prod_{i=1}^n f_i(x)$$&lt;/p&gt;
+&lt;p&gt;For the uninitiated, $\prod$ is a mathematical symbol meaning &amp;ldquo;product&amp;rdquo; (and is analogous to the $\sum$ symbol meaning &amp;ldquo;sum&amp;rdquo;).
+It says to look at each $f_i$ term as $i$ goes from $1, 2, \ldots, n$ and multiply them all together:&lt;/p&gt;
+&lt;p&gt;$$\prod_{i=1}^n f_i(x) = f_1(x) \times f_2(x) \times \cdots \times f_n(x)$$&lt;/p&gt;
+&lt;p&gt;Taking this derivative is something high-school me was much better prepared for than current postdoc me, but after some head scratching I found the elegant solution:&lt;/p&gt;
+&lt;p&gt;$$\frac{d}{dx} \prod_{i=1}^n f_i(x) = \prod_{i=1}^n f_i(x) \cdot \sum_{i=1}^n \frac{f_i&#39;(x)}{f_i(x)}$$&lt;/p&gt;
+&lt;p&gt;As is common in mathematics, there&amp;rsquo;s a direct but tedious way to get this answer and another more elegant way to get the same thing.
+I&amp;rsquo;m not the first to derive this solution, but I&amp;rsquo;m writing it up for posterity because I will inevitably forget this trick in a few days.
+A PDF of the two derivations without all the handholding I&amp;rsquo;m about to do is available &lt;a href=&#34;https://jdaymude.github.io/uploads/elegant-derivatives-of-large-products.pdf&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;method-1-product-rule&#34;&gt;Method 1: Product Rule&lt;/h2&gt;
+&lt;p&gt;I had to sweep away years of mental cobwebs to remember the &lt;a href=&#34;https://en.wikipedia.org/wiki/Product_rule&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;product rule&lt;/a&gt; for derivatives.
+My expression is a product, after all, so why not start there?
+The product rule states:&lt;/p&gt;
+&lt;p&gt;$$\frac{d}{dx}(u \cdot v) = u&#39; \cdot v + u \cdot v&#39;$$&lt;/p&gt;
+&lt;p&gt;This works for the product of two terms, but $\prod_{i=1}^n f_i(x)$ has $n$ terms.
+Let&amp;rsquo;s try peeling off terms one-by-one, starting with $f_1(x)$, and then applying the product rule.&lt;/p&gt;
+&lt;p&gt;$$\begin{align*}
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= \frac{d}{dx} \left(f_1(x) \cdot \prod_{i=2}^n f_i(x)\right) \\&lt;br&gt;
+&amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right)
+\end{align*}$$&lt;/p&gt;
+&lt;p&gt;That&amp;rsquo;s progress, but now we have to repeat the process to deal with the $\frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right)$ term, peeling off $f_2(x)$ and applying the product rule again:&lt;/p&gt;
+&lt;p&gt;$$\begin{align*}
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right) \\&lt;br&gt;
+&amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\&lt;br&gt;
+&amp;amp;\quad \cdot \left(f_2&#39;(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \cdot \frac{d}{dx} \left(\prod_{i=3}^n f_i(x)\right)\right)
+\end{align*}$$&lt;/p&gt;
+&lt;p&gt;This expression&amp;rsquo;s going to have &lt;a href=&#34;https://media.giphy.com/media/22eVpVYpRhaE0/giphy.gif&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;more layers than an ogre&lt;/a&gt;!
+If we were to do the peel-and-product rule strategy $n-1$ times, we would arrive at:&lt;/p&gt;
+&lt;p&gt;$$\begin{align*}
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\&lt;br&gt;
+&amp;amp;\quad \cdot \left(f_2&#39;(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \right. \\&lt;br&gt;
+&amp;amp;\quad \cdot \left(f_3&#39;(x) \cdot \prod_{i=4}^n f_i(x) + f_3(x) \cdots + f_{n-2}(x) \right. \\&lt;br&gt;
+&amp;amp;\quad \left. \left. \cdot \left(f_{n-1}&#39;(x) \cdot f_n(x) + f_n&#39;(x) \cdot f_{n-1}(x)\right) \cdots \right) \right)
+\end{align*}$$&lt;/p&gt;
+&lt;p&gt;Do you see the pattern?
+If we distribute the $f_i(x)$ terms at the end of each of the lines above into the parentheses that immediately follow,&lt;/p&gt;
+&lt;p&gt;$$\begin{align*}
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_2&#39;(x) \cdot f_1(x) \cdot \prod_{i=3}^n f_i(x) \\&lt;br&gt;
+&amp;amp;\quad + f_3&#39;(x) \cdot f_1(x) \cdot f_2(x) \cdot \prod_{i=4}^n f_i(x) \\&lt;br&gt;
+&amp;amp;\quad + f_{n-1}&#39;(x) \cdot f_1(x) \cdots f_{n-2}(x) \cdot f_n(x) \\&lt;br&gt;
+&amp;amp;\quad + f_n&#39;(x) \cdot f_1(x) \cdots f_{n-1}(x)
+\end{align*}$$&lt;/p&gt;
+&lt;p&gt;We&amp;rsquo;re adding up a bunch of terms, each of which is a derivative $f_i&#39;(x)$ multiplied by all the other $f_j(x)$&amp;rsquo;s, where $j \neq i$.
+Landing this messy, notation-heavy plane, we can rewrite this long sum as&lt;/p&gt;
+&lt;p&gt;$$\frac{d}{dx} \prod_{i=1}^n f_i(x) = \sum_{i=1}^n f_i&#39;(x) \cdot \frac{\prod_{j=1}^n f_j(x)}{f_i(x)}
+= \prod_{i=1}^n f_i(x) \cdot \sum_{i=1}^n \frac{f_i&#39;(x)}{f_i(x)},$$&lt;/p&gt;
+&lt;p&gt;which is the solution we came for.&lt;/p&gt;
+&lt;h2 id=&#34;method-2-leveraging-logarithms&#34;&gt;Method 2: Leveraging Logarithms&lt;/h2&gt;
+&lt;p&gt;Mathematicians crave elegance, and Method 1 wasn&amp;rsquo;t that.
+We had to keep keen eyes out for patterns as they emerged and carefully distribute/rearrange many terms to get the solution.
+This second method will be much cleaner, but as many clever methods do, it begins with an unintuitive step.&lt;/p&gt;
+&lt;p&gt;Let $F(x) = \prod_{i=1}^n f_i(x)$.
+Taking the &lt;a href=&#34;https://en.wikipedia.org/wiki/Natural_logarithm&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;natural logarithm&lt;/a&gt; of both sides,&lt;/p&gt;
+&lt;p&gt;$$\ln(F(x)) = \ln\left(\prod_{i=1}^n f_i(x)\right) = \sum_{i=1}^n \ln(f_i(x)),$$&lt;/p&gt;
+&lt;p&gt;where the last equality follows from the fact that the logarithm of a product is equal to the sum of logarithms.
+The derivative of the natural logarithm is:&lt;/p&gt;
+&lt;p&gt;$$\frac{d}{dx}\ln(x) = \frac{1}{x}$$&lt;/p&gt;
+&lt;p&gt;Using &lt;a href=&#34;https://en.wikipedia.org/wiki/Chain_rule&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;chain rule&lt;/a&gt; to take the derivative of both sides of the above equality,&lt;/p&gt;
+&lt;p&gt;$$\begin{align*}
+\frac{d}{dx}\ln(F(x)) &amp;amp;= \frac{d}{dx}\sum_{i=1}^n \ln(f_i(x)) \\&lt;br&gt;
+\frac{1}{F(x)} \cdot \frac{dF}{dx} &amp;amp;= \sum_{i=1}^n \frac{1}{f_i(x)} \cdot f_i&#39;(x) \\&lt;br&gt;
+\frac{dF}{dx} &amp;amp;= F(x) \cdot \sum_{i=1}^n \frac{f_i&#39;(x)}{f_i(x)}
+\end{align*}$$&lt;/p&gt;
+&lt;p&gt;If we plug $F(x) = \prod_{i=1}^n f_i(x)$ back in, out pops the solution:&lt;/p&gt;
+&lt;p&gt;$$\frac{d}{dx} \prod_{i=1}^n f_i(x) = \prod_{i=1}^n f_i(x) \cdot \sum_{i=1}^n \frac{f_i&#39;(x)}{f_i(x)}$$&lt;/p&gt;
+&lt;h2 id=&#34;concluding-thoughts&#34;&gt;Concluding Thoughts&lt;/h2&gt;
+&lt;p&gt;Having initially stumbled upon Method 1, I was surprised that this derivative came out so beautifully in the end.
+Credit where it&amp;rsquo;s due: I adapted the elegant Method 2 from &lt;a href=&#34;https://www.quora.com/What-is-the-first-derivative-of-an-infinite-product-of-factors&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;this post&lt;/a&gt; regarding infinite products.
+I have some technical notes at the end of the &lt;a href=&#34;https://jdaymude.github.io/uploads/elegant-derivatives-of-large-products.pdf&#34; target=&#34;_blank&#34;&gt;linked PDF&lt;/a&gt; about when Method 2 breaks down, though I believe Method 1 does not have any of these problems.&lt;/p&gt;
+&lt;p&gt;Hopefully this was fun (and if it wasn&amp;rsquo;t, I doubt you read this far 😉).
+This is one of many examples in mathematics of finding multiple solutions to the same problem and learning something different each time.
+Next time you emerge victorious from a tedious derivation, see if you can find a clever alternative!&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Local Mutual Exclusion for Dynamic, Anonymous, Bounded Memory Message Passing Systems</title>
@@ -1734,7 +1817,7 @@ Perhaps if this technique were widely used, we would all be that much closer to 
                height=&#34;760&#34;
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
-&lt;p&gt;This is my first contribution to the world of webcomics, a medium I&amp;rsquo;ve long admired for being able to deliver witty, weird reflections on life in simple packages. Giving credit where it&amp;rsquo;s due, this &amp;ldquo;joke&amp;rdquo; is adapted from &lt;a href=&#34;https://www.goodreads.com/book/show/1618.The_Curious_Incident_of_the_Dog_in_the_Night_Time&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;The Curious Case of the Dog in the Night-Time&lt;/em&gt;&lt;/a&gt; by Mark Haddon and the art style takes after &lt;a href=&#34;https://www.instagram.com/poorlydrawnlines/?hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poorlydrawnlines&lt;/a&gt; by Reza Farazmand. In living out &lt;a href=&#34;https://www.alabasterco.com/blogs/articles/all-that-is-made&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;generous making&lt;/a&gt;, this comic is available as a high resolution &lt;a href=&#34;https://jdaymude.github.io/files/the-three-academics-highres.png&#34; target=&#34;_blank&#34;&gt;PNG&lt;/a&gt; or &lt;a href=&#34;https://jdaymude.github.io/files/the-three-academics.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; for you to use as you&amp;rsquo;d like. (Just keep my authorship in the corner intact, please!)&lt;/p&gt;
+&lt;p&gt;This is my first contribution to the world of webcomics, a medium I&amp;rsquo;ve long admired for being able to deliver witty, weird reflections on life in simple packages. Giving credit where it&amp;rsquo;s due, this &amp;ldquo;joke&amp;rdquo; is adapted from &lt;a href=&#34;https://www.goodreads.com/book/show/1618.The_Curious_Incident_of_the_Dog_in_the_Night_Time&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;The Curious Case of the Dog in the Night-Time&lt;/em&gt;&lt;/a&gt; by Mark Haddon and the art style takes after &lt;a href=&#34;https://www.instagram.com/poorlydrawnlines/?hl=en&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;poorlydrawnlines&lt;/a&gt; by Reza Farazmand. In living out &lt;a href=&#34;https://www.alabasterco.com/blogs/articles/all-that-is-made&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;generous making&lt;/a&gt;, this comic is available as a high resolution &lt;a href=&#34;https://jdaymude.github.io/uploads/the-three-academics-highres.png&#34; target=&#34;_blank&#34;&gt;PNG&lt;/a&gt; or &lt;a href=&#34;https://jdaymude.github.io/uploads/the-three-academics.pdf&#34; target=&#34;_blank&#34;&gt;PDF&lt;/a&gt; for you to use as you&amp;rsquo;d like. (Just keep my authorship in the corner intact, please!)&lt;/p&gt;
 &lt;p&gt;And hey, to the economists out there: if you&amp;rsquo;ve got any good roasts of mathematicians, I&amp;rsquo;m all ears.&lt;/p&gt;
 </description>
     </item>

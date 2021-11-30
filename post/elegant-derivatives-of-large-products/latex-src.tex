@@ -1,0 +1,96 @@
+\documentclass[10pt]{article}
+
+% Packages.
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage{fancyhdr}
+\usepackage[margin=1in]{geometry}
+\usepackage{xcolor}
+
+% Style the headers and footers.
+\fancypagestyle{firststyle}
+{
+   \fancyhf{}
+   \rfoot{\thepage}
+}
+\fancypagestyle{nonfirststyle}
+{
+   \fancyhf{}
+   \lhead{Elegant Derivatives of Large Products}
+   \rhead{Last Updated: November 30, 2021}
+   \cfoot{\thepage}
+}
+\pagestyle{nonfirststyle}
+
+\title{Elegant Derivatives of Large Products}
+\author{Joshua J. Daymude}
+\date{November 30, 2021}
+
+\begin{document}
+
+\thispagestyle{firststyle}
+
+\maketitle
+
+
+
+
+\section*{Introduction}
+
+This short writeup details two derivations of the solution:
+\[\frac{d}{dx}\prod_{i=1}^n f_i(x) = \prod_{i=1}^n f_i(x) \cdot \sum_{i=1}^n \frac{f_i'(x)}{f_i(x)}\]
+These derivations also work for infinite products:
+\[\frac{d}{dx}\prod_{i=1}^\infty f_i(x) = \prod_{i=1}^\infty f_i(x) \cdot \sum_{i=1}^\infty \frac{f_i'(x)}{f_i(x)}\]
+
+
+
+
+\section*{Method 1: Product Rule}
+
+The product rule states:
+\[\frac{d}{dx}(u \cdot v) = u' \cdot v + u \cdot v'\]
+By iteratively peeling off terms from the product and applying the product rule, we obtain:
+\begin{align*}
+    \frac{d}{dx} \prod_{i=1}^n f_i(x) &= \frac{d}{dx} \left(f_1(x) \cdot \prod_{i=2}^n f_i(x)\right) \\
+    &= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right) \\
+    &= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \left(f_2'(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \cdot \frac{d}{dx} \left(\prod_{i=3}^n f_i(x)\right)\right) \\
+    &= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \left(f_2'(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \cdots \right. \\
+    &\quad \left. + f_{n-2}(x) \cdot \left(f_{n-1}'(x) \cdot f_n(x) + f_n'(x) \cdot f_{n-1}(x)\right) \cdots \right)
+\end{align*}
+Distributing the singular $f_i(x)$ terms into their following nested sums and rearranging, we obtain
+\[\frac{d}{dx} \prod_{i=1}^n f_i(x) = \sum_{i=1}^n f_i'(x) \cdot \frac{\prod_{j=1}^n f_j(x)}{f_i(x)}
+= \prod_{i=1}^n f_i(x) \cdot \sum_{i=1}^n \frac{f_i'(x)}{f_i(x)}.\]
+
+
+
+
+\section*{Method 2: Leveraging Logarithms}
+
+Let $F(x) = \prod_{i=1}^n f_i(x)$.
+Then taking the natural logarithm of both sides yields
+\[\ln(F(x)) = \ln\left(\prod_{i=1}^n f_i(x)\right) = \sum_{i=1}^n \ln(f_i(x))\]
+The derivative of the natural logarithm is $\frac{d}{dx}\ln x = 1/x$.
+So, taking the derivative of both sides and observing that the derivative of a finite sum is equal to the finite sum of derivatives,
+\begin{align*}
+    \frac{d}{dx}\ln(F(x)) &= \frac{d}{dx}\sum_{i=1}^n \ln(f_i(x)) \\
+    \frac{1}{F(x)} \cdot \frac{dF}{dx} &= \sum_{i=1}^n \frac{1}{f_i(x)} \cdot f_i'(x) \\
+    \frac{dF}{dx} &= F(x) \cdot \sum_{i=1}^n \frac{f_i'(x)}{f_i(x)}
+\end{align*}
+Substituting the full expression back in for $F(x)$ yields
+\[\frac{d}{dx}\prod_{i=1}^n f_i(x) = \prod_{i=1}^n f_i(x) \cdot \sum_{i=1}^n \frac{f_i'(x)}{f_i(x)}\]
+
+
+
+
+\section*{Notes and Caveats}
+
+\begin{itemize}
+    \item The second method only applies when $f_i(x) > 0$ for all $i$ and $x$; otherwise, $\ln(f_i(x))$ is undefined.
+    The first method holds in all cases.
+
+    \item The second method relies on the derivative of a sum being equal to the sum of the derivatives.
+    When applied to an infinite sum, this is true if (a) $f_i$ is differentiable over the domain for all $i$, (b) $\sum_{i=1}^\infty f_i'(x)$ uniformly converges, and (c) there exists at least one point of convergence for $\sum_{i=1}^\infty f_i(x)$.
+    Unless I'm mistaken, the first method does not have this problem and can be directly applied to infinite products.
+\end{itemize}
+
+
+\end{document}
