@@ -5,7 +5,7 @@
     <link>https://jdaymude.github.io/tag/calculus/</link>
       <atom:link href="https://jdaymude.github.io/tag/calculus/index.xml" rel="self" type="application/rss+xml" />
     <description>calculus</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2021 Joshua J. Daymude</copyright><lastBuildDate>Tue, 30 Nov 2021 11:57:40 -0700</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Tue, 30 Nov 2021 11:57:40 -0700</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
       <title>calculus</title>
@@ -37,29 +37,29 @@ The product rule states:&lt;/p&gt;
 &lt;p&gt;This works for the product of two terms, but $\prod_{i=1}^n f_i(x)$ has $n$ terms.
 Let&amp;rsquo;s try peeling off terms one-by-one, starting with $f_1(x)$, and then applying the product rule.&lt;/p&gt;
 &lt;p&gt;$$\begin{align*}
-\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= \frac{d}{dx} \left(f_1(x) \cdot \prod_{i=2}^n f_i(x)\right) \\&lt;br&gt;
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= \frac{d}{dx} \left(f_1(x) \cdot \prod_{i=2}^n f_i(x)\right) \\
 &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right)
 \end{align*}$$&lt;/p&gt;
 &lt;p&gt;That&amp;rsquo;s progress, but now we have to repeat the process to deal with the $\frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right)$ term, peeling off $f_2(x)$ and applying the product rule again:&lt;/p&gt;
 &lt;p&gt;$$\begin{align*}
-\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right) \\&lt;br&gt;
-&amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\&lt;br&gt;
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right) \\
+&amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\
 &amp;amp;\quad \cdot \left(f_2&#39;(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \cdot \frac{d}{dx} \left(\prod_{i=3}^n f_i(x)\right)\right)
 \end{align*}$$&lt;/p&gt;
 &lt;p&gt;This expression&amp;rsquo;s going to have &lt;a href=&#34;https://media.giphy.com/media/22eVpVYpRhaE0/giphy.gif&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;more layers than an ogre&lt;/a&gt;!
 If we were to do the peel-and-product rule strategy $n-1$ times, we would arrive at:&lt;/p&gt;
 &lt;p&gt;$$\begin{align*}
-\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\&lt;br&gt;
-&amp;amp;\quad \cdot \left(f_2&#39;(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \right. \\&lt;br&gt;
-&amp;amp;\quad \cdot \left(f_3&#39;(x) \cdot \prod_{i=4}^n f_i(x) + f_3(x) \cdots + f_{n-2}(x) \right. \\&lt;br&gt;
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\
+&amp;amp;\quad \cdot \left(f_2&#39;(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \right. \\
+&amp;amp;\quad \cdot \left(f_3&#39;(x) \cdot \prod_{i=4}^n f_i(x) + f_3(x) \cdots + f_{n-2}(x) \right. \\
 &amp;amp;\quad \left. \left. \cdot \left(f_{n-1}&#39;(x) \cdot f_n(x) + f_n&#39;(x) \cdot f_{n-1}(x)\right) \cdots \right) \right)
 \end{align*}$$&lt;/p&gt;
 &lt;p&gt;Do you see the pattern?
 If we distribute the $f_i(x)$ terms at the end of each of the lines above into the parentheses that immediately follow,&lt;/p&gt;
 &lt;p&gt;$$\begin{align*}
-\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_2&#39;(x) \cdot f_1(x) \cdot \prod_{i=3}^n f_i(x) \\&lt;br&gt;
-&amp;amp;\quad + f_3&#39;(x) \cdot f_1(x) \cdot f_2(x) \cdot \prod_{i=4}^n f_i(x) \\&lt;br&gt;
-&amp;amp;\quad + f_{n-1}&#39;(x) \cdot f_1(x) \cdots f_{n-2}(x) \cdot f_n(x) \\&lt;br&gt;
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;amp;= f_1&#39;(x) \cdot \prod_{i=2}^n f_i(x) + f_2&#39;(x) \cdot f_1(x) \cdot \prod_{i=3}^n f_i(x) \\
+&amp;amp;\quad + f_3&#39;(x) \cdot f_1(x) \cdot f_2(x) \cdot \prod_{i=4}^n f_i(x) \\
+&amp;amp;\quad + f_{n-1}&#39;(x) \cdot f_1(x) \cdots f_{n-2}(x) \cdot f_n(x) \\
 &amp;amp;\quad + f_n&#39;(x) \cdot f_1(x) \cdots f_{n-1}(x)
 \end{align*}$$&lt;/p&gt;
 &lt;p&gt;We&amp;rsquo;re adding up a bunch of terms, each of which is a derivative $f_i&#39;(x)$ multiplied by all the other $f_j(x)$&amp;rsquo;s, where $j \neq i$.
@@ -79,8 +79,8 @@ The derivative of the natural logarithm is:&lt;/p&gt;
 &lt;p&gt;$$\frac{d}{dx}\ln(x) = \frac{1}{x}$$&lt;/p&gt;
 &lt;p&gt;Using &lt;a href=&#34;https://en.wikipedia.org/wiki/Chain_rule&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;chain rule&lt;/a&gt; to take the derivative of both sides of the above equality,&lt;/p&gt;
 &lt;p&gt;$$\begin{align*}
-\frac{d}{dx}\ln(F(x)) &amp;amp;= \frac{d}{dx}\sum_{i=1}^n \ln(f_i(x)) \\&lt;br&gt;
-\frac{1}{F(x)} \cdot \frac{dF}{dx} &amp;amp;= \sum_{i=1}^n \frac{1}{f_i(x)} \cdot f_i&#39;(x) \\&lt;br&gt;
+\frac{d}{dx}\ln(F(x)) &amp;amp;= \frac{d}{dx}\sum_{i=1}^n \ln(f_i(x)) \\
+\frac{1}{F(x)} \cdot \frac{dF}{dx} &amp;amp;= \sum_{i=1}^n \frac{1}{f_i(x)} \cdot f_i&#39;(x) \\
 \frac{dF}{dx} &amp;amp;= F(x) \cdot \sum_{i=1}^n \frac{f_i&#39;(x)}{f_i(x)}
 \end{align*}$$&lt;/p&gt;
 &lt;p&gt;If we plug $F(x) = \prod_{i=1}^n f_i(x)$ back in, out pops the solution:&lt;/p&gt;

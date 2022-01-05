@@ -1004,29 +1004,29 @@ The product rule states:</p>
 <p>This works for the product of two terms, but $\prod_{i=1}^n f_i(x)$ has $n$ terms.
 Let&rsquo;s try peeling off terms one-by-one, starting with $f_1(x)$, and then applying the product rule.</p>
 <p>$$\begin{align*}
-\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;= \frac{d}{dx} \left(f_1(x) \cdot \prod_{i=2}^n f_i(x)\right) \\<br>
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;= \frac{d}{dx} \left(f_1(x) \cdot \prod_{i=2}^n f_i(x)\right) \\
 &amp;= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right)
 \end{align*}$$</p>
 <p>That&rsquo;s progress, but now we have to repeat the process to deal with the $\frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right)$ term, peeling off $f_2(x)$ and applying the product rule again:</p>
 <p>$$\begin{align*}
-\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right) \\<br>
-&amp;= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\<br>
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \cdot \frac{d}{dx} \left(\prod_{i=2}^n f_i(x)\right) \\
+&amp;= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\
 &amp;\quad \cdot \left(f_2'(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \cdot \frac{d}{dx} \left(\prod_{i=3}^n f_i(x)\right)\right)
 \end{align*}$$</p>
 <p>This expression&rsquo;s going to have <a href="https://media.giphy.com/media/22eVpVYpRhaE0/giphy.gif" target="_blank" rel="noopener">more layers than an ogre</a>!
 If we were to do the peel-and-product rule strategy $n-1$ times, we would arrive at:</p>
 <p>$$\begin{align*}
-\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\<br>
-&amp;\quad \cdot \left(f_2'(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \right. \\<br>
-&amp;\quad \cdot \left(f_3'(x) \cdot \prod_{i=4}^n f_i(x) + f_3(x) \cdots + f_{n-2}(x) \right. \\<br>
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_1(x) \\
+&amp;\quad \cdot \left(f_2'(x) \cdot \prod_{i=3}^n f_i(x) + f_2(x) \right. \\
+&amp;\quad \cdot \left(f_3'(x) \cdot \prod_{i=4}^n f_i(x) + f_3(x) \cdots + f_{n-2}(x) \right. \\
 &amp;\quad \left. \left. \cdot \left(f_{n-1}'(x) \cdot f_n(x) + f_n'(x) \cdot f_{n-1}(x)\right) \cdots \right) \right)
 \end{align*}$$</p>
 <p>Do you see the pattern?
 If we distribute the $f_i(x)$ terms at the end of each of the lines above into the parentheses that immediately follow,</p>
 <p>$$\begin{align*}
-\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_2'(x) \cdot f_1(x) \cdot \prod_{i=3}^n f_i(x) \\<br>
-&amp;\quad + f_3'(x) \cdot f_1(x) \cdot f_2(x) \cdot \prod_{i=4}^n f_i(x) \\<br>
-&amp;\quad + f_{n-1}'(x) \cdot f_1(x) \cdots f_{n-2}(x) \cdot f_n(x) \\<br>
+\frac{d}{dx} \prod_{i=1}^n f_i(x) &amp;= f_1'(x) \cdot \prod_{i=2}^n f_i(x) + f_2'(x) \cdot f_1(x) \cdot \prod_{i=3}^n f_i(x) \\
+&amp;\quad + f_3'(x) \cdot f_1(x) \cdot f_2(x) \cdot \prod_{i=4}^n f_i(x) \\
+&amp;\quad + f_{n-1}'(x) \cdot f_1(x) \cdots f_{n-2}(x) \cdot f_n(x) \\
 &amp;\quad + f_n'(x) \cdot f_1(x) \cdots f_{n-1}(x)
 \end{align*}$$</p>
 <p>We&rsquo;re adding up a bunch of terms, each of which is a derivative $f_i'(x)$ multiplied by all the other $f_j(x)$&rsquo;s, where $j \neq i$.
@@ -1046,8 +1046,8 @@ The derivative of the natural logarithm is:</p>
 <p>$$\frac{d}{dx}\ln(x) = \frac{1}{x}$$</p>
 <p>Using <a href="https://en.wikipedia.org/wiki/Chain_rule" target="_blank" rel="noopener">chain rule</a> to take the derivative of both sides of the above equality,</p>
 <p>$$\begin{align*}
-\frac{d}{dx}\ln(F(x)) &amp;= \frac{d}{dx}\sum_{i=1}^n \ln(f_i(x)) \\<br>
-\frac{1}{F(x)} \cdot \frac{dF}{dx} &amp;= \sum_{i=1}^n \frac{1}{f_i(x)} \cdot f_i'(x) \\<br>
+\frac{d}{dx}\ln(F(x)) &amp;= \frac{d}{dx}\sum_{i=1}^n \ln(f_i(x)) \\
+\frac{1}{F(x)} \cdot \frac{dF}{dx} &amp;= \sum_{i=1}^n \frac{1}{f_i(x)} \cdot f_i'(x) \\
 \frac{dF}{dx} &amp;= F(x) \cdot \sum_{i=1}^n \frac{f_i'(x)}{f_i(x)}
 \end{align*}$$</p>
 <p>If we plug $F(x) = \prod_{i=1}^n f_i(x)$ back in, out pops the solution:</p>
@@ -1344,7 +1344,7 @@ Next time you emerge victorious from a tedious derivation, see if you can find a
 
   
   <p class="powered-by">
-    © 2021 Joshua J. Daymude
+    © 2022 Joshua J. Daymude
   </p>
   
 
@@ -1492,7 +1492,7 @@ Next time you emerge victorious from a tedious derivation, see if you can find a
       
     
     
-    <script src="/en/js/wowchemy.min.8859d3cf6e5d748215fea2814e2e9c7f.js"></script>
+    <script src="/en/js/wowchemy.min.d68ecd57c0ec1f1f61d65fd568f1c3a0.js"></script>
 
     
 
