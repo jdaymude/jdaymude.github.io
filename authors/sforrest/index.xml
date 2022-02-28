@@ -5,7 +5,7 @@
     <link>https://jdaymude.github.io/authors/sforrest/</link>
       <atom:link href="https://jdaymude.github.io/authors/sforrest/index.xml" rel="self" type="application/rss+xml" />
     <description>Stephanie Forrest</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Tue, 23 Mar 2021 07:43:30 -0700</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Wed, 19 Jan 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/authors/sforrest/avatar_hu596e127fff29e11a93736f7ed48c7ad2_30514_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Stephanie Forrest</title>
@@ -13,11 +13,26 @@
     </image>
     
     <item>
+      <title>Cutting Through the Noise to Infer Autonomous System Topology</title>
+      <link>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Preventing Extreme Polarization of Political Attitudes</title>
       <link>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</link>
-      <pubDate>Tue, 23 Mar 2021 07:43:30 -0700</pubDate>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</guid>
-      <description></description>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.eurekalert.org/news-releases/937038&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Like a natural system, democracy faces collapse as polarization leads to loss of diversity.&lt;/a&gt; Princeton University. &lt;em&gt;EurekaAlert!&lt;/em&gt;, December 2021.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://santafe.edu/news-center/news/preventing-extreme-polarization-political-attitudes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Preventing extreme polarization of political attitudes.&lt;/a&gt; &lt;em&gt;Santa Fe Institute&lt;/em&gt;, December 2021. (Also featured in &lt;a href=&#34;https://www.eurekalert.org/news-releases/937259&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;EurekaAlert!&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fullcircle.asu.edu/research/computing-scenarios-for-defusing-polarizing-politics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Computing scenarios for defusing polarizing politics.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU FullCircle&lt;/em&gt;, December 2021. (Also featured in &lt;a href=&#34;https://news.asu.edu/20211207-solutions-computing-scenarios-defusing-polarized-politics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ASU News&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.brookings.edu/blog/techtank/2022/01/26/reducing-extreme-polarization-is-key-to-stabilizing-democracy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reducing extreme polarization is key to stabilizing democracy.&lt;/a&gt; Stephanie Forrest and Joshua Daymude. &lt;em&gt;Brookings TechTank&lt;/em&gt;, January 2022. (Reposted by &lt;a href=&#34;https://www.facebook.com/602667646/posts/10158520474532647/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bishop Jennifer Reddall&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://azpbs.org/horizon/2022/01/researchers-look-to-technology-to-find-out-whats-increasing-the-countrys-social-and-political-divide/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Researchers look to technology to find out what’s increasing the country’s social and political divide.&lt;/a&gt; &lt;em&gt;Arizona Horizon&lt;/em&gt;, January 2022.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
     </item>
     
   </channel>

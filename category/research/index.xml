@@ -5,7 +5,7 @@
     <link>https://jdaymude.github.io/category/research/</link>
       <atom:link href="https://jdaymude.github.io/category/research/index.xml" rel="self" type="application/rss+xml" />
     <description>research</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Mon, 22 Nov 2021 16:01:44 -0700</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
       <title>research</title>
@@ -15,24 +15,47 @@
     <item>
       <title>Local Mutual Exclusion for Dynamic, Anonymous, Bounded Memory Message Passing Systems</title>
       <link>https://jdaymude.github.io/publication/daymude2022-localmutual/</link>
-      <pubDate>Mon, 22 Nov 2021 16:01:44 -0700</pubDate>
+      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/daymude2022-localmutual/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Labor and Delivery Unit Closures in Rural Georgia from 2012–2016 and the Impact on Black Women: A Mixed-Methods Investigation</title>
-      <link>https://jdaymude.github.io/publication/daymude2021-labordelivery/</link>
-      <pubDate>Mon, 22 Nov 2021 15:05:17 -0700</pubDate>
-      <guid>https://jdaymude.github.io/publication/daymude2021-labordelivery/</guid>
+      <title>Labor and Delivery Unit Closures in Rural Georgia from 2012 to 2016 and the Impact on Black Women: A Mixed-Methods Investigation</title>
+      <link>https://jdaymude.github.io/publication/daymude2022-labordelivery/</link>
+      <pubDate>Fri, 18 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2022-labordelivery/</guid>
       <description>&lt;h3 id=&#34;abstract&#34;&gt;Abstract&lt;/h3&gt;
-&lt;p&gt;&lt;strong&gt;Background.&lt;/strong&gt; Obstetric provider coverage in rural Georgia has worsened, with nine rural labor and delivery units (LDUs) closing outside the Atlanta Metropolitan Statistical Area from 2012–2016.
+&lt;p&gt;&lt;strong&gt;Background.&lt;/strong&gt; Obstetric provider coverage in rural Georgia has worsened, with nine rural labor and delivery units (LDUs) closing outside the Atlanta Metropolitan Statistical Area from 2012 to 2016.
 Georgia consistently has one of the highest maternal mortality rates in the nation and faces increased adverse health consequences from this decline in obstetric care.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Objective.&lt;/strong&gt; This study explores what factors may be associated with rural hospital LDU closures in Georgia from 2012–2016.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Objective.&lt;/strong&gt; This study explores what factors may be associated with rural hospital LDU closures in Georgia from 2012 to 2016.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Methods.&lt;/strong&gt; This study describes differences between rural Georgia hospitals based on LDU closure status through a quantitative analysis of 2011 baseline regional, hospital, and patient data, and a qualitative analysis of newspaper articles addressing the closures.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Results.&lt;/strong&gt; LDUs that closed had higher proportions of Black female residents in their Primary Care Service Areas (PCSAs), of Black birthing patients, and of patients with Medicaid, self-pay or other government insurance; lower LDU birth volume; more women giving birth within their PCSA of residence; fewer obstetricians and obstetric provider equivalents per LDU; and fewer average annual births per obstetric provider.
 Qualitative results indicate financial distress primarily contributed to closures, but also suggest that low birth volume and obstetric provider shortage impacted closures.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Conclusions for Practice.&lt;/strong&gt; Rural LDU closure in Georgia has a disproportionate impact on Black and low-income women and may be prevented through funding maternity healthcare and addressing provider shortages.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cutting Through the Noise to Infer Autonomous System Topology</title>
+      <link>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</link>
+      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Preventing Extreme Polarization of Political Attitudes</title>
+      <link>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</link>
+      <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</guid>
+      <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.eurekalert.org/news-releases/937038&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Like a natural system, democracy faces collapse as polarization leads to loss of diversity.&lt;/a&gt; Princeton University. &lt;em&gt;EurekaAlert!&lt;/em&gt;, December 2021.&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://santafe.edu/news-center/news/preventing-extreme-polarization-political-attitudes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Preventing extreme polarization of political attitudes.&lt;/a&gt; &lt;em&gt;Santa Fe Institute&lt;/em&gt;, December 2021. (Also featured in &lt;a href=&#34;https://www.eurekalert.org/news-releases/937259&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;EurekaAlert!&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://fullcircle.asu.edu/research/computing-scenarios-for-defusing-polarizing-politics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Computing scenarios for defusing polarizing politics.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU FullCircle&lt;/em&gt;, December 2021. (Also featured in &lt;a href=&#34;https://news.asu.edu/20211207-solutions-computing-scenarios-defusing-polarized-politics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ASU News&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.brookings.edu/blog/techtank/2022/01/26/reducing-extreme-polarization-is-key-to-stabilizing-democracy/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Reducing extreme polarization is key to stabilizing democracy.&lt;/a&gt; Stephanie Forrest and Joshua Daymude. &lt;em&gt;Brookings TechTank&lt;/em&gt;, January 2022. (Reposted by &lt;a href=&#34;https://www.facebook.com/602667646/posts/10158520474532647/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Bishop Jennifer Reddall&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://azpbs.org/horizon/2022/01/researchers-look-to-technology-to-find-out-whats-increasing-the-countrys-social-and-political-divide/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Researchers look to technology to find out what’s increasing the country’s social and political divide.&lt;/a&gt; &lt;em&gt;Arizona Horizon&lt;/em&gt;, January 2022.&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -83,18 +106,10 @@ Qualitative results indicate financial distress primarily contributed to closure
       <guid>https://jdaymude.github.io/publication/li2021-bobbots/</guid>
       <description>&lt;h3 id=&#34;related-press&#34;&gt;Related Press&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://news.gatech.edu/2021/04/29/simple-robots-smart-algorithms-meet-bobbots&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Simple Robots, Smart Algorithms: Meet the BOBbots&lt;/a&gt; Dana Randall. &lt;em&gt;Georgia Tech News Center&lt;/em&gt;, April 2021. (Also featured in &lt;a href=&#34;https://www.eurekalert.org/pub_releases/2021-04/giot-srs042321.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;EurekaAlert!&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://news.gatech.edu/2021/04/29/simple-robots-smart-algorithms-meet-bobbots&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Simple Robots, Smart Algorithms: Meet the BOBbots.&lt;/a&gt; Dana Randall. &lt;em&gt;Georgia Tech News Center&lt;/em&gt;, April 2021. (Also featured in &lt;a href=&#34;https://www.eurekalert.org/pub_releases/2021-04/giot-srs042321.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;EurekaAlert!&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://fullcircle.asu.edu/research/greater-than-the-sum-of-its-parts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Greater Than the Sum of Its Parts.&lt;/a&gt; Gary Werner. &lt;em&gt;ASU FullCircle&lt;/em&gt;, April 2021. (Also featured in &lt;a href=&#34;https://news.asu.edu/20210426-greater-sum-its-parts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ASU News&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Preventing Extreme Polarization of Political Attitudes</title>
-      <link>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</link>
-      <pubDate>Tue, 23 Mar 2021 07:43:30 -0700</pubDate>
-      <guid>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</guid>
-      <description></description>
     </item>
     
     <item>

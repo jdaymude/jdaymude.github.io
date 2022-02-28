@@ -342,10 +342,10 @@
     
       <meta
         property="article:published_time"
-        content="2021-11-22T16:01:44-07:00"
+        content="2022-02-24T00:00:00&#43;00:00"
       />
     
-    <meta property="article:modified_time" content="2021-11-22T16:01:44-07:00">
+    <meta property="article:modified_time" content="2022-02-24T00:00:00&#43;00:00">
   
 
   
@@ -375,8 +375,8 @@
     "https://jdaymude.github.io/publication/daymude2022-localmutual/featured.png"
   ],
   
-  "datePublished": "2021-11-22T16:01:44-07:00",
-  "dateModified": "2021-11-22T16:01:44-07:00",
+  "datePublished": "2022-02-24T00:00:00Z",
+  "dateModified": "2022-02-24T00:00:00Z",
   
   "author": {
     "@type": "Person",
@@ -943,7 +943,7 @@
     
       
     
-    November 2021
+    February 2022
   </span>
   
 
@@ -1049,7 +1049,7 @@
 
     
     <h3>Abstract</h3>
-    <p class="pub-abstract"><em>Mutual exclusion</em> is a classical problem in distributed computing that provides <em>isolation</em> among concurrent action executions that may require access to the same shared resources. Inspired by algorithmic research on distributed systems of weakly capable entities whose connections change over time, we address the <em>local mutual exclusion</em> problem that tasks each node with acquiring exclusive locks for itself and the maximal subset of its &ldquo;persistent&rdquo; neighbors that remain connected to it over the time interval of the lock request. Using the established <em>time-varying graphs</em> model to capture adversarial topological changes, we propose and rigorously analyze a local mutual exclusion algorithm for nodes that are anonymous and communicate via asynchronous message passing. The algorithm satisfies <em>mutual exclusion</em> (non-intersecting lock sets) and <em>lockout freedom</em> (eventual success) under both semi-synchronous and asynchronous concurrency. It requires $\mathcal{O}(\Delta\log\Delta)$ memory per node and messages of size $\mathcal{O}(\log\Delta)$, where $\Delta$ is the maximum number of connections per node. For systems of weak entities, $\Delta$ is often a small constant, reducing the memory and message size requirements to $\mathcal{O}(1)$. We conclude by describing how our algorithm can be used to implement the schedulers assumed by <em>population protocols</em> and the concurrency control operations assumed by the <em>canonical amoebot model</em>, demonstrating its utility in both passively and actively dynamic distributed systems.</p>
+    <p class="pub-abstract"><em>Mutual exclusion</em> is a classical problem in distributed computing that provides <em>isolation</em> among concurrent action executions that may require access to the same shared resources. Inspired by algorithmic research on distributed systems of weakly capable entities whose connections change over time, we address the <em>local mutual exclusion</em> problem that tasks each node with acquiring exclusive locks for itself and the maximal subset of its &ldquo;persistent&rdquo; neighbors that remain connected to it over the time interval of the lock request. Using the established <em>time-varying graphs</em> model to capture adversarial topological changes, we propose and rigorously analyze a local mutual exclusion algorithm for nodes that are anonymous and communicate via asynchronous message passing. The algorithm satisfies <em>mutual exclusion</em> (non-intersecting lock sets) and <em>lockout freedom</em> (eventual success with probability 1) under both semi-synchronous and asynchronous concurrency. It requires $\mathcal{O}(\Delta)$ memory per node and messages of size $\Theta(1)$, where $\Delta$ is the maximum number of connections per node. We conclude by describing how our algorithm can implement the pairwise interactions assumed by <em>population protocols</em> and the concurrency control operations assumed by the <em>canonical amoebot model</em>, demonstrating its utility in both passively and actively dynamic distributed systems.</p>
     
 
     
@@ -1077,7 +1077,7 @@
       <div class="col-md-10">
         <div class="row">
           <div class="col-12 col-md-3 pub-row-heading">Publication</div>
-          <div class="col-12 col-md-9">Submitted and Under Review</div>
+          <div class="col-12 col-md-9">Accepted to SAND 2022</div>
         </div>
       </div>
       <div class="col-md-1"></div>
