@@ -5,12 +5,22 @@
     <link>https://jdaymude.github.io/authors/rgmyr/</link>
       <atom:link href="https://jdaymude.github.io/authors/rgmyr/index.xml" rel="self" type="application/rss+xml" />
     <description>Robert Gmyr</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Sat, 04 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/authors/rgmyr/avatar_hu969d5786536ef75c97a1d9aa17c319a6_152138_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Robert Gmyr</title>
       <link>https://jdaymude.github.io/authors/rgmyr/</link>
     </image>
+    
+    <item>
+      <title>Self-Organizing Particle Systems (SOPS)</title>
+      <link>https://jdaymude.github.io/project/sops/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/sops/</guid>
+      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
+&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Convex Hull Formation for Programmable Matter</title>
@@ -37,16 +47,6 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://asunow.asu.edu/20170306-opening-paths-progress-programmable-materials&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Opening Paths to Progress with Programmable Materials.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU Now&lt;/em&gt;, March 2017. (Also featured in &lt;a href=&#34;http://technews.acm.org/archives.cfm?fo=2017-03-mar/mar-13-2017.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Self-Organizing Particle Systems (SOPS)</title>
-      <link>https://jdaymude.github.io/project/sops/</link>
-      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/project/sops/</guid>
-      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
-&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
 </description>
     </item>
     

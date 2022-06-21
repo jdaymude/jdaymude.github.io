@@ -37,6 +37,15 @@
     </item>
     
     <item>
+      <title>A Distributed, Stochastic Framework for Active Matter</title>
+      <link>https://jdaymude.github.io/project/active-matter/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/active-matter/</guid>
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Programming Active Cohesive Granular Matter with Mechanically Induced Phase Changes</title>
       <link>https://jdaymude.github.io/publication/li2021-bobbots/</link>
       <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
@@ -94,15 +103,6 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.quantamagazine.org/smart-swarms-of-robots-seek-better-algorithms-20180214&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Smart Swarms Seek New Ways to Cooperate.&lt;/a&gt; Kevin Hartnett. &lt;em&gt;Quanta Magazine&lt;/em&gt;, February 2018. (Also featured in &lt;a href=&#34;https://technews.acm.org/archives.cfm?fo=2018-02-feb/feb-16-2018.html&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ACM TechNews&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Distributed, Stochastic Framework for Active Matter</title>
-      <link>https://jdaymude.github.io/project/active-matter/</link>
-      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/project/active-matter/</guid>
-      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
 </description>
     </item>
     

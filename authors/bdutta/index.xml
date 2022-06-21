@@ -13,6 +13,15 @@
     </image>
     
     <item>
+      <title>A Distributed, Stochastic Framework for Active Matter</title>
+      <link>https://jdaymude.github.io/project/active-matter/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/active-matter/</guid>
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Programming Active Cohesive Granular Matter with Mechanically Induced Phase Changes</title>
       <link>https://jdaymude.github.io/publication/li2021-bobbots/</link>
       <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
@@ -22,15 +31,6 @@
 &lt;li&gt;&lt;a href=&#34;https://news.gatech.edu/2021/04/29/simple-robots-smart-algorithms-meet-bobbots&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Simple Robots, Smart Algorithms: Meet the BOBbots.&lt;/a&gt; Dana Randall. &lt;em&gt;Georgia Tech News Center&lt;/em&gt;, April 2021. (Also featured in &lt;a href=&#34;https://www.eurekalert.org/pub_releases/2021-04/giot-srs042321.php&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;EurekaAlert!&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://fullcircle.asu.edu/research/greater-than-the-sum-of-its-parts/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Greater Than the Sum of Its Parts.&lt;/a&gt; Gary Werner. &lt;em&gt;ASU FullCircle&lt;/em&gt;, April 2021. (Also featured in &lt;a href=&#34;https://news.asu.edu/20210426-greater-sum-its-parts&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ASU News&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>A Distributed, Stochastic Framework for Active Matter</title>
-      <link>https://jdaymude.github.io/project/active-matter/</link>
-      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/project/active-matter/</guid>
-      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
 </description>
     </item>
     

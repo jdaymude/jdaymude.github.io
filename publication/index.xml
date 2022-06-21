@@ -5,7 +5,7 @@
     <link>https://jdaymude.github.io/publication/</link>
       <atom:link href="https://jdaymude.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
       <title>Publications</title>
@@ -13,10 +13,34 @@
     </image>
     
     <item>
+      <title>Asynchronous Deterministic Leader Election in Three-Dimensional Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/briones2022-threedimensional/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/briones2022-threedimensional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cutting Through the Noise to Infer Autonomous System Topology</title>
+      <link>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Local Mutual Exclusion for Dynamic, Anonymous, Bounded Memory Message Passing Systems</title>
       <link>https://jdaymude.github.io/publication/daymude2022-localmutual/</link>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/daymude2022-localmutual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reply to de Marchi: Modeling Polarization of Political Attitudes</title>
+      <link>https://jdaymude.github.io/publication/axelrod2022-polarizationreply/</link>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/axelrod2022-polarizationreply/</guid>
       <description></description>
     </item>
     
@@ -37,19 +61,12 @@ Qualitative results indicate financial distress primarily contributed to closure
     </item>
     
     <item>
-      <title>Cutting Through the Noise to Infer Autonomous System Topology</title>
-      <link>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Preventing Extreme Polarization of Political Attitudes</title>
       <link>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</link>
       <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</guid>
       <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://icccr.tc.columbia.edu/blog/how-might-individual-interactions-lead-to-polarization-in-a-society/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Science-Practice Blog: How might individual interactions lead to polarization in a society?&lt;/a&gt; Nancy Lewis. &lt;em&gt;The Morton Deutsch International Center for Cooperation and Conflict Resolution&lt;/em&gt;, June 2022.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.eurekalert.org/news-releases/937038&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Like a natural system, democracy faces collapse as polarization leads to loss of diversity.&lt;/a&gt; Princeton University. &lt;em&gt;EurekaAlert!&lt;/em&gt;, December 2021.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://santafe.edu/news-center/news/preventing-extreme-polarization-political-attitudes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Preventing extreme polarization of political attitudes.&lt;/a&gt; &lt;em&gt;Santa Fe Institute&lt;/em&gt;, December 2021. (Also featured in &lt;a href=&#34;https://www.eurekalert.org/news-releases/937259&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;EurekaAlert!&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://fullcircle.asu.edu/research/computing-scenarios-for-defusing-polarizing-politics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Computing scenarios for defusing polarizing politics.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU FullCircle&lt;/em&gt;, December 2021. (Also featured in &lt;a href=&#34;https://news.asu.edu/20211207-solutions-computing-scenarios-defusing-polarized-politics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ASU News&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;

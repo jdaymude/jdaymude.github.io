@@ -5,7 +5,7 @@
     <link>https://jdaymude.github.io/tag/distributed-algorithms/</link>
       <atom:link href="https://jdaymude.github.io/tag/distributed-algorithms/index.xml" rel="self" type="application/rss+xml" />
     <description>distributed-algorithms</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
       <title>distributed-algorithms</title>
@@ -13,10 +13,28 @@
     </image>
     
     <item>
+      <title>Self-Organizing Particle Systems (SOPS)</title>
+      <link>https://jdaymude.github.io/project/sops/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/sops/</guid>
+      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
+&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Local Mutual Exclusion for Dynamic, Anonymous, Bounded Memory Message Passing Systems</title>
       <link>https://jdaymude.github.io/publication/daymude2022-localmutual/</link>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/daymude2022-localmutual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Local Mutual Exclusion for Dynamic, Anonymous, Bounded Memory Message Passing Systems</title>
+      <link>https://jdaymude.github.io/event/2022sand-localmutual/</link>
+      <pubDate>Tue, 29 Mar 2022 17:20:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/event/2022sand-localmutual/</guid>
       <description></description>
     </item>
     
@@ -42,6 +60,15 @@
       <pubDate>Wed, 14 Jul 2021 12:15:00 -0600</pubDate>
       <guid>https://jdaymude.github.io/event/2021sfi-analogcollectives/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>A Distributed, Stochastic Framework for Active Matter</title>
+      <link>https://jdaymude.github.io/project/active-matter/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/active-matter/</guid>
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -302,15 +329,6 @@
     </item>
     
     <item>
-      <title>A Distributed, Stochastic Framework for Active Matter</title>
-      <link>https://jdaymude.github.io/project/active-matter/</link>
-      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/project/active-matter/</guid>
-      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>A Markov Chain Algorithm for Compression in Self-Organizing Particle Systems</title>
       <link>https://jdaymude.github.io/publication/cannon2016-compression/</link>
       <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
@@ -338,16 +356,6 @@
       <pubDate>Wed, 06 Apr 2016 11:00:00 -0700</pubDate>
       <guid>https://jdaymude.github.io/event/2016asu-undergradthesis/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Self-Organizing Particle Systems (SOPS)</title>
-      <link>https://jdaymude.github.io/project/sops/</link>
-      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/project/sops/</guid>
-      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
-&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
-</description>
     </item>
     
   </channel>

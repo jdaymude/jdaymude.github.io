@@ -5,7 +5,7 @@
     <link>https://jdaymude.github.io/</link>
       <atom:link href="https://jdaymude.github.io/index.xml" rel="self" type="application/rss+xml" />
     <description>Joshua J. Daymude</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Thu, 24 Feb 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Mon, 30 May 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://jdaymude.github.io/media/logo_hu1dc8deb1865675db905a286e8af9308b_16380_300x300_fit_lanczos_3.png</url>
       <title>Joshua J. Daymude</title>
@@ -13,10 +13,236 @@
     </image>
     
     <item>
+      <title>Asynchronous Deterministic Leader Election in Three-Dimensional Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/briones2022-threedimensional/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/briones2022-threedimensional/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Self-Organizing Particle Systems (SOPS)</title>
+      <link>https://jdaymude.github.io/project/sops/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/sops/</guid>
+      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
+&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Donut County</title>
+      <link>https://jdaymude.github.io/review/videogame-donut-county/</link>
+      <pubDate>Mon, 23 May 2022 12:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-donut-county/</guid>
+      <description>&lt;p&gt;This will be a short and sweet review for a short and sweet game.
+&lt;em&gt;Donut County&lt;/em&gt; is a delightful and comical must-play in which you control as a hole in the ground that&amp;rsquo;s gobbling everything up.
+Each hole starts small—fitting only a soda can or a pebble—but grows with each object consumed.
+Pretty soon you&amp;rsquo;re dropping whole tables, cars, and houses into the abyss.
+Clear the area of any and all objects, and you win!&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-donut-county/lagoon_huae14f9948a41b49dd39a8cc50d1a38b6_750641_31dabf6b3dfdd7d61aacaab82c757cb5.png 400w,
+               /review/videogame-donut-county/lagoon_huae14f9948a41b49dd39a8cc50d1a38b6_750641_45439be4bc3c9a534bf8e0059212cc9a.png 760w,
+               /review/videogame-donut-county/lagoon_huae14f9948a41b49dd39a8cc50d1a38b6_750641_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-donut-county/lagoon_huae14f9948a41b49dd39a8cc50d1a38b6_750641_31dabf6b3dfdd7d61aacaab82c757cb5.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Destroying civilization as a hole in the ground is the most satisfying way of channeling your chaotic evil.
+(Do you hate traffic jams but stifle your inner road rage? &lt;em&gt;Donut County&lt;/em&gt; has a level for you.)
+By methodically working through a location&amp;rsquo;s objects, smallest to largest, I couldn&amp;rsquo;t help but make happy sighs of relief as all the junk slowly disappeared.
+The hole does not discriminate among its targets, though; an upstanding farm in the countryside is just as fair game as a roach-infested greasy spoon.
+Our consciences get to take a back seat to hilarity on this colorful and minimalist polygon art ride.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-donut-county/roaches_hu37bbe4c4fb81050bf2f28d15d1198476_712798_c902565c223c6b5e5a63d7f700f72415.png 400w,
+               /review/videogame-donut-county/roaches_hu37bbe4c4fb81050bf2f28d15d1198476_712798_7c9abf128bf1b740b1dc286b99f8d560.png 760w,
+               /review/videogame-donut-county/roaches_hu37bbe4c4fb81050bf2f28d15d1198476_712798_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-donut-county/roaches_hu37bbe4c4fb81050bf2f28d15d1198476_712798_c902565c223c6b5e5a63d7f700f72415.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;From the surprising physics of retrofitting the hole as a projectile gun to the descriptions of mundane objects—a dog dish is described as &amp;ldquo;drinking from this is like kissing a dog, but not as fun&amp;rdquo;—&lt;em&gt;Donut County&lt;/em&gt; kept me laughing throughout its few-hour playtime.
+If you need an afternoon pick-me-up or a palette cleanser between longer games, &lt;em&gt;Donut County&lt;/em&gt; won&amp;rsquo;t fail to delight.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Bugsnax</title>
+      <link>https://jdaymude.github.io/review/videogame-bugsnax/</link>
+      <pubDate>Sun, 22 May 2022 11:00:00 -0700</pubDate>
+      <guid>https://jdaymude.github.io/review/videogame-bugsnax/</guid>
+      <description>&lt;p&gt;&lt;em&gt;Bugsnax&lt;/em&gt; tells the story of a ragtag band of grumpuses who followed the charismatic Aussie-explorer Elizabert Megafig to Snaktooth Island.
+On arrival, they discover bugsnax—part bug, part snack!—which quickly become their primary source of food and mystery.
+Only three things are certain: bugsnax are delicious, eating them changes body parts into the &amp;ldquo;-snax&amp;rdquo; part of bugsnax, and grumpuses are bizarrely okay with having curly fries for biceps and honeycombs for hands.
+But just as eating too many bugsnax morphs grumpuses into foodie-Frankensteins, so too does stitching together a glut of individually tasty gaming morsels render &lt;em&gt;Bugsnax&lt;/em&gt; more off-putting than enjoyable.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-bugsnax/chandlo_hu67f43246ef3723f28ec9f658b8cbbbb9_11098875_bd59abff18c60c0e3dcec6295e350608.png 400w,
+               /review/videogame-bugsnax/chandlo_hu67f43246ef3723f28ec9f658b8cbbbb9_11098875_22b7eec29dc315526d8ff4e63c32bd6a.png 760w,
+               /review/videogame-bugsnax/chandlo_hu67f43246ef3723f28ec9f658b8cbbbb9_11098875_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-bugsnax/chandlo_hu67f43246ef3723f28ec9f658b8cbbbb9_11098875_bd59abff18c60c0e3dcec6295e350608.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;Young Horses, perhaps better known for their indie hit &lt;em&gt;Octodad: Dadliest Catch&lt;/em&gt;, write on their website that they&amp;rsquo;re &amp;ldquo;pushing the boundaries of game design in order to create experiences that players have not had before.&amp;rdquo;
+I&amp;rsquo;ll give them this much: it&amp;rsquo;s true that I&amp;rsquo;ve never covered a hamster ball in cheese to lure a sentient nacho mantis into fighting a loaded baked potato crab before.
+So, novel?
+Yes.
+Fun?
+&amp;hellip;sometimes?
+&amp;ldquo;Pushing the boundaries of game design&amp;rdquo;?
+Well&amp;hellip;
+If &lt;em&gt;Inspector Gadget&lt;/em&gt; meets &lt;em&gt;Pokémon&lt;/em&gt; meets &lt;em&gt;Slime Rancher&lt;/em&gt; meets &lt;em&gt;Sesame Street&lt;/em&gt; meets &lt;em&gt;The Sims&lt;/em&gt; sounds like your preferred way of pushing boundaries, then by all means &lt;em&gt;Bugsnax&lt;/em&gt; is probably a delightful way for you to spend 10–15 hours.
+For me, it didn&amp;rsquo;t quite hit the spot.&lt;/p&gt;
+&lt;p&gt;Gameplay is focused on entering a new area, finding its associated grumpuses who retreated there from the central town, convincing them to return to town via bugsnak-based fetch quests, and then coming back later to catch all the bugsnax you missed the first time.
+Hunting bugsnax involves a light amount of physics- and tool-based puzzle solving.
+Some need to be melted by tricking them to walk into a hot spring.
+Others need to be chased out of their holes using your snak-in-a-hamster-ball.
+Perhaps the most overpowered technique in the game is a carefully laid trip wire, ready to stun just about anything it touches.
+Figuring out these idiosyncrasies for the first time is good fun— repeating them for another ten hours to catch &amp;lsquo;em all is less rewarding.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-bugsnax/party_hub288d71f368e3316dfa6d690adc1e376_10983763_094bcfa548c58507675cf3e4910ab6aa.png 400w,
+               /review/videogame-bugsnax/party_hub288d71f368e3316dfa6d690adc1e376_10983763_feca1f4a5eefd60b8a983c2f196e6745.png 760w,
+               /review/videogame-bugsnax/party_hub288d71f368e3316dfa6d690adc1e376_10983763_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-bugsnax/party_hub288d71f368e3316dfa6d690adc1e376_10983763_094bcfa548c58507675cf3e4910ab6aa.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;You&amp;rsquo;d hope, then, that the grumpuses and their &amp;ldquo;charming&amp;rdquo; personality stereotypes would be the missing ingredients in this mediocre stew.
+Instead, they&amp;rsquo;re extra helpings of distraction with a dash of relational weight.
+Which is the main course: Chandlo and Snorpy&amp;rsquo;s romantic tension, their outlandish obsessions with fitness and conspiracy theories, or their untreated anxiety?
+Do we focus on Wambus and Triffy&amp;rsquo;s pursuits of career or their seemingly untrusting but fine marriage?
+Is Beffica a real grumpus worthy of care and concern, or a plot device via which we learn about everyone else?
+Without spoilers, the narrative wages a similarly bizarre subterfuge against its most important relationship between Eggabell and Lizbert; I couldn&amp;rsquo;t settle whether I was in their corner or wanted Eggabell to run for the hills.
+And don&amp;rsquo;t even get me started on Wiggle.&lt;/p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /review/videogame-bugsnax/wiggle_hue586f5bdd12c1608f3a4e6947390d787_8826702_47d0ac2217c684824986cb63d2101bbb.png 400w,
+               /review/videogame-bugsnax/wiggle_hue586f5bdd12c1608f3a4e6947390d787_8826702_2daff6c7bfebc6d36cd71123aa878bba.png 760w,
+               /review/videogame-bugsnax/wiggle_hue586f5bdd12c1608f3a4e6947390d787_8826702_1200x1200_fit_lanczos_3.png 1200w&#34;
+               src=&#34;https://jdaymude.github.io/review/videogame-bugsnax/wiggle_hue586f5bdd12c1608f3a4e6947390d787_8826702_47d0ac2217c684824986cb63d2101bbb.png&#34;
+               width=&#34;760&#34;
+               height=&#34;428&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;p&gt;We probably do need more games like &lt;em&gt;Bugsnax&lt;/em&gt; made with a huge amount of heart and goodwill.
+A basic sense of goodness and grumpus-kindness runs through it all, from the bright and colorful characters to the whimsy and silliness of snak-hunting.
+It may not have been the finest of dining, but would it satisfy at a family dinner?
+Hopefully so.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Cutting Through the Noise to Infer Autonomous System Topology</title>
+      <link>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</link>
+      <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Local Mutual Exclusion for Dynamic, Anonymous, Bounded Memory Message Passing Systems</title>
       <link>https://jdaymude.github.io/publication/daymude2022-localmutual/</link>
-      <pubDate>Thu, 24 Feb 2022 00:00:00 +0000</pubDate>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/daymude2022-localmutual/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Reply to de Marchi: Modeling Polarization of Political Attitudes</title>
+      <link>https://jdaymude.github.io/publication/axelrod2022-polarizationreply/</link>
+      <pubDate>Thu, 21 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/axelrod2022-polarizationreply/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Local Mutual Exclusion for Dynamic, Anonymous, Bounded Memory Message Passing Systems</title>
+      <link>https://jdaymude.github.io/event/2022sand-localmutual/</link>
+      <pubDate>Tue, 29 Mar 2022 17:20:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/event/2022sand-localmutual/</guid>
       <description></description>
     </item>
     
@@ -221,14 +447,6 @@ Too bad it seized every opportunity to take that vision down with the ship.&lt;/
     </item>
     
     <item>
-      <title>Cutting Through the Noise to Infer Autonomous System Topology</title>
-      <link>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</link>
-      <pubDate>Wed, 19 Jan 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Crying in H Mart</title>
       <link>https://jdaymude.github.io/review/book-crying-in-h-mart/</link>
       <pubDate>Wed, 05 Jan 2022 13:00:00 -0800</pubDate>
@@ -428,6 +646,7 @@ The epilogue shows us how Zagreus&amp;rsquo;s potential for redemptive, generous
       <pubDate>Tue, 14 Dec 2021 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/axelrod2021-preventingpolarization/</guid>
       <description>&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://icccr.tc.columbia.edu/blog/how-might-individual-interactions-lead-to-polarization-in-a-society/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Science-Practice Blog: How might individual interactions lead to polarization in a society?&lt;/a&gt; Nancy Lewis. &lt;em&gt;The Morton Deutsch International Center for Cooperation and Conflict Resolution&lt;/em&gt;, June 2022.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://www.eurekalert.org/news-releases/937038&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Like a natural system, democracy faces collapse as polarization leads to loss of diversity.&lt;/a&gt; Princeton University. &lt;em&gt;EurekaAlert!&lt;/em&gt;, December 2021.&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://santafe.edu/news-center/news/preventing-extreme-polarization-political-attitudes&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Preventing extreme polarization of political attitudes.&lt;/a&gt; &lt;em&gt;Santa Fe Institute&lt;/em&gt;, December 2021. (Also featured in &lt;a href=&#34;https://www.eurekalert.org/news-releases/937259&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;EurekaAlert!&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://fullcircle.asu.edu/research/computing-scenarios-for-defusing-polarizing-politics/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Computing scenarios for defusing polarizing politics.&lt;/a&gt; Joe Kullman. &lt;em&gt;ASU FullCircle&lt;/em&gt;, December 2021. (Also featured in &lt;a href=&#34;https://news.asu.edu/20211207-solutions-computing-scenarios-defusing-polarized-politics&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;ASU News&lt;/em&gt;&lt;/a&gt;).&lt;/li&gt;
@@ -840,6 +1059,15 @@ But unless they are collapsed by an observer, they will never be more than possi
       <pubDate>Wed, 14 Jul 2021 12:15:00 -0600</pubDate>
       <guid>https://jdaymude.github.io/event/2021sfi-analogcollectives/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>A Distributed, Stochastic Framework for Active Matter</title>
+      <link>https://jdaymude.github.io/project/active-matter/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/active-matter/</guid>
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -3504,15 +3732,6 @@ Simon walked on for a time without answering. Finally, he spoke. &amp;ldquo;He w
     </item>
     
     <item>
-      <title>A Distributed, Stochastic Framework for Active Matter</title>
-      <link>https://jdaymude.github.io/project/active-matter/</link>
-      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/project/active-matter/</guid>
-      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>A Markov Chain Algorithm for Compression in Self-Organizing Particle Systems</title>
       <link>https://jdaymude.github.io/publication/cannon2016-compression/</link>
       <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
@@ -3601,16 +3820,6 @@ Simon walked on for a time without answering. Finally, he spoke. &amp;ldquo;He w
       <pubDate>Wed, 06 Apr 2016 11:00:00 -0700</pubDate>
       <guid>https://jdaymude.github.io/event/2016asu-undergradthesis/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Self-Organizing Particle Systems (SOPS)</title>
-      <link>https://jdaymude.github.io/project/sops/</link>
-      <pubDate>Wed, 01 Apr 2015 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/project/sops/</guid>
-      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
-&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
-</description>
     </item>
     
     <item>

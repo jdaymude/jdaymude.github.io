@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>A Distributed, Stochastic Framework for Active Matter</title>
+      <link>https://jdaymude.github.io/project/active-matter/</link>
+      <pubDate>Fri, 23 Apr 2021 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/active-matter/</guid>
+      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Collaborating in Motion: Distributed and Stochastic Algorithms for Emergent Behavior in Programmable Matter</title>
       <link>https://jdaymude.github.io/event/2021asu-dissertationdefense/</link>
       <pubDate>Mon, 15 Mar 2021 09:00:00 -0700</pubDate>
@@ -128,15 +137,6 @@
       <pubDate>Fri, 28 Jul 2017 14:05:00 -0500</pubDate>
       <guid>https://jdaymude.github.io/event/2017bda-compression/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>A Distributed, Stochastic Framework for Active Matter</title>
-      <link>https://jdaymude.github.io/project/active-matter/</link>
-      <pubDate>Mon, 25 Jul 2016 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/project/active-matter/</guid>
-      <description>&lt;p&gt;We develop a theoretical framework for task-oriented &lt;em&gt;active matter&lt;/em&gt; that combines distributed computing, stochastic processes, statistical physics, active matter physics, and robophysics. By harnessing phase changes from statistical physics in our formal modeling and algorithm design, we obtain robust and provable self-organizing behaviors. We then incorporate this theory into swarm robotics platforms, establishing tight analogies between (but not necessarily strict implementations of) the algorithms&#39; rules and our robots&#39; designs. This allows us to critically examine our theoretical algorithms&#39; robustness to the errors and uncertainties of physical environments. Further, we can treat robot swarms as macro-scale active matter systems, studying the inter-robot dynamics as an analogy to particle interactions.&lt;/p&gt;
-</description>
     </item>
     
     <item>
