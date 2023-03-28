@@ -5,12 +5,38 @@
     <link>https://jdaymude.github.io/authors/jdaymude/</link>
       <atom:link href="https://jdaymude.github.io/authors/jdaymude/index.xml" rel="self" type="application/rss+xml" />
     <description>Joshua J. Daymude</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2022 Joshua J. Daymude</copyright><lastBuildDate>Thu, 23 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><copyright>© 2023 Joshua J. Daymude</copyright><lastBuildDate>Fri, 17 Feb 2023 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://jdaymude.github.io/authors/jdaymude/avatar_hudc6139071599df06305f24f0bbe0bef5_92978_270x270_fill_q75_lanczos_center.jpg</url>
+      <url>https://jdaymude.github.io/authors/jdaymude/avatar_hu17e1a184a8f4c95f5ef946ea7bded1e5_114598_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Joshua J. Daymude</title>
       <link>https://jdaymude.github.io/authors/jdaymude/</link>
     </image>
+    
+    <item>
+      <title>Self-Organizing Particle Systems (SOPS)</title>
+      <link>https://jdaymude.github.io/project/sops/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/sops/</guid>
+      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
+&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>The Canonical Amoebot Model: Algorithms and Concurrency Control</title>
+      <link>https://jdaymude.github.io/publication/daymude2023-canonicalamoebot/</link>
+      <pubDate>Fri, 17 Feb 2023 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/daymude2023-canonicalamoebot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Invited Paper: Asynchronous Deterministic Leader Election in Three-Dimensional Programmable Matter</title>
+      <link>https://jdaymude.github.io/publication/briones2023-3dleader/</link>
+      <pubDate>Wed, 04 Jan 2023 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/publication/briones2023-3dleader/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Fable: Anniversary</title>
@@ -103,24 +129,6 @@ As with everything else in &lt;em&gt;Fable&lt;/em&gt;, morality is inconsequenti
 Good games can be silly.
 Good games can be simple.
 Good games can be fun.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Asynchronous Deterministic Leader Election in Three-Dimensional Programmable Matter</title>
-      <link>https://jdaymude.github.io/publication/briones2022-threedimensional/</link>
-      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/publication/briones2022-threedimensional/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Self-Organizing Particle Systems (SOPS)</title>
-      <link>https://jdaymude.github.io/project/sops/</link>
-      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
-      <guid>https://jdaymude.github.io/project/sops/</guid>
-      <description>&lt;p&gt;Self-Organizing Particle Systems (SOPS) is an abstraction of &lt;em&gt;programmable matter&lt;/em&gt;, a substance with the ability to change its physical properties (shape, density, conductivity, etc.) in a programmable fashion. In order for programmable matter to live up to the dream of being an all-purpose &amp;quot;bucket of stuff&amp;quot; deployable for any task at any scale, we need a rich toolbox of algorithmic primitives upon which we can program more complex behaviors. Although the eventual vision is to control a whole mass of programmable matter as a single entity, our toolbox of primitives should be defined at the level of individual &amp;quot;atoms&amp;quot; of programmable matter to enable arbitrary scalability. Thus, we must take a distributed computing approach to defining micro-scale behaviors that collectively induce macro-scale phenomena.&lt;/p&gt;
-&lt;p&gt;Towards this goal, self-organizing particle systems abstractly envision programmable matter as an ensemble of tiny computational units called &lt;em&gt;particles&lt;/em&gt;. These particles are assumed to be very simple: they have very limited memory, no sense of orientation or direction, and only local movement and communication capabilities. Our formal model for these particle systems is the &lt;em&gt;amoebot model&lt;/em&gt;, which provides a theoretical framework for developing and analyzing our distributed algorithms for particle systems.&lt;/p&gt;
 </description>
     </item>
     
@@ -314,6 +322,21 @@ Hopefully so.&lt;/p&gt;
       <pubDate>Mon, 02 May 2022 00:00:00 +0000</pubDate>
       <guid>https://jdaymude.github.io/publication/leyba2022-cuttingthrough/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Adaptive Self-Organization in Anonymous Dynamic Networks</title>
+      <link>https://jdaymude.github.io/project/dynamic-networks/</link>
+      <pubDate>Fri, 29 Apr 2022 00:00:00 +0000</pubDate>
+      <guid>https://jdaymude.github.io/project/dynamic-networks/</guid>
+      <description>&lt;p&gt;Distributed computing theory has matured well beyond its original inspiration of dedicated computers linked together in static networks for message passing and file sharing.
+A key theme across modern applications of distributed computing is the impact of &lt;em&gt;dynamics&lt;/em&gt;, or frequent changes in the system&amp;rsquo;s members or the connections among them.
+This paradigm shift has enabled distributed computing to innovate both within computer science—e.g., in the construction of self-stabilizing overlay networks—and beyond the realm of engineering in, e.g., economics, biology, neurology, and active matter physics.
+Motivated by these domains where individuals often have limited to no explicit computational power, we study the &lt;em&gt;algorithmic theory of dynamic networks&lt;/em&gt; where nodes are &lt;em&gt;anonymous&lt;/em&gt; (lacking unique identifiers), have &lt;em&gt;sublogarithmic memory&lt;/em&gt; (insufficient for computing identifiers), and communicate via &lt;em&gt;message passing&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;We are specifically interested in &lt;em&gt;asynchronous concurrency&lt;/em&gt; and &lt;em&gt;adaptive self-organization&lt;/em&gt;.
+In studying asynchronous concurrency, we challenge the literature&amp;rsquo;s ubiquitous simplifying assumption that computation and network dynamics remain separated in time, instead designing algorithms that achieve their desired goals in spite of concurrent topological changes.
+With adaptive self-organization, we initiate the study of an orthogonal type of dynamics, &lt;em&gt;time-varying system tasks&lt;/em&gt;, which require algorithms to simultaneously adapt to the environment and achieve self-stabilization.&lt;/p&gt;
+</description>
     </item>
     
     <item>
